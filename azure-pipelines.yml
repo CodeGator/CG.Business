@@ -85,7 +85,7 @@ steps:
     packagesToPack: '$(SolutionPath).sln'
     nobuild: true
     versioningScheme: 'off'    
-
+  
 - task: NuGetCommand@2
   displayName: 'nuget internal push'
   inputs:
