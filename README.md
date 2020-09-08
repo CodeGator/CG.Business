@@ -1,6 +1,10 @@
 # CG.Business: 
 
 ---
+[![Build Status](https://dev.azure.com/codegator/CG.Business/_apis/build/status/CodeGator.CG.Business?branchName=master)](https://dev.azure.com/codegator/CG.Business/_build/latest?definitionId=4&branchName=master)
+[![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Business/index.html)
+[![NuGet downloads](https://img.shields.io/nuget/dt/CG.Business.svg?style=flat)](https://nuget.org/packages/CG.Business)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Business/4)
 
 
 #### What does it do?
