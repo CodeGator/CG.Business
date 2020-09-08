@@ -1,0 +1,398 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: CG.Business.Repositories
+  name: CG.Business.Repositories
+  href: api/CG.Business.Repositories.html
+  commentId: N:CG.Business.Repositories
+  fullName: CG.Business.Repositories
+  nameWithType: CG.Business.Repositories
+- uid: CG.Business.Repositories.IRepository
+  name: IRepository
+  href: api/CG.Business.Repositories.IRepository.html
+  commentId: T:CG.Business.Repositories.IRepository
+  fullName: CG.Business.Repositories.IRepository
+  nameWithType: IRepository
+- uid: CG.Business.Repositories.Options
+  name: CG.Business.Repositories.Options
+  href: api/CG.Business.Repositories.Options.html
+  commentId: N:CG.Business.Repositories.Options
+  fullName: CG.Business.Repositories.Options
+  nameWithType: CG.Business.Repositories.Options
+- uid: CG.Business.Repositories.Options.RepositoryOptions
+  name: RepositoryOptions
+  href: api/CG.Business.Repositories.Options.RepositoryOptions.html
+  commentId: T:CG.Business.Repositories.Options.RepositoryOptions
+  fullName: CG.Business.Repositories.Options.RepositoryOptions
+  nameWithType: RepositoryOptions
+- uid: CG.Business.Repositories.RepositoryBase
+  name: RepositoryBase
+  href: api/CG.Business.Repositories.RepositoryBase.html
+  commentId: T:CG.Business.Repositories.RepositoryBase
+  fullName: CG.Business.Repositories.RepositoryBase
+  nameWithType: RepositoryBase
+- uid: CG.Business.Repositories.RepositoryBase`1
+  name: RepositoryBase<TSettings>
+  href: api/CG.Business.Repositories.RepositoryBase-1.html
+  commentId: T:CG.Business.Repositories.RepositoryBase`1
+  name.vb: RepositoryBase(Of TSettings)
+  fullName: CG.Business.Repositories.RepositoryBase<TSettings>
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TSettings)
+  nameWithType: RepositoryBase<TSettings>
+  nameWithType.vb: RepositoryBase(Of TSettings)
+- uid: CG.Business.Repositories.RepositoryBase`1.#ctor(`0)
+  name: RepositoryBase(TSettings)
+  href: api/CG.Business.Repositories.RepositoryBase-1.html#CG_Business_Repositories_RepositoryBase_1__ctor__0_
+  commentId: M:CG.Business.Repositories.RepositoryBase`1.#ctor(`0)
+  fullName: CG.Business.Repositories.RepositoryBase<TSettings>.RepositoryBase(TSettings)
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TSettings).RepositoryBase(TSettings)
+  nameWithType: RepositoryBase<TSettings>.RepositoryBase(TSettings)
+  nameWithType.vb: RepositoryBase(Of TSettings).RepositoryBase(TSettings)
+- uid: CG.Business.Repositories.RepositoryBase`1.#ctor*
+  name: RepositoryBase
+  href: api/CG.Business.Repositories.RepositoryBase-1.html#CG_Business_Repositories_RepositoryBase_1__ctor_
+  commentId: Overload:CG.Business.Repositories.RepositoryBase`1.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Repositories.RepositoryBase<TSettings>.RepositoryBase
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TSettings).RepositoryBase
+  nameWithType: RepositoryBase<TSettings>.RepositoryBase
+  nameWithType.vb: RepositoryBase(Of TSettings).RepositoryBase
+- uid: CG.Business.Repositories.RepositoryBase`1.Settings
+  name: Settings
+  href: api/CG.Business.Repositories.RepositoryBase-1.html#CG_Business_Repositories_RepositoryBase_1_Settings
+  commentId: P:CG.Business.Repositories.RepositoryBase`1.Settings
+  fullName: CG.Business.Repositories.RepositoryBase<TSettings>.Settings
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TSettings).Settings
+  nameWithType: RepositoryBase<TSettings>.Settings
+  nameWithType.vb: RepositoryBase(Of TSettings).Settings
+- uid: CG.Business.Repositories.RepositoryBase`1.Settings*
+  name: Settings
+  href: api/CG.Business.Repositories.RepositoryBase-1.html#CG_Business_Repositories_RepositoryBase_1_Settings_
+  commentId: Overload:CG.Business.Repositories.RepositoryBase`1.Settings
+  isSpec: "True"
+  fullName: CG.Business.Repositories.RepositoryBase<TSettings>.Settings
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TSettings).Settings
+  nameWithType: RepositoryBase<TSettings>.Settings
+  nameWithType.vb: RepositoryBase(Of TSettings).Settings
+- uid: CG.Business.Repositories.RepositoryBase`2
+  name: RepositoryBase<TEntity, TModel>
+  href: api/CG.Business.Repositories.RepositoryBase-2.html
+  commentId: T:CG.Business.Repositories.RepositoryBase`2
+  name.vb: RepositoryBase(Of TEntity, TModel)
+  fullName: CG.Business.Repositories.RepositoryBase<TEntity, TModel>
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TEntity, TModel)
+  nameWithType: RepositoryBase<TEntity, TModel>
+  nameWithType.vb: RepositoryBase(Of TEntity, TModel)
+- uid: CG.Business.Repositories.RepositoryBase`2.ToEntity(`1)
+  name: ToEntity(TModel)
+  href: api/CG.Business.Repositories.RepositoryBase-2.html#CG_Business_Repositories_RepositoryBase_2_ToEntity__1_
+  commentId: M:CG.Business.Repositories.RepositoryBase`2.ToEntity(`1)
+  fullName: CG.Business.Repositories.RepositoryBase<TEntity, TModel>.ToEntity(TModel)
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TEntity, TModel).ToEntity(TModel)
+  nameWithType: RepositoryBase<TEntity, TModel>.ToEntity(TModel)
+  nameWithType.vb: RepositoryBase(Of TEntity, TModel).ToEntity(TModel)
+- uid: CG.Business.Repositories.RepositoryBase`2.ToEntity*
+  name: ToEntity
+  href: api/CG.Business.Repositories.RepositoryBase-2.html#CG_Business_Repositories_RepositoryBase_2_ToEntity_
+  commentId: Overload:CG.Business.Repositories.RepositoryBase`2.ToEntity
+  isSpec: "True"
+  fullName: CG.Business.Repositories.RepositoryBase<TEntity, TModel>.ToEntity
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TEntity, TModel).ToEntity
+  nameWithType: RepositoryBase<TEntity, TModel>.ToEntity
+  nameWithType.vb: RepositoryBase(Of TEntity, TModel).ToEntity
+- uid: CG.Business.Repositories.RepositoryBase`2.ToModel(`0)
+  name: ToModel(TEntity)
+  href: api/CG.Business.Repositories.RepositoryBase-2.html#CG_Business_Repositories_RepositoryBase_2_ToModel__0_
+  commentId: M:CG.Business.Repositories.RepositoryBase`2.ToModel(`0)
+  fullName: CG.Business.Repositories.RepositoryBase<TEntity, TModel>.ToModel(TEntity)
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TEntity, TModel).ToModel(TEntity)
+  nameWithType: RepositoryBase<TEntity, TModel>.ToModel(TEntity)
+  nameWithType.vb: RepositoryBase(Of TEntity, TModel).ToModel(TEntity)
+- uid: CG.Business.Repositories.RepositoryBase`2.ToModel*
+  name: ToModel
+  href: api/CG.Business.Repositories.RepositoryBase-2.html#CG_Business_Repositories_RepositoryBase_2_ToModel_
+  commentId: Overload:CG.Business.Repositories.RepositoryBase`2.ToModel
+  isSpec: "True"
+  fullName: CG.Business.Repositories.RepositoryBase<TEntity, TModel>.ToModel
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TEntity, TModel).ToModel
+  nameWithType: RepositoryBase<TEntity, TModel>.ToModel
+  nameWithType.vb: RepositoryBase(Of TEntity, TModel).ToModel
+- uid: CG.Business.Repositories.RepositoryBase`3
+  name: RepositoryBase<TSettings, TEntity, TModel>
+  href: api/CG.Business.Repositories.RepositoryBase-3.html
+  commentId: T:CG.Business.Repositories.RepositoryBase`3
+  name.vb: RepositoryBase(Of TSettings, TEntity, TModel)
+  fullName: CG.Business.Repositories.RepositoryBase<TSettings, TEntity, TModel>
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TSettings, TEntity, TModel)
+  nameWithType: RepositoryBase<TSettings, TEntity, TModel>
+  nameWithType.vb: RepositoryBase(Of TSettings, TEntity, TModel)
+- uid: CG.Business.Repositories.RepositoryBase`3.#ctor(`0)
+  name: RepositoryBase(TSettings)
+  href: api/CG.Business.Repositories.RepositoryBase-3.html#CG_Business_Repositories_RepositoryBase_3__ctor__0_
+  commentId: M:CG.Business.Repositories.RepositoryBase`3.#ctor(`0)
+  fullName: CG.Business.Repositories.RepositoryBase<TSettings, TEntity, TModel>.RepositoryBase(TSettings)
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TSettings, TEntity, TModel).RepositoryBase(TSettings)
+  nameWithType: RepositoryBase<TSettings, TEntity, TModel>.RepositoryBase(TSettings)
+  nameWithType.vb: RepositoryBase(Of TSettings, TEntity, TModel).RepositoryBase(TSettings)
+- uid: CG.Business.Repositories.RepositoryBase`3.#ctor*
+  name: RepositoryBase
+  href: api/CG.Business.Repositories.RepositoryBase-3.html#CG_Business_Repositories_RepositoryBase_3__ctor_
+  commentId: Overload:CG.Business.Repositories.RepositoryBase`3.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Repositories.RepositoryBase<TSettings, TEntity, TModel>.RepositoryBase
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TSettings, TEntity, TModel).RepositoryBase
+  nameWithType: RepositoryBase<TSettings, TEntity, TModel>.RepositoryBase
+  nameWithType.vb: RepositoryBase(Of TSettings, TEntity, TModel).RepositoryBase
+- uid: CG.Business.Repositories.RepositoryBase`3.Settings
+  name: Settings
+  href: api/CG.Business.Repositories.RepositoryBase-3.html#CG_Business_Repositories_RepositoryBase_3_Settings
+  commentId: P:CG.Business.Repositories.RepositoryBase`3.Settings
+  fullName: CG.Business.Repositories.RepositoryBase<TSettings, TEntity, TModel>.Settings
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TSettings, TEntity, TModel).Settings
+  nameWithType: RepositoryBase<TSettings, TEntity, TModel>.Settings
+  nameWithType.vb: RepositoryBase(Of TSettings, TEntity, TModel).Settings
+- uid: CG.Business.Repositories.RepositoryBase`3.Settings*
+  name: Settings
+  href: api/CG.Business.Repositories.RepositoryBase-3.html#CG_Business_Repositories_RepositoryBase_3_Settings_
+  commentId: Overload:CG.Business.Repositories.RepositoryBase`3.Settings
+  isSpec: "True"
+  fullName: CG.Business.Repositories.RepositoryBase<TSettings, TEntity, TModel>.Settings
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TSettings, TEntity, TModel).Settings
+  nameWithType: RepositoryBase<TSettings, TEntity, TModel>.Settings
+  nameWithType.vb: RepositoryBase(Of TSettings, TEntity, TModel).Settings
+- uid: CG.Business.Repositories.RepositoryException
+  name: RepositoryException
+  href: api/CG.Business.Repositories.RepositoryException.html
+  commentId: T:CG.Business.Repositories.RepositoryException
+  fullName: CG.Business.Repositories.RepositoryException
+  nameWithType: RepositoryException
+- uid: CG.Business.Repositories.RepositoryException.#ctor
+  name: RepositoryException()
+  href: api/CG.Business.Repositories.RepositoryException.html#CG_Business_Repositories_RepositoryException__ctor
+  commentId: M:CG.Business.Repositories.RepositoryException.#ctor
+  fullName: CG.Business.Repositories.RepositoryException.RepositoryException()
+  nameWithType: RepositoryException.RepositoryException()
+- uid: CG.Business.Repositories.RepositoryException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: RepositoryException(SerializationInfo, StreamingContext)
+  href: api/CG.Business.Repositories.RepositoryException.html#CG_Business_Repositories_RepositoryException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:CG.Business.Repositories.RepositoryException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: CG.Business.Repositories.RepositoryException.RepositoryException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: RepositoryException.RepositoryException(SerializationInfo, StreamingContext)
+- uid: CG.Business.Repositories.RepositoryException.#ctor(System.String)
+  name: RepositoryException(String)
+  href: api/CG.Business.Repositories.RepositoryException.html#CG_Business_Repositories_RepositoryException__ctor_System_String_
+  commentId: M:CG.Business.Repositories.RepositoryException.#ctor(System.String)
+  fullName: CG.Business.Repositories.RepositoryException.RepositoryException(System.String)
+  nameWithType: RepositoryException.RepositoryException(String)
+- uid: CG.Business.Repositories.RepositoryException.#ctor(System.String,System.Exception)
+  name: RepositoryException(String, Exception)
+  href: api/CG.Business.Repositories.RepositoryException.html#CG_Business_Repositories_RepositoryException__ctor_System_String_System_Exception_
+  commentId: M:CG.Business.Repositories.RepositoryException.#ctor(System.String,System.Exception)
+  fullName: CG.Business.Repositories.RepositoryException.RepositoryException(System.String, System.Exception)
+  nameWithType: RepositoryException.RepositoryException(String, Exception)
+- uid: CG.Business.Repositories.RepositoryException.#ctor*
+  name: RepositoryException
+  href: api/CG.Business.Repositories.RepositoryException.html#CG_Business_Repositories_RepositoryException__ctor_
+  commentId: Overload:CG.Business.Repositories.RepositoryException.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Repositories.RepositoryException.RepositoryException
+  nameWithType: RepositoryException.RepositoryException
+- uid: CG.Business.Stores
+  name: CG.Business.Stores
+  href: api/CG.Business.Stores.html
+  commentId: N:CG.Business.Stores
+  fullName: CG.Business.Stores
+  nameWithType: CG.Business.Stores
+- uid: CG.Business.Stores.IStore
+  name: IStore
+  href: api/CG.Business.Stores.IStore.html
+  commentId: T:CG.Business.Stores.IStore
+  fullName: CG.Business.Stores.IStore
+  nameWithType: IStore
+- uid: CG.Business.Stores.Options
+  name: CG.Business.Stores.Options
+  href: api/CG.Business.Stores.Options.html
+  commentId: N:CG.Business.Stores.Options
+  fullName: CG.Business.Stores.Options
+  nameWithType: CG.Business.Stores.Options
+- uid: CG.Business.Stores.Options.StoreOptions
+  name: StoreOptions
+  href: api/CG.Business.Stores.Options.StoreOptions.html
+  commentId: T:CG.Business.Stores.Options.StoreOptions
+  fullName: CG.Business.Stores.Options.StoreOptions
+  nameWithType: StoreOptions
+- uid: CG.Business.Stores.StoreBase
+  name: StoreBase
+  href: api/CG.Business.Stores.StoreBase.html
+  commentId: T:CG.Business.Stores.StoreBase
+  fullName: CG.Business.Stores.StoreBase
+  nameWithType: StoreBase
+- uid: CG.Business.Stores.StoreBase`1
+  name: StoreBase<TOptions>
+  href: api/CG.Business.Stores.StoreBase-1.html
+  commentId: T:CG.Business.Stores.StoreBase`1
+  name.vb: StoreBase(Of TOptions)
+  fullName: CG.Business.Stores.StoreBase<TOptions>
+  fullName.vb: CG.Business.Stores.StoreBase(Of TOptions)
+  nameWithType: StoreBase<TOptions>
+  nameWithType.vb: StoreBase(Of TOptions)
+- uid: CG.Business.Stores.StoreBase`1.#ctor(`0)
+  name: StoreBase(TOptions)
+  href: api/CG.Business.Stores.StoreBase-1.html#CG_Business_Stores_StoreBase_1__ctor__0_
+  commentId: M:CG.Business.Stores.StoreBase`1.#ctor(`0)
+  fullName: CG.Business.Stores.StoreBase<TOptions>.StoreBase(TOptions)
+  fullName.vb: CG.Business.Stores.StoreBase(Of TOptions).StoreBase(TOptions)
+  nameWithType: StoreBase<TOptions>.StoreBase(TOptions)
+  nameWithType.vb: StoreBase(Of TOptions).StoreBase(TOptions)
+- uid: CG.Business.Stores.StoreBase`1.#ctor*
+  name: StoreBase
+  href: api/CG.Business.Stores.StoreBase-1.html#CG_Business_Stores_StoreBase_1__ctor_
+  commentId: Overload:CG.Business.Stores.StoreBase`1.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Stores.StoreBase<TOptions>.StoreBase
+  fullName.vb: CG.Business.Stores.StoreBase(Of TOptions).StoreBase
+  nameWithType: StoreBase<TOptions>.StoreBase
+  nameWithType.vb: StoreBase(Of TOptions).StoreBase
+- uid: CG.Business.Stores.StoreBase`1.Options
+  name: Options
+  href: api/CG.Business.Stores.StoreBase-1.html#CG_Business_Stores_StoreBase_1_Options
+  commentId: P:CG.Business.Stores.StoreBase`1.Options
+  fullName: CG.Business.Stores.StoreBase<TOptions>.Options
+  fullName.vb: CG.Business.Stores.StoreBase(Of TOptions).Options
+  nameWithType: StoreBase<TOptions>.Options
+  nameWithType.vb: StoreBase(Of TOptions).Options
+- uid: CG.Business.Stores.StoreBase`1.Options*
+  name: Options
+  href: api/CG.Business.Stores.StoreBase-1.html#CG_Business_Stores_StoreBase_1_Options_
+  commentId: Overload:CG.Business.Stores.StoreBase`1.Options
+  isSpec: "True"
+  fullName: CG.Business.Stores.StoreBase<TOptions>.Options
+  fullName.vb: CG.Business.Stores.StoreBase(Of TOptions).Options
+  nameWithType: StoreBase<TOptions>.Options
+  nameWithType.vb: StoreBase(Of TOptions).Options
+- uid: CG.Business.Stores.StoreException
+  name: StoreException
+  href: api/CG.Business.Stores.StoreException.html
+  commentId: T:CG.Business.Stores.StoreException
+  fullName: CG.Business.Stores.StoreException
+  nameWithType: StoreException
+- uid: CG.Business.Stores.StoreException.#ctor
+  name: StoreException()
+  href: api/CG.Business.Stores.StoreException.html#CG_Business_Stores_StoreException__ctor
+  commentId: M:CG.Business.Stores.StoreException.#ctor
+  fullName: CG.Business.Stores.StoreException.StoreException()
+  nameWithType: StoreException.StoreException()
+- uid: CG.Business.Stores.StoreException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: StoreException(SerializationInfo, StreamingContext)
+  href: api/CG.Business.Stores.StoreException.html#CG_Business_Stores_StoreException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:CG.Business.Stores.StoreException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: CG.Business.Stores.StoreException.StoreException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: StoreException.StoreException(SerializationInfo, StreamingContext)
+- uid: CG.Business.Stores.StoreException.#ctor(System.String)
+  name: StoreException(String)
+  href: api/CG.Business.Stores.StoreException.html#CG_Business_Stores_StoreException__ctor_System_String_
+  commentId: M:CG.Business.Stores.StoreException.#ctor(System.String)
+  fullName: CG.Business.Stores.StoreException.StoreException(System.String)
+  nameWithType: StoreException.StoreException(String)
+- uid: CG.Business.Stores.StoreException.#ctor(System.String,System.Exception)
+  name: StoreException(String, Exception)
+  href: api/CG.Business.Stores.StoreException.html#CG_Business_Stores_StoreException__ctor_System_String_System_Exception_
+  commentId: M:CG.Business.Stores.StoreException.#ctor(System.String,System.Exception)
+  fullName: CG.Business.Stores.StoreException.StoreException(System.String, System.Exception)
+  nameWithType: StoreException.StoreException(String, Exception)
+- uid: CG.Business.Stores.StoreException.#ctor*
+  name: StoreException
+  href: api/CG.Business.Stores.StoreException.html#CG_Business_Stores_StoreException__ctor_
+  commentId: Overload:CG.Business.Stores.StoreException.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Stores.StoreException.StoreException
+  nameWithType: StoreException.StoreException
+- uid: CG.Models
+  name: CG.Models
+  href: api/CG.Models.html
+  commentId: N:CG.Models
+  fullName: CG.Models
+  nameWithType: CG.Models
+- uid: CG.Models.ModelBase
+  name: ModelBase
+  href: api/CG.Models.ModelBase.html
+  commentId: T:CG.Models.ModelBase
+  fullName: CG.Models.ModelBase
+  nameWithType: ModelBase
+- uid: CG.Models.ModelBase`1
+  name: ModelBase<T>
+  href: api/CG.Models.ModelBase-1.html
+  commentId: T:CG.Models.ModelBase`1
+  name.vb: ModelBase(Of T)
+  fullName: CG.Models.ModelBase<T>
+  fullName.vb: CG.Models.ModelBase(Of T)
+  nameWithType: ModelBase<T>
+  nameWithType.vb: ModelBase(Of T)
+- uid: CG.Models.ModelBase`1.Equals(System.Object)
+  name: Equals(Object)
+  href: api/CG.Models.ModelBase-1.html#CG_Models_ModelBase_1_Equals_System_Object_
+  commentId: M:CG.Models.ModelBase`1.Equals(System.Object)
+  fullName: CG.Models.ModelBase<T>.Equals(System.Object)
+  fullName.vb: CG.Models.ModelBase(Of T).Equals(System.Object)
+  nameWithType: ModelBase<T>.Equals(Object)
+  nameWithType.vb: ModelBase(Of T).Equals(Object)
+- uid: CG.Models.ModelBase`1.Equals*
+  name: Equals
+  href: api/CG.Models.ModelBase-1.html#CG_Models_ModelBase_1_Equals_
+  commentId: Overload:CG.Models.ModelBase`1.Equals
+  isSpec: "True"
+  fullName: CG.Models.ModelBase<T>.Equals
+  fullName.vb: CG.Models.ModelBase(Of T).Equals
+  nameWithType: ModelBase<T>.Equals
+  nameWithType.vb: ModelBase(Of T).Equals
+- uid: CG.Models.ModelBase`1.GetHashCode
+  name: GetHashCode()
+  href: api/CG.Models.ModelBase-1.html#CG_Models_ModelBase_1_GetHashCode
+  commentId: M:CG.Models.ModelBase`1.GetHashCode
+  fullName: CG.Models.ModelBase<T>.GetHashCode()
+  fullName.vb: CG.Models.ModelBase(Of T).GetHashCode()
+  nameWithType: ModelBase<T>.GetHashCode()
+  nameWithType.vb: ModelBase(Of T).GetHashCode()
+- uid: CG.Models.ModelBase`1.GetHashCode*
+  name: GetHashCode
+  href: api/CG.Models.ModelBase-1.html#CG_Models_ModelBase_1_GetHashCode_
+  commentId: Overload:CG.Models.ModelBase`1.GetHashCode
+  isSpec: "True"
+  fullName: CG.Models.ModelBase<T>.GetHashCode
+  fullName.vb: CG.Models.ModelBase(Of T).GetHashCode
+  nameWithType: ModelBase<T>.GetHashCode
+  nameWithType.vb: ModelBase(Of T).GetHashCode
+- uid: CG.Models.ModelBase`1.Id
+  name: Id
+  href: api/CG.Models.ModelBase-1.html#CG_Models_ModelBase_1_Id
+  commentId: P:CG.Models.ModelBase`1.Id
+  fullName: CG.Models.ModelBase<T>.Id
+  fullName.vb: CG.Models.ModelBase(Of T).Id
+  nameWithType: ModelBase<T>.Id
+  nameWithType.vb: ModelBase(Of T).Id
+- uid: CG.Models.ModelBase`1.Id*
+  name: Id
+  href: api/CG.Models.ModelBase-1.html#CG_Models_ModelBase_1_Id_
+  commentId: Overload:CG.Models.ModelBase`1.Id
+  isSpec: "True"
+  fullName: CG.Models.ModelBase<T>.Id
+  fullName.vb: CG.Models.ModelBase(Of T).Id
+  nameWithType: ModelBase<T>.Id
+  nameWithType.vb: ModelBase(Of T).Id
+- uid: CG.Models.ModelBase`1.ToString
+  name: ToString()
+  href: api/CG.Models.ModelBase-1.html#CG_Models_ModelBase_1_ToString
+  commentId: M:CG.Models.ModelBase`1.ToString
+  fullName: CG.Models.ModelBase<T>.ToString()
+  fullName.vb: CG.Models.ModelBase(Of T).ToString()
+  nameWithType: ModelBase<T>.ToString()
+  nameWithType.vb: ModelBase(Of T).ToString()
+- uid: CG.Models.ModelBase`1.ToString*
+  name: ToString
+  href: api/CG.Models.ModelBase-1.html#CG_Models_ModelBase_1_ToString_
+  commentId: Overload:CG.Models.ModelBase`1.ToString
+  isSpec: "True"
+  fullName: CG.Models.ModelBase<T>.ToString
+  fullName.vb: CG.Models.ModelBase(Of T).ToString
+  nameWithType: ModelBase<T>.ToString
+  nameWithType.vb: ModelBase(Of T).ToString
