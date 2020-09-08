@@ -2,24 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>BG.Business</RootNamespace>
-    <Description>This package contains business abstractions used by other BobbyGogs packages. 
+    <RootNamespace>CG.Business</RootNamespace>
+    <Description>This package contains business related abstractions used by other CodeGator packages. 
 
 Platforms supported:
       .NET 4.61 or above
       .NET Standard 2.0 or above</Description>
-    <Company>BobbyGogs</Company>
+    <Company>CodeGator</Company>
     <Authors>Martin Cook</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Copyright>Copyright © 2019 - 2020 by BobbyGogs. Copyright © 2010 - 2020 by CodeGator.</Copyright>
-    <PackageProjectUrl>https://github.com/BobbyGogs/BG.Business</PackageProjectUrl>
-    <PackageTags>business, abstrations, BG.Busness, BobbyGogs</PackageTags>
+    <Copyright>Copyright © 2010 - 2020 by CodeGator.</Copyright>
+    <PackageProjectUrl>https://github.com/CodeGator/CG.Business</PackageProjectUrl>
+    <PackageTags>business, abstrations, CG.Busness, CodeGator</PackageTags>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard2.0\BG.Business.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netstandard2.0\CG.Business.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
