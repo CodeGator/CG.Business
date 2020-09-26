@@ -23,9 +23,9 @@ Platforms supported:
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CG.Core" Version="2020.6.11" />
-    <PackageReference Include="CG.DataAnnotations" Version="2020.1.13" />
-    <PackageReference Include="CG.Validations" Version="2020.1.35" />
+    <PackageReference Include="CG.Core" Version="2020.6.15" />
+    <PackageReference Include="CG.DataAnnotations" Version="2020.1.15" />
+    <PackageReference Include="CG.Validations" Version="2020.1.37" />
     <PackageReference Include="Nerdbank.GitVersioning" Version="3.2.31">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
