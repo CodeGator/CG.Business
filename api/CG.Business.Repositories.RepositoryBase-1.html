@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RepositoryBase&lt;TSettings&gt;
+    <title>Class RepositoryBase&lt;TOptions&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RepositoryBase&lt;TSettings&gt;
+    <meta name="title" content="Class RepositoryBase&lt;TOptions&gt;
    ">
     <meta name="generator" content="docfx 2.56.2.0">
     
@@ -81,7 +81,7 @@
             <article class="content wrap" id="_content" data-uid="CG.Business.Repositories.RepositoryBase`1">
   
   
-  <h1 id="CG_Business_Repositories_RepositoryBase_1" data-uid="CG.Business.Repositories.RepositoryBase`1" class="text-break">Class RepositoryBase&lt;TSettings&gt;
+  <h1 id="CG_Business_Repositories_RepositoryBase_1" data-uid="CG.Business.Repositories.RepositoryBase`1" class="text-break">Class RepositoryBase&lt;TOptions&gt;
   </h1>
   <div class="markdown level0 summary"><p>This class represents a base implementation of the <a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a>
 inteface.</p>
@@ -92,7 +92,7 @@ inteface.</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">CG.DisposableBase</span></div>
     <div class="level2"><a class="xref" href="CG.Business.Repositories.RepositoryBase.html">RepositoryBase</a></div>
-    <div class="level3"><span class="xref">RepositoryBase&lt;TSettings&gt;</span></div>
+    <div class="level3"><span class="xref">RepositoryBase&lt;TOptions&gt;</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -136,7 +136,7 @@ inteface.</p>
   <h6><strong>Assembly</strong>: CG.Business.dll</h6>
   <h5 id="CG_Business_Repositories_RepositoryBase_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class RepositoryBase&lt;TSettings&gt; : RepositoryBase, IRepository, IDisposable where TSettings : RepositoryOptions</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class RepositoryBase&lt;TOptions&gt; : RepositoryBase, IRepository, IDisposable where TOptions : RepositoryOptions</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -148,8 +148,8 @@ inteface.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TSettings</span></td>
-        <td><p>The type of associated settings.</p>
+        <td><span class="parametername">TOptions</span></td>
+        <td><p>The type of associated options.</p>
 </td>
       </tr>
     </tbody>
@@ -157,14 +157,14 @@ inteface.</p>
   <h3 id="constructors">Constructors
   </h3>
   <a id="CG_Business_Repositories_RepositoryBase_1__ctor_" data-uid="CG.Business.Repositories.RepositoryBase`1.#ctor*"></a>
-  <h4 id="CG_Business_Repositories_RepositoryBase_1__ctor__0_" data-uid="CG.Business.Repositories.RepositoryBase`1.#ctor(`0)">RepositoryBase(TSettings)</h4>
-  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Business.Repositories.RepositoryBase-1.html">RepositoryBase&lt;TSettings&gt;</a>
+  <h4 id="CG_Business_Repositories_RepositoryBase_1__ctor__0_" data-uid="CG.Business.Repositories.RepositoryBase`1.#ctor(`0)">RepositoryBase(TOptions)</h4>
+  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Business.Repositories.RepositoryBase-1.html">RepositoryBase&lt;TOptions&gt;</a>
 class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RepositoryBase(TSettings settings)</code></pre>
+    <pre><code class="lang-csharp hljs">public RepositoryBase(TOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -177,23 +177,23 @@ class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TSettings</span></td>
-        <td><span class="parametername">settings</span></td>
-        <td><p>The settings to use with the repository.</p>
+        <td><span class="xref">TOptions</span></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>The options to use with the repository.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="CG_Business_Repositories_RepositoryBase_1_Settings_" data-uid="CG.Business.Repositories.RepositoryBase`1.Settings*"></a>
-  <h4 id="CG_Business_Repositories_RepositoryBase_1_Settings" data-uid="CG.Business.Repositories.RepositoryBase`1.Settings">Settings</h4>
-  <div class="markdown level1 summary"><p>This property contains settings for the manager.</p>
+  <a id="CG_Business_Repositories_RepositoryBase_1_Options_" data-uid="CG.Business.Repositories.RepositoryBase`1.Options*"></a>
+  <h4 id="CG_Business_Repositories_RepositoryBase_1_Options" data-uid="CG.Business.Repositories.RepositoryBase`1.Options">Options</h4>
+  <div class="markdown level1 summary"><p>This property contains options for the repository.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected TSettings Settings { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected TOptions Options { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -205,7 +205,7 @@ class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TSettings</span></td>
+        <td><span class="xref">TOptions</span></td>
         <td></td>
       </tr>
     </tbody>

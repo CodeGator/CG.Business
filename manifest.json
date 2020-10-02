@@ -14,6 +14,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Models.ModelBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Models.ModelBase-1.html",
+          "hash": "UiaPC7+dJFm1I4otvbm65Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Models.ModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Models.ModelBase.html",
+          "hash": "52nbgt1pEMlDfHuAH23opg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Models.html",
+          "hash": "JbI1oZ0jGf9XuPWVGVHqSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Business.Repositories.IRepository.yml",
       "output": {
         ".html": {
@@ -54,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.RepositoryBase-1.html",
-          "hash": "BQAbusd7X+xrAWB0nVaSDw=="
+          "hash": "vfbK1my53orAHIE0k6Ok6Q=="
         }
       },
       "is_incremental": false,
@@ -66,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.RepositoryBase-2.html",
-          "hash": "Z+7XQo6ROmAAHogssf5Hhg=="
+          "hash": "DEbrMIX+XhHK+LC1iCmHYA=="
         }
       },
       "is_incremental": false,
@@ -78,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.RepositoryBase-3.html",
-          "hash": "OQgZNYISU1D8YCQMXuqziQ=="
+          "hash": "+EUuTUt//TPFJdYtgFb3ig=="
         }
       },
       "is_incremental": false,
@@ -90,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.RepositoryBase.html",
-          "hash": "e0slz9/Q460UF07VGnagIg=="
+          "hash": "HMSPVisG39zMe3lXDZry6A=="
         }
       },
       "is_incremental": false,
@@ -114,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.html",
-          "hash": "FB+RteQod5AvtFnl6EACgQ=="
+          "hash": "xohlkphfOxbWYErnE4z6rA=="
         }
       },
       "is_incremental": false,
@@ -205,48 +241,12 @@
       "version": ""
     },
     {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Models.ModelBase-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Models.ModelBase-1.html",
-          "hash": "YjlmWdi6H2+3p3wjcBYl1A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Models.ModelBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Models.ModelBase.html",
-          "hash": "/f/hB1sy6j3cFV3GLVVM6A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Models.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Models.html",
-          "hash": "kfidofKkU912If+OWEyvJQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Y0eIXla042AWEbsfSUNu0A=="
+          "hash": "gTuEFDJWkjBVgMHKQXoHjw=="
         }
       },
       "is_incremental": false,
@@ -294,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "KHBxLQKsgiOxHxECzx/wvg=="
+          "hash": "GFVdOMAFeLxc3fBPl8zXFw=="
         }
       },
       "is_incremental": false,
