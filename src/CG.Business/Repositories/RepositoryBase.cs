@@ -1,5 +1,5 @@
 ﻿using CG.Business.Repositories.Options;
-using CG.Models;
+using CG.Business.Models;
 using CG.Validations;
 
 namespace CG.Business.Repositories
@@ -56,11 +56,11 @@ namespace CG.Business.Repositories
     /// This class represents a base implementation of the <see cref="IRepository"/>
     /// inteface.
     /// </summary>
-    /// <typeparam name="TSettings">The type of associated settings.</typeparam>
-    public abstract class RepositoryBase<TSettings> :
+    /// <typeparam name="TOptions">The type of associated options.</typeparam>
+    public abstract class RepositoryBase<TOptions> :
         RepositoryBase,
         IRepository
-        where TSettings : RepositoryOptions
+        where TOptions : RepositoryOptions
     {
         // *******************************************************************
         // Properties.
@@ -69,9 +69,9 @@ namespace CG.Business.Repositories
         #region Properties
 
         /// <summary>
-        /// This property contains settings for the manager.
+        /// This property contains options for the repository.
         /// </summary>
-        protected TSettings Settings { get; }
+        protected TOptions Options { get; }
 
         #endregion
 
@@ -82,19 +82,19 @@ namespace CG.Business.Repositories
         #region Constructors
 
         /// <summary>
-        /// This constructor creates a new instance of the <see cref="RepositoryBase{TSettings}"/>
+        /// This constructor creates a new instance of the <see cref="RepositoryBase{TOptions}"/>
         /// class.
         /// </summary>
-        /// <param name="settings">The settings to use with the repository.</param>
+        /// <param name="options">The options to use with the repository.</param>
         public RepositoryBase(
-            TSettings settings
+            TOptions options
             )
         {
             // Validate the parameters before attempting to use them.
-            Guard.Instance().ThrowIfNull(settings, nameof(settings));
+            Guard.Instance().ThrowIfNull(options, nameof(options));
 
             // Save the referrence.
-            Settings = settings;
+            Options = options;
         }
 
         #endregion
@@ -105,13 +105,13 @@ namespace CG.Business.Repositories
     /// This class represents a base implementation of the <see cref="IRepository"/>
     /// inteface.
     /// </summary>
-    /// <typeparam name="TSettings">The type of associated settings.</typeparam>
+    /// <typeparam name="TOptions">The type of associated options.</typeparam>
     /// <typeparam name="TEntity">The entity type associated with the repository.</typeparam>
     /// <typeparam name="TModel">The model type associated with the repository.</typeparam>
-    public abstract class RepositoryBase<TSettings, TEntity, TModel> :
+    public abstract class RepositoryBase<TOptions, TEntity, TModel> :
         RepositoryBase<TEntity, TModel>,
         IRepository
-        where TSettings : RepositoryOptions
+        where TOptions : RepositoryOptions
         where TEntity : class
         where TModel : ModelBase
     {
@@ -122,9 +122,9 @@ namespace CG.Business.Repositories
         #region Properties
 
         /// <summary>
-        /// This property contains settings for the manager.
+        /// This property contains options for the manager.
         /// </summary>
-        protected TSettings Settings { get; }
+        protected TOptions Options { get; }
 
         #endregion
 
@@ -135,19 +135,19 @@ namespace CG.Business.Repositories
         #region Constructors
 
         /// <summary>
-        /// This constructor creates a new instance of the <see cref="RepositoryBase{TSettings}"/>
+        /// This constructor creates a new instance of the <see cref="RepositoryBase{TOptions}"/>
         /// class.
         /// </summary>
-        /// <param name="settings">The settings to use with the repository.</param>
+        /// <param name="options">The options to use with the repository.</param>
         public RepositoryBase(
-            TSettings settings
+            TOptions options
             )
         {
             // Validate the parameters before attempting to use them.
-            Guard.Instance().ThrowIfNull(settings, nameof(settings));
+            Guard.Instance().ThrowIfNull(options, nameof(options));
 
             // Save the referrence.
-            Settings = settings;
+            Options = options;
         }
 
         #endregion

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace CG.Models
+namespace CG.Business.Models
 {
     /// <summary>
     /// This class represents a base implmentation of a business model. 
