@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.RepositoryBase-1.html",
-          "hash": "vfbK1my53orAHIE0k6Ok6Q=="
+          "hash": "vowZ0lhXG8OKt2xXvS2GNw=="
         }
       },
       "is_incremental": false,
@@ -102,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.RepositoryBase-2.html",
-          "hash": "DEbrMIX+XhHK+LC1iCmHYA=="
+          "hash": "vawuXpyifSSf1evO/pQDhA=="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.RepositoryBase-3.html",
-          "hash": "+EUuTUt//TPFJdYtgFb3ig=="
+          "hash": "L2SVqVOloDwwBdjTybkVkg=="
         }
       },
       "is_incremental": false,
@@ -150,7 +150,115 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.html",
-          "hash": "xohlkphfOxbWYErnE4z6rA=="
+          "hash": "ExHZttuUEBb1+2iRAPLq1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.IService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.IService.html",
+          "hash": "/BYXpsRBajuhp2kpkqibHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.Options.ServiceOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.Options.ServiceOptions.html",
+          "hash": "jFvwAAbvno1U02rUmV/pAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.Options.html",
+          "hash": "T1eb3p+IHZbFVbdWgUg4ZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.ServiceBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.ServiceBase-1.html",
+          "hash": "369INrZAVkmgbpA0Vci5hA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.ServiceBase-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.ServiceBase-2.html",
+          "hash": "zPOy0czuDEORe0sNZuIU4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.ServiceBase-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.ServiceBase-3.html",
+          "hash": "6AQxu365oihsQ8UVe8qg7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.ServiceBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.ServiceBase.html",
+          "hash": "QUMMhqk8R03w+K7CQhiAvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.ServiceException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.ServiceException.html",
+          "hash": "47moqIB5e9x5E/xY6h1nxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.html",
+          "hash": "0I5tKIzsBhUggk5Csiyddg=="
         }
       },
       "is_incremental": false,
@@ -241,12 +349,132 @@
       "version": ""
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategies.IStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategies.IStrategy.html",
+          "hash": "wNe6Mfd9hpRbcwOyHXjfVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategies.Options.StrategyOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategies.Options.StrategyOptions.html",
+          "hash": "yP7v9z8cWRNLIl0rdceQmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategies.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategies.Options.html",
+          "hash": "xNxHvS0VMSNAgNzubTTaag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategies.StrategyBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategies.StrategyBase-1.html",
+          "hash": "Ghvidt932W3ey0oKZJ3XpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategies.StrategyBase-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategies.StrategyBase-2.html",
+          "hash": "/62tiNXOFzB7n1b8Z0BFPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategies.StrategyBase-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategies.StrategyBase-3.html",
+          "hash": "rs2VTrcisTHagZqURZxM7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategies.StrategyBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategies.StrategyBase.html",
+          "hash": "InmpN+zzxDMAIs/kGiDHmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategies.html",
+          "hash": "vzHUoK5RNDRfcSbExnO1yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategys.StrategyException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategys.StrategyException.html",
+          "hash": "MXxFU2cf7kzHRcEsWj5JlQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategys.html",
+          "hash": "WUSyM3mkAm99Bpq1rI4A1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "gTuEFDJWkjBVgMHKQXoHjw=="
+          "hash": "1rHBYe7ULxzC3ygzHN3O/A=="
         }
       },
       "is_incremental": false,
@@ -321,7 +549,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 19,
+          "total_file_count": 38,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

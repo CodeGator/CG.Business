@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RepositoryBase&lt;TOptions&gt;
+    <title>Class ServiceBase&lt;TOptions, TEntity, TModel&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RepositoryBase&lt;TOptions&gt;
+    <meta name="title" content="Class ServiceBase&lt;TOptions, TEntity, TModel&gt;
    ">
     <meta name="generator" content="docfx 2.56.2.0">
     
@@ -78,12 +78,12 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Business.Repositories.RepositoryBase`1">
+            <article class="content wrap" id="_content" data-uid="CG.Business.Services.ServiceBase`3">
   
   
-  <h1 id="CG_Business_Repositories_RepositoryBase_1" data-uid="CG.Business.Repositories.RepositoryBase`1" class="text-break">Class RepositoryBase&lt;TOptions&gt;
+  <h1 id="CG_Business_Services_ServiceBase_3" data-uid="CG.Business.Services.ServiceBase`3" class="text-break">Class ServiceBase&lt;TOptions, TEntity, TModel&gt;
   </h1>
-  <div class="markdown level0 summary"><p>This class represents a base implementation of the <a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a>
+  <div class="markdown level0 summary"><p>This class represents a base implementation of the <a class="xref" href="CG.Business.Services.IService.html">IService</a>
 interface.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -91,16 +91,23 @@ interface.</p>
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">CG.DisposableBase</span></div>
-    <div class="level2"><a class="xref" href="CG.Business.Repositories.RepositoryBase.html">RepositoryBase</a></div>
-    <div class="level3"><span class="xref">RepositoryBase&lt;TOptions&gt;</span></div>
+    <div class="level2"><a class="xref" href="CG.Business.Services.ServiceBase.html">ServiceBase</a></div>
+    <div class="level3"><a class="xref" href="CG.Business.Services.ServiceBase-2.html">ServiceBase</a>&lt;TEntity, TModel&gt;</div>
+    <div class="level4"><span class="xref">ServiceBase&lt;TOptions, TEntity, TModel&gt;</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a></div>
+    <div><a class="xref" href="CG.Business.Services.IService.html">IService</a></div>
     <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CG.Business.Services.ServiceBase-2.html#CG_Business_Services_ServiceBase_2_ToEntity__1_">ServiceBase&lt;TEntity, TModel&gt;.ToEntity(TModel)</a>
+    </div>
+    <div>
+      <a class="xref" href="CG.Business.Services.ServiceBase-2.html#CG_Business_Services_ServiceBase_2_ToModel__0_">ServiceBase&lt;TEntity, TModel&gt;.ToModel(TEntity)</a>
+    </div>
     <div>
       <span class="xref">CG.DisposableBase.System.IDisposable.Dispose()</span>
     </div>
@@ -132,11 +139,11 @@ interface.</p>
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Business.Repositories.html">CG.Business.Repositories</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Business.Services.html">CG.Business.Services</a></h6>
   <h6><strong>Assembly</strong>: CG.Business.dll</h6>
-  <h5 id="CG_Business_Repositories_RepositoryBase_1_syntax">Syntax</h5>
+  <h5 id="CG_Business_Services_ServiceBase_3_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class RepositoryBase&lt;TOptions&gt; : RepositoryBase, IRepository, IDisposable where TOptions : RepositoryOptions</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ServiceBase&lt;TOptions, TEntity, TModel&gt; : ServiceBase&lt;TEntity, TModel&gt;, IService, IDisposable where TOptions : ServiceOptions where TEntity : class where TModel : ModelBase</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -152,19 +159,29 @@ interface.</p>
         <td><p>The type of associated options.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="parametername">TEntity</span></td>
+        <td><p>The entity type associated with the service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td><p>The model type associated with the service.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h3 id="constructors">Constructors
   </h3>
-  <a id="CG_Business_Repositories_RepositoryBase_1__ctor_" data-uid="CG.Business.Repositories.RepositoryBase`1.#ctor*"></a>
-  <h4 id="CG_Business_Repositories_RepositoryBase_1__ctor__0_" data-uid="CG.Business.Repositories.RepositoryBase`1.#ctor(`0)">RepositoryBase(TOptions)</h4>
-  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Business.Repositories.RepositoryBase-1.html">RepositoryBase&lt;TOptions&gt;</a>
+  <a id="CG_Business_Services_ServiceBase_3__ctor_" data-uid="CG.Business.Services.ServiceBase`3.#ctor*"></a>
+  <h4 id="CG_Business_Services_ServiceBase_3__ctor__0_" data-uid="CG.Business.Services.ServiceBase`3.#ctor(`0)">ServiceBase(TOptions)</h4>
+  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Business.Services.ServiceBase-1.html">ServiceBase&lt;TOptions&gt;</a>
 class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RepositoryBase(TOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public ServiceBase(TOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -179,16 +196,16 @@ class.</p>
       <tr>
         <td><span class="xref">TOptions</span></td>
         <td><span class="parametername">options</span></td>
-        <td><p>The options to use with the repository.</p>
+        <td><p>The options to use with the service.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="CG_Business_Repositories_RepositoryBase_1_Options_" data-uid="CG.Business.Repositories.RepositoryBase`1.Options*"></a>
-  <h4 id="CG_Business_Repositories_RepositoryBase_1_Options" data-uid="CG.Business.Repositories.RepositoryBase`1.Options">Options</h4>
-  <div class="markdown level1 summary"><p>This property contains options for the repository.</p>
+  <a id="CG_Business_Services_ServiceBase_3_Options_" data-uid="CG.Business.Services.ServiceBase`3.Options*"></a>
+  <h4 id="CG_Business_Services_ServiceBase_3_Options" data-uid="CG.Business.Services.ServiceBase`3.Options">Options</h4>
+  <div class="markdown level1 summary"><p>This property contains options for the manager.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -212,7 +229,7 @@ class.</p>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a>
+      <a class="xref" href="CG.Business.Services.IService.html">IService</a>
   </div>
   <div>
       <span class="xref">System.IDisposable</span>
