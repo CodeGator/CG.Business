@@ -1,5 +1,4 @@
-﻿using CG.Business.Strategies.Options;
-using CG.Business.Models;
+﻿using CG.Business.Models;
 using CG.Validations;
 
 namespace CG.Business.Strategies
@@ -60,7 +59,7 @@ namespace CG.Business.Strategies
     public abstract class StrategyBase<TOptions> :
         StrategyBase,
         IStrategy
-        where TOptions : StrategyOptions
+        where TOptions : class
     {
         // *******************************************************************
         // Properties.
@@ -111,7 +110,7 @@ namespace CG.Business.Strategies
     public abstract class StrategyBase<TOptions, TEntity, TModel> :
         StrategyBase<TEntity, TModel>,
         IStrategy
-        where TOptions : StrategyOptions
+        where TOptions : class
         where TEntity : class
         where TModel : ModelBase
     {

@@ -1,5 +1,4 @@
-﻿using CG.Business.Stores.Options;
-using CG.Validations;
+﻿using CG.Validations;
 
 namespace CG.Business.Stores
 {
@@ -19,7 +18,7 @@ namespace CG.Business.Stores
     /// </summary>
     /// <typeparam name="TOptions">The type of associated options.</typeparam>
     public abstract class StoreBase<TOptions> : StoreBase, IStore
-        where TOptions : StoreOptions
+        where TOptions : class
     {
         // *******************************************************************
         // Properties.

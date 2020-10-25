@@ -1,5 +1,4 @@
-﻿using CG.Business.Services.Options;
-using CG.Business.Models;
+﻿using CG.Business.Models;
 using CG.Validations;
 
 namespace CG.Business.Services
@@ -60,7 +59,7 @@ namespace CG.Business.Services
     public abstract class ServiceBase<TOptions> :
         ServiceBase,
         IService
-        where TOptions : ServiceOptions
+        where TOptions : class
     {
         // *******************************************************************
         // Properties.
@@ -111,7 +110,7 @@ namespace CG.Business.Services
     public abstract class ServiceBase<TOptions, TEntity, TModel> :
         ServiceBase<TEntity, TModel>,
         IService
-        where TOptions : ServiceOptions
+        where TOptions : class
         where TEntity : class
         where TModel : ModelBase
     {
