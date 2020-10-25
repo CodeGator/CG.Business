@@ -18,7 +18,7 @@ namespace CG.Business.Repositories
 
     /// <summary>
     /// This class represents a base implementation of the <see cref="IRepository"/>
-    /// inteface.
+    /// interface.
     /// </summary>
     /// <typeparam name="TEntity">The entity type associated with the repository.</typeparam>
     /// <typeparam name="TModel">The model type associated with the repository.</typeparam>
@@ -54,7 +54,7 @@ namespace CG.Business.Repositories
 
     /// <summary>
     /// This class represents a base implementation of the <see cref="IRepository"/>
-    /// inteface.
+    /// interface.
     /// </summary>
     /// <typeparam name="TOptions">The type of associated options.</typeparam>
     public abstract class RepositoryBase<TOptions> :
@@ -103,7 +103,7 @@ namespace CG.Business.Repositories
 
     /// <summary>
     /// This class represents a base implementation of the <see cref="IRepository"/>
-    /// inteface.
+    /// interface.
     /// </summary>
     /// <typeparam name="TOptions">The type of associated options.</typeparam>
     /// <typeparam name="TEntity">The entity type associated with the repository.</typeparam>

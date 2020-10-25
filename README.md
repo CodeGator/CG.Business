@@ -6,9 +6,23 @@
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.Business.svg?style=flat)](https://nuget.org/packages/CG.Business)
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Business/4)
 
-
 #### What does it do?
 The package contains business related abstractions used by other CodeGator packages.
+
+#### Commonly used types:
+* CG.Business.Repositories.IRepository
+* CG.Business.Repositories.RepositoryBase
+* CG.Business.Repositories.RepositoryException
+* CG.Business.Stores.IStore
+* CG.Business.Stores.StoreBase
+* CG.Business.Stores.StoreException
+* CG.Business.Services.IService
+* CG.Business.Services.ServiceBase
+* CG.Business.Services.ServiceException
+* CG.Business.Models.ModelBase
+* CG.Business.Strategies.IStrategy
+* CG.Business.Strategies.StrategyBase
+* CG.Business.Strategies.StrategyException
 
 #### What platform(s) does it support?
 * .NET 4.61x or above
