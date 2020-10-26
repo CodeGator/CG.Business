@@ -1,5 +1,5 @@
 ﻿
-using CG.DataAnnotations.Options;
+using CG.Options;
 
 namespace CG.Business.Stores.Options
 {
