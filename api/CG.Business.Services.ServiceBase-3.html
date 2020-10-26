@@ -143,7 +143,7 @@ interface.</p>
   <h6><strong>Assembly</strong>: CG.Business.dll</h6>
   <h5 id="CG_Business_Services_ServiceBase_3_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class ServiceBase&lt;TOptions, TEntity, TModel&gt; : ServiceBase&lt;TEntity, TModel&gt;, IService, IDisposable where TOptions : class where TEntity : class where TModel : ModelBase</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class ServiceBase&lt;TOptions, TEntity, TModel&gt; : ServiceBase&lt;TEntity, TModel&gt;, IService, IDisposable where TOptions : ServiceOptions where TEntity : class where TModel : ModelBase</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

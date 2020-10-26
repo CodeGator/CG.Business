@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.RepositoryBase-1.html",
-          "hash": "Z0IAJQszLL9v/wRSkCKYaQ=="
+          "hash": "vowZ0lhXG8OKt2xXvS2GNw=="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.RepositoryBase-3.html",
-          "hash": "T9bGCV0ImrBMo3Fjs6hdhQ=="
+          "hash": "L2SVqVOloDwwBdjTybkVkg=="
         }
       },
       "is_incremental": false,
@@ -138,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.RepositoryException.html",
-          "hash": "1x5IHui0Q352J2vp7tmzEA=="
+          "hash": "1ry4lgWtm4aiZ5fG1JG6sQ=="
         }
       },
       "is_incremental": false,
@@ -198,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Services.ServiceBase-1.html",
-          "hash": "QcXcsVN5APaanCICSUK9uQ=="
+          "hash": "369INrZAVkmgbpA0Vci5hA=="
         }
       },
       "is_incremental": false,
@@ -222,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Services.ServiceBase-3.html",
-          "hash": "8AGcpCreJpJHlQO7bL53Sw=="
+          "hash": "6AQxu365oihsQ8UVe8qg7Q=="
         }
       },
       "is_incremental": false,
@@ -246,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Services.ServiceException.html",
-          "hash": "47moqIB5e9x5E/xY6h1nxw=="
+          "hash": "G52mvmMEqw9rI0X+cFY5SQ=="
         }
       },
       "is_incremental": false,
@@ -306,7 +306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Stores.StoreBase-1.html",
-          "hash": "omLjtFD69K8vt/916FvoBA=="
+          "hash": "rMmo77eztNqb/y6mKqykmg=="
         }
       },
       "is_incremental": false,
@@ -330,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Stores.StoreException.html",
-          "hash": "bzrgoqYyN5mRYlmq+IG5eg=="
+          "hash": "8f/jXqDgjRi52U2k1K3YMg=="
         }
       },
       "is_incremental": false,
@@ -390,31 +390,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Strategies.StrategyBase-1.html",
-          "hash": "geCw8Ax6uBVp0QQzC4V+PQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Strategies.StrategyBase-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Strategies.StrategyBase-2.html",
-          "hash": "/62tiNXOFzB7n1b8Z0BFPA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Strategies.StrategyBase-3.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Strategies.StrategyBase-3.html",
-          "hash": "hlA1eIiiST7tDvk/P3EulA=="
+          "hash": "Ghvidt932W3ey0oKZJ3XpA=="
         }
       },
       "is_incremental": false,
@@ -426,7 +402,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Strategies.StrategyBase.html",
-          "hash": "InmpN+zzxDMAIs/kGiDHmQ=="
+          "hash": "vb3LPwSEHroAp3g7yu+qjw=="
         }
       },
       "is_incremental": false,
@@ -438,7 +414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Strategies.html",
-          "hash": "vzHUoK5RNDRfcSbExnO1yw=="
+          "hash": "L8x06TPxNK3fAiRZLjnX2A=="
         }
       },
       "is_incremental": false,
@@ -450,7 +426,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Strategys.StrategyException.html",
-          "hash": "MXxFU2cf7kzHRcEsWj5JlQ=="
+          "hash": "3h88m/KeJb9z/XDmvBTwlg=="
         }
       },
       "is_incremental": false,
@@ -474,7 +450,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "1rHBYe7ULxzC3ygzHN3O/A=="
+          "hash": "QJ5XEbNndUqfSpw3ecwMQQ=="
         }
       },
       "is_incremental": false,
@@ -549,7 +525,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 38,
+          "total_file_count": 36,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
