@@ -7,7 +7,7 @@ namespace CG.Business.Stores
     /// This class represents a store related exception.
     /// </summary>
     [Serializable]
-    public class StoreException : CGException
+    public class StoreException : Exception
     {
         // *******************************************************************
         // Constructors.

@@ -7,7 +7,7 @@ namespace CG.Business.Services
     /// This class represents a repository related exception.
     /// </summary>
     [Serializable]
-    public class ServiceException : CGException
+    public class ServiceException : Exception
     {
         // *******************************************************************
         // Constructors.
