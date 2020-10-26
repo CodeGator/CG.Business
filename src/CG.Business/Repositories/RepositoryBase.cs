@@ -1,4 +1,5 @@
 ﻿using CG.Business.Models;
+using CG.Business.Repositories.Options;
 using CG.Validations;
 
 namespace CG.Business.Repositories
@@ -59,7 +60,7 @@ namespace CG.Business.Repositories
     public abstract class RepositoryBase<TOptions> :
         RepositoryBase,
         IRepository
-        where TOptions : class
+        where TOptions : RepositoryOptions
     {
         // *******************************************************************
         // Properties.
@@ -110,7 +111,7 @@ namespace CG.Business.Repositories
     public abstract class RepositoryBase<TOptions, TEntity, TModel> :
         RepositoryBase<TEntity, TModel>,
         IRepository
-        where TOptions : class
+        where TOptions : RepositoryOptions
         where TEntity : class
         where TModel : ModelBase
     {
