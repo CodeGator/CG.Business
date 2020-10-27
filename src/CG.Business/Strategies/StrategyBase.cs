@@ -1,5 +1,6 @@
 ﻿using CG.Business.Strategies.Options;
 using CG.Validations;
+using Microsoft.Extensions.Options;
 
 namespace CG.Business.Strategies
 {
@@ -22,7 +23,7 @@ namespace CG.Business.Strategies
     public abstract class StrategyBase<TOptions> :
         StrategyBase,
         IStrategy
-        where TOptions : StrategyOptions
+        where TOptions : IOptions<StrategyOptions>
     {
         // *******************************************************************
         // Properties.
