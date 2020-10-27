@@ -23,7 +23,7 @@ namespace CG.Business.Strategies
     public abstract class StrategyBase<TOptions> :
         StrategyBase,
         IStrategy
-        where TOptions : IOptions<StrategyOptions>
+        where TOptions : StrategyOptions, new()
     {
         // *******************************************************************
         // Properties.
@@ -34,7 +34,7 @@ namespace CG.Business.Strategies
         /// <summary>
         /// This property contains options for the strategy.
         /// </summary>
-        protected TOptions Options { get; }
+        protected IOptions<TOptions> Options { get; }
 
         #endregion
 
@@ -50,7 +50,7 @@ namespace CG.Business.Strategies
         /// </summary>
         /// <param name="options">The options to use with the strategy.</param>
         public StrategyBase(
-            TOptions options
+            IOptions<TOptions> options
             )
         {
             // Validate the parameters before attempting to use them.

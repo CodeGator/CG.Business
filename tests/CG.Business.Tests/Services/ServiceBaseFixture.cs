@@ -1,5 +1,6 @@
 ﻿using CG.Business.Services.Options;
 using CG.Diagnostics;
+using Microsoft.Extensions.Options;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -26,7 +27,7 @@ namespace CG.Business.Services
             /// This constructor is used for internal testing purposes.
             /// </summary>
             public TestService(
-                ServiceOptions options
+                IOptions<ServiceOptions> options
                 ) : base(options)
             {
 
@@ -49,7 +50,7 @@ namespace CG.Business.Services
         public void ServiceBase_Ctor()
         {
             // Arrange ...
-            var options = new ServiceOptions();
+            var options = new OptionsWrapper<ServiceOptions>(new ServiceOptions());
 
             // Act ...
             var result = new TestService(options);

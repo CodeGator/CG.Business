@@ -20,7 +20,7 @@ namespace CG.Business.Stores
     /// </summary>
     /// <typeparam name="TOptions">The type of associated options.</typeparam>
     public abstract class StoreBase<TOptions> : StoreBase, IStore
-        where TOptions : IOptions<StoreOptions>
+        where TOptions : StoreOptions, new()
     {
         // *******************************************************************
         // Properties.
@@ -31,7 +31,7 @@ namespace CG.Business.Stores
         /// <summary>
         /// This property contains options for the manager.
         /// </summary>
-        protected TOptions Options { get; }
+        protected IOptions<TOptions> Options { get; }
 
         #endregion
 
@@ -47,7 +47,7 @@ namespace CG.Business.Stores
         /// </summary>
         /// <param name="options">The options to use with the store.</param>
         public StoreBase(
-            TOptions options
+            IOptions<TOptions> options
             )
         {
             // Validate the parameters before attempting to use them.

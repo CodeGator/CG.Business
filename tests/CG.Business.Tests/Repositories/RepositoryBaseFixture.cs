@@ -1,5 +1,6 @@
 ﻿using CG.Business.Repositories.Options;
 using CG.Diagnostics;
+using Microsoft.Extensions.Options;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -26,7 +27,7 @@ namespace CG.Business.Repositories
             /// This constructor is used for internal testing purposes.
             /// </summary>
             public TestRepository(
-                RepositoryOptions options
+                IOptions<RepositoryOptions> options
                 ) : base(options)
             {
 
@@ -49,7 +50,7 @@ namespace CG.Business.Repositories
         public void RepositoryBase_Ctor()
         {
             // Arrange ...
-            var options = new RepositoryOptions();
+            var options = new OptionsWrapper<RepositoryOptions>(new RepositoryOptions()); 
 
             // Act ...
             var result = new TestRepository(options);

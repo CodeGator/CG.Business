@@ -61,7 +61,7 @@ namespace CG.Business.Repositories
     public abstract class RepositoryBase<TOptions> :
         RepositoryBase,
         IRepository
-        where TOptions : IOptions<RepositoryOptions>
+        where TOptions : RepositoryOptions, new()
     {
         // *******************************************************************
         // Properties.
@@ -72,7 +72,7 @@ namespace CG.Business.Repositories
         /// <summary>
         /// This property contains options for the repository.
         /// </summary>
-        protected TOptions Options { get; }
+        protected IOptions<TOptions> Options { get; }
 
         #endregion
 
@@ -88,7 +88,7 @@ namespace CG.Business.Repositories
         /// </summary>
         /// <param name="options">The options to use with the repository.</param>
         public RepositoryBase(
-            TOptions options
+            IOptions<TOptions> options
             )
         {
             // Validate the parameters before attempting to use them.
@@ -112,7 +112,7 @@ namespace CG.Business.Repositories
     public abstract class RepositoryBase<TOptions, TEntity, TModel> :
         RepositoryBase<TEntity, TModel>,
         IRepository
-        where TOptions : IOptions<RepositoryOptions>
+        where TOptions : RepositoryOptions, new()
         where TEntity : class
         where TModel : ModelBase
     {
@@ -125,7 +125,7 @@ namespace CG.Business.Repositories
         /// <summary>
         /// This property contains options for the manager.
         /// </summary>
-        protected TOptions Options { get; }
+        protected IOptions<TOptions> Options { get; }
 
         #endregion
 
@@ -141,7 +141,7 @@ namespace CG.Business.Repositories
         /// </summary>
         /// <param name="options">The options to use with the repository.</param>
         public RepositoryBase(
-            TOptions options
+            IOptions<TOptions> options
             )
         {
             // Validate the parameters before attempting to use them.
