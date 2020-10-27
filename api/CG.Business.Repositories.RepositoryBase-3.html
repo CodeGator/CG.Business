@@ -143,7 +143,8 @@ interface.</p>
   <h6><strong>Assembly</strong>: CG.Business.dll</h6>
   <h5 id="CG_Business_Repositories_RepositoryBase_3_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class RepositoryBase&lt;TOptions, TEntity, TModel&gt; : RepositoryBase&lt;TEntity, TModel&gt;, IRepository, IDisposable where TOptions : RepositoryOptions where TEntity : class where TModel : ModelBase</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class RepositoryBase&lt;TOptions, TEntity, TModel&gt; : RepositoryBase&lt;TEntity, TModel&gt;, IRepository, IDisposable where TOptions : RepositoryOptions, new()
+    where TEntity : class where TModel : ModelBase</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -174,14 +175,14 @@ interface.</p>
   <h3 id="constructors">Constructors
   </h3>
   <a id="CG_Business_Repositories_RepositoryBase_3__ctor_" data-uid="CG.Business.Repositories.RepositoryBase`3.#ctor*"></a>
-  <h4 id="CG_Business_Repositories_RepositoryBase_3__ctor__0_" data-uid="CG.Business.Repositories.RepositoryBase`3.#ctor(`0)">RepositoryBase(TOptions)</h4>
+  <h4 id="CG_Business_Repositories_RepositoryBase_3__ctor_Microsoft_Extensions_Options_IOptions__0__" data-uid="CG.Business.Repositories.RepositoryBase`3.#ctor(Microsoft.Extensions.Options.IOptions{`0})">RepositoryBase(IOptions&lt;TOptions&gt;)</h4>
   <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Business.Repositories.RepositoryBase-1.html">RepositoryBase&lt;TOptions&gt;</a>
 class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RepositoryBase(TOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">public RepositoryBase(IOptions&lt;TOptions&gt; options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -194,7 +195,7 @@ class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TOptions</span></td>
+        <td><span class="xref">Microsoft.Extensions.Options.IOptions</span>&lt;TOptions&gt;</td>
         <td><span class="parametername">options</span></td>
         <td><p>The options to use with the repository.</p>
 </td>
@@ -210,7 +211,7 @@ class.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected TOptions Options { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">protected IOptions&lt;TOptions&gt; Options { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -222,7 +223,7 @@ class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TOptions</span></td>
+        <td><span class="xref">Microsoft.Extensions.Options.IOptions</span>&lt;TOptions&gt;</td>
         <td></td>
       </tr>
     </tbody>

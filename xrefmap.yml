@@ -129,14 +129,15 @@ references:
   fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions)
   nameWithType: RepositoryBase<TOptions>
   nameWithType.vb: RepositoryBase(Of TOptions)
-- uid: CG.Business.Repositories.RepositoryBase`1.#ctor(`0)
-  name: RepositoryBase(TOptions)
-  href: api/CG.Business.Repositories.RepositoryBase-1.html#CG_Business_Repositories_RepositoryBase_1__ctor__0_
-  commentId: M:CG.Business.Repositories.RepositoryBase`1.#ctor(`0)
-  fullName: CG.Business.Repositories.RepositoryBase<TOptions>.RepositoryBase(TOptions)
-  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions).RepositoryBase(TOptions)
-  nameWithType: RepositoryBase<TOptions>.RepositoryBase(TOptions)
-  nameWithType.vb: RepositoryBase(Of TOptions).RepositoryBase(TOptions)
+- uid: CG.Business.Repositories.RepositoryBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name: RepositoryBase(IOptions<TOptions>)
+  href: api/CG.Business.Repositories.RepositoryBase-1.html#CG_Business_Repositories_RepositoryBase_1__ctor_Microsoft_Extensions_Options_IOptions__0__
+  commentId: M:CG.Business.Repositories.RepositoryBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name.vb: RepositoryBase(IOptions(Of TOptions))
+  fullName: CG.Business.Repositories.RepositoryBase<TOptions>.RepositoryBase(Microsoft.Extensions.Options.IOptions<TOptions>)
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions).RepositoryBase(Microsoft.Extensions.Options.IOptions(Of TOptions))
+  nameWithType: RepositoryBase<TOptions>.RepositoryBase(IOptions<TOptions>)
+  nameWithType.vb: RepositoryBase(Of TOptions).RepositoryBase(IOptions(Of TOptions))
 - uid: CG.Business.Repositories.RepositoryBase`1.#ctor*
   name: RepositoryBase
   href: api/CG.Business.Repositories.RepositoryBase-1.html#CG_Business_Repositories_RepositoryBase_1__ctor_
@@ -215,14 +216,15 @@ references:
   fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions, TEntity, TModel)
   nameWithType: RepositoryBase<TOptions, TEntity, TModel>
   nameWithType.vb: RepositoryBase(Of TOptions, TEntity, TModel)
-- uid: CG.Business.Repositories.RepositoryBase`3.#ctor(`0)
-  name: RepositoryBase(TOptions)
-  href: api/CG.Business.Repositories.RepositoryBase-3.html#CG_Business_Repositories_RepositoryBase_3__ctor__0_
-  commentId: M:CG.Business.Repositories.RepositoryBase`3.#ctor(`0)
-  fullName: CG.Business.Repositories.RepositoryBase<TOptions, TEntity, TModel>.RepositoryBase(TOptions)
-  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions, TEntity, TModel).RepositoryBase(TOptions)
-  nameWithType: RepositoryBase<TOptions, TEntity, TModel>.RepositoryBase(TOptions)
-  nameWithType.vb: RepositoryBase(Of TOptions, TEntity, TModel).RepositoryBase(TOptions)
+- uid: CG.Business.Repositories.RepositoryBase`3.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name: RepositoryBase(IOptions<TOptions>)
+  href: api/CG.Business.Repositories.RepositoryBase-3.html#CG_Business_Repositories_RepositoryBase_3__ctor_Microsoft_Extensions_Options_IOptions__0__
+  commentId: M:CG.Business.Repositories.RepositoryBase`3.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name.vb: RepositoryBase(IOptions(Of TOptions))
+  fullName: CG.Business.Repositories.RepositoryBase<TOptions, TEntity, TModel>.RepositoryBase(Microsoft.Extensions.Options.IOptions<TOptions>)
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions, TEntity, TModel).RepositoryBase(Microsoft.Extensions.Options.IOptions(Of TOptions))
+  nameWithType: RepositoryBase<TOptions, TEntity, TModel>.RepositoryBase(IOptions<TOptions>)
+  nameWithType.vb: RepositoryBase(Of TOptions, TEntity, TModel).RepositoryBase(IOptions(Of TOptions))
 - uid: CG.Business.Repositories.RepositoryBase`3.#ctor*
   name: RepositoryBase
   href: api/CG.Business.Repositories.RepositoryBase-3.html#CG_Business_Repositories_RepositoryBase_3__ctor_
@@ -325,14 +327,15 @@ references:
   fullName.vb: CG.Business.Services.ServiceBase(Of TOptions)
   nameWithType: ServiceBase<TOptions>
   nameWithType.vb: ServiceBase(Of TOptions)
-- uid: CG.Business.Services.ServiceBase`1.#ctor(`0)
-  name: ServiceBase(TOptions)
-  href: api/CG.Business.Services.ServiceBase-1.html#CG_Business_Services_ServiceBase_1__ctor__0_
-  commentId: M:CG.Business.Services.ServiceBase`1.#ctor(`0)
-  fullName: CG.Business.Services.ServiceBase<TOptions>.ServiceBase(TOptions)
-  fullName.vb: CG.Business.Services.ServiceBase(Of TOptions).ServiceBase(TOptions)
-  nameWithType: ServiceBase<TOptions>.ServiceBase(TOptions)
-  nameWithType.vb: ServiceBase(Of TOptions).ServiceBase(TOptions)
+- uid: CG.Business.Services.ServiceBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name: ServiceBase(IOptions<TOptions>)
+  href: api/CG.Business.Services.ServiceBase-1.html#CG_Business_Services_ServiceBase_1__ctor_Microsoft_Extensions_Options_IOptions__0__
+  commentId: M:CG.Business.Services.ServiceBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name.vb: ServiceBase(IOptions(Of TOptions))
+  fullName: CG.Business.Services.ServiceBase<TOptions>.ServiceBase(Microsoft.Extensions.Options.IOptions<TOptions>)
+  fullName.vb: CG.Business.Services.ServiceBase(Of TOptions).ServiceBase(Microsoft.Extensions.Options.IOptions(Of TOptions))
+  nameWithType: ServiceBase<TOptions>.ServiceBase(IOptions<TOptions>)
+  nameWithType.vb: ServiceBase(Of TOptions).ServiceBase(IOptions(Of TOptions))
 - uid: CG.Business.Services.ServiceBase`1.#ctor*
   name: ServiceBase
   href: api/CG.Business.Services.ServiceBase-1.html#CG_Business_Services_ServiceBase_1__ctor_
@@ -359,92 +362,6 @@ references:
   fullName.vb: CG.Business.Services.ServiceBase(Of TOptions).Options
   nameWithType: ServiceBase<TOptions>.Options
   nameWithType.vb: ServiceBase(Of TOptions).Options
-- uid: CG.Business.Services.ServiceBase`2
-  name: ServiceBase<TEntity, TModel>
-  href: api/CG.Business.Services.ServiceBase-2.html
-  commentId: T:CG.Business.Services.ServiceBase`2
-  name.vb: ServiceBase(Of TEntity, TModel)
-  fullName: CG.Business.Services.ServiceBase<TEntity, TModel>
-  fullName.vb: CG.Business.Services.ServiceBase(Of TEntity, TModel)
-  nameWithType: ServiceBase<TEntity, TModel>
-  nameWithType.vb: ServiceBase(Of TEntity, TModel)
-- uid: CG.Business.Services.ServiceBase`2.ToEntity(`1)
-  name: ToEntity(TModel)
-  href: api/CG.Business.Services.ServiceBase-2.html#CG_Business_Services_ServiceBase_2_ToEntity__1_
-  commentId: M:CG.Business.Services.ServiceBase`2.ToEntity(`1)
-  fullName: CG.Business.Services.ServiceBase<TEntity, TModel>.ToEntity(TModel)
-  fullName.vb: CG.Business.Services.ServiceBase(Of TEntity, TModel).ToEntity(TModel)
-  nameWithType: ServiceBase<TEntity, TModel>.ToEntity(TModel)
-  nameWithType.vb: ServiceBase(Of TEntity, TModel).ToEntity(TModel)
-- uid: CG.Business.Services.ServiceBase`2.ToEntity*
-  name: ToEntity
-  href: api/CG.Business.Services.ServiceBase-2.html#CG_Business_Services_ServiceBase_2_ToEntity_
-  commentId: Overload:CG.Business.Services.ServiceBase`2.ToEntity
-  isSpec: "True"
-  fullName: CG.Business.Services.ServiceBase<TEntity, TModel>.ToEntity
-  fullName.vb: CG.Business.Services.ServiceBase(Of TEntity, TModel).ToEntity
-  nameWithType: ServiceBase<TEntity, TModel>.ToEntity
-  nameWithType.vb: ServiceBase(Of TEntity, TModel).ToEntity
-- uid: CG.Business.Services.ServiceBase`2.ToModel(`0)
-  name: ToModel(TEntity)
-  href: api/CG.Business.Services.ServiceBase-2.html#CG_Business_Services_ServiceBase_2_ToModel__0_
-  commentId: M:CG.Business.Services.ServiceBase`2.ToModel(`0)
-  fullName: CG.Business.Services.ServiceBase<TEntity, TModel>.ToModel(TEntity)
-  fullName.vb: CG.Business.Services.ServiceBase(Of TEntity, TModel).ToModel(TEntity)
-  nameWithType: ServiceBase<TEntity, TModel>.ToModel(TEntity)
-  nameWithType.vb: ServiceBase(Of TEntity, TModel).ToModel(TEntity)
-- uid: CG.Business.Services.ServiceBase`2.ToModel*
-  name: ToModel
-  href: api/CG.Business.Services.ServiceBase-2.html#CG_Business_Services_ServiceBase_2_ToModel_
-  commentId: Overload:CG.Business.Services.ServiceBase`2.ToModel
-  isSpec: "True"
-  fullName: CG.Business.Services.ServiceBase<TEntity, TModel>.ToModel
-  fullName.vb: CG.Business.Services.ServiceBase(Of TEntity, TModel).ToModel
-  nameWithType: ServiceBase<TEntity, TModel>.ToModel
-  nameWithType.vb: ServiceBase(Of TEntity, TModel).ToModel
-- uid: CG.Business.Services.ServiceBase`3
-  name: ServiceBase<TOptions, TEntity, TModel>
-  href: api/CG.Business.Services.ServiceBase-3.html
-  commentId: T:CG.Business.Services.ServiceBase`3
-  name.vb: ServiceBase(Of TOptions, TEntity, TModel)
-  fullName: CG.Business.Services.ServiceBase<TOptions, TEntity, TModel>
-  fullName.vb: CG.Business.Services.ServiceBase(Of TOptions, TEntity, TModel)
-  nameWithType: ServiceBase<TOptions, TEntity, TModel>
-  nameWithType.vb: ServiceBase(Of TOptions, TEntity, TModel)
-- uid: CG.Business.Services.ServiceBase`3.#ctor(`0)
-  name: ServiceBase(TOptions)
-  href: api/CG.Business.Services.ServiceBase-3.html#CG_Business_Services_ServiceBase_3__ctor__0_
-  commentId: M:CG.Business.Services.ServiceBase`3.#ctor(`0)
-  fullName: CG.Business.Services.ServiceBase<TOptions, TEntity, TModel>.ServiceBase(TOptions)
-  fullName.vb: CG.Business.Services.ServiceBase(Of TOptions, TEntity, TModel).ServiceBase(TOptions)
-  nameWithType: ServiceBase<TOptions, TEntity, TModel>.ServiceBase(TOptions)
-  nameWithType.vb: ServiceBase(Of TOptions, TEntity, TModel).ServiceBase(TOptions)
-- uid: CG.Business.Services.ServiceBase`3.#ctor*
-  name: ServiceBase
-  href: api/CG.Business.Services.ServiceBase-3.html#CG_Business_Services_ServiceBase_3__ctor_
-  commentId: Overload:CG.Business.Services.ServiceBase`3.#ctor
-  isSpec: "True"
-  fullName: CG.Business.Services.ServiceBase<TOptions, TEntity, TModel>.ServiceBase
-  fullName.vb: CG.Business.Services.ServiceBase(Of TOptions, TEntity, TModel).ServiceBase
-  nameWithType: ServiceBase<TOptions, TEntity, TModel>.ServiceBase
-  nameWithType.vb: ServiceBase(Of TOptions, TEntity, TModel).ServiceBase
-- uid: CG.Business.Services.ServiceBase`3.Options
-  name: Options
-  href: api/CG.Business.Services.ServiceBase-3.html#CG_Business_Services_ServiceBase_3_Options
-  commentId: P:CG.Business.Services.ServiceBase`3.Options
-  fullName: CG.Business.Services.ServiceBase<TOptions, TEntity, TModel>.Options
-  fullName.vb: CG.Business.Services.ServiceBase(Of TOptions, TEntity, TModel).Options
-  nameWithType: ServiceBase<TOptions, TEntity, TModel>.Options
-  nameWithType.vb: ServiceBase(Of TOptions, TEntity, TModel).Options
-- uid: CG.Business.Services.ServiceBase`3.Options*
-  name: Options
-  href: api/CG.Business.Services.ServiceBase-3.html#CG_Business_Services_ServiceBase_3_Options_
-  commentId: Overload:CG.Business.Services.ServiceBase`3.Options
-  isSpec: "True"
-  fullName: CG.Business.Services.ServiceBase<TOptions, TEntity, TModel>.Options
-  fullName.vb: CG.Business.Services.ServiceBase(Of TOptions, TEntity, TModel).Options
-  nameWithType: ServiceBase<TOptions, TEntity, TModel>.Options
-  nameWithType.vb: ServiceBase(Of TOptions, TEntity, TModel).Options
 - uid: CG.Business.Services.ServiceException
   name: ServiceException
   href: api/CG.Business.Services.ServiceException.html
@@ -521,14 +438,15 @@ references:
   fullName.vb: CG.Business.Stores.StoreBase(Of TOptions)
   nameWithType: StoreBase<TOptions>
   nameWithType.vb: StoreBase(Of TOptions)
-- uid: CG.Business.Stores.StoreBase`1.#ctor(`0)
-  name: StoreBase(TOptions)
-  href: api/CG.Business.Stores.StoreBase-1.html#CG_Business_Stores_StoreBase_1__ctor__0_
-  commentId: M:CG.Business.Stores.StoreBase`1.#ctor(`0)
-  fullName: CG.Business.Stores.StoreBase<TOptions>.StoreBase(TOptions)
-  fullName.vb: CG.Business.Stores.StoreBase(Of TOptions).StoreBase(TOptions)
-  nameWithType: StoreBase<TOptions>.StoreBase(TOptions)
-  nameWithType.vb: StoreBase(Of TOptions).StoreBase(TOptions)
+- uid: CG.Business.Stores.StoreBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name: StoreBase(IOptions<TOptions>)
+  href: api/CG.Business.Stores.StoreBase-1.html#CG_Business_Stores_StoreBase_1__ctor_Microsoft_Extensions_Options_IOptions__0__
+  commentId: M:CG.Business.Stores.StoreBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name.vb: StoreBase(IOptions(Of TOptions))
+  fullName: CG.Business.Stores.StoreBase<TOptions>.StoreBase(Microsoft.Extensions.Options.IOptions<TOptions>)
+  fullName.vb: CG.Business.Stores.StoreBase(Of TOptions).StoreBase(Microsoft.Extensions.Options.IOptions(Of TOptions))
+  nameWithType: StoreBase<TOptions>.StoreBase(IOptions<TOptions>)
+  nameWithType.vb: StoreBase(Of TOptions).StoreBase(IOptions(Of TOptions))
 - uid: CG.Business.Stores.StoreBase`1.#ctor*
   name: StoreBase
   href: api/CG.Business.Stores.StoreBase-1.html#CG_Business_Stores_StoreBase_1__ctor_
@@ -631,14 +549,15 @@ references:
   fullName.vb: CG.Business.Strategies.StrategyBase(Of TOptions)
   nameWithType: StrategyBase<TOptions>
   nameWithType.vb: StrategyBase(Of TOptions)
-- uid: CG.Business.Strategies.StrategyBase`1.#ctor(`0)
-  name: StrategyBase(TOptions)
-  href: api/CG.Business.Strategies.StrategyBase-1.html#CG_Business_Strategies_StrategyBase_1__ctor__0_
-  commentId: M:CG.Business.Strategies.StrategyBase`1.#ctor(`0)
-  fullName: CG.Business.Strategies.StrategyBase<TOptions>.StrategyBase(TOptions)
-  fullName.vb: CG.Business.Strategies.StrategyBase(Of TOptions).StrategyBase(TOptions)
-  nameWithType: StrategyBase<TOptions>.StrategyBase(TOptions)
-  nameWithType.vb: StrategyBase(Of TOptions).StrategyBase(TOptions)
+- uid: CG.Business.Strategies.StrategyBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name: StrategyBase(IOptions<TOptions>)
+  href: api/CG.Business.Strategies.StrategyBase-1.html#CG_Business_Strategies_StrategyBase_1__ctor_Microsoft_Extensions_Options_IOptions__0__
+  commentId: M:CG.Business.Strategies.StrategyBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name.vb: StrategyBase(IOptions(Of TOptions))
+  fullName: CG.Business.Strategies.StrategyBase<TOptions>.StrategyBase(Microsoft.Extensions.Options.IOptions<TOptions>)
+  fullName.vb: CG.Business.Strategies.StrategyBase(Of TOptions).StrategyBase(Microsoft.Extensions.Options.IOptions(Of TOptions))
+  nameWithType: StrategyBase<TOptions>.StrategyBase(IOptions<TOptions>)
+  nameWithType.vb: StrategyBase(Of TOptions).StrategyBase(IOptions(Of TOptions))
 - uid: CG.Business.Strategies.StrategyBase`1.#ctor*
   name: StrategyBase
   href: api/CG.Business.Strategies.StrategyBase-1.html#CG_Business_Strategies_StrategyBase_1__ctor_
