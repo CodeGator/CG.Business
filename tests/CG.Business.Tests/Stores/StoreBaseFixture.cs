@@ -1,5 +1,6 @@
 ﻿using CG.Business.Stores.Options;
 using CG.Diagnostics;
+using Microsoft.Extensions.Options;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -26,7 +27,7 @@ namespace CG.Business.Stores
             /// This constructor is used for internal testing purposes.
             /// </summary>
             public TestStore(
-                StoreOptions options
+                IOptions<StoreOptions> options
                 ) : base(options)
             {
 
@@ -49,7 +50,7 @@ namespace CG.Business.Stores
         public void StoreBase_Ctor()
         {
             // Arrange ...
-            var options = new StoreOptions();
+            var options = new OptionsWrapper<StoreOptions>(new StoreOptions());
 
             // Act ...
             var result = new TestStore(options);

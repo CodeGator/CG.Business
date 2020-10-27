@@ -1,5 +1,6 @@
 ﻿using CG.Business.Strategies.Options;
 using CG.Diagnostics;
+using Microsoft.Extensions.Options;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -26,7 +27,7 @@ namespace CG.Business.Strategies
             /// This constructor is used for internal testing purposes.
             /// </summary>
             public TestStrategy(
-                StrategyOptions options
+                IOptions<StrategyOptions> options
                 ) : base(options)
             {
 
@@ -49,7 +50,7 @@ namespace CG.Business.Strategies
         public void StrategyBase_Ctor()
         {
             // Arrange ...
-            var options = new StrategyOptions();
+            var options = new OptionsWrapper<StrategyOptions>(new StrategyOptions());
 
             // Act ...
             var result = new TestStrategy(options);

@@ -24,7 +24,7 @@ namespace CG.Business.Services
     public abstract class ServiceBase<TOptions> :
         ServiceBase,
         IService
-        where TOptions : IOptions<ServiceOptions>
+        where TOptions : ServiceOptions, new()
     {
         // *******************************************************************
         // Properties.
@@ -35,7 +35,7 @@ namespace CG.Business.Services
         /// <summary>
         /// This property contains options for the service.
         /// </summary>
-        protected TOptions Options { get; }
+        protected IOptions<TOptions> Options { get; }
 
         #endregion
 
@@ -51,7 +51,7 @@ namespace CG.Business.Services
         /// </summary>
         /// <param name="options">The options to use with the service.</param>
         public ServiceBase(
-            TOptions options
+            IOptions<TOptions> options
             )
         {
             // Validate the parameters before attempting to use them.
