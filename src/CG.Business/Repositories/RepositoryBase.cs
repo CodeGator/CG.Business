@@ -1,6 +1,7 @@
 ﻿using CG.Business.Models;
 using CG.Business.Repositories.Options;
 using CG.Validations;
+using Microsoft.Extensions.Options;
 
 namespace CG.Business.Repositories
 {
@@ -60,7 +61,7 @@ namespace CG.Business.Repositories
     public abstract class RepositoryBase<TOptions> :
         RepositoryBase,
         IRepository
-        where TOptions : RepositoryOptions
+        where TOptions : IOptions<RepositoryOptions>
     {
         // *******************************************************************
         // Properties.
@@ -111,7 +112,7 @@ namespace CG.Business.Repositories
     public abstract class RepositoryBase<TOptions, TEntity, TModel> :
         RepositoryBase<TEntity, TModel>,
         IRepository
-        where TOptions : RepositoryOptions
+        where TOptions : IOptions<RepositoryOptions>
         where TEntity : class
         where TModel : ModelBase
     {
