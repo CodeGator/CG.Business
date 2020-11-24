@@ -57,7 +57,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 );
 
             // Format the name of a target extension method.
-            var methodName = $"Add{repositoryOptions.Strategy}";
+            var methodName = $"Add{repositoryOptions.Strategy}Repositories";
 
             // Look for specified extension method.
             var methods = AppDomain.CurrentDomain.ExtensionMethods(
