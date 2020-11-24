@@ -61,7 +61,16 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Failed to locate an extension method named: &apos;{0}&apos; accepting an IConfiguration argument. Do you have the corresponding assembly loaded, or otherwise referenced, by the AppDomain?.
+        ///   Looks up a localized string similar to Despite our best efforts, you&apos;ve somehow managed to call the &apos;{0}&apos; method with an empty strategy name! Please correct the strategy name in the associated options and try again..
+        /// </summary>
+        internal static string ServiceCollectionExtensions_EmptyStrategyName {
+            get {
+                return ResourceManager.GetString("ServiceCollectionExtensions_EmptyStrategyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to locate an extension method named: &apos;{0}&apos; accepting IServiceCollection and IConfiguration arguments. Do you have the corresponding assembly loaded, or specified for loading?.
         /// </summary>
         internal static string ServiceCollectionExtensions_MethodNotFound {
             get {

@@ -34,6 +34,12 @@ namespace CG.Business.Repositories.Options
         [Required]
         public string Strategy { get; set; }
 
+        /// <summary>
+        /// This property contains the optional name of the assembly that contains 
+        /// the repository strategy.
+        /// </summary>
+        public string Assembly { get; set; }
+
         #endregion
     }
 }
