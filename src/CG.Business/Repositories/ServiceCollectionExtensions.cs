@@ -23,8 +23,8 @@ namespace Microsoft.Extensions.DependencyInjection
         #region Public methods
 
         /// <summary>
-        /// This method registers repository types, as configured in the 
-        /// specified configuration. 
+        /// This method dynamicall registers repository types, as configured 
+        /// in the specified configuration section. 
         /// </summary>
         /// <param name="serviceCollection">The service collection to use 
         /// for the operation.</param>
@@ -40,6 +40,12 @@ namespace Microsoft.Extensions.DependencyInjection
         /// one ore more of the parameters is missing, or invalid.</exception>
         /// <exception cref="BusinessException">This exception is thrown whenver
         /// the operation can't be completed.</exception>
+        /// <remarks>
+        /// The idea, with this method, is to allow the caller to specify the
+        /// concrete repository type(s) in the configuration. If configured to 
+        /// do so, this method will load an assembly in order to resolve the 
+        /// extension method(s) needed to register the repository types.  
+        /// </remarks>
         public static IServiceCollection AddRepositories(
             this IServiceCollection serviceCollection,
             IConfiguration configuration,
@@ -82,6 +88,13 @@ namespace Microsoft.Extensions.DependencyInjection
             {
                 // Load the assembly.
                 _ = Assembly.Load(repositoryOptions.Assembly);
+
+                // If we loaded an assembly then we should be able to
+                // make use of the white list to significantly narrow 
+                //   the range of assemblies we'll search, below.
+                assemblyWhiteList = assemblyWhiteList.Length > 0
+                    ? $"{assemblyWhiteList}, {repositoryOptions.Assembly}"
+                    : assemblyWhiteList;
             }
 
             // Format the name of a target extension method.

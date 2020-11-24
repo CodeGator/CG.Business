@@ -29,7 +29,7 @@ namespace CG.Business.Repositories.Options
         #region Properties
 
         /// <summary>
-        /// This property contains the name of the current repository strategy.
+        /// This property contains the name of the configured repository strategy.
         /// </summary>
         [Required]
         public string Strategy { get; set; }
