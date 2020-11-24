@@ -111,7 +111,7 @@ namespace CG.Business.Repositories
 
         #region Public methods
 
-        public static IServiceCollection AddTestMe(
+        public static IServiceCollection AddTestMeRepositories(
             this IServiceCollection serviceCollection,
             IConfiguration confuguration
             )
