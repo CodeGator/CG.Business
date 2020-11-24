@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.Options.RepositoryOptions.html",
-          "hash": "eCpBQ9NF7sHTQ+EIqkjNIw=="
+          "hash": "/Qunvf+wB68pgZ8FtA6zTQ=="
         }
       },
       "is_incremental": false,
@@ -450,7 +450,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html",
-          "hash": "8BBWnrIbkJkBHWvgVWaLqw=="
+          "hash": "tsbn26KSjXk8yC6o0lX9FA=="
         }
       },
       "is_incremental": false,

@@ -157,6 +157,19 @@ references:
   commentId: T:CG.Business.Repositories.Options.RepositoryOptions
   fullName: CG.Business.Repositories.Options.RepositoryOptions
   nameWithType: RepositoryOptions
+- uid: CG.Business.Repositories.Options.RepositoryOptions.Assembly
+  name: Assembly
+  href: api/CG.Business.Repositories.Options.RepositoryOptions.html#CG_Business_Repositories_Options_RepositoryOptions_Assembly
+  commentId: P:CG.Business.Repositories.Options.RepositoryOptions.Assembly
+  fullName: CG.Business.Repositories.Options.RepositoryOptions.Assembly
+  nameWithType: RepositoryOptions.Assembly
+- uid: CG.Business.Repositories.Options.RepositoryOptions.Assembly*
+  name: Assembly
+  href: api/CG.Business.Repositories.Options.RepositoryOptions.html#CG_Business_Repositories_Options_RepositoryOptions_Assembly_
+  commentId: Overload:CG.Business.Repositories.Options.RepositoryOptions.Assembly
+  isSpec: "True"
+  fullName: CG.Business.Repositories.Options.RepositoryOptions.Assembly
+  nameWithType: RepositoryOptions.Assembly
 - uid: CG.Business.Repositories.Options.RepositoryOptions.SectionName
   name: SectionName
   href: api/CG.Business.Repositories.Options.RepositoryOptions.html#CG_Business_Repositories_Options_RepositoryOptions_SectionName
