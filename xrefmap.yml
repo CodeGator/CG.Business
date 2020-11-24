@@ -1,6 +1,49 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: CG.Business
+  name: CG.Business
+  href: api/CG.Business.html
+  commentId: N:CG.Business
+  fullName: CG.Business
+  nameWithType: CG.Business
+- uid: CG.Business.BusinessException
+  name: BusinessException
+  href: api/CG.Business.BusinessException.html
+  commentId: T:CG.Business.BusinessException
+  fullName: CG.Business.BusinessException
+  nameWithType: BusinessException
+- uid: CG.Business.BusinessException.#ctor
+  name: BusinessException()
+  href: api/CG.Business.BusinessException.html#CG_Business_BusinessException__ctor
+  commentId: M:CG.Business.BusinessException.#ctor
+  fullName: CG.Business.BusinessException.BusinessException()
+  nameWithType: BusinessException.BusinessException()
+- uid: CG.Business.BusinessException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: BusinessException(SerializationInfo, StreamingContext)
+  href: api/CG.Business.BusinessException.html#CG_Business_BusinessException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:CG.Business.BusinessException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: CG.Business.BusinessException.BusinessException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: BusinessException.BusinessException(SerializationInfo, StreamingContext)
+- uid: CG.Business.BusinessException.#ctor(System.String)
+  name: BusinessException(String)
+  href: api/CG.Business.BusinessException.html#CG_Business_BusinessException__ctor_System_String_
+  commentId: M:CG.Business.BusinessException.#ctor(System.String)
+  fullName: CG.Business.BusinessException.BusinessException(System.String)
+  nameWithType: BusinessException.BusinessException(String)
+- uid: CG.Business.BusinessException.#ctor(System.String,System.Exception)
+  name: BusinessException(String, Exception)
+  href: api/CG.Business.BusinessException.html#CG_Business_BusinessException__ctor_System_String_System_Exception_
+  commentId: M:CG.Business.BusinessException.#ctor(System.String,System.Exception)
+  fullName: CG.Business.BusinessException.BusinessException(System.String, System.Exception)
+  nameWithType: BusinessException.BusinessException(String, Exception)
+- uid: CG.Business.BusinessException.#ctor*
+  name: BusinessException
+  href: api/CG.Business.BusinessException.html#CG_Business_BusinessException__ctor_
+  commentId: Overload:CG.Business.BusinessException.#ctor
+  isSpec: "True"
+  fullName: CG.Business.BusinessException.BusinessException
+  nameWithType: BusinessException.BusinessException
 - uid: CG.Business.Models
   name: CG.Business.Models
   href: api/CG.Business.Models.html
@@ -114,6 +157,25 @@ references:
   commentId: T:CG.Business.Repositories.Options.RepositoryOptions
   fullName: CG.Business.Repositories.Options.RepositoryOptions
   nameWithType: RepositoryOptions
+- uid: CG.Business.Repositories.Options.RepositoryOptions.SectionName
+  name: SectionName
+  href: api/CG.Business.Repositories.Options.RepositoryOptions.html#CG_Business_Repositories_Options_RepositoryOptions_SectionName
+  commentId: F:CG.Business.Repositories.Options.RepositoryOptions.SectionName
+  fullName: CG.Business.Repositories.Options.RepositoryOptions.SectionName
+  nameWithType: RepositoryOptions.SectionName
+- uid: CG.Business.Repositories.Options.RepositoryOptions.Strategy
+  name: Strategy
+  href: api/CG.Business.Repositories.Options.RepositoryOptions.html#CG_Business_Repositories_Options_RepositoryOptions_Strategy
+  commentId: P:CG.Business.Repositories.Options.RepositoryOptions.Strategy
+  fullName: CG.Business.Repositories.Options.RepositoryOptions.Strategy
+  nameWithType: RepositoryOptions.Strategy
+- uid: CG.Business.Repositories.Options.RepositoryOptions.Strategy*
+  name: Strategy
+  href: api/CG.Business.Repositories.Options.RepositoryOptions.html#CG_Business_Repositories_Options_RepositoryOptions_Strategy_
+  commentId: Overload:CG.Business.Repositories.Options.RepositoryOptions.Strategy
+  isSpec: "True"
+  fullName: CG.Business.Repositories.Options.RepositoryOptions.Strategy
+  nameWithType: RepositoryOptions.Strategy
 - uid: CG.Business.Repositories.RepositoryBase
   name: RepositoryBase
   href: api/CG.Business.Repositories.RepositoryBase.html
@@ -627,3 +689,28 @@ references:
   isSpec: "True"
   fullName: CG.Business.Strategys.StrategyException.StrategyException
   nameWithType: StrategyException.StrategyException
+- uid: Microsoft.Extensions.DependencyInjection
+  name: Microsoft.Extensions.DependencyInjection
+  href: api/Microsoft.Extensions.DependencyInjection.html
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html
+  commentId: T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  name: AddRepositories(IServiceCollection, IConfiguration, String, String)
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String)
+  nameWithType: ServiceCollectionExtensions.AddRepositories(IServiceCollection, IConfiguration, String, String)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories*
+  name: AddRepositories
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories
+  isSpec: "True"
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories
+  nameWithType: ServiceCollectionExtensions.AddRepositories
