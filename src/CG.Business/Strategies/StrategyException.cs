@@ -7,7 +7,7 @@ namespace CG.Business.Strategys
     /// This class represents a strategy related exception.
     /// </summary>
     [Serializable]
-    public class StrategyException : Exception
+    public class StrategyException : BusinessException
     {
         // *******************************************************************
         // Constructors.

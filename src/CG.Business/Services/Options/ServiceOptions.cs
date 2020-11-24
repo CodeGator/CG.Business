@@ -1,5 +1,4 @@
-﻿
-using CG.Options;
+﻿using CG.Options;
 
 namespace CG.Business.Services.Options
 {
@@ -8,6 +7,6 @@ namespace CG.Business.Services.Options
     /// </summary>
     public class ServiceOptions : OptionsBase
     {
-
+        
     }
 }

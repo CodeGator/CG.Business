@@ -7,6 +7,6 @@ namespace CG.Business.Strategies.Options
     /// </summary>
     public class StrategyOptions : OptionsBase
     {
-
+        
     }
 }
