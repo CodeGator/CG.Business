@@ -133,8 +133,9 @@
   <h3 id="fields">Fields
   </h3>
   <h4 id="CG_Business_Repositories_Options_RepositoryOptions_SectionName" data-uid="CG.Business.Repositories.Options.RepositoryOptions.SectionName">SectionName</h4>
-  <div class="markdown level1 summary"><p>This constant represents the configuration section for the current
-repository strategy.</p>
+  <div class="markdown level1 summary"><p>This constant represents the configuration section root for repository
+options. This means options for repositories should be bound at a
+point just above the Repositories node, in the configuration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -190,7 +191,7 @@ the repository strategy.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Required]
+    <pre><code class="lang-csharp hljs">[Required(ErrorMessageResourceName = &quot;RepositoryOptions_Strategy&quot;, ErrorMessageResourceType = typeof(Resources))]
 public string Strategy { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>

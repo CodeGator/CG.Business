@@ -609,6 +609,38 @@ references:
   commentId: T:CG.Business.Strategies.Options.StrategyOptions
   fullName: CG.Business.Strategies.Options.StrategyOptions
   nameWithType: StrategyOptions
+- uid: CG.Business.Strategies.Options.StrategyOptions.Assembly
+  name: Assembly
+  href: api/CG.Business.Strategies.Options.StrategyOptions.html#CG_Business_Strategies_Options_StrategyOptions_Assembly
+  commentId: P:CG.Business.Strategies.Options.StrategyOptions.Assembly
+  fullName: CG.Business.Strategies.Options.StrategyOptions.Assembly
+  nameWithType: StrategyOptions.Assembly
+- uid: CG.Business.Strategies.Options.StrategyOptions.Assembly*
+  name: Assembly
+  href: api/CG.Business.Strategies.Options.StrategyOptions.html#CG_Business_Strategies_Options_StrategyOptions_Assembly_
+  commentId: Overload:CG.Business.Strategies.Options.StrategyOptions.Assembly
+  isSpec: "True"
+  fullName: CG.Business.Strategies.Options.StrategyOptions.Assembly
+  nameWithType: StrategyOptions.Assembly
+- uid: CG.Business.Strategies.Options.StrategyOptions.SectionName
+  name: SectionName
+  href: api/CG.Business.Strategies.Options.StrategyOptions.html#CG_Business_Strategies_Options_StrategyOptions_SectionName
+  commentId: F:CG.Business.Strategies.Options.StrategyOptions.SectionName
+  fullName: CG.Business.Strategies.Options.StrategyOptions.SectionName
+  nameWithType: StrategyOptions.SectionName
+- uid: CG.Business.Strategies.Options.StrategyOptions.Strategy
+  name: Strategy
+  href: api/CG.Business.Strategies.Options.StrategyOptions.html#CG_Business_Strategies_Options_StrategyOptions_Strategy
+  commentId: P:CG.Business.Strategies.Options.StrategyOptions.Strategy
+  fullName: CG.Business.Strategies.Options.StrategyOptions.Strategy
+  nameWithType: StrategyOptions.Strategy
+- uid: CG.Business.Strategies.Options.StrategyOptions.Strategy*
+  name: Strategy
+  href: api/CG.Business.Strategies.Options.StrategyOptions.html#CG_Business_Strategies_Options_StrategyOptions_Strategy_
+  commentId: Overload:CG.Business.Strategies.Options.StrategyOptions.Strategy
+  isSpec: "True"
+  fullName: CG.Business.Strategies.Options.StrategyOptions.Strategy
+  nameWithType: StrategyOptions.Strategy
 - uid: CG.Business.Strategies.StrategyBase
   name: StrategyBase
   href: api/CG.Business.Strategies.StrategyBase.html
@@ -727,3 +759,16 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories
   nameWithType: ServiceCollectionExtensions.AddRepositories
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  name: AddStrategies(IServiceCollection, IConfiguration, String, String)
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String)
+  nameWithType: ServiceCollectionExtensions.AddStrategies(IServiceCollection, IConfiguration, String, String)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies*
+  name: AddStrategies
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies
+  isSpec: "True"
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies
+  nameWithType: ServiceCollectionExtensions.AddStrategies
