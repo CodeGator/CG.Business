@@ -95,5 +95,14 @@ namespace CG.Business.Properties {
                 return ResourceManager.GetString("ServiceCollectionExtensions_NoLoadAssembly", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Strategy options require a &apos;Strategy&apos; field and it appears to be missing, or empty. Check the configuration to ensure that it contains a &apos;Strategy&apos; field under the &apos;Strategies&apos; section. Also, ensure that you&apos;re binding to the properties above the &apos;Strategies&apos; section, so that the binding operation won&apos;t fail and the options will validate properly..
+        /// </summary>
+        internal static string StrategyOptions_Strategy {
+            get {
+                return ResourceManager.GetString("StrategyOptions_Strategy", resourceCulture);
+            }
+        }
     }
 }

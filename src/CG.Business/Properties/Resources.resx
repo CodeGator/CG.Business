@@ -129,4 +129,7 @@
   <data name="ServiceCollectionExtensions_NoLoadAssembly" xml:space="preserve">
     <value>Unable to load the specified assembly: '{0}'. If this is a path to an assembly, is it correct? If this is an assembly name, is the corresponding dll file in your path? See inner exception(s) for more detail.</value>
   </data>
+  <data name="StrategyOptions_Strategy" xml:space="preserve">
+    <value>Strategy options require a 'Strategy' field and it appears to be missing, or empty. Check the configuration to ensure that it contains a 'Strategy' field under the 'Strategies' section. Also, ensure that you're binding to the properties above the 'Strategies' section, so that the binding operation won't fail and the options will validate properly.</value>
+  </data>
 </root>
