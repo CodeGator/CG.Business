@@ -61,6 +61,15 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Repository options require a &apos;Strategy&apos; field and it appears to be missing, or empty. Check the configuration to ensure that it contains a &apos;Strategy&apos; field under the &apos;Repositories&apos; section. Also, ensure that you&apos;re binding to the properties above the &apos;Repositories&apos; section, so that the binding operation won&apos;t fail and the options will validate properly..
+        /// </summary>
+        internal static string RepositoryOptions_Strategy {
+            get {
+                return ResourceManager.GetString("RepositoryOptions_Strategy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Despite our best efforts, you&apos;ve somehow managed to call the &apos;{0}&apos; method with an empty strategy name! Please correct the strategy name in the associated options and try again..
         /// </summary>
         internal static string ServiceCollectionExtensions_EmptyStrategyName {
@@ -70,11 +79,20 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Failed to locate an extension method named: &apos;{0}&apos; accepting IServiceCollection and IConfiguration arguments. Do you have the corresponding assembly loaded, or specified for loading?.
+        ///   Looks up a localized string similar to Failed to locate an extension method named: &apos;{0}&apos; accepting IServiceCollection and IConfiguration arguments. Do you have the corresponding assembly loaded, or specified for loading in the configuration? Also, is the strategy name correct?.
         /// </summary>
         internal static string ServiceCollectionExtensions_MethodNotFound {
             get {
                 return ResourceManager.GetString("ServiceCollectionExtensions_MethodNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unable to load the specified assembly: &apos;{0}&apos;. If this is a path to an assembly, is it correct? If this is an assembly name, is the corresponding dll file in your path? See inner exception(s) for more detail..
+        /// </summary>
+        internal static string ServiceCollectionExtensions_NoLoadAssembly {
+            get {
+                return ResourceManager.GetString("ServiceCollectionExtensions_NoLoadAssembly", resourceCulture);
             }
         }
     }

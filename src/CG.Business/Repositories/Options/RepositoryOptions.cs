@@ -1,4 +1,5 @@
-﻿using CG.Options;
+﻿using CG.Business.Properties;
+using CG.Options;
 using System.ComponentModel.DataAnnotations;
 
 namespace CG.Business.Repositories.Options
@@ -15,8 +16,9 @@ namespace CG.Business.Repositories.Options
         #region Constants
 
         /// <summary>
-        /// This constant represents the configuration section for the current
-        /// repository strategy.
+        /// This constant represents the configuration section root for repository 
+        /// options. This means options for repositories should be bound at a 
+        /// point just above the Repositories node, in the configuration.
         /// </summary>
         public const string SectionName = "Repositories";
 
@@ -31,7 +33,8 @@ namespace CG.Business.Repositories.Options
         /// <summary>
         /// This property contains the name of the configured repository strategy.
         /// </summary>
-        [Required]
+        [Required(ErrorMessageResourceName = "RepositoryOptions_Strategy", 
+                  ErrorMessageResourceType = typeof(Resources) )]
         public string Strategy { get; set; }
 
         /// <summary>

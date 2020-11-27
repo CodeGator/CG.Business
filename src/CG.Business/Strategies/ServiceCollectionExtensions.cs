@@ -1,6 +1,7 @@
 ﻿using CG.Business;
 using CG.Business.Properties;
 using CG.Business.Repositories.Options;
+using CG.Business.Strategies.Options;
 using CG.Reflection;
 using CG.Validations;
 using Microsoft.Extensions.Configuration;
@@ -23,7 +24,7 @@ namespace Microsoft.Extensions.DependencyInjection
         #region Public methods
 
         /// <summary>
-        /// This method dynamically registers repository types, as configured 
+        /// This method dynamically registers strategy types, as configured 
         /// in the specified configuration section. 
         /// </summary>
         /// <param name="serviceCollection">The service collection to use 
@@ -42,11 +43,11 @@ namespace Microsoft.Extensions.DependencyInjection
         /// the operation can't be completed.</exception>
         /// <remarks>
         /// The idea, with this method, is to allow the caller to specify the
-        /// concrete repository type(s) in the configuration. If configured to 
+        /// concrete strategy type(s) in the configuration. If configured to 
         /// do so, this method will load an assembly in order to resolve the 
-        /// extension method(s) needed to register the repository types.  
+        /// extension method(s) needed to register the strategy types.  
         /// </remarks>
-        public static IServiceCollection AddRepositories(
+        public static IServiceCollection AddStrategies(
             this IServiceCollection serviceCollection,
             IConfiguration configuration,
             string assemblyWhiteList = "", 
@@ -59,17 +60,17 @@ namespace Microsoft.Extensions.DependencyInjection
 
             // Get the appropriate configuration section.
             var section = configuration.GetSection(
-                RepositoryOptions.SectionName
+                StrategyOptions.SectionName
                 );
 
-            // Register the repository options with the DI container.
-            serviceCollection.ConfigureOptions<RepositoryOptions>(
+            // Register the strategy options with the DI container.
+            serviceCollection.ConfigureOptions<StrategyOptions>(
                 section,
-                out var repositoryOptions
+                out var strategyOptions
                 );
 
             // Trim the strategy name, just in case.
-            var strategyName = repositoryOptions.Strategy.Trim();
+            var strategyName = strategyOptions.Strategy.Trim();
 
             // Should never happen, but, pffft, check it anyway
             if (string.IsNullOrEmpty(strategyName))
@@ -78,25 +79,25 @@ namespace Microsoft.Extensions.DependencyInjection
                 throw new BusinessException(
                     message: string.Format(
                         Resources.ServiceCollectionExtensions_EmptyStrategyName,
-                        nameof(AddRepositories)
+                        nameof(AddStrategies)
                         )
                     );
             }
 
             try
             {
-                // Should we try to load an assembly for the repository strategy?
-                if (false == string.IsNullOrEmpty(repositoryOptions.Assembly))
+                // Should we try to load an assembly for the strategy?
+                if (false == string.IsNullOrEmpty(strategyOptions.Assembly))
                 {
                     // Load the assembly.
-                    _ = Assembly.Load(repositoryOptions.Assembly);
+                    _ = Assembly.Load(strategyOptions.Assembly);
 
                     // If an assembly was specified then we should be able to
                     // make use of the white list to significantly improve 
                     //   the runtime of the search operation we're about to
                     //   perform.
                     assemblyWhiteList = assemblyWhiteList.Length > 0
-                        ? $"{assemblyWhiteList}, {repositoryOptions.Assembly}"
+                        ? $"{assemblyWhiteList}, {strategyOptions.Assembly}"
                         : assemblyWhiteList;
                 }
             }
@@ -106,14 +107,14 @@ namespace Microsoft.Extensions.DependencyInjection
                 throw new BusinessException(
                     message: string.Format(
                         Resources.ServiceCollectionExtensions_NoLoadAssembly,
-                        repositoryOptions.Assembly
+                        strategyOptions.Assembly
                         ),
                     innerException: ex
                     );
             }
 
             // Format the name of a target extension method.
-            var methodName = $"Add{strategyName}Repositories";
+            var methodName = $"Add{strategyName}Strategies";
             
             // Look for specified extension method.
             var methods = AppDomain.CurrentDomain.ExtensionMethods(
