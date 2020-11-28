@@ -7,6 +7,50 @@ references:
   commentId: N:CG.Business
   fullName: CG.Business
   nameWithType: CG.Business
+- uid: CG.Business.Builders
+  name: CG.Business.Builders
+  href: api/CG.Business.Builders.html
+  commentId: N:CG.Business.Builders
+  fullName: CG.Business.Builders
+  nameWithType: CG.Business.Builders
+- uid: CG.Business.Builders.BuilderBase
+  name: BuilderBase
+  href: api/CG.Business.Builders.BuilderBase.html
+  commentId: T:CG.Business.Builders.BuilderBase
+  fullName: CG.Business.Builders.BuilderBase
+  nameWithType: BuilderBase
+- uid: CG.Business.Builders.BuilderBase.ServiceCollection
+  name: ServiceCollection
+  href: api/CG.Business.Builders.BuilderBase.html#CG_Business_Builders_BuilderBase_ServiceCollection
+  commentId: P:CG.Business.Builders.BuilderBase.ServiceCollection
+  fullName: CG.Business.Builders.BuilderBase.ServiceCollection
+  nameWithType: BuilderBase.ServiceCollection
+- uid: CG.Business.Builders.BuilderBase.ServiceCollection*
+  name: ServiceCollection
+  href: api/CG.Business.Builders.BuilderBase.html#CG_Business_Builders_BuilderBase_ServiceCollection_
+  commentId: Overload:CG.Business.Builders.BuilderBase.ServiceCollection
+  isSpec: "True"
+  fullName: CG.Business.Builders.BuilderBase.ServiceCollection
+  nameWithType: BuilderBase.ServiceCollection
+- uid: CG.Business.Builders.IBuilder
+  name: IBuilder
+  href: api/CG.Business.Builders.IBuilder.html
+  commentId: T:CG.Business.Builders.IBuilder
+  fullName: CG.Business.Builders.IBuilder
+  nameWithType: IBuilder
+- uid: CG.Business.Builders.IBuilder.ServiceCollection
+  name: ServiceCollection
+  href: api/CG.Business.Builders.IBuilder.html#CG_Business_Builders_IBuilder_ServiceCollection
+  commentId: P:CG.Business.Builders.IBuilder.ServiceCollection
+  fullName: CG.Business.Builders.IBuilder.ServiceCollection
+  nameWithType: IBuilder.ServiceCollection
+- uid: CG.Business.Builders.IBuilder.ServiceCollection*
+  name: ServiceCollection
+  href: api/CG.Business.Builders.IBuilder.html#CG_Business_Builders_IBuilder_ServiceCollection_
+  commentId: Overload:CG.Business.Builders.IBuilder.ServiceCollection
+  isSpec: "True"
+  fullName: CG.Business.Builders.IBuilder.ServiceCollection
+  nameWithType: IBuilder.ServiceCollection
 - uid: CG.Business.BusinessException
   name: BusinessException
   href: api/CG.Business.BusinessException.html
@@ -139,6 +183,204 @@ references:
   commentId: N:CG.Business.Repositories
   fullName: CG.Business.Repositories
   nameWithType: CG.Business.Repositories
+- uid: CG.Business.Repositories.CrudRepositoryBase`2
+  name: CrudRepositoryBase<TModel, TKey>
+  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html
+  commentId: T:CG.Business.Repositories.CrudRepositoryBase`2
+  name.vb: CrudRepositoryBase(Of TModel, TKey)
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey)
+  nameWithType: CrudRepositoryBase<TModel, TKey>
+  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey)
+- uid: CG.Business.Repositories.CrudRepositoryBase`2.AddAsync(`0,System.Threading.CancellationToken)
+  name: AddAsync(TModel, CancellationToken)
+  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_AddAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Business.Repositories.CrudRepositoryBase`2.AddAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.AddAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).AddAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: CrudRepositoryBase<TModel, TKey>.AddAsync(TModel, CancellationToken)
+  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).AddAsync(TModel, CancellationToken)
+- uid: CG.Business.Repositories.CrudRepositoryBase`2.AddAsync*
+  name: AddAsync
+  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_AddAsync_
+  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`2.AddAsync
+  isSpec: "True"
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.AddAsync
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).AddAsync
+  nameWithType: CrudRepositoryBase<TModel, TKey>.AddAsync
+  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).AddAsync
+- uid: CG.Business.Repositories.CrudRepositoryBase`2.AsQueryable
+  name: AsQueryable()
+  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_AsQueryable
+  commentId: M:CG.Business.Repositories.CrudRepositoryBase`2.AsQueryable
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.AsQueryable()
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).AsQueryable()
+  nameWithType: CrudRepositoryBase<TModel, TKey>.AsQueryable()
+  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).AsQueryable()
+- uid: CG.Business.Repositories.CrudRepositoryBase`2.AsQueryable*
+  name: AsQueryable
+  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_AsQueryable_
+  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`2.AsQueryable
+  isSpec: "True"
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.AsQueryable
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).AsQueryable
+  nameWithType: CrudRepositoryBase<TModel, TKey>.AsQueryable
+  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).AsQueryable
+- uid: CG.Business.Repositories.CrudRepositoryBase`2.DeleteAsync(`0,System.Threading.CancellationToken)
+  name: DeleteAsync(TModel, CancellationToken)
+  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_DeleteAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Business.Repositories.CrudRepositoryBase`2.DeleteAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.DeleteAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).DeleteAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: CrudRepositoryBase<TModel, TKey>.DeleteAsync(TModel, CancellationToken)
+  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).DeleteAsync(TModel, CancellationToken)
+- uid: CG.Business.Repositories.CrudRepositoryBase`2.DeleteAsync*
+  name: DeleteAsync
+  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_DeleteAsync_
+  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`2.DeleteAsync
+  isSpec: "True"
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.DeleteAsync
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).DeleteAsync
+  nameWithType: CrudRepositoryBase<TModel, TKey>.DeleteAsync
+  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).DeleteAsync
+- uid: CG.Business.Repositories.CrudRepositoryBase`2.UpdateAsync(`0,System.Threading.CancellationToken)
+  name: UpdateAsync(TModel, CancellationToken)
+  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_UpdateAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Business.Repositories.CrudRepositoryBase`2.UpdateAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.UpdateAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).UpdateAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: CrudRepositoryBase<TModel, TKey>.UpdateAsync(TModel, CancellationToken)
+  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).UpdateAsync(TModel, CancellationToken)
+- uid: CG.Business.Repositories.CrudRepositoryBase`2.UpdateAsync*
+  name: UpdateAsync
+  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_UpdateAsync_
+  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`2.UpdateAsync
+  isSpec: "True"
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.UpdateAsync
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).UpdateAsync
+  nameWithType: CrudRepositoryBase<TModel, TKey>.UpdateAsync
+  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).UpdateAsync
+- uid: CG.Business.Repositories.CrudRepositoryBase`3
+  name: CrudRepositoryBase<TOptions, TModel, TKey>
+  href: api/CG.Business.Repositories.CrudRepositoryBase-3.html
+  commentId: T:CG.Business.Repositories.CrudRepositoryBase`3
+  name.vb: CrudRepositoryBase(Of TOptions, TModel, TKey)
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TModel, TKey>
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey)
+  nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey)
+- uid: CG.Business.Repositories.CrudRepositoryBase`3.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name: CrudRepositoryBase(IOptions<TOptions>)
+  href: api/CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3__ctor_Microsoft_Extensions_Options_IOptions__0__
+  commentId: M:CG.Business.Repositories.CrudRepositoryBase`3.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name.vb: CrudRepositoryBase(IOptions(Of TOptions))
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TModel, TKey>.CrudRepositoryBase(Microsoft.Extensions.Options.IOptions<TOptions>)
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).CrudRepositoryBase(Microsoft.Extensions.Options.IOptions(Of TOptions))
+  nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.CrudRepositoryBase(IOptions<TOptions>)
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).CrudRepositoryBase(IOptions(Of TOptions))
+- uid: CG.Business.Repositories.CrudRepositoryBase`3.#ctor*
+  name: CrudRepositoryBase
+  href: api/CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3__ctor_
+  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`3.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TModel, TKey>.CrudRepositoryBase
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).CrudRepositoryBase
+  nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.CrudRepositoryBase
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).CrudRepositoryBase
+- uid: CG.Business.Repositories.CrudRepositoryBase`3.Options
+  name: Options
+  href: api/CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3_Options
+  commentId: P:CG.Business.Repositories.CrudRepositoryBase`3.Options
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TModel, TKey>.Options
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).Options
+  nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.Options
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).Options
+- uid: CG.Business.Repositories.CrudRepositoryBase`3.Options*
+  name: Options
+  href: api/CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3_Options_
+  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`3.Options
+  isSpec: "True"
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TModel, TKey>.Options
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).Options
+  nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.Options
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).Options
+- uid: CG.Business.Repositories.ICrudRepository`2
+  name: ICrudRepository<TModel, TKey>
+  href: api/CG.Business.Repositories.ICrudRepository-2.html
+  commentId: T:CG.Business.Repositories.ICrudRepository`2
+  name.vb: ICrudRepository(Of TModel, TKey)
+  fullName: CG.Business.Repositories.ICrudRepository<TModel, TKey>
+  fullName.vb: CG.Business.Repositories.ICrudRepository(Of TModel, TKey)
+  nameWithType: ICrudRepository<TModel, TKey>
+  nameWithType.vb: ICrudRepository(Of TModel, TKey)
+- uid: CG.Business.Repositories.ICrudRepository`2.AddAsync(`0,System.Threading.CancellationToken)
+  name: AddAsync(TModel, CancellationToken)
+  href: api/CG.Business.Repositories.ICrudRepository-2.html#CG_Business_Repositories_ICrudRepository_2_AddAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Business.Repositories.ICrudRepository`2.AddAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Business.Repositories.ICrudRepository<TModel, TKey>.AddAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Business.Repositories.ICrudRepository(Of TModel, TKey).AddAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: ICrudRepository<TModel, TKey>.AddAsync(TModel, CancellationToken)
+  nameWithType.vb: ICrudRepository(Of TModel, TKey).AddAsync(TModel, CancellationToken)
+- uid: CG.Business.Repositories.ICrudRepository`2.AddAsync*
+  name: AddAsync
+  href: api/CG.Business.Repositories.ICrudRepository-2.html#CG_Business_Repositories_ICrudRepository_2_AddAsync_
+  commentId: Overload:CG.Business.Repositories.ICrudRepository`2.AddAsync
+  isSpec: "True"
+  fullName: CG.Business.Repositories.ICrudRepository<TModel, TKey>.AddAsync
+  fullName.vb: CG.Business.Repositories.ICrudRepository(Of TModel, TKey).AddAsync
+  nameWithType: ICrudRepository<TModel, TKey>.AddAsync
+  nameWithType.vb: ICrudRepository(Of TModel, TKey).AddAsync
+- uid: CG.Business.Repositories.ICrudRepository`2.AsQueryable
+  name: AsQueryable()
+  href: api/CG.Business.Repositories.ICrudRepository-2.html#CG_Business_Repositories_ICrudRepository_2_AsQueryable
+  commentId: M:CG.Business.Repositories.ICrudRepository`2.AsQueryable
+  fullName: CG.Business.Repositories.ICrudRepository<TModel, TKey>.AsQueryable()
+  fullName.vb: CG.Business.Repositories.ICrudRepository(Of TModel, TKey).AsQueryable()
+  nameWithType: ICrudRepository<TModel, TKey>.AsQueryable()
+  nameWithType.vb: ICrudRepository(Of TModel, TKey).AsQueryable()
+- uid: CG.Business.Repositories.ICrudRepository`2.AsQueryable*
+  name: AsQueryable
+  href: api/CG.Business.Repositories.ICrudRepository-2.html#CG_Business_Repositories_ICrudRepository_2_AsQueryable_
+  commentId: Overload:CG.Business.Repositories.ICrudRepository`2.AsQueryable
+  isSpec: "True"
+  fullName: CG.Business.Repositories.ICrudRepository<TModel, TKey>.AsQueryable
+  fullName.vb: CG.Business.Repositories.ICrudRepository(Of TModel, TKey).AsQueryable
+  nameWithType: ICrudRepository<TModel, TKey>.AsQueryable
+  nameWithType.vb: ICrudRepository(Of TModel, TKey).AsQueryable
+- uid: CG.Business.Repositories.ICrudRepository`2.DeleteAsync(`0,System.Threading.CancellationToken)
+  name: DeleteAsync(TModel, CancellationToken)
+  href: api/CG.Business.Repositories.ICrudRepository-2.html#CG_Business_Repositories_ICrudRepository_2_DeleteAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Business.Repositories.ICrudRepository`2.DeleteAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Business.Repositories.ICrudRepository<TModel, TKey>.DeleteAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Business.Repositories.ICrudRepository(Of TModel, TKey).DeleteAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: ICrudRepository<TModel, TKey>.DeleteAsync(TModel, CancellationToken)
+  nameWithType.vb: ICrudRepository(Of TModel, TKey).DeleteAsync(TModel, CancellationToken)
+- uid: CG.Business.Repositories.ICrudRepository`2.DeleteAsync*
+  name: DeleteAsync
+  href: api/CG.Business.Repositories.ICrudRepository-2.html#CG_Business_Repositories_ICrudRepository_2_DeleteAsync_
+  commentId: Overload:CG.Business.Repositories.ICrudRepository`2.DeleteAsync
+  isSpec: "True"
+  fullName: CG.Business.Repositories.ICrudRepository<TModel, TKey>.DeleteAsync
+  fullName.vb: CG.Business.Repositories.ICrudRepository(Of TModel, TKey).DeleteAsync
+  nameWithType: ICrudRepository<TModel, TKey>.DeleteAsync
+  nameWithType.vb: ICrudRepository(Of TModel, TKey).DeleteAsync
+- uid: CG.Business.Repositories.ICrudRepository`2.UpdateAsync(`0,System.Threading.CancellationToken)
+  name: UpdateAsync(TModel, CancellationToken)
+  href: api/CG.Business.Repositories.ICrudRepository-2.html#CG_Business_Repositories_ICrudRepository_2_UpdateAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Business.Repositories.ICrudRepository`2.UpdateAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Business.Repositories.ICrudRepository<TModel, TKey>.UpdateAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Business.Repositories.ICrudRepository(Of TModel, TKey).UpdateAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: ICrudRepository<TModel, TKey>.UpdateAsync(TModel, CancellationToken)
+  nameWithType.vb: ICrudRepository(Of TModel, TKey).UpdateAsync(TModel, CancellationToken)
+- uid: CG.Business.Repositories.ICrudRepository`2.UpdateAsync*
+  name: UpdateAsync
+  href: api/CG.Business.Repositories.ICrudRepository-2.html#CG_Business_Repositories_ICrudRepository_2_UpdateAsync_
+  commentId: Overload:CG.Business.Repositories.ICrudRepository`2.UpdateAsync
+  isSpec: "True"
+  fullName: CG.Business.Repositories.ICrudRepository<TModel, TKey>.UpdateAsync
+  fullName.vb: CG.Business.Repositories.ICrudRepository(Of TModel, TKey).UpdateAsync
+  nameWithType: ICrudRepository<TModel, TKey>.UpdateAsync
+  nameWithType.vb: ICrudRepository(Of TModel, TKey).UpdateAsync
 - uid: CG.Business.Repositories.IRepository
   name: IRepository
   href: api/CG.Business.Repositories.IRepository.html
@@ -480,6 +722,255 @@ references:
   commentId: N:CG.Business.Stores
   fullName: CG.Business.Stores
   nameWithType: CG.Business.Stores
+- uid: CG.Business.Stores.CrudStoreBase`3
+  name: CrudStoreBase<TModel, TKey, TRepository>
+  href: api/CG.Business.Stores.CrudStoreBase-3.html
+  commentId: T:CG.Business.Stores.CrudStoreBase`3
+  name.vb: CrudStoreBase(Of TModel, TKey, TRepository)
+  fullName: CG.Business.Stores.CrudStoreBase<TModel, TKey, TRepository>
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TModel, TKey, TRepository)
+  nameWithType: CrudStoreBase<TModel, TKey, TRepository>
+  nameWithType.vb: CrudStoreBase(Of TModel, TKey, TRepository)
+- uid: CG.Business.Stores.CrudStoreBase`3.#ctor(`2)
+  name: CrudStoreBase(TRepository)
+  href: api/CG.Business.Stores.CrudStoreBase-3.html#CG_Business_Stores_CrudStoreBase_3__ctor__2_
+  commentId: M:CG.Business.Stores.CrudStoreBase`3.#ctor(`2)
+  fullName: CG.Business.Stores.CrudStoreBase<TModel, TKey, TRepository>.CrudStoreBase(TRepository)
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TModel, TKey, TRepository).CrudStoreBase(TRepository)
+  nameWithType: CrudStoreBase<TModel, TKey, TRepository>.CrudStoreBase(TRepository)
+  nameWithType.vb: CrudStoreBase(Of TModel, TKey, TRepository).CrudStoreBase(TRepository)
+- uid: CG.Business.Stores.CrudStoreBase`3.#ctor*
+  name: CrudStoreBase
+  href: api/CG.Business.Stores.CrudStoreBase-3.html#CG_Business_Stores_CrudStoreBase_3__ctor_
+  commentId: Overload:CG.Business.Stores.CrudStoreBase`3.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Stores.CrudStoreBase<TModel, TKey, TRepository>.CrudStoreBase
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TModel, TKey, TRepository).CrudStoreBase
+  nameWithType: CrudStoreBase<TModel, TKey, TRepository>.CrudStoreBase
+  nameWithType.vb: CrudStoreBase(Of TModel, TKey, TRepository).CrudStoreBase
+- uid: CG.Business.Stores.CrudStoreBase`3.AddAsync(`0,System.Threading.CancellationToken)
+  name: AddAsync(TModel, CancellationToken)
+  href: api/CG.Business.Stores.CrudStoreBase-3.html#CG_Business_Stores_CrudStoreBase_3_AddAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Business.Stores.CrudStoreBase`3.AddAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Business.Stores.CrudStoreBase<TModel, TKey, TRepository>.AddAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TModel, TKey, TRepository).AddAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: CrudStoreBase<TModel, TKey, TRepository>.AddAsync(TModel, CancellationToken)
+  nameWithType.vb: CrudStoreBase(Of TModel, TKey, TRepository).AddAsync(TModel, CancellationToken)
+- uid: CG.Business.Stores.CrudStoreBase`3.AddAsync*
+  name: AddAsync
+  href: api/CG.Business.Stores.CrudStoreBase-3.html#CG_Business_Stores_CrudStoreBase_3_AddAsync_
+  commentId: Overload:CG.Business.Stores.CrudStoreBase`3.AddAsync
+  isSpec: "True"
+  fullName: CG.Business.Stores.CrudStoreBase<TModel, TKey, TRepository>.AddAsync
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TModel, TKey, TRepository).AddAsync
+  nameWithType: CrudStoreBase<TModel, TKey, TRepository>.AddAsync
+  nameWithType.vb: CrudStoreBase(Of TModel, TKey, TRepository).AddAsync
+- uid: CG.Business.Stores.CrudStoreBase`3.AsQueryable
+  name: AsQueryable()
+  href: api/CG.Business.Stores.CrudStoreBase-3.html#CG_Business_Stores_CrudStoreBase_3_AsQueryable
+  commentId: M:CG.Business.Stores.CrudStoreBase`3.AsQueryable
+  fullName: CG.Business.Stores.CrudStoreBase<TModel, TKey, TRepository>.AsQueryable()
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TModel, TKey, TRepository).AsQueryable()
+  nameWithType: CrudStoreBase<TModel, TKey, TRepository>.AsQueryable()
+  nameWithType.vb: CrudStoreBase(Of TModel, TKey, TRepository).AsQueryable()
+- uid: CG.Business.Stores.CrudStoreBase`3.AsQueryable*
+  name: AsQueryable
+  href: api/CG.Business.Stores.CrudStoreBase-3.html#CG_Business_Stores_CrudStoreBase_3_AsQueryable_
+  commentId: Overload:CG.Business.Stores.CrudStoreBase`3.AsQueryable
+  isSpec: "True"
+  fullName: CG.Business.Stores.CrudStoreBase<TModel, TKey, TRepository>.AsQueryable
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TModel, TKey, TRepository).AsQueryable
+  nameWithType: CrudStoreBase<TModel, TKey, TRepository>.AsQueryable
+  nameWithType.vb: CrudStoreBase(Of TModel, TKey, TRepository).AsQueryable
+- uid: CG.Business.Stores.CrudStoreBase`3.DeleteAsync(`0,System.Threading.CancellationToken)
+  name: DeleteAsync(TModel, CancellationToken)
+  href: api/CG.Business.Stores.CrudStoreBase-3.html#CG_Business_Stores_CrudStoreBase_3_DeleteAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Business.Stores.CrudStoreBase`3.DeleteAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Business.Stores.CrudStoreBase<TModel, TKey, TRepository>.DeleteAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TModel, TKey, TRepository).DeleteAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: CrudStoreBase<TModel, TKey, TRepository>.DeleteAsync(TModel, CancellationToken)
+  nameWithType.vb: CrudStoreBase(Of TModel, TKey, TRepository).DeleteAsync(TModel, CancellationToken)
+- uid: CG.Business.Stores.CrudStoreBase`3.DeleteAsync*
+  name: DeleteAsync
+  href: api/CG.Business.Stores.CrudStoreBase-3.html#CG_Business_Stores_CrudStoreBase_3_DeleteAsync_
+  commentId: Overload:CG.Business.Stores.CrudStoreBase`3.DeleteAsync
+  isSpec: "True"
+  fullName: CG.Business.Stores.CrudStoreBase<TModel, TKey, TRepository>.DeleteAsync
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TModel, TKey, TRepository).DeleteAsync
+  nameWithType: CrudStoreBase<TModel, TKey, TRepository>.DeleteAsync
+  nameWithType.vb: CrudStoreBase(Of TModel, TKey, TRepository).DeleteAsync
+- uid: CG.Business.Stores.CrudStoreBase`3.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/CG.Business.Stores.CrudStoreBase-3.html#CG_Business_Stores_CrudStoreBase_3_Dispose_System_Boolean_
+  commentId: M:CG.Business.Stores.CrudStoreBase`3.Dispose(System.Boolean)
+  fullName: CG.Business.Stores.CrudStoreBase<TModel, TKey, TRepository>.Dispose(System.Boolean)
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TModel, TKey, TRepository).Dispose(System.Boolean)
+  nameWithType: CrudStoreBase<TModel, TKey, TRepository>.Dispose(Boolean)
+  nameWithType.vb: CrudStoreBase(Of TModel, TKey, TRepository).Dispose(Boolean)
+- uid: CG.Business.Stores.CrudStoreBase`3.Dispose*
+  name: Dispose
+  href: api/CG.Business.Stores.CrudStoreBase-3.html#CG_Business_Stores_CrudStoreBase_3_Dispose_
+  commentId: Overload:CG.Business.Stores.CrudStoreBase`3.Dispose
+  isSpec: "True"
+  fullName: CG.Business.Stores.CrudStoreBase<TModel, TKey, TRepository>.Dispose
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TModel, TKey, TRepository).Dispose
+  nameWithType: CrudStoreBase<TModel, TKey, TRepository>.Dispose
+  nameWithType.vb: CrudStoreBase(Of TModel, TKey, TRepository).Dispose
+- uid: CG.Business.Stores.CrudStoreBase`3.Repository
+  name: Repository
+  href: api/CG.Business.Stores.CrudStoreBase-3.html#CG_Business_Stores_CrudStoreBase_3_Repository
+  commentId: P:CG.Business.Stores.CrudStoreBase`3.Repository
+  fullName: CG.Business.Stores.CrudStoreBase<TModel, TKey, TRepository>.Repository
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TModel, TKey, TRepository).Repository
+  nameWithType: CrudStoreBase<TModel, TKey, TRepository>.Repository
+  nameWithType.vb: CrudStoreBase(Of TModel, TKey, TRepository).Repository
+- uid: CG.Business.Stores.CrudStoreBase`3.Repository*
+  name: Repository
+  href: api/CG.Business.Stores.CrudStoreBase-3.html#CG_Business_Stores_CrudStoreBase_3_Repository_
+  commentId: Overload:CG.Business.Stores.CrudStoreBase`3.Repository
+  isSpec: "True"
+  fullName: CG.Business.Stores.CrudStoreBase<TModel, TKey, TRepository>.Repository
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TModel, TKey, TRepository).Repository
+  nameWithType: CrudStoreBase<TModel, TKey, TRepository>.Repository
+  nameWithType.vb: CrudStoreBase(Of TModel, TKey, TRepository).Repository
+- uid: CG.Business.Stores.CrudStoreBase`3.UpdateAsync(`0,System.Threading.CancellationToken)
+  name: UpdateAsync(TModel, CancellationToken)
+  href: api/CG.Business.Stores.CrudStoreBase-3.html#CG_Business_Stores_CrudStoreBase_3_UpdateAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Business.Stores.CrudStoreBase`3.UpdateAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Business.Stores.CrudStoreBase<TModel, TKey, TRepository>.UpdateAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TModel, TKey, TRepository).UpdateAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: CrudStoreBase<TModel, TKey, TRepository>.UpdateAsync(TModel, CancellationToken)
+  nameWithType.vb: CrudStoreBase(Of TModel, TKey, TRepository).UpdateAsync(TModel, CancellationToken)
+- uid: CG.Business.Stores.CrudStoreBase`3.UpdateAsync*
+  name: UpdateAsync
+  href: api/CG.Business.Stores.CrudStoreBase-3.html#CG_Business_Stores_CrudStoreBase_3_UpdateAsync_
+  commentId: Overload:CG.Business.Stores.CrudStoreBase`3.UpdateAsync
+  isSpec: "True"
+  fullName: CG.Business.Stores.CrudStoreBase<TModel, TKey, TRepository>.UpdateAsync
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TModel, TKey, TRepository).UpdateAsync
+  nameWithType: CrudStoreBase<TModel, TKey, TRepository>.UpdateAsync
+  nameWithType.vb: CrudStoreBase(Of TModel, TKey, TRepository).UpdateAsync
+- uid: CG.Business.Stores.CrudStoreBase`4
+  name: CrudStoreBase<TOptions, TModel, TKey, TRepository>
+  href: api/CG.Business.Stores.CrudStoreBase-4.html
+  commentId: T:CG.Business.Stores.CrudStoreBase`4
+  name.vb: CrudStoreBase(Of TOptions, TModel, TKey, TRepository)
+  fullName: CG.Business.Stores.CrudStoreBase<TOptions, TModel, TKey, TRepository>
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TOptions, TModel, TKey, TRepository)
+  nameWithType: CrudStoreBase<TOptions, TModel, TKey, TRepository>
+  nameWithType.vb: CrudStoreBase(Of TOptions, TModel, TKey, TRepository)
+- uid: CG.Business.Stores.CrudStoreBase`4.#ctor(Microsoft.Extensions.Options.IOptions{`0},`3)
+  name: CrudStoreBase(IOptions<TOptions>, TRepository)
+  href: api/CG.Business.Stores.CrudStoreBase-4.html#CG_Business_Stores_CrudStoreBase_4__ctor_Microsoft_Extensions_Options_IOptions__0___3_
+  commentId: M:CG.Business.Stores.CrudStoreBase`4.#ctor(Microsoft.Extensions.Options.IOptions{`0},`3)
+  name.vb: CrudStoreBase(IOptions(Of TOptions), TRepository)
+  fullName: CG.Business.Stores.CrudStoreBase<TOptions, TModel, TKey, TRepository>.CrudStoreBase(Microsoft.Extensions.Options.IOptions<TOptions>, TRepository)
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TOptions, TModel, TKey, TRepository).CrudStoreBase(Microsoft.Extensions.Options.IOptions(Of TOptions), TRepository)
+  nameWithType: CrudStoreBase<TOptions, TModel, TKey, TRepository>.CrudStoreBase(IOptions<TOptions>, TRepository)
+  nameWithType.vb: CrudStoreBase(Of TOptions, TModel, TKey, TRepository).CrudStoreBase(IOptions(Of TOptions), TRepository)
+- uid: CG.Business.Stores.CrudStoreBase`4.#ctor*
+  name: CrudStoreBase
+  href: api/CG.Business.Stores.CrudStoreBase-4.html#CG_Business_Stores_CrudStoreBase_4__ctor_
+  commentId: Overload:CG.Business.Stores.CrudStoreBase`4.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Stores.CrudStoreBase<TOptions, TModel, TKey, TRepository>.CrudStoreBase
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TOptions, TModel, TKey, TRepository).CrudStoreBase
+  nameWithType: CrudStoreBase<TOptions, TModel, TKey, TRepository>.CrudStoreBase
+  nameWithType.vb: CrudStoreBase(Of TOptions, TModel, TKey, TRepository).CrudStoreBase
+- uid: CG.Business.Stores.CrudStoreBase`4.Options
+  name: Options
+  href: api/CG.Business.Stores.CrudStoreBase-4.html#CG_Business_Stores_CrudStoreBase_4_Options
+  commentId: P:CG.Business.Stores.CrudStoreBase`4.Options
+  fullName: CG.Business.Stores.CrudStoreBase<TOptions, TModel, TKey, TRepository>.Options
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TOptions, TModel, TKey, TRepository).Options
+  nameWithType: CrudStoreBase<TOptions, TModel, TKey, TRepository>.Options
+  nameWithType.vb: CrudStoreBase(Of TOptions, TModel, TKey, TRepository).Options
+- uid: CG.Business.Stores.CrudStoreBase`4.Options*
+  name: Options
+  href: api/CG.Business.Stores.CrudStoreBase-4.html#CG_Business_Stores_CrudStoreBase_4_Options_
+  commentId: Overload:CG.Business.Stores.CrudStoreBase`4.Options
+  isSpec: "True"
+  fullName: CG.Business.Stores.CrudStoreBase<TOptions, TModel, TKey, TRepository>.Options
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TOptions, TModel, TKey, TRepository).Options
+  nameWithType: CrudStoreBase<TOptions, TModel, TKey, TRepository>.Options
+  nameWithType.vb: CrudStoreBase(Of TOptions, TModel, TKey, TRepository).Options
+- uid: CG.Business.Stores.ICrudStore`2
+  name: ICrudStore<TModel, TKey>
+  href: api/CG.Business.Stores.ICrudStore-2.html
+  commentId: T:CG.Business.Stores.ICrudStore`2
+  name.vb: ICrudStore(Of TModel, TKey)
+  fullName: CG.Business.Stores.ICrudStore<TModel, TKey>
+  fullName.vb: CG.Business.Stores.ICrudStore(Of TModel, TKey)
+  nameWithType: ICrudStore<TModel, TKey>
+  nameWithType.vb: ICrudStore(Of TModel, TKey)
+- uid: CG.Business.Stores.ICrudStore`2.AddAsync(`0,System.Threading.CancellationToken)
+  name: AddAsync(TModel, CancellationToken)
+  href: api/CG.Business.Stores.ICrudStore-2.html#CG_Business_Stores_ICrudStore_2_AddAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Business.Stores.ICrudStore`2.AddAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Business.Stores.ICrudStore<TModel, TKey>.AddAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Business.Stores.ICrudStore(Of TModel, TKey).AddAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: ICrudStore<TModel, TKey>.AddAsync(TModel, CancellationToken)
+  nameWithType.vb: ICrudStore(Of TModel, TKey).AddAsync(TModel, CancellationToken)
+- uid: CG.Business.Stores.ICrudStore`2.AddAsync*
+  name: AddAsync
+  href: api/CG.Business.Stores.ICrudStore-2.html#CG_Business_Stores_ICrudStore_2_AddAsync_
+  commentId: Overload:CG.Business.Stores.ICrudStore`2.AddAsync
+  isSpec: "True"
+  fullName: CG.Business.Stores.ICrudStore<TModel, TKey>.AddAsync
+  fullName.vb: CG.Business.Stores.ICrudStore(Of TModel, TKey).AddAsync
+  nameWithType: ICrudStore<TModel, TKey>.AddAsync
+  nameWithType.vb: ICrudStore(Of TModel, TKey).AddAsync
+- uid: CG.Business.Stores.ICrudStore`2.AsQueryable
+  name: AsQueryable()
+  href: api/CG.Business.Stores.ICrudStore-2.html#CG_Business_Stores_ICrudStore_2_AsQueryable
+  commentId: M:CG.Business.Stores.ICrudStore`2.AsQueryable
+  fullName: CG.Business.Stores.ICrudStore<TModel, TKey>.AsQueryable()
+  fullName.vb: CG.Business.Stores.ICrudStore(Of TModel, TKey).AsQueryable()
+  nameWithType: ICrudStore<TModel, TKey>.AsQueryable()
+  nameWithType.vb: ICrudStore(Of TModel, TKey).AsQueryable()
+- uid: CG.Business.Stores.ICrudStore`2.AsQueryable*
+  name: AsQueryable
+  href: api/CG.Business.Stores.ICrudStore-2.html#CG_Business_Stores_ICrudStore_2_AsQueryable_
+  commentId: Overload:CG.Business.Stores.ICrudStore`2.AsQueryable
+  isSpec: "True"
+  fullName: CG.Business.Stores.ICrudStore<TModel, TKey>.AsQueryable
+  fullName.vb: CG.Business.Stores.ICrudStore(Of TModel, TKey).AsQueryable
+  nameWithType: ICrudStore<TModel, TKey>.AsQueryable
+  nameWithType.vb: ICrudStore(Of TModel, TKey).AsQueryable
+- uid: CG.Business.Stores.ICrudStore`2.DeleteAsync(`0,System.Threading.CancellationToken)
+  name: DeleteAsync(TModel, CancellationToken)
+  href: api/CG.Business.Stores.ICrudStore-2.html#CG_Business_Stores_ICrudStore_2_DeleteAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Business.Stores.ICrudStore`2.DeleteAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Business.Stores.ICrudStore<TModel, TKey>.DeleteAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Business.Stores.ICrudStore(Of TModel, TKey).DeleteAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: ICrudStore<TModel, TKey>.DeleteAsync(TModel, CancellationToken)
+  nameWithType.vb: ICrudStore(Of TModel, TKey).DeleteAsync(TModel, CancellationToken)
+- uid: CG.Business.Stores.ICrudStore`2.DeleteAsync*
+  name: DeleteAsync
+  href: api/CG.Business.Stores.ICrudStore-2.html#CG_Business_Stores_ICrudStore_2_DeleteAsync_
+  commentId: Overload:CG.Business.Stores.ICrudStore`2.DeleteAsync
+  isSpec: "True"
+  fullName: CG.Business.Stores.ICrudStore<TModel, TKey>.DeleteAsync
+  fullName.vb: CG.Business.Stores.ICrudStore(Of TModel, TKey).DeleteAsync
+  nameWithType: ICrudStore<TModel, TKey>.DeleteAsync
+  nameWithType.vb: ICrudStore(Of TModel, TKey).DeleteAsync
+- uid: CG.Business.Stores.ICrudStore`2.UpdateAsync(`0,System.Threading.CancellationToken)
+  name: UpdateAsync(TModel, CancellationToken)
+  href: api/CG.Business.Stores.ICrudStore-2.html#CG_Business_Stores_ICrudStore_2_UpdateAsync__0_System_Threading_CancellationToken_
+  commentId: M:CG.Business.Stores.ICrudStore`2.UpdateAsync(`0,System.Threading.CancellationToken)
+  fullName: CG.Business.Stores.ICrudStore<TModel, TKey>.UpdateAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Business.Stores.ICrudStore(Of TModel, TKey).UpdateAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: ICrudStore<TModel, TKey>.UpdateAsync(TModel, CancellationToken)
+  nameWithType.vb: ICrudStore(Of TModel, TKey).UpdateAsync(TModel, CancellationToken)
+- uid: CG.Business.Stores.ICrudStore`2.UpdateAsync*
+  name: UpdateAsync
+  href: api/CG.Business.Stores.ICrudStore-2.html#CG_Business_Stores_ICrudStore_2_UpdateAsync_
+  commentId: Overload:CG.Business.Stores.ICrudStore`2.UpdateAsync
+  isSpec: "True"
+  fullName: CG.Business.Stores.ICrudStore<TModel, TKey>.UpdateAsync
+  fullName.vb: CG.Business.Stores.ICrudStore(Of TModel, TKey).UpdateAsync
+  nameWithType: ICrudStore<TModel, TKey>.UpdateAsync
+  nameWithType.vb: ICrudStore(Of TModel, TKey).UpdateAsync
 - uid: CG.Business.Stores.IStore
   name: IStore
   href: api/CG.Business.Stores.IStore.html
@@ -759,6 +1250,15 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories
   nameWithType: ServiceCollectionExtensions.AddRepositories
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  name: AddRepositories<TBuilder>(IServiceCollection, IConfiguration, String, String)
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  name.vb: AddRepositories(Of TBuilder)(IServiceCollection, IConfiguration, String, String)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories<TBuilder>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Of TBuilder)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String)
+  nameWithType: ServiceCollectionExtensions.AddRepositories<TBuilder>(IServiceCollection, IConfiguration, String, String)
+  nameWithType.vb: ServiceCollectionExtensions.AddRepositories(Of TBuilder)(IServiceCollection, IConfiguration, String, String)
 - uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
   name: AddStrategies(IServiceCollection, IConfiguration, String, String)
   href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_
@@ -772,3 +1272,12 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies
   nameWithType: ServiceCollectionExtensions.AddStrategies
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  name: AddStrategies<TBuilder>(IServiceCollection, IConfiguration, String, String)
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  name.vb: AddStrategies(Of TBuilder)(IServiceCollection, IConfiguration, String, String)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies<TBuilder>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Of TBuilder)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String)
+  nameWithType: ServiceCollectionExtensions.AddStrategies<TBuilder>(IServiceCollection, IConfiguration, String, String)
+  nameWithType.vb: ServiceCollectionExtensions.AddStrategies(Of TBuilder)(IServiceCollection, IConfiguration, String, String)

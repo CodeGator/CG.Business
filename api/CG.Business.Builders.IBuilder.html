@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace CG.Business.Repositories
+    <title>Interface IBuilder
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace CG.Business.Repositories
+    <meta name="title" content="Interface IBuilder
    ">
     <meta name="generator" content="docfx 2.56.5.0">
     
@@ -78,52 +78,47 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Business.Repositories">
+            <article class="content wrap" id="_content" data-uid="CG.Business.Builders.IBuilder">
   
-  <h1 id="CG_Business_Repositories" data-uid="CG.Business.Repositories" class="text-break">Namespace CG.Business.Repositories
+  
+  <h1 id="CG_Business_Builders_IBuilder" data-uid="CG.Business.Builders.IBuilder" class="text-break">Interface IBuilder
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>This interface represents an object that builds up other
+object types, at runtime.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Business.Builders.html">CG.Business.Builders</a></h6>
+  <h6><strong>Assembly</strong>: CG.Business.dll</h6>
+  <h5 id="CG_Business_Builders_IBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IBuilder</code></pre>
+  </div>
+  <h3 id="properties">Properties
   </h3>
-      <h4><a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-2.html">CrudRepositoryBase&lt;TModel, TKey&gt;</a></h4>
-      <section><p>This class is a default implementation of the <a class="xref" href="CG.Business.Repositories.ICrudRepository-2.html">ICrudRepository&lt;TModel, TKey&gt;</a>
-interface.</p>
-</section>
-      <h4><a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-3.html">CrudRepositoryBase&lt;TOptions, TModel, TKey&gt;</a></h4>
-      <section><p>This class is a default implementation of the <a class="xref" href="CG.Business.Repositories.ICrudRepository-2.html">ICrudRepository&lt;TModel, TKey&gt;</a>
-interface.</p>
-</section>
-      <h4><a class="xref" href="CG.Business.Repositories.RepositoryBase.html">RepositoryBase</a></h4>
-      <section><p>This class represents a base implementation of the <a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a>
-inteface.</p>
-</section>
-      <h4><a class="xref" href="CG.Business.Repositories.RepositoryBase-1.html">RepositoryBase&lt;TOptions&gt;</a></h4>
-      <section><p>This class represents a base implementation of the <a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a>
-interface.</p>
-</section>
-      <h4><a class="xref" href="CG.Business.Repositories.RepositoryBase-2.html">RepositoryBase&lt;TEntity, TModel&gt;</a></h4>
-      <section><p>This class represents a base implementation of the <a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a>
-interface.</p>
-</section>
-      <h4><a class="xref" href="CG.Business.Repositories.RepositoryBase-3.html">RepositoryBase&lt;TOptions, TEntity, TModel&gt;</a></h4>
-      <section><p>This class represents a base implementation of the <a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a>
-interface.</p>
-</section>
-      <h4><a class="xref" href="CG.Business.Repositories.RepositoryException.html">RepositoryException</a></h4>
-      <section><p>This class represents a repository related exception.</p>
-</section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="CG.Business.Repositories.ICrudRepository-2.html">ICrudRepository&lt;TModel, TKey&gt;</a></h4>
-      <section><p>This interface represents a repository type that includes simple
-CRUD operations.</p>
-</section>
-      <h4><a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a></h4>
-      <section><p>This interface represents an object that manages low-level data
-operations - typically to and from a database.</p>
-</section>
+  <a id="CG_Business_Builders_IBuilder_ServiceCollection_" data-uid="CG.Business.Builders.IBuilder.ServiceCollection*"></a>
+  <h4 id="CG_Business_Builders_IBuilder_ServiceCollection" data-uid="CG.Business.Builders.IBuilder.ServiceCollection">ServiceCollection</h4>
+  <div class="markdown level1 summary"><p>This property contains a reference to a service collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IServiceCollection ServiceCollection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
