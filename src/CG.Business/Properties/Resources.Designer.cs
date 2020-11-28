@@ -61,6 +61,33 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} failed to add a new {1}! parameter: {2}. See inner exception(s) for more detail..
+        /// </summary>
+        internal static string CrudStoreBase_AddAsync {
+            get {
+                return ResourceManager.GetString("CrudStoreBase_AddAsync", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} failed to delete a {1}! parameter: {2}. See inner exception(s) for more detail..
+        /// </summary>
+        internal static string CrudStoreBase_DeleteAsync {
+            get {
+                return ResourceManager.GetString("CrudStoreBase_DeleteAsync", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} failed to update a {1}! parameter: {2}. See inner exception(s) for more detail..
+        /// </summary>
+        internal static string CrudStoreBase_UpdateAsync {
+            get {
+                return ResourceManager.GetString("CrudStoreBase_UpdateAsync", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Repository options require a &apos;Strategy&apos; field and it appears to be missing, or empty. Check the configuration to ensure that it contains a &apos;Strategy&apos; field under the &apos;Repositories&apos; section. Also, ensure that you&apos;re binding to the properties above the &apos;Repositories&apos; section, so that the binding operation won&apos;t fail and the options will validate properly..
         /// </summary>
         internal static string RepositoryOptions_Strategy {
@@ -84,6 +111,15 @@ namespace CG.Business.Properties {
         internal static string ServiceCollectionExtensions_MethodNotFound {
             get {
                 return ResourceManager.GetString("ServiceCollectionExtensions_MethodNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to locate an extension method named: &apos;{0}&apos; accepting {1} and IConfiguration arguments. Do you have the corresponding assembly loaded, or specified for loading in the configuration? Also, is the strategy name correct?.
+        /// </summary>
+        internal static string ServiceCollectionExtensions_MethodNotFound2 {
+            get {
+                return ResourceManager.GetString("ServiceCollectionExtensions_MethodNotFound2", resourceCulture);
             }
         }
         
