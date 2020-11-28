@@ -9,3 +9,5 @@
 
 * I added back suppport for services and strategies.
 
+* I added back basic CRUD support to the repository and store types.
+
