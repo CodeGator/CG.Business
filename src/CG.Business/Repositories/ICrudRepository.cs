@@ -8,7 +8,8 @@ namespace CG.Business.Repositories
 {
     /// <summary>
     /// This interface represents a repository type that includes simple
-    /// CRUD operations. 
+    /// CRUD operations and queries through the use of the LINQ <see cref="IQueryable{T}"/>. 
+    /// type.
     /// </summary>
     public interface ICrudRepository<TModel, TKey> : IRepository
         where TModel : ModelBase<TKey>
@@ -18,6 +19,29 @@ namespace CG.Business.Repositories
         /// from the repository.
         /// </summary>
         /// <returns>An <see cref="IQueryable{TModel}"/> object</returns>
+        /// <remarks>
+        /// <para>
+        /// The idea, with this method, is to expose the internals of the 
+        /// underlying data store directly to the caller. I realize that means
+        /// the abstraction is leaking implementation details. But, because of
+        /// the way LINQ works, it's also the simplest way of doing business 
+        /// without forcing everyone who uses this type to jump through hoops 
+        /// trying to simultaneously hide, and expose, those very same details. 
+        /// So yes, this abstraction is leakier than a $2 rowboat in a hurricane, 
+        /// but, it's also usable without forcing layers of additional code onto 
+        /// everyone that, ultimately, will probably also leak in ways we wish it 
+        /// wouldn't. LINQ is a flexible tool we all love to use, but, it's also 
+        /// the culprit here. If we use LINQ for queries (as I'm doing her), then 
+        /// we can live with the benefits of that decision. Of course, it also 
+        /// means we have to live with the consequences of that decision ... 
+        /// </para>
+        /// <para>
+        /// An alternative to this type of repository is the <see cref="RepositoryBase"/>
+        /// type, and it's variants. They all lend themselves quite nicely to 
+        /// the use of ADO for creating highly performant query methods that 
+        /// don't leak implementation details. 
+        /// </para>
+        /// </remarks>
         IQueryable<TModel> AsQueryable();
 
         /// <summary>
