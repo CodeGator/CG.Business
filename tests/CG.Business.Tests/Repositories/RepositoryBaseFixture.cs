@@ -21,7 +21,7 @@ namespace CG.Business.Repositories
         /// <summary>
         /// This class is used for internal testing purposes.
         /// </summary>
-        class TestRepository : RepositoryBase<RepositoryOptions>
+        class TestRepository : RepositoryBase<IOptions<RepositoryOptions>>
         {
             /// <summary>
             /// This constructor is used for internal testing purposes.
@@ -50,7 +50,9 @@ namespace CG.Business.Repositories
         public void RepositoryBase_Ctor()
         {
             // Arrange ...
-            var options = new OptionsWrapper<RepositoryOptions>(new RepositoryOptions()); 
+            var options = new OptionsWrapper<RepositoryOptions>(
+                new RepositoryOptions()
+                ); 
 
             // Act ...
             var result = new TestRepository(options);

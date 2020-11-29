@@ -85,7 +85,7 @@ namespace CG.Business.Repositories
         CrudRepositoryBase<TModel, TKey>,
         ICrudRepository<TModel, TKey>
         where TModel : ModelBase<TKey>
-        where TOptions : RepositoryOptions, new()
+        where TOptions : IOptions<RepositoryOptions>
     {
         // *******************************************************************
         // Properties.
@@ -96,7 +96,7 @@ namespace CG.Business.Repositories
         /// <summary>
         /// This property contains options for the repository.
         /// </summary>
-        protected IOptions<TOptions> Options { get; }
+        protected TOptions Options { get; }
 
         #endregion
 
@@ -112,7 +112,7 @@ namespace CG.Business.Repositories
         /// </summary>
         /// <param name="options">The options to use with the repository.</param>
         public CrudRepositoryBase(
-            IOptions<TOptions> options
+            TOptions options
             )
         {
             // Validate the parameters before attempting to use them.
