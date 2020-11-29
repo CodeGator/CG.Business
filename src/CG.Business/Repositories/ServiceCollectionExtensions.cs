@@ -271,11 +271,6 @@ namespace Microsoft.Extensions.DependencyInjection
             // Did we find it?
             if (methods.Any())
             {
-                // Drill down to the right configuration sub-section.
-                var subSection = section.GetSection(
-                    strategyName
-                    );
-
                 // We'll use the first matching method.
                 var method = methods.First();
 
@@ -288,7 +283,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Invoke the extension method.
                 method.Invoke(
                     null,
-                    new object[] { builder, subSection }
+                    new object[] { builder, section }
                     );
             }
             else
