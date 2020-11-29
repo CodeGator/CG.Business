@@ -1,7 +1,4 @@
-﻿using CG.Business.Repositories.Options;
-using CG.Diagnostics;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace CG.Business.Models
 {
@@ -45,7 +42,7 @@ namespace CG.Business.Models
             // Act ...
             var result = new TestModel()
             {
-                Id = 400
+                Key = 400
             };
 
             // Assert ...
@@ -67,11 +64,11 @@ namespace CG.Business.Models
             // Arrange ...
             var a = new TestModel()
             {
-                Id = 400
+                Key = 400
             };
             var b = new TestModel()
             {
-                Id = 400
+                Key = 400
             };
 
             // Act ...
@@ -96,7 +93,7 @@ namespace CG.Business.Models
             // Arrange ...
             var a = new TestModel()
             {
-                Id = 400
+                Key = 400
             };
 
             // Act ...
@@ -104,7 +101,7 @@ namespace CG.Business.Models
 
             // Assert ...
             Assert.IsTrue(
-                result == "CG.Business.Models.ModelBaseFixture+TestModel - Id: 400",
+                result == "CG.Business.Models.ModelBaseFixture+TestModel - Key: 400",
                 "The method returned an invalid result."
                 );
         }
