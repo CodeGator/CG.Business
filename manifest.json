@@ -66,7 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Models.ModelBase-1.html",
-          "hash": "bqahNwvQxvogeDx6KcVhHw=="
+          "hash": "DNB0F7zMPDvj+KSvcdkXwA=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Models.ModelBase.html",
-          "hash": "vh/zhaMd9LPGWL8ad+WULg=="
+          "hash": "ASXiU6lu2yEmHfXd7LlsZQ=="
         }
       },
       "is_incremental": false,
@@ -90,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Models.html",
-          "hash": "xyoFpycv866TCVKimWgcEQ=="
+          "hash": "fN4CTdpyE2JqVLrb+xCnZw=="
         }
       },
       "is_incremental": false,
@@ -114,7 +114,19 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.CrudRepositoryBase-3.html",
-          "hash": "u4iarb/tUN5ZSvxBAYzKsg=="
+          "hash": "ZzAOaqMGE44+3Z2eI7XhHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Repositories.CrudRepositoryBase-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Repositories.CrudRepositoryBase-4.html",
+          "hash": "yfZ3kPu3xQ7pphcMJK7J4A=="
         }
       },
       "is_incremental": false,
@@ -234,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.html",
-          "hash": "i+N6N06HwbZRl89kfZBVJA=="
+          "hash": "swj0pYPCKxXHCPBQQQs76w=="
         }
       },
       "is_incremental": false,
@@ -582,7 +594,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "TB9s2HuGeEm7QpVqclh/QQ=="
+          "hash": "cAJqB+V1Hf2rG0XCFnQNhQ=="
         }
       },
       "is_incremental": false,
@@ -657,7 +669,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 47,
+          "total_file_count": 48,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

@@ -101,82 +101,82 @@ references:
   fullName: CG.Business.Models.ModelBase
   nameWithType: ModelBase
 - uid: CG.Business.Models.ModelBase`1
-  name: ModelBase<T>
+  name: ModelBase<TKey>
   href: api/CG.Business.Models.ModelBase-1.html
   commentId: T:CG.Business.Models.ModelBase`1
-  name.vb: ModelBase(Of T)
-  fullName: CG.Business.Models.ModelBase<T>
-  fullName.vb: CG.Business.Models.ModelBase(Of T)
-  nameWithType: ModelBase<T>
-  nameWithType.vb: ModelBase(Of T)
+  name.vb: ModelBase(Of TKey)
+  fullName: CG.Business.Models.ModelBase<TKey>
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey)
+  nameWithType: ModelBase<TKey>
+  nameWithType.vb: ModelBase(Of TKey)
 - uid: CG.Business.Models.ModelBase`1.Equals(System.Object)
   name: Equals(Object)
   href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_Equals_System_Object_
   commentId: M:CG.Business.Models.ModelBase`1.Equals(System.Object)
-  fullName: CG.Business.Models.ModelBase<T>.Equals(System.Object)
-  fullName.vb: CG.Business.Models.ModelBase(Of T).Equals(System.Object)
-  nameWithType: ModelBase<T>.Equals(Object)
-  nameWithType.vb: ModelBase(Of T).Equals(Object)
+  fullName: CG.Business.Models.ModelBase<TKey>.Equals(System.Object)
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).Equals(System.Object)
+  nameWithType: ModelBase<TKey>.Equals(Object)
+  nameWithType.vb: ModelBase(Of TKey).Equals(Object)
 - uid: CG.Business.Models.ModelBase`1.Equals*
   name: Equals
   href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_Equals_
   commentId: Overload:CG.Business.Models.ModelBase`1.Equals
   isSpec: "True"
-  fullName: CG.Business.Models.ModelBase<T>.Equals
-  fullName.vb: CG.Business.Models.ModelBase(Of T).Equals
-  nameWithType: ModelBase<T>.Equals
-  nameWithType.vb: ModelBase(Of T).Equals
+  fullName: CG.Business.Models.ModelBase<TKey>.Equals
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).Equals
+  nameWithType: ModelBase<TKey>.Equals
+  nameWithType.vb: ModelBase(Of TKey).Equals
 - uid: CG.Business.Models.ModelBase`1.GetHashCode
   name: GetHashCode()
   href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_GetHashCode
   commentId: M:CG.Business.Models.ModelBase`1.GetHashCode
-  fullName: CG.Business.Models.ModelBase<T>.GetHashCode()
-  fullName.vb: CG.Business.Models.ModelBase(Of T).GetHashCode()
-  nameWithType: ModelBase<T>.GetHashCode()
-  nameWithType.vb: ModelBase(Of T).GetHashCode()
+  fullName: CG.Business.Models.ModelBase<TKey>.GetHashCode()
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).GetHashCode()
+  nameWithType: ModelBase<TKey>.GetHashCode()
+  nameWithType.vb: ModelBase(Of TKey).GetHashCode()
 - uid: CG.Business.Models.ModelBase`1.GetHashCode*
   name: GetHashCode
   href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_GetHashCode_
   commentId: Overload:CG.Business.Models.ModelBase`1.GetHashCode
   isSpec: "True"
-  fullName: CG.Business.Models.ModelBase<T>.GetHashCode
-  fullName.vb: CG.Business.Models.ModelBase(Of T).GetHashCode
-  nameWithType: ModelBase<T>.GetHashCode
-  nameWithType.vb: ModelBase(Of T).GetHashCode
-- uid: CG.Business.Models.ModelBase`1.Id
-  name: Id
-  href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_Id
-  commentId: P:CG.Business.Models.ModelBase`1.Id
-  fullName: CG.Business.Models.ModelBase<T>.Id
-  fullName.vb: CG.Business.Models.ModelBase(Of T).Id
-  nameWithType: ModelBase<T>.Id
-  nameWithType.vb: ModelBase(Of T).Id
-- uid: CG.Business.Models.ModelBase`1.Id*
-  name: Id
-  href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_Id_
-  commentId: Overload:CG.Business.Models.ModelBase`1.Id
+  fullName: CG.Business.Models.ModelBase<TKey>.GetHashCode
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).GetHashCode
+  nameWithType: ModelBase<TKey>.GetHashCode
+  nameWithType.vb: ModelBase(Of TKey).GetHashCode
+- uid: CG.Business.Models.ModelBase`1.Key
+  name: Key
+  href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_Key
+  commentId: P:CG.Business.Models.ModelBase`1.Key
+  fullName: CG.Business.Models.ModelBase<TKey>.Key
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).Key
+  nameWithType: ModelBase<TKey>.Key
+  nameWithType.vb: ModelBase(Of TKey).Key
+- uid: CG.Business.Models.ModelBase`1.Key*
+  name: Key
+  href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_Key_
+  commentId: Overload:CG.Business.Models.ModelBase`1.Key
   isSpec: "True"
-  fullName: CG.Business.Models.ModelBase<T>.Id
-  fullName.vb: CG.Business.Models.ModelBase(Of T).Id
-  nameWithType: ModelBase<T>.Id
-  nameWithType.vb: ModelBase(Of T).Id
+  fullName: CG.Business.Models.ModelBase<TKey>.Key
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).Key
+  nameWithType: ModelBase<TKey>.Key
+  nameWithType.vb: ModelBase(Of TKey).Key
 - uid: CG.Business.Models.ModelBase`1.ToString
   name: ToString()
   href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_ToString
   commentId: M:CG.Business.Models.ModelBase`1.ToString
-  fullName: CG.Business.Models.ModelBase<T>.ToString()
-  fullName.vb: CG.Business.Models.ModelBase(Of T).ToString()
-  nameWithType: ModelBase<T>.ToString()
-  nameWithType.vb: ModelBase(Of T).ToString()
+  fullName: CG.Business.Models.ModelBase<TKey>.ToString()
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).ToString()
+  nameWithType: ModelBase<TKey>.ToString()
+  nameWithType.vb: ModelBase(Of TKey).ToString()
 - uid: CG.Business.Models.ModelBase`1.ToString*
   name: ToString
   href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_ToString_
   commentId: Overload:CG.Business.Models.ModelBase`1.ToString
   isSpec: "True"
-  fullName: CG.Business.Models.ModelBase<T>.ToString
-  fullName.vb: CG.Business.Models.ModelBase(Of T).ToString
-  nameWithType: ModelBase<T>.ToString
-  nameWithType.vb: ModelBase(Of T).ToString
+  fullName: CG.Business.Models.ModelBase<TKey>.ToString
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).ToString
+  nameWithType: ModelBase<TKey>.ToString
+  nameWithType.vb: ModelBase(Of TKey).ToString
 - uid: CG.Business.Repositories
   name: CG.Business.Repositories
   href: api/CG.Business.Repositories.html
@@ -303,6 +303,66 @@ references:
   fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).Options
   nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.Options
   nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).Options
+- uid: CG.Business.Repositories.CrudRepositoryBase`4
+  name: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>
+  href: api/CG.Business.Repositories.CrudRepositoryBase-4.html
+  commentId: T:CG.Business.Repositories.CrudRepositoryBase`4
+  name.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey)
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TEntity, TModel, TKey>
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey)
+  nameWithType: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey)
+- uid: CG.Business.Repositories.CrudRepositoryBase`4.#ctor(`0)
+  name: CrudRepositoryBase(TOptions)
+  href: api/CG.Business.Repositories.CrudRepositoryBase-4.html#CG_Business_Repositories_CrudRepositoryBase_4__ctor__0_
+  commentId: M:CG.Business.Repositories.CrudRepositoryBase`4.#ctor(`0)
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.CrudRepositoryBase(TOptions)
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).CrudRepositoryBase(TOptions)
+  nameWithType: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.CrudRepositoryBase(TOptions)
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).CrudRepositoryBase(TOptions)
+- uid: CG.Business.Repositories.CrudRepositoryBase`4.#ctor*
+  name: CrudRepositoryBase
+  href: api/CG.Business.Repositories.CrudRepositoryBase-4.html#CG_Business_Repositories_CrudRepositoryBase_4__ctor_
+  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`4.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.CrudRepositoryBase
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).CrudRepositoryBase
+  nameWithType: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.CrudRepositoryBase
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).CrudRepositoryBase
+- uid: CG.Business.Repositories.CrudRepositoryBase`4.ToEntity(`2)
+  name: ToEntity(TModel)
+  href: api/CG.Business.Repositories.CrudRepositoryBase-4.html#CG_Business_Repositories_CrudRepositoryBase_4_ToEntity__2_
+  commentId: M:CG.Business.Repositories.CrudRepositoryBase`4.ToEntity(`2)
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToEntity(TModel)
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToEntity(TModel)
+  nameWithType: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToEntity(TModel)
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToEntity(TModel)
+- uid: CG.Business.Repositories.CrudRepositoryBase`4.ToEntity*
+  name: ToEntity
+  href: api/CG.Business.Repositories.CrudRepositoryBase-4.html#CG_Business_Repositories_CrudRepositoryBase_4_ToEntity_
+  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`4.ToEntity
+  isSpec: "True"
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToEntity
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToEntity
+  nameWithType: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToEntity
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToEntity
+- uid: CG.Business.Repositories.CrudRepositoryBase`4.ToModel(`1)
+  name: ToModel(TEntity)
+  href: api/CG.Business.Repositories.CrudRepositoryBase-4.html#CG_Business_Repositories_CrudRepositoryBase_4_ToModel__1_
+  commentId: M:CG.Business.Repositories.CrudRepositoryBase`4.ToModel(`1)
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToModel(TEntity)
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToModel(TEntity)
+  nameWithType: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToModel(TEntity)
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToModel(TEntity)
+- uid: CG.Business.Repositories.CrudRepositoryBase`4.ToModel*
+  name: ToModel
+  href: api/CG.Business.Repositories.CrudRepositoryBase-4.html#CG_Business_Repositories_CrudRepositoryBase_4_ToModel_
+  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`4.ToModel
+  isSpec: "True"
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToModel
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToModel
+  nameWithType: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToModel
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToModel
 - uid: CG.Business.Repositories.ICrudRepository`2
   name: ICrudRepository<TModel, TKey>
   href: api/CG.Business.Repositories.ICrudRepository-2.html

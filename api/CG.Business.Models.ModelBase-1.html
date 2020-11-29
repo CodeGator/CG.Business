@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ModelBase&lt;T&gt;
+    <title>Class ModelBase&lt;TKey&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ModelBase&lt;T&gt;
+    <meta name="title" content="Class ModelBase&lt;TKey&gt;
    ">
     <meta name="generator" content="docfx 2.56.5.0">
     
@@ -81,7 +81,7 @@
             <article class="content wrap" id="_content" data-uid="CG.Business.Models.ModelBase`1">
   
   
-  <h1 id="CG_Business_Models_ModelBase_1" data-uid="CG.Business.Models.ModelBase`1" class="text-break">Class ModelBase&lt;T&gt;
+  <h1 id="CG_Business_Models_ModelBase_1" data-uid="CG.Business.Models.ModelBase`1" class="text-break">Class ModelBase&lt;TKey&gt;
   </h1>
   <div class="markdown level0 summary"><p>This class represents a base implmentation of a business model.</p>
 </div>
@@ -91,7 +91,7 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">CG.DataAnnotations.ValidatableObject</span></div>
     <div class="level2"><a class="xref" href="CG.Business.Models.ModelBase.html">ModelBase</a></div>
-    <div class="level3"><span class="xref">ModelBase&lt;T&gt;</span></div>
+    <div class="level3"><span class="xref">ModelBase&lt;TKey&gt;</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -119,7 +119,7 @@
   <h6><strong>Assembly</strong>: CG.Business.dll</h6>
   <h5 id="CG_Business_Models_ModelBase_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ModelBase&lt;T&gt; : ModelBase, IValidatableObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class ModelBase&lt;TKey&gt; : ModelBase, IValidatableObject</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -131,23 +131,30 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of associated unique identifier.</p>
+        <td><span class="parametername">TKey</span></td>
+        <td><p>The type of associated model key.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="CG_Business_Models_ModelBase_1_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The idea, with this class, is to create a model base that contains a
+model key, which is a unique value that is irrespective of any other
+identifiers that happen to be part of the associated database. Of course,
+this means storing an extra key. If that's an issue then don't use this
+version of <a class="xref" href="CG.Business.Models.ModelBase-1.html">ModelBase&lt;TKey&gt;</a></p>
+</div>
   <h3 id="properties">Properties
   </h3>
-  <a id="CG_Business_Models_ModelBase_1_Id_" data-uid="CG.Business.Models.ModelBase`1.Id*"></a>
-  <h4 id="CG_Business_Models_ModelBase_1_Id" data-uid="CG.Business.Models.ModelBase`1.Id">Id</h4>
-  <div class="markdown level1 summary"><p>This property contains the unique identifier for the model.</p>
+  <a id="CG_Business_Models_ModelBase_1_Key_" data-uid="CG.Business.Models.ModelBase`1.Key*"></a>
+  <h4 id="CG_Business_Models_ModelBase_1_Key" data-uid="CG.Business.Models.ModelBase`1.Key">Key</h4>
+  <div class="markdown level1 summary"><p>This property contains a unique identifier for the model.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Key]
-public T Id { get; set; }</code></pre>
+public TKey Key { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -159,7 +166,7 @@ public T Id { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
+        <td><span class="xref">TKey</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -213,8 +220,8 @@ public T Id { get; set; }</code></pre>
   <div><span class="xref">System.Object.Equals(System.Object)</span></div>
   <a id="CG_Business_Models_ModelBase_1_GetHashCode_" data-uid="CG.Business.Models.ModelBase`1.GetHashCode*"></a>
   <h4 id="CG_Business_Models_ModelBase_1_GetHashCode" data-uid="CG.Business.Models.ModelBase`1.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"><p>This method is overridden in order to generate a hash code for
-the model.</p>
+  <div class="markdown level1 summary"><p>This method is overridden in order to generate a unique hash code
+for the model.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
