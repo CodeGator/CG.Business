@@ -84,7 +84,8 @@
   <h1 id="CG_Business_Repositories_ICrudRepository_2" data-uid="CG.Business.Repositories.ICrudRepository`2" class="text-break">Interface ICrudRepository&lt;TModel, TKey&gt;
   </h1>
   <div class="markdown level0 summary"><p>This interface represents a repository type that includes simple
-CRUD operations.</p>
+CRUD operations and queries through the use of the LINQ <span class="xref">System.Linq.IQueryable&lt;T&gt;</span>.
+type.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
@@ -197,6 +198,29 @@ from the repository.</p>
       </tr>
     </tbody>
   </table>
+  <h5 id="CG_Business_Repositories_ICrudRepository_2_AsQueryable_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+The idea, with this method, is to expose the internals of the 
+underlying data store directly to the caller. I realize that means
+the abstraction is leaking implementation details. But, because of
+the way LINQ works, it&apos;s also the simplest way of doing business 
+without forcing everyone who uses this type to jump through hoops 
+trying to simultaneously hide, and expose, those very same details. 
+So yes, this abstraction is leakier than a $2 rowboat in a hurricane, 
+but, it&apos;s also usable without forcing layers of additional code onto 
+everyone that, ultimately, will probably also leak in ways we wish it 
+wouldn&apos;t. LINQ is a flexible tool we all love to use, but, it&apos;s also 
+the culprit here. If we use LINQ for queries (as I&apos;m doing her), then 
+we can live with the benefits of that decision. Of course, it also 
+means we have to live with the consequences of that decision ... 
+</p>
+<p>
+An alternative to this type of repository is the <a class="xref" href="CG.Business.Repositories.RepositoryBase.html">RepositoryBase</a>
+type, and it&apos;s variants. They all lend themselves quite nicely to 
+the use of ADO for creating highly performant query methods that 
+don&apos;t leak implementation details. 
+</p>
+</div>
   <a id="CG_Business_Repositories_ICrudRepository_2_DeleteAsync_" data-uid="CG.Business.Repositories.ICrudRepository`2.DeleteAsync*"></a>
   <h4 id="CG_Business_Repositories_ICrudRepository_2_DeleteAsync__0_System_Threading_CancellationToken_" data-uid="CG.Business.Repositories.ICrudRepository`2.DeleteAsync(`0,System.Threading.CancellationToken)">DeleteAsync(TModel, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>This method deletes a <code data-dev-comment-type="typeparamref" class="typeparamref">TModel</code> from the
