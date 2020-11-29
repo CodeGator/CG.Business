@@ -269,15 +269,14 @@ references:
   fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey)
   nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>
   nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey)
-- uid: CG.Business.Repositories.CrudRepositoryBase`3.#ctor(Microsoft.Extensions.Options.IOptions{`0})
-  name: CrudRepositoryBase(IOptions<TOptions>)
-  href: api/CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3__ctor_Microsoft_Extensions_Options_IOptions__0__
-  commentId: M:CG.Business.Repositories.CrudRepositoryBase`3.#ctor(Microsoft.Extensions.Options.IOptions{`0})
-  name.vb: CrudRepositoryBase(IOptions(Of TOptions))
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TModel, TKey>.CrudRepositoryBase(Microsoft.Extensions.Options.IOptions<TOptions>)
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).CrudRepositoryBase(Microsoft.Extensions.Options.IOptions(Of TOptions))
-  nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.CrudRepositoryBase(IOptions<TOptions>)
-  nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).CrudRepositoryBase(IOptions(Of TOptions))
+- uid: CG.Business.Repositories.CrudRepositoryBase`3.#ctor(`0)
+  name: CrudRepositoryBase(TOptions)
+  href: api/CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3__ctor__0_
+  commentId: M:CG.Business.Repositories.CrudRepositoryBase`3.#ctor(`0)
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TModel, TKey>.CrudRepositoryBase(TOptions)
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).CrudRepositoryBase(TOptions)
+  nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.CrudRepositoryBase(TOptions)
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).CrudRepositoryBase(TOptions)
 - uid: CG.Business.Repositories.CrudRepositoryBase`3.#ctor*
   name: CrudRepositoryBase
   href: api/CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3__ctor_
@@ -446,15 +445,14 @@ references:
   fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions)
   nameWithType: RepositoryBase<TOptions>
   nameWithType.vb: RepositoryBase(Of TOptions)
-- uid: CG.Business.Repositories.RepositoryBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
-  name: RepositoryBase(IOptions<TOptions>)
-  href: api/CG.Business.Repositories.RepositoryBase-1.html#CG_Business_Repositories_RepositoryBase_1__ctor_Microsoft_Extensions_Options_IOptions__0__
-  commentId: M:CG.Business.Repositories.RepositoryBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
-  name.vb: RepositoryBase(IOptions(Of TOptions))
-  fullName: CG.Business.Repositories.RepositoryBase<TOptions>.RepositoryBase(Microsoft.Extensions.Options.IOptions<TOptions>)
-  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions).RepositoryBase(Microsoft.Extensions.Options.IOptions(Of TOptions))
-  nameWithType: RepositoryBase<TOptions>.RepositoryBase(IOptions<TOptions>)
-  nameWithType.vb: RepositoryBase(Of TOptions).RepositoryBase(IOptions(Of TOptions))
+- uid: CG.Business.Repositories.RepositoryBase`1.#ctor(`0)
+  name: RepositoryBase(TOptions)
+  href: api/CG.Business.Repositories.RepositoryBase-1.html#CG_Business_Repositories_RepositoryBase_1__ctor__0_
+  commentId: M:CG.Business.Repositories.RepositoryBase`1.#ctor(`0)
+  fullName: CG.Business.Repositories.RepositoryBase<TOptions>.RepositoryBase(TOptions)
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions).RepositoryBase(TOptions)
+  nameWithType: RepositoryBase<TOptions>.RepositoryBase(TOptions)
+  nameWithType.vb: RepositoryBase(Of TOptions).RepositoryBase(TOptions)
 - uid: CG.Business.Repositories.RepositoryBase`1.#ctor*
   name: RepositoryBase
   href: api/CG.Business.Repositories.RepositoryBase-1.html#CG_Business_Repositories_RepositoryBase_1__ctor_
@@ -533,15 +531,14 @@ references:
   fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions, TEntity, TModel)
   nameWithType: RepositoryBase<TOptions, TEntity, TModel>
   nameWithType.vb: RepositoryBase(Of TOptions, TEntity, TModel)
-- uid: CG.Business.Repositories.RepositoryBase`3.#ctor(Microsoft.Extensions.Options.IOptions{`0})
-  name: RepositoryBase(IOptions<TOptions>)
-  href: api/CG.Business.Repositories.RepositoryBase-3.html#CG_Business_Repositories_RepositoryBase_3__ctor_Microsoft_Extensions_Options_IOptions__0__
-  commentId: M:CG.Business.Repositories.RepositoryBase`3.#ctor(Microsoft.Extensions.Options.IOptions{`0})
-  name.vb: RepositoryBase(IOptions(Of TOptions))
-  fullName: CG.Business.Repositories.RepositoryBase<TOptions, TEntity, TModel>.RepositoryBase(Microsoft.Extensions.Options.IOptions<TOptions>)
-  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions, TEntity, TModel).RepositoryBase(Microsoft.Extensions.Options.IOptions(Of TOptions))
-  nameWithType: RepositoryBase<TOptions, TEntity, TModel>.RepositoryBase(IOptions<TOptions>)
-  nameWithType.vb: RepositoryBase(Of TOptions, TEntity, TModel).RepositoryBase(IOptions(Of TOptions))
+- uid: CG.Business.Repositories.RepositoryBase`3.#ctor(`0)
+  name: RepositoryBase(TOptions)
+  href: api/CG.Business.Repositories.RepositoryBase-3.html#CG_Business_Repositories_RepositoryBase_3__ctor__0_
+  commentId: M:CG.Business.Repositories.RepositoryBase`3.#ctor(`0)
+  fullName: CG.Business.Repositories.RepositoryBase<TOptions, TEntity, TModel>.RepositoryBase(TOptions)
+  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions, TEntity, TModel).RepositoryBase(TOptions)
+  nameWithType: RepositoryBase<TOptions, TEntity, TModel>.RepositoryBase(TOptions)
+  nameWithType.vb: RepositoryBase(Of TOptions, TEntity, TModel).RepositoryBase(TOptions)
 - uid: CG.Business.Repositories.RepositoryBase`3.#ctor*
   name: RepositoryBase
   href: api/CG.Business.Repositories.RepositoryBase-3.html#CG_Business_Repositories_RepositoryBase_3__ctor_
