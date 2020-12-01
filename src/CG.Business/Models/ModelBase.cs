@@ -6,16 +6,18 @@ using System.ComponentModel.DataAnnotations;
 namespace CG.Business.Models
 {
     /// <summary>
-    /// This class represents a base implmentation of a business model. 
+    /// This class is a default implmentation of the <see cref="IModel"/>
+    /// interface.
     /// </summary>
-    public class ModelBase : ValidatableObject
+    public class ModelBase : ValidatableObject, IModel
     {
 
     }
 
 
     /// <summary>
-    /// This class represents a base implmentation of a business model.
+    /// This class is a default implmentation of the <see cref="IModel"/>
+    /// interface.
     /// </summary>
     /// <typeparam name="TKey">The type of associated model key.</typeparam>
     /// <remarks>
@@ -25,7 +27,8 @@ namespace CG.Business.Models
     /// this means storing an extra key. If that's an issue then don't use this
     /// version of <see cref="ModelBase{TKey}"/>
     /// </remarks>
-    public class ModelBase<TKey> : ModelBase
+    public class ModelBase<TKey> : ModelBase, IModel<TKey>
+        where TKey : new()
     {
         // *******************************************************************
         // Properties.
@@ -33,9 +36,7 @@ namespace CG.Business.Models
 
         #region Properties
 
-        /// <summary>
-        /// This property contains a unique identifier for the model.
-        /// </summary>
+        /// <inheritdoc />
         [Key]
         public TKey Key { get; set; }
 

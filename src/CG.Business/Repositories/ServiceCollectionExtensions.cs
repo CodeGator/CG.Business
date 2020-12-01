@@ -1,7 +1,10 @@
 ﻿using CG.Business;
 using CG.Business.Builders;
+using CG.Business.Options;
 using CG.Business.Properties;
 using CG.Business.Repositories.Options;
+using CG.DataAnnotations;
+using CG.Options;
 using CG.Reflection;
 using CG.Validations;
 using Microsoft.Extensions.Configuration;
@@ -60,17 +63,20 @@ namespace Microsoft.Extensions.DependencyInjection
 
             // Get the appropriate configuration section.
             var section = configuration.GetSection(
-                RepositoryOptions.SectionName
+                "Repositories"
                 );
 
-            // Register the repository options with the DI container.
-            serviceCollection.ConfigureOptions<RepositoryOptions>(
-                section,
-                out var repositoryOptions
-                );
+            // Create the loader options.
+            var loaderOptions = new LoaderOptions();
+
+            // Bind the loader options to the configuration.
+            section.Bind(loaderOptions);
+
+            // Verify the options.
+            (loaderOptions as OptionsBase)?.ThrowIfInvalid();
 
             // Trim the strategy name, just in case.
-            var strategyName = repositoryOptions.Strategy.Trim();
+            var strategyName = loaderOptions.Strategy.Trim();
 
             // Should never happen, but, pffft, check it anyway
             if (string.IsNullOrEmpty(strategyName))
@@ -87,17 +93,17 @@ namespace Microsoft.Extensions.DependencyInjection
             try
             {
                 // Should we try to load an assembly for the repository strategy?
-                if (false == string.IsNullOrEmpty(repositoryOptions.Assembly))
+                if (false == string.IsNullOrEmpty(loaderOptions.Assembly))
                 {
                     // Load the assembly.
-                    _ = Assembly.Load(repositoryOptions.Assembly);
+                    _ = Assembly.Load(loaderOptions.Assembly);
 
                     // If an assembly was specified then we should be able to
                     // make use of the white list to significantly improve 
                     //   the runtime of the search operation we're about to
                     //   perform.
                     assemblyWhiteList = assemblyWhiteList.Length > 0
-                        ? $"{assemblyWhiteList}, {repositoryOptions.Assembly}"
+                        ? $"{assemblyWhiteList}, {loaderOptions.Assembly}"
                         : assemblyWhiteList;
                 }
             }
@@ -107,7 +113,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 throw new BusinessException(
                     message: string.Format(
                         Resources.ServiceCollectionExtensions_NoLoadAssembly,
-                        repositoryOptions.Assembly
+                        loaderOptions.Assembly
                         ),
                     innerException: ex
                     );
@@ -128,7 +134,7 @@ namespace Microsoft.Extensions.DependencyInjection
             // Did we find it?
             if (methods.Any())
             {
-                // Drill down to the right configuration sub-section.
+                // Drill down into the appropriate sub-section.
                 var subSection = section.GetSection(
                     strategyName
                     );
@@ -203,17 +209,20 @@ namespace Microsoft.Extensions.DependencyInjection
 
             // Get the appropriate configuration section.
             var section = configuration.GetSection(
-                RepositoryOptions.SectionName
+                "Repositories"
                 );
 
-            // Register the repository options with the DI container.
-            serviceCollection.ConfigureOptions<RepositoryOptions>(
-                section,
-                out var repositoryOptions
-                );
+            // Create the loader options.
+            var loaderOptions = new LoaderOptions();
+
+            // Bind the loader options to the configuration.
+            section.Bind(loaderOptions);
+
+            // Verify the options.
+            (loaderOptions as OptionsBase)?.ThrowIfInvalid();
 
             // Trim the strategy name, just in case.
-            var strategyName = repositoryOptions.Strategy.Trim();
+            var strategyName = loaderOptions.Strategy.Trim();
 
             // Should never happen, but, pffft, check it anyway
             if (string.IsNullOrEmpty(strategyName))
@@ -230,17 +239,17 @@ namespace Microsoft.Extensions.DependencyInjection
             try
             {
                 // Should we try to load an assembly for the repository strategy?
-                if (false == string.IsNullOrEmpty(repositoryOptions.Assembly))
+                if (false == string.IsNullOrEmpty(loaderOptions.Assembly))
                 {
                     // Load the assembly.
-                    _ = Assembly.Load(repositoryOptions.Assembly);
+                    _ = Assembly.Load(loaderOptions.Assembly);
 
                     // If an assembly was specified then we should be able to
                     // make use of the white list to significantly improve 
                     //   the runtime of the search operation we're about to
                     //   perform.
                     assemblyWhiteList = assemblyWhiteList.Length > 0
-                        ? $"{assemblyWhiteList}, {repositoryOptions.Assembly}"
+                        ? $"{assemblyWhiteList}, {loaderOptions.Assembly}"
                         : assemblyWhiteList;
                 }
             }
@@ -250,7 +259,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 throw new BusinessException(
                     message: string.Format(
                         Resources.ServiceCollectionExtensions_NoLoadAssembly,
-                        repositoryOptions.Assembly
+                        loaderOptions.Assembly
                         ),
                     innerException: ex
                     );
@@ -271,6 +280,11 @@ namespace Microsoft.Extensions.DependencyInjection
             // Did we find it?
             if (methods.Any())
             {
+                // Drill down into the appropriate sub-section.
+                var subSection = section.GetSection(
+                    strategyName
+                    );
+
                 // We'll use the first matching method.
                 var method = methods.First();
 
@@ -283,7 +297,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Invoke the extension method.
                 method.Invoke(
                     null,
-                    new object[] { builder, section }
+                    new object[] { builder, subSection }
                     );
             }
             else

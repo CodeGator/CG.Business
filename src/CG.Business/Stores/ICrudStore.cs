@@ -11,7 +11,8 @@ namespace CG.Business.Stores
     /// operations.
     /// </summary>
     public interface ICrudStore<TModel, TKey> : IStore
-        where TModel : ModelBase<TKey>
+        where TModel : class, IModel<TKey>
+        where TKey : new()
     {
         /// <summary>
         /// This method returns an <see cref="IQueryable{TModel}"/> object

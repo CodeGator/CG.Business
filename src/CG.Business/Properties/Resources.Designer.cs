@@ -88,6 +88,33 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The KeyUtility doesn&apos;t know how to deal with a key of type: &apos;{0}&apos;..
+        /// </summary>
+        internal static string KeyUtility_KeyType {
+            get {
+                return ResourceManager.GetString("KeyUtility_KeyType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LinqRepository options require a &apos;ConnectionString&apos; field and it appears to be missing, or empty. .
+        /// </summary>
+        internal static string LinqRepositoryOptions_CS {
+            get {
+                return ResourceManager.GetString("LinqRepositoryOptions_CS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Loader strategy options require a &apos;Strategy&apos; field and it appears to be missing, or empty. .
+        /// </summary>
+        internal static string LoaderOptions_Strategy {
+            get {
+                return ResourceManager.GetString("LoaderOptions_Strategy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Repository options require a &apos;Strategy&apos; field and it appears to be missing, or empty. Check the configuration to ensure that it contains a &apos;Strategy&apos; field under the &apos;Repositories&apos; section. Also, ensure that you&apos;re binding to the properties above the &apos;Repositories&apos; section, so that the binding operation won&apos;t fail and the options will validate properly..
         /// </summary>
         internal static string RepositoryOptions_Strategy {

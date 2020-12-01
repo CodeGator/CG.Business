@@ -22,8 +22,9 @@ namespace CG.Business.Stores
     public class CrudStoreBase<TModel, TKey, TRepository> : 
         StoreBase, 
         ICrudStore<TModel, TKey>
-        where TModel : ModelBase<TKey>
-        where TRepository : CrudRepositoryBase<TModel, TKey>
+        where TModel : class, IModel<TKey>
+        where TRepository : class, ICrudRepository<TModel, TKey>
+        where TKey : new()
     {
         // *******************************************************************
         // Properties.
@@ -247,8 +248,9 @@ namespace CG.Business.Stores
         CrudStoreBase<TModel, TKey, TRepository>,
         ICrudStore<TModel, TKey>
         where TModel : ModelBase<TKey>
-        where TOptions : StoreOptions, new()
-        where TRepository : CrudRepositoryBase<TModel, TKey>
+        where TOptions : IOptions<StoreOptions>
+        where TRepository : class, ICrudRepository<TModel, TKey>
+        where TKey : new()
     {
         // *******************************************************************
         // Properties.
@@ -257,9 +259,9 @@ namespace CG.Business.Stores
         #region Properties
 
         /// <summary>
-        /// This property contains options for the manager.
+        /// This property contains options for the store.
         /// </summary>
-        protected IOptions<TOptions> Options { get; }
+        protected TOptions Options { get; }
 
         #endregion
 
@@ -276,7 +278,7 @@ namespace CG.Business.Stores
         /// <param name="options">The options to use with the store.</param>
         /// <param name="repository">The repository to use with the store.</param>
         protected CrudStoreBase(
-            IOptions<TOptions> options,
+            TOptions options,
             TRepository repository
             ) : base(repository)
         {
