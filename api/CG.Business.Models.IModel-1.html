@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace CG.Business.Models
+    <title>Interface IModel&lt;TKey&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace CG.Business.Models
+    <meta name="title" content="Interface IModel&lt;TKey&gt;
    ">
     <meta name="generator" content="docfx 2.56.5.0">
     
@@ -78,31 +78,69 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Business.Models">
+            <article class="content wrap" id="_content" data-uid="CG.Business.Models.IModel`1">
   
-  <h1 id="CG_Business_Models" data-uid="CG.Business.Models" class="text-break">Namespace CG.Business.Models
+  
+  <h1 id="CG_Business_Models_IModel_1" data-uid="CG.Business.Models.IModel`1" class="text-break">Interface IModel&lt;TKey&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>This interface represents a business model.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Business.Models.html">CG.Business.Models</a></h6>
+  <h6><strong>Assembly</strong>: CG.Business.dll</h6>
+  <h5 id="CG_Business_Models_IModel_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IModel&lt;TKey&gt; : IModel where TKey : new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td><p>The type of associated model key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="CG_Business_Models_IModel_1_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The idea, with this flavor of <a class="xref" href="CG.Business.Models.IModel.html">IModel</a>, is to create a type
+that contains a unique key, which is irrespective of any other keys or
+identifiers that happen to be part of the underlying database. Of course,
+this almost certainly means storing an extra key. If that's an issue then
+don't use this flavor of <a class="xref" href="CG.Business.Models.IModel.html">IModel</a></p>
+</div>
+  <h3 id="properties">Properties
   </h3>
-      <h4><a class="xref" href="CG.Business.Models.ModelBase.html">ModelBase</a></h4>
-      <section><p>This class is a default implmentation of the <a class="xref" href="CG.Business.Models.IModel.html">IModel</a>
-interface.</p>
-</section>
-      <h4><a class="xref" href="CG.Business.Models.ModelBase-1.html">ModelBase&lt;TKey&gt;</a></h4>
-      <section><p>This class is a default implmentation of the <a class="xref" href="CG.Business.Models.IModel.html">IModel</a>
-interface.</p>
-</section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="CG.Business.Models.IModel.html">IModel</a></h4>
-      <section><p>This interface represents a business model.</p>
-</section>
-      <h4><a class="xref" href="CG.Business.Models.IModel-1.html">IModel&lt;TKey&gt;</a></h4>
-      <section><p>This interface represents a business model.</p>
-</section>
+  <a id="CG_Business_Models_IModel_1_Key_" data-uid="CG.Business.Models.IModel`1.Key*"></a>
+  <h4 id="CG_Business_Models_IModel_1_Key" data-uid="CG.Business.Models.IModel`1.Key">Key</h4>
+  <div class="markdown level1 summary"><p>This property contains the key for the model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TKey Key { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

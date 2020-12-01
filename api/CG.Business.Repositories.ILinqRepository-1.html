@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace CG.Business.Models
+    <title>Interface ILinqRepository&lt;TModel&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace CG.Business.Models
+    <meta name="title" content="Interface ILinqRepository&lt;TModel&gt;
    ">
     <meta name="generator" content="docfx 2.56.5.0">
     
@@ -78,31 +78,72 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Business.Models">
+            <article class="content wrap" id="_content" data-uid="CG.Business.Repositories.ILinqRepository`1">
   
-  <h1 id="CG_Business_Models" data-uid="CG.Business.Models" class="text-break">Namespace CG.Business.Models
+  
+  <h1 id="CG_Business_Repositories_ILinqRepository_1" data-uid="CG.Business.Repositories.ILinqRepository`1" class="text-break">Interface ILinqRepository&lt;TModel&gt;
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>This interface represents a repository type that exposes an <span class="xref">System.Linq.IQueryable&lt;T&gt;</span>.
+object, for queries, but has no built-in mechanism for writing to the underyling
+data store.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">Classes
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Business.Repositories.html">CG.Business.Repositories</a></h6>
+  <h6><strong>Assembly</strong>: CG.Business.dll</h6>
+  <h5 id="CG_Business_Repositories_ILinqRepository_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ILinqRepository&lt;TModel&gt; : IRepository, IDisposable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td><p>The model type associated with the repository.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
   </h3>
-      <h4><a class="xref" href="CG.Business.Models.ModelBase.html">ModelBase</a></h4>
-      <section><p>This class is a default implmentation of the <a class="xref" href="CG.Business.Models.IModel.html">IModel</a>
-interface.</p>
-</section>
-      <h4><a class="xref" href="CG.Business.Models.ModelBase-1.html">ModelBase&lt;TKey&gt;</a></h4>
-      <section><p>This class is a default implmentation of the <a class="xref" href="CG.Business.Models.IModel.html">IModel</a>
-interface.</p>
-</section>
-    <h3 id="interfaces">Interfaces
-  </h3>
-      <h4><a class="xref" href="CG.Business.Models.IModel.html">IModel</a></h4>
-      <section><p>This interface represents a business model.</p>
-</section>
-      <h4><a class="xref" href="CG.Business.Models.IModel-1.html">IModel&lt;TKey&gt;</a></h4>
-      <section><p>This interface represents a business model.</p>
-</section>
+  <a id="CG_Business_Repositories_ILinqRepository_1_AsQueryable_" data-uid="CG.Business.Repositories.ILinqRepository`1.AsQueryable*"></a>
+  <h4 id="CG_Business_Repositories_ILinqRepository_1_AsQueryable" data-uid="CG.Business.Repositories.ILinqRepository`1.AsQueryable">AsQueryable()</h4>
+  <div class="markdown level1 summary"><p>This method returns an <span class="xref">System.Linq.IQueryable&lt;T&gt;</span> object
+from the repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; AsQueryable()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.IQueryable</span>&lt;TModel&gt;</td>
+        <td><p>An <span class="xref">System.Linq.IQueryable&lt;T&gt;</span> object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

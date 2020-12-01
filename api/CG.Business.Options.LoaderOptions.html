@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RepositoryBase&lt;TEntity, TModel&gt;
+    <title>Class LoaderOptions
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RepositoryBase&lt;TEntity, TModel&gt;
+    <meta name="title" content="Class LoaderOptions
    ">
     <meta name="generator" content="docfx 2.56.5.0">
     
@@ -78,38 +78,29 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Business.Repositories.RepositoryBase`2">
+            <article class="content wrap" id="_content" data-uid="CG.Business.Options.LoaderOptions">
   
   
-  <h1 id="CG_Business_Repositories_RepositoryBase_2" data-uid="CG.Business.Repositories.RepositoryBase`2" class="text-break">Class RepositoryBase&lt;TEntity, TModel&gt;
+  <h1 id="CG_Business_Options_LoaderOptions" data-uid="CG.Business.Options.LoaderOptions" class="text-break">Class LoaderOptions
   </h1>
-  <div class="markdown level0 summary"><p>This class represents a base implementation of the <a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a>
-interface.</p>
+  <div class="markdown level0 summary"><p>This class represents configuration settings for a strategy loader.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">CG.DisposableBase</span></div>
-    <div class="level2"><a class="xref" href="CG.Business.Repositories.RepositoryBase.html">RepositoryBase</a></div>
-    <div class="level3"><span class="xref">RepositoryBase&lt;TEntity, TModel&gt;</span></div>
-      <div class="level4"><a class="xref" href="CG.Business.Repositories.RepositoryBase-3.html">RepositoryBase&lt;TOptions, TEntity, TModel&gt;</a></div>
+    <div class="level1"><span class="xref">CG.DataAnnotations.ValidatableObject</span></div>
+    <div class="level2"><span class="xref">CG.Options.OptionsBase</span></div>
+    <div class="level3"><span class="xref">LoaderOptions</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a></div>
-    <div><span class="xref">System.IDisposable</span></div>
+    <div><span class="xref">System.ComponentModel.DataAnnotations.IValidatableObject</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <span class="xref">CG.DisposableBase.System.IDisposable.Dispose()</span>
-    </div>
-    <div>
-      <span class="xref">CG.DisposableBase.Dispose(System.Boolean)</span>
-    </div>
-    <div>
-      <span class="xref">CG.DisposableBase.IsDisposed</span>
+      <span class="xref">CG.DataAnnotations.ValidatableObject.Validate(System.ComponentModel.DataAnnotations.ValidationContext)</span>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
@@ -133,63 +124,25 @@ interface.</p>
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Business.Repositories.html">CG.Business.Repositories</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Business.Options.html">CG.Business.Options</a></h6>
   <h6><strong>Assembly</strong>: CG.Business.dll</h6>
-  <h5 id="CG_Business_Repositories_RepositoryBase_2_syntax">Syntax</h5>
+  <h5 id="CG_Business_Options_LoaderOptions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class RepositoryBase&lt;TEntity, TModel&gt; : RepositoryBase, IRepository, IDisposable where TEntity : class where TModel : ModelBase</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class LoaderOptions : OptionsBase, IValidatableObject</code></pre>
   </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TEntity</span></td>
-        <td><p>The entity type associated with the repository.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="parametername">TModel</span></td>
-        <td><p>The model type associated with the repository.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
+  <h3 id="properties">Properties
   </h3>
-  <a id="CG_Business_Repositories_RepositoryBase_2_ToEntity_" data-uid="CG.Business.Repositories.RepositoryBase`2.ToEntity*"></a>
-  <h4 id="CG_Business_Repositories_RepositoryBase_2_ToEntity__1_" data-uid="CG.Business.Repositories.RepositoryBase`2.ToEntity(`1)">ToEntity(TModel)</h4>
-  <div class="markdown level1 summary"><p>This method is called to convert a model to an entity.</p>
+  <a id="CG_Business_Options_LoaderOptions_Assembly_" data-uid="CG.Business.Options.LoaderOptions.Assembly*"></a>
+  <h4 id="CG_Business_Options_LoaderOptions_Assembly" data-uid="CG.Business.Options.LoaderOptions.Assembly">Assembly</h4>
+  <div class="markdown level1 summary"><p>This property contains the optional name of an assembly that
+contains one or more extension method(s), for the loader strategy.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract TEntity ToEntity(TModel source)</code></pre>
+    <pre><code class="lang-csharp hljs">public string Assembly { get; set; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TModel</span></td>
-        <td><span class="parametername">source</span></td>
-        <td><p>The object to be converted.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -199,40 +152,22 @@ interface.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TEntity</span></td>
-        <td><p>A converted entity.</p>
-</td>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Business_Repositories_RepositoryBase_2_ToModel_" data-uid="CG.Business.Repositories.RepositoryBase`2.ToModel*"></a>
-  <h4 id="CG_Business_Repositories_RepositoryBase_2_ToModel__0_" data-uid="CG.Business.Repositories.RepositoryBase`2.ToModel(`0)">ToModel(TEntity)</h4>
-  <div class="markdown level1 summary"><p>This method is called to convert an entity to a model.</p>
+  <a id="CG_Business_Options_LoaderOptions_Strategy_" data-uid="CG.Business.Options.LoaderOptions.Strategy*"></a>
+  <h4 id="CG_Business_Options_LoaderOptions_Strategy" data-uid="CG.Business.Options.LoaderOptions.Strategy">Strategy</h4>
+  <div class="markdown level1 summary"><p>This property contains the name of a configured loader strategy.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract TModel ToModel(TEntity source)</code></pre>
+    <pre><code class="lang-csharp hljs">[Required(ErrorMessageResourceName = &quot;LoaderOptions_Strategy&quot;, ErrorMessageResourceType = typeof(Resources))]
+public string Strategy { get; set; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TEntity</span></td>
-        <td><span class="parametername">source</span></td>
-        <td><p>The object to be converted.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -242,18 +177,14 @@ interface.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TModel</span></td>
-        <td><p>A converted model.</p>
-</td>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a>
-  </div>
-  <div>
-      <span class="xref">System.IDisposable</span>
+      <span class="xref">System.ComponentModel.DataAnnotations.IValidatableObject</span>
   </div>
 </article>
           </div>

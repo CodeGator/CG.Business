@@ -83,7 +83,7 @@
   
   <h1 id="CG_Business_Repositories_CrudRepositoryBase_3" data-uid="CG.Business.Repositories.CrudRepositoryBase`3" class="text-break">Class CrudRepositoryBase&lt;TOptions, TModel, TKey&gt;
   </h1>
-  <div class="markdown level0 summary"><p>This class is a default implementation of the <a class="xref" href="CG.Business.Repositories.ICrudRepository-2.html">ICrudRepository&lt;TModel, TKey&gt;</a>
+  <div class="markdown level0 summary"><p>This class is a base implementation of the <a class="xref" href="CG.Business.Repositories.ICrudRepository-2.html">ICrudRepository&lt;TModel, TKey&gt;</a>
 interface.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -92,29 +92,25 @@ interface.</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">CG.DisposableBase</span></div>
     <div class="level2"><a class="xref" href="CG.Business.Repositories.RepositoryBase.html">RepositoryBase</a></div>
-    <div class="level3"><a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-2.html">CrudRepositoryBase</a>&lt;TModel, TKey&gt;</div>
-    <div class="level4"><span class="xref">CrudRepositoryBase&lt;TOptions, TModel, TKey&gt;</span></div>
-      <div class="level5"><a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-4.html">CrudRepositoryBase&lt;TOptions, TEntity, TModel, TKey&gt;</a></div>
+    <div class="level3"><a class="xref" href="CG.Business.Repositories.RepositoryBase-1.html">RepositoryBase</a>&lt;TOptions&gt;</div>
+    <div class="level4"><a class="xref" href="CG.Business.Repositories.LinqRepositoryBase-2.html">LinqRepositoryBase</a>&lt;TOptions, TModel&gt;</div>
+    <div class="level5"><a class="xref" href="CG.Business.Repositories.LinqRepositoryBase-3.html">LinqRepositoryBase</a>&lt;TOptions, TModel, TKey&gt;</div>
+    <div class="level6"><span class="xref">CrudRepositoryBase&lt;TOptions, TModel, TKey&gt;</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="CG.Business.Repositories.ICrudRepository-2.html">ICrudRepository</a>&lt;TModel, TKey&gt;</div>
+    <div><a class="xref" href="CG.Business.Repositories.ILinqRepository-1.html">ILinqRepository</a>&lt;TModel&gt;</div>
     <div><a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a></div>
     <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_AsQueryable">CrudRepositoryBase&lt;TModel, TKey&gt;.AsQueryable()</a>
+      <a class="xref" href="CG.Business.Repositories.LinqRepositoryBase-2.html#CG_Business_Repositories_LinqRepositoryBase_2_AsQueryable">LinqRepositoryBase&lt;TOptions, TModel&gt;.AsQueryable()</a>
     </div>
     <div>
-      <a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_AddAsync__0_System_Threading_CancellationToken_">CrudRepositoryBase&lt;TModel, TKey&gt;.AddAsync(TModel, CancellationToken)</a>
-    </div>
-    <div>
-      <a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_UpdateAsync__0_System_Threading_CancellationToken_">CrudRepositoryBase&lt;TModel, TKey&gt;.UpdateAsync(TModel, CancellationToken)</a>
-    </div>
-    <div>
-      <a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_DeleteAsync__0_System_Threading_CancellationToken_">CrudRepositoryBase&lt;TModel, TKey&gt;.DeleteAsync(TModel, CancellationToken)</a>
+      <a class="xref" href="CG.Business.Repositories.RepositoryBase-1.html#CG_Business_Repositories_RepositoryBase_1_Options">RepositoryBase&lt;TOptions&gt;.Options</a>
     </div>
     <div>
       <span class="xref">CG.DisposableBase.System.IDisposable.Dispose()</span>
@@ -151,7 +147,7 @@ interface.</p>
   <h6><strong>Assembly</strong>: CG.Business.dll</h6>
   <h5 id="CG_Business_Repositories_CrudRepositoryBase_3_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class CrudRepositoryBase&lt;TOptions, TModel, TKey&gt; : CrudRepositoryBase&lt;TModel, TKey&gt;, ICrudRepository&lt;TModel, TKey&gt;, IRepository, IDisposable where TOptions : IOptions&lt;RepositoryOptions&gt; where TModel : ModelBase&lt;TKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class CrudRepositoryBase&lt;TOptions, TModel, TKey&gt; : LinqRepositoryBase&lt;TOptions, TModel, TKey&gt;, ICrudRepository&lt;TModel, TKey&gt;, ILinqRepository&lt;TModel&gt;, IRepository, IDisposable where TOptions : IOptions&lt;RepositoryOptions&gt; where TModel : class, IModel&lt;TKey&gt; where TKey : new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -209,18 +205,43 @@ class.</p>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
+  <h3 id="methods">Methods
   </h3>
-  <a id="CG_Business_Repositories_CrudRepositoryBase_3_Options_" data-uid="CG.Business.Repositories.CrudRepositoryBase`3.Options*"></a>
-  <h4 id="CG_Business_Repositories_CrudRepositoryBase_3_Options" data-uid="CG.Business.Repositories.CrudRepositoryBase`3.Options">Options</h4>
-  <div class="markdown level1 summary"><p>This property contains options for the repository.</p>
+  <a id="CG_Business_Repositories_CrudRepositoryBase_3_AddAsync_" data-uid="CG.Business.Repositories.CrudRepositoryBase`3.AddAsync*"></a>
+  <h4 id="CG_Business_Repositories_CrudRepositoryBase_3_AddAsync__1_System_Threading_CancellationToken_" data-uid="CG.Business.Repositories.CrudRepositoryBase`3.AddAsync(`1,System.Threading.CancellationToken)">AddAsync(TModel, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This method adds a new <code data-dev-comment-type="typeparamref" class="typeparamref">TModel</code> to the
+repository.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected TOptions Options { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;TModel&gt; AddAsync(TModel model, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -230,14 +251,120 @@ class.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TOptions</span></td>
-        <td></td>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TModel&gt;</td>
+        <td><p>A task to perform the operation, that returns the recently
+added <code data-dev-comment-type="typeparamref" class="typeparamref">TModel</code> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Business_Repositories_CrudRepositoryBase_3_DeleteAsync_" data-uid="CG.Business.Repositories.CrudRepositoryBase`3.DeleteAsync*"></a>
+  <h4 id="CG_Business_Repositories_CrudRepositoryBase_3_DeleteAsync__1_System_Threading_CancellationToken_" data-uid="CG.Business.Repositories.CrudRepositoryBase`3.DeleteAsync(`1,System.Threading.CancellationToken)">DeleteAsync(TModel, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This method deletes a <code data-dev-comment-type="typeparamref" class="typeparamref">TModel</code> from the
+repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task DeleteAsync(TModel model, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>A task to perform the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Business_Repositories_CrudRepositoryBase_3_UpdateAsync_" data-uid="CG.Business.Repositories.CrudRepositoryBase`3.UpdateAsync*"></a>
+  <h4 id="CG_Business_Repositories_CrudRepositoryBase_3_UpdateAsync__1_System_Threading_CancellationToken_" data-uid="CG.Business.Repositories.CrudRepositoryBase`3.UpdateAsync(`1,System.Threading.CancellationToken)">UpdateAsync(TModel, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>This method updates a <code data-dev-comment-type="typeparamref" class="typeparamref">TModel</code> in the
+repository.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Task&lt;TModel&gt; UpdateAsync(TModel model, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TModel</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TModel&gt;</td>
+        <td><p>A task to perform the operation, that returns the recently
+updated <code data-dev-comment-type="typeparamref" class="typeparamref">TModel</code> object.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="CG.Business.Repositories.ICrudRepository-2.html">ICrudRepository&lt;TModel, TKey&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="CG.Business.Repositories.ILinqRepository-1.html">ILinqRepository&lt;TModel&gt;</a>
   </div>
   <div>
       <a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a>

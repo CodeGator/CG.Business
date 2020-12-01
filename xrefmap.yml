@@ -94,6 +94,38 @@ references:
   commentId: N:CG.Business.Models
   fullName: CG.Business.Models
   nameWithType: CG.Business.Models
+- uid: CG.Business.Models.IModel
+  name: IModel
+  href: api/CG.Business.Models.IModel.html
+  commentId: T:CG.Business.Models.IModel
+  fullName: CG.Business.Models.IModel
+  nameWithType: IModel
+- uid: CG.Business.Models.IModel`1
+  name: IModel<TKey>
+  href: api/CG.Business.Models.IModel-1.html
+  commentId: T:CG.Business.Models.IModel`1
+  name.vb: IModel(Of TKey)
+  fullName: CG.Business.Models.IModel<TKey>
+  fullName.vb: CG.Business.Models.IModel(Of TKey)
+  nameWithType: IModel<TKey>
+  nameWithType.vb: IModel(Of TKey)
+- uid: CG.Business.Models.IModel`1.Key
+  name: Key
+  href: api/CG.Business.Models.IModel-1.html#CG_Business_Models_IModel_1_Key
+  commentId: P:CG.Business.Models.IModel`1.Key
+  fullName: CG.Business.Models.IModel<TKey>.Key
+  fullName.vb: CG.Business.Models.IModel(Of TKey).Key
+  nameWithType: IModel<TKey>.Key
+  nameWithType.vb: IModel(Of TKey).Key
+- uid: CG.Business.Models.IModel`1.Key*
+  name: Key
+  href: api/CG.Business.Models.IModel-1.html#CG_Business_Models_IModel_1_Key_
+  commentId: Overload:CG.Business.Models.IModel`1.Key
+  isSpec: "True"
+  fullName: CG.Business.Models.IModel<TKey>.Key
+  fullName.vb: CG.Business.Models.IModel(Of TKey).Key
+  nameWithType: IModel<TKey>.Key
+  nameWithType.vb: IModel(Of TKey).Key
 - uid: CG.Business.Models.ModelBase
   name: ModelBase
   href: api/CG.Business.Models.ModelBase.html
@@ -177,89 +209,50 @@ references:
   fullName.vb: CG.Business.Models.ModelBase(Of TKey).ToString
   nameWithType: ModelBase<TKey>.ToString
   nameWithType.vb: ModelBase(Of TKey).ToString
+- uid: CG.Business.Options
+  name: CG.Business.Options
+  href: api/CG.Business.Options.html
+  commentId: N:CG.Business.Options
+  fullName: CG.Business.Options
+  nameWithType: CG.Business.Options
+- uid: CG.Business.Options.LoaderOptions
+  name: LoaderOptions
+  href: api/CG.Business.Options.LoaderOptions.html
+  commentId: T:CG.Business.Options.LoaderOptions
+  fullName: CG.Business.Options.LoaderOptions
+  nameWithType: LoaderOptions
+- uid: CG.Business.Options.LoaderOptions.Assembly
+  name: Assembly
+  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions_Assembly
+  commentId: P:CG.Business.Options.LoaderOptions.Assembly
+  fullName: CG.Business.Options.LoaderOptions.Assembly
+  nameWithType: LoaderOptions.Assembly
+- uid: CG.Business.Options.LoaderOptions.Assembly*
+  name: Assembly
+  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions_Assembly_
+  commentId: Overload:CG.Business.Options.LoaderOptions.Assembly
+  isSpec: "True"
+  fullName: CG.Business.Options.LoaderOptions.Assembly
+  nameWithType: LoaderOptions.Assembly
+- uid: CG.Business.Options.LoaderOptions.Strategy
+  name: Strategy
+  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions_Strategy
+  commentId: P:CG.Business.Options.LoaderOptions.Strategy
+  fullName: CG.Business.Options.LoaderOptions.Strategy
+  nameWithType: LoaderOptions.Strategy
+- uid: CG.Business.Options.LoaderOptions.Strategy*
+  name: Strategy
+  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions_Strategy_
+  commentId: Overload:CG.Business.Options.LoaderOptions.Strategy
+  isSpec: "True"
+  fullName: CG.Business.Options.LoaderOptions.Strategy
+  nameWithType: LoaderOptions.Strategy
 - uid: CG.Business.Repositories
   name: CG.Business.Repositories
   href: api/CG.Business.Repositories.html
   commentId: N:CG.Business.Repositories
   fullName: CG.Business.Repositories
   nameWithType: CG.Business.Repositories
-- uid: CG.Business.Repositories.CrudRepositoryBase`2
-  name: CrudRepositoryBase<TModel, TKey>
-  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html
-  commentId: T:CG.Business.Repositories.CrudRepositoryBase`2
-  name.vb: CrudRepositoryBase(Of TModel, TKey)
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey)
-  nameWithType: CrudRepositoryBase<TModel, TKey>
-  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey)
-- uid: CG.Business.Repositories.CrudRepositoryBase`2.AddAsync(`0,System.Threading.CancellationToken)
-  name: AddAsync(TModel, CancellationToken)
-  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_AddAsync__0_System_Threading_CancellationToken_
-  commentId: M:CG.Business.Repositories.CrudRepositoryBase`2.AddAsync(`0,System.Threading.CancellationToken)
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.AddAsync(TModel, System.Threading.CancellationToken)
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).AddAsync(TModel, System.Threading.CancellationToken)
-  nameWithType: CrudRepositoryBase<TModel, TKey>.AddAsync(TModel, CancellationToken)
-  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).AddAsync(TModel, CancellationToken)
-- uid: CG.Business.Repositories.CrudRepositoryBase`2.AddAsync*
-  name: AddAsync
-  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_AddAsync_
-  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`2.AddAsync
-  isSpec: "True"
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.AddAsync
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).AddAsync
-  nameWithType: CrudRepositoryBase<TModel, TKey>.AddAsync
-  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).AddAsync
-- uid: CG.Business.Repositories.CrudRepositoryBase`2.AsQueryable
-  name: AsQueryable()
-  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_AsQueryable
-  commentId: M:CG.Business.Repositories.CrudRepositoryBase`2.AsQueryable
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.AsQueryable()
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).AsQueryable()
-  nameWithType: CrudRepositoryBase<TModel, TKey>.AsQueryable()
-  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).AsQueryable()
-- uid: CG.Business.Repositories.CrudRepositoryBase`2.AsQueryable*
-  name: AsQueryable
-  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_AsQueryable_
-  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`2.AsQueryable
-  isSpec: "True"
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.AsQueryable
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).AsQueryable
-  nameWithType: CrudRepositoryBase<TModel, TKey>.AsQueryable
-  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).AsQueryable
-- uid: CG.Business.Repositories.CrudRepositoryBase`2.DeleteAsync(`0,System.Threading.CancellationToken)
-  name: DeleteAsync(TModel, CancellationToken)
-  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_DeleteAsync__0_System_Threading_CancellationToken_
-  commentId: M:CG.Business.Repositories.CrudRepositoryBase`2.DeleteAsync(`0,System.Threading.CancellationToken)
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.DeleteAsync(TModel, System.Threading.CancellationToken)
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).DeleteAsync(TModel, System.Threading.CancellationToken)
-  nameWithType: CrudRepositoryBase<TModel, TKey>.DeleteAsync(TModel, CancellationToken)
-  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).DeleteAsync(TModel, CancellationToken)
-- uid: CG.Business.Repositories.CrudRepositoryBase`2.DeleteAsync*
-  name: DeleteAsync
-  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_DeleteAsync_
-  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`2.DeleteAsync
-  isSpec: "True"
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.DeleteAsync
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).DeleteAsync
-  nameWithType: CrudRepositoryBase<TModel, TKey>.DeleteAsync
-  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).DeleteAsync
-- uid: CG.Business.Repositories.CrudRepositoryBase`2.UpdateAsync(`0,System.Threading.CancellationToken)
-  name: UpdateAsync(TModel, CancellationToken)
-  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_UpdateAsync__0_System_Threading_CancellationToken_
-  commentId: M:CG.Business.Repositories.CrudRepositoryBase`2.UpdateAsync(`0,System.Threading.CancellationToken)
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.UpdateAsync(TModel, System.Threading.CancellationToken)
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).UpdateAsync(TModel, System.Threading.CancellationToken)
-  nameWithType: CrudRepositoryBase<TModel, TKey>.UpdateAsync(TModel, CancellationToken)
-  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).UpdateAsync(TModel, CancellationToken)
-- uid: CG.Business.Repositories.CrudRepositoryBase`2.UpdateAsync*
-  name: UpdateAsync
-  href: api/CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_UpdateAsync_
-  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`2.UpdateAsync
-  isSpec: "True"
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TModel, TKey>.UpdateAsync
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TModel, TKey).UpdateAsync
-  nameWithType: CrudRepositoryBase<TModel, TKey>.UpdateAsync
-  nameWithType.vb: CrudRepositoryBase(Of TModel, TKey).UpdateAsync
 - uid: CG.Business.Repositories.CrudRepositoryBase`3
   name: CrudRepositoryBase<TOptions, TModel, TKey>
   href: api/CG.Business.Repositories.CrudRepositoryBase-3.html
@@ -286,83 +279,57 @@ references:
   fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).CrudRepositoryBase
   nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.CrudRepositoryBase
   nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).CrudRepositoryBase
-- uid: CG.Business.Repositories.CrudRepositoryBase`3.Options
-  name: Options
-  href: api/CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3_Options
-  commentId: P:CG.Business.Repositories.CrudRepositoryBase`3.Options
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TModel, TKey>.Options
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).Options
-  nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.Options
-  nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).Options
-- uid: CG.Business.Repositories.CrudRepositoryBase`3.Options*
-  name: Options
-  href: api/CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3_Options_
-  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`3.Options
+- uid: CG.Business.Repositories.CrudRepositoryBase`3.AddAsync(`1,System.Threading.CancellationToken)
+  name: AddAsync(TModel, CancellationToken)
+  href: api/CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3_AddAsync__1_System_Threading_CancellationToken_
+  commentId: M:CG.Business.Repositories.CrudRepositoryBase`3.AddAsync(`1,System.Threading.CancellationToken)
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TModel, TKey>.AddAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).AddAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.AddAsync(TModel, CancellationToken)
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).AddAsync(TModel, CancellationToken)
+- uid: CG.Business.Repositories.CrudRepositoryBase`3.AddAsync*
+  name: AddAsync
+  href: api/CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3_AddAsync_
+  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`3.AddAsync
   isSpec: "True"
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TModel, TKey>.Options
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).Options
-  nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.Options
-  nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).Options
-- uid: CG.Business.Repositories.CrudRepositoryBase`4
-  name: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>
-  href: api/CG.Business.Repositories.CrudRepositoryBase-4.html
-  commentId: T:CG.Business.Repositories.CrudRepositoryBase`4
-  name.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey)
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TEntity, TModel, TKey>
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey)
-  nameWithType: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>
-  nameWithType.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey)
-- uid: CG.Business.Repositories.CrudRepositoryBase`4.#ctor(`0)
-  name: CrudRepositoryBase(TOptions)
-  href: api/CG.Business.Repositories.CrudRepositoryBase-4.html#CG_Business_Repositories_CrudRepositoryBase_4__ctor__0_
-  commentId: M:CG.Business.Repositories.CrudRepositoryBase`4.#ctor(`0)
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.CrudRepositoryBase(TOptions)
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).CrudRepositoryBase(TOptions)
-  nameWithType: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.CrudRepositoryBase(TOptions)
-  nameWithType.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).CrudRepositoryBase(TOptions)
-- uid: CG.Business.Repositories.CrudRepositoryBase`4.#ctor*
-  name: CrudRepositoryBase
-  href: api/CG.Business.Repositories.CrudRepositoryBase-4.html#CG_Business_Repositories_CrudRepositoryBase_4__ctor_
-  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`4.#ctor
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TModel, TKey>.AddAsync
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).AddAsync
+  nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.AddAsync
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).AddAsync
+- uid: CG.Business.Repositories.CrudRepositoryBase`3.DeleteAsync(`1,System.Threading.CancellationToken)
+  name: DeleteAsync(TModel, CancellationToken)
+  href: api/CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3_DeleteAsync__1_System_Threading_CancellationToken_
+  commentId: M:CG.Business.Repositories.CrudRepositoryBase`3.DeleteAsync(`1,System.Threading.CancellationToken)
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TModel, TKey>.DeleteAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).DeleteAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.DeleteAsync(TModel, CancellationToken)
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).DeleteAsync(TModel, CancellationToken)
+- uid: CG.Business.Repositories.CrudRepositoryBase`3.DeleteAsync*
+  name: DeleteAsync
+  href: api/CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3_DeleteAsync_
+  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`3.DeleteAsync
   isSpec: "True"
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.CrudRepositoryBase
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).CrudRepositoryBase
-  nameWithType: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.CrudRepositoryBase
-  nameWithType.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).CrudRepositoryBase
-- uid: CG.Business.Repositories.CrudRepositoryBase`4.ToEntity(`2)
-  name: ToEntity(TModel)
-  href: api/CG.Business.Repositories.CrudRepositoryBase-4.html#CG_Business_Repositories_CrudRepositoryBase_4_ToEntity__2_
-  commentId: M:CG.Business.Repositories.CrudRepositoryBase`4.ToEntity(`2)
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToEntity(TModel)
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToEntity(TModel)
-  nameWithType: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToEntity(TModel)
-  nameWithType.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToEntity(TModel)
-- uid: CG.Business.Repositories.CrudRepositoryBase`4.ToEntity*
-  name: ToEntity
-  href: api/CG.Business.Repositories.CrudRepositoryBase-4.html#CG_Business_Repositories_CrudRepositoryBase_4_ToEntity_
-  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`4.ToEntity
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TModel, TKey>.DeleteAsync
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).DeleteAsync
+  nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.DeleteAsync
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).DeleteAsync
+- uid: CG.Business.Repositories.CrudRepositoryBase`3.UpdateAsync(`1,System.Threading.CancellationToken)
+  name: UpdateAsync(TModel, CancellationToken)
+  href: api/CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3_UpdateAsync__1_System_Threading_CancellationToken_
+  commentId: M:CG.Business.Repositories.CrudRepositoryBase`3.UpdateAsync(`1,System.Threading.CancellationToken)
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TModel, TKey>.UpdateAsync(TModel, System.Threading.CancellationToken)
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).UpdateAsync(TModel, System.Threading.CancellationToken)
+  nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.UpdateAsync(TModel, CancellationToken)
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).UpdateAsync(TModel, CancellationToken)
+- uid: CG.Business.Repositories.CrudRepositoryBase`3.UpdateAsync*
+  name: UpdateAsync
+  href: api/CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3_UpdateAsync_
+  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`3.UpdateAsync
   isSpec: "True"
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToEntity
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToEntity
-  nameWithType: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToEntity
-  nameWithType.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToEntity
-- uid: CG.Business.Repositories.CrudRepositoryBase`4.ToModel(`1)
-  name: ToModel(TEntity)
-  href: api/CG.Business.Repositories.CrudRepositoryBase-4.html#CG_Business_Repositories_CrudRepositoryBase_4_ToModel__1_
-  commentId: M:CG.Business.Repositories.CrudRepositoryBase`4.ToModel(`1)
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToModel(TEntity)
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToModel(TEntity)
-  nameWithType: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToModel(TEntity)
-  nameWithType.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToModel(TEntity)
-- uid: CG.Business.Repositories.CrudRepositoryBase`4.ToModel*
-  name: ToModel
-  href: api/CG.Business.Repositories.CrudRepositoryBase-4.html#CG_Business_Repositories_CrudRepositoryBase_4_ToModel_
-  commentId: Overload:CG.Business.Repositories.CrudRepositoryBase`4.ToModel
-  isSpec: "True"
-  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToModel
-  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToModel
-  nameWithType: CrudRepositoryBase<TOptions, TEntity, TModel, TKey>.ToModel
-  nameWithType.vb: CrudRepositoryBase(Of TOptions, TEntity, TModel, TKey).ToModel
+  fullName: CG.Business.Repositories.CrudRepositoryBase<TOptions, TModel, TKey>.UpdateAsync
+  fullName.vb: CG.Business.Repositories.CrudRepositoryBase(Of TOptions, TModel, TKey).UpdateAsync
+  nameWithType: CrudRepositoryBase<TOptions, TModel, TKey>.UpdateAsync
+  nameWithType.vb: CrudRepositoryBase(Of TOptions, TModel, TKey).UpdateAsync
 - uid: CG.Business.Repositories.ICrudRepository`2
   name: ICrudRepository<TModel, TKey>
   href: api/CG.Business.Repositories.ICrudRepository-2.html
@@ -389,23 +356,6 @@ references:
   fullName.vb: CG.Business.Repositories.ICrudRepository(Of TModel, TKey).AddAsync
   nameWithType: ICrudRepository<TModel, TKey>.AddAsync
   nameWithType.vb: ICrudRepository(Of TModel, TKey).AddAsync
-- uid: CG.Business.Repositories.ICrudRepository`2.AsQueryable
-  name: AsQueryable()
-  href: api/CG.Business.Repositories.ICrudRepository-2.html#CG_Business_Repositories_ICrudRepository_2_AsQueryable
-  commentId: M:CG.Business.Repositories.ICrudRepository`2.AsQueryable
-  fullName: CG.Business.Repositories.ICrudRepository<TModel, TKey>.AsQueryable()
-  fullName.vb: CG.Business.Repositories.ICrudRepository(Of TModel, TKey).AsQueryable()
-  nameWithType: ICrudRepository<TModel, TKey>.AsQueryable()
-  nameWithType.vb: ICrudRepository(Of TModel, TKey).AsQueryable()
-- uid: CG.Business.Repositories.ICrudRepository`2.AsQueryable*
-  name: AsQueryable
-  href: api/CG.Business.Repositories.ICrudRepository-2.html#CG_Business_Repositories_ICrudRepository_2_AsQueryable_
-  commentId: Overload:CG.Business.Repositories.ICrudRepository`2.AsQueryable
-  isSpec: "True"
-  fullName: CG.Business.Repositories.ICrudRepository<TModel, TKey>.AsQueryable
-  fullName.vb: CG.Business.Repositories.ICrudRepository(Of TModel, TKey).AsQueryable
-  nameWithType: ICrudRepository<TModel, TKey>.AsQueryable
-  nameWithType.vb: ICrudRepository(Of TModel, TKey).AsQueryable
 - uid: CG.Business.Repositories.ICrudRepository`2.DeleteAsync(`0,System.Threading.CancellationToken)
   name: DeleteAsync(TModel, CancellationToken)
   href: api/CG.Business.Repositories.ICrudRepository-2.html#CG_Business_Repositories_ICrudRepository_2_DeleteAsync__0_System_Threading_CancellationToken_
@@ -440,56 +390,176 @@ references:
   fullName.vb: CG.Business.Repositories.ICrudRepository(Of TModel, TKey).UpdateAsync
   nameWithType: ICrudRepository<TModel, TKey>.UpdateAsync
   nameWithType.vb: ICrudRepository(Of TModel, TKey).UpdateAsync
+- uid: CG.Business.Repositories.ILinqRepository`1
+  name: ILinqRepository<TModel>
+  href: api/CG.Business.Repositories.ILinqRepository-1.html
+  commentId: T:CG.Business.Repositories.ILinqRepository`1
+  name.vb: ILinqRepository(Of TModel)
+  fullName: CG.Business.Repositories.ILinqRepository<TModel>
+  fullName.vb: CG.Business.Repositories.ILinqRepository(Of TModel)
+  nameWithType: ILinqRepository<TModel>
+  nameWithType.vb: ILinqRepository(Of TModel)
+- uid: CG.Business.Repositories.ILinqRepository`1.AsQueryable
+  name: AsQueryable()
+  href: api/CG.Business.Repositories.ILinqRepository-1.html#CG_Business_Repositories_ILinqRepository_1_AsQueryable
+  commentId: M:CG.Business.Repositories.ILinqRepository`1.AsQueryable
+  fullName: CG.Business.Repositories.ILinqRepository<TModel>.AsQueryable()
+  fullName.vb: CG.Business.Repositories.ILinqRepository(Of TModel).AsQueryable()
+  nameWithType: ILinqRepository<TModel>.AsQueryable()
+  nameWithType.vb: ILinqRepository(Of TModel).AsQueryable()
+- uid: CG.Business.Repositories.ILinqRepository`1.AsQueryable*
+  name: AsQueryable
+  href: api/CG.Business.Repositories.ILinqRepository-1.html#CG_Business_Repositories_ILinqRepository_1_AsQueryable_
+  commentId: Overload:CG.Business.Repositories.ILinqRepository`1.AsQueryable
+  isSpec: "True"
+  fullName: CG.Business.Repositories.ILinqRepository<TModel>.AsQueryable
+  fullName.vb: CG.Business.Repositories.ILinqRepository(Of TModel).AsQueryable
+  nameWithType: ILinqRepository<TModel>.AsQueryable
+  nameWithType.vb: ILinqRepository(Of TModel).AsQueryable
 - uid: CG.Business.Repositories.IRepository
   name: IRepository
   href: api/CG.Business.Repositories.IRepository.html
   commentId: T:CG.Business.Repositories.IRepository
   fullName: CG.Business.Repositories.IRepository
   nameWithType: IRepository
+- uid: CG.Business.Repositories.KeyUtility
+  name: KeyUtility
+  href: api/CG.Business.Repositories.KeyUtility.html
+  commentId: T:CG.Business.Repositories.KeyUtility
+  fullName: CG.Business.Repositories.KeyUtility
+  nameWithType: KeyUtility
+- uid: CG.Business.Repositories.KeyUtility.CreateRandomKey*
+  name: CreateRandomKey
+  href: api/CG.Business.Repositories.KeyUtility.html#CG_Business_Repositories_KeyUtility_CreateRandomKey_
+  commentId: Overload:CG.Business.Repositories.KeyUtility.CreateRandomKey
+  isSpec: "True"
+  fullName: CG.Business.Repositories.KeyUtility.CreateRandomKey
+  nameWithType: KeyUtility.CreateRandomKey
+- uid: CG.Business.Repositories.KeyUtility.CreateRandomKey``1
+  name: CreateRandomKey<TKey>()
+  href: api/CG.Business.Repositories.KeyUtility.html#CG_Business_Repositories_KeyUtility_CreateRandomKey__1
+  commentId: M:CG.Business.Repositories.KeyUtility.CreateRandomKey``1
+  name.vb: CreateRandomKey(Of TKey)()
+  fullName: CG.Business.Repositories.KeyUtility.CreateRandomKey<TKey>()
+  fullName.vb: CG.Business.Repositories.KeyUtility.CreateRandomKey(Of TKey)()
+  nameWithType: KeyUtility.CreateRandomKey<TKey>()
+  nameWithType.vb: KeyUtility.CreateRandomKey(Of TKey)()
+- uid: CG.Business.Repositories.KeyUtility.IsKeyMissing*
+  name: IsKeyMissing
+  href: api/CG.Business.Repositories.KeyUtility.html#CG_Business_Repositories_KeyUtility_IsKeyMissing_
+  commentId: Overload:CG.Business.Repositories.KeyUtility.IsKeyMissing
+  isSpec: "True"
+  fullName: CG.Business.Repositories.KeyUtility.IsKeyMissing
+  nameWithType: KeyUtility.IsKeyMissing
+- uid: CG.Business.Repositories.KeyUtility.IsKeyMissing``1(``0)
+  name: IsKeyMissing<TKey>(TKey)
+  href: api/CG.Business.Repositories.KeyUtility.html#CG_Business_Repositories_KeyUtility_IsKeyMissing__1___0_
+  commentId: M:CG.Business.Repositories.KeyUtility.IsKeyMissing``1(``0)
+  name.vb: IsKeyMissing(Of TKey)(TKey)
+  fullName: CG.Business.Repositories.KeyUtility.IsKeyMissing<TKey>(TKey)
+  fullName.vb: CG.Business.Repositories.KeyUtility.IsKeyMissing(Of TKey)(TKey)
+  nameWithType: KeyUtility.IsKeyMissing<TKey>(TKey)
+  nameWithType.vb: KeyUtility.IsKeyMissing(Of TKey)(TKey)
+- uid: CG.Business.Repositories.LinqRepositoryBase`2
+  name: LinqRepositoryBase<TOptions, TModel>
+  href: api/CG.Business.Repositories.LinqRepositoryBase-2.html
+  commentId: T:CG.Business.Repositories.LinqRepositoryBase`2
+  name.vb: LinqRepositoryBase(Of TOptions, TModel)
+  fullName: CG.Business.Repositories.LinqRepositoryBase<TOptions, TModel>
+  fullName.vb: CG.Business.Repositories.LinqRepositoryBase(Of TOptions, TModel)
+  nameWithType: LinqRepositoryBase<TOptions, TModel>
+  nameWithType.vb: LinqRepositoryBase(Of TOptions, TModel)
+- uid: CG.Business.Repositories.LinqRepositoryBase`2.#ctor(`0)
+  name: LinqRepositoryBase(TOptions)
+  href: api/CG.Business.Repositories.LinqRepositoryBase-2.html#CG_Business_Repositories_LinqRepositoryBase_2__ctor__0_
+  commentId: M:CG.Business.Repositories.LinqRepositoryBase`2.#ctor(`0)
+  fullName: CG.Business.Repositories.LinqRepositoryBase<TOptions, TModel>.LinqRepositoryBase(TOptions)
+  fullName.vb: CG.Business.Repositories.LinqRepositoryBase(Of TOptions, TModel).LinqRepositoryBase(TOptions)
+  nameWithType: LinqRepositoryBase<TOptions, TModel>.LinqRepositoryBase(TOptions)
+  nameWithType.vb: LinqRepositoryBase(Of TOptions, TModel).LinqRepositoryBase(TOptions)
+- uid: CG.Business.Repositories.LinqRepositoryBase`2.#ctor*
+  name: LinqRepositoryBase
+  href: api/CG.Business.Repositories.LinqRepositoryBase-2.html#CG_Business_Repositories_LinqRepositoryBase_2__ctor_
+  commentId: Overload:CG.Business.Repositories.LinqRepositoryBase`2.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Repositories.LinqRepositoryBase<TOptions, TModel>.LinqRepositoryBase
+  fullName.vb: CG.Business.Repositories.LinqRepositoryBase(Of TOptions, TModel).LinqRepositoryBase
+  nameWithType: LinqRepositoryBase<TOptions, TModel>.LinqRepositoryBase
+  nameWithType.vb: LinqRepositoryBase(Of TOptions, TModel).LinqRepositoryBase
+- uid: CG.Business.Repositories.LinqRepositoryBase`2.AsQueryable
+  name: AsQueryable()
+  href: api/CG.Business.Repositories.LinqRepositoryBase-2.html#CG_Business_Repositories_LinqRepositoryBase_2_AsQueryable
+  commentId: M:CG.Business.Repositories.LinqRepositoryBase`2.AsQueryable
+  fullName: CG.Business.Repositories.LinqRepositoryBase<TOptions, TModel>.AsQueryable()
+  fullName.vb: CG.Business.Repositories.LinqRepositoryBase(Of TOptions, TModel).AsQueryable()
+  nameWithType: LinqRepositoryBase<TOptions, TModel>.AsQueryable()
+  nameWithType.vb: LinqRepositoryBase(Of TOptions, TModel).AsQueryable()
+- uid: CG.Business.Repositories.LinqRepositoryBase`2.AsQueryable*
+  name: AsQueryable
+  href: api/CG.Business.Repositories.LinqRepositoryBase-2.html#CG_Business_Repositories_LinqRepositoryBase_2_AsQueryable_
+  commentId: Overload:CG.Business.Repositories.LinqRepositoryBase`2.AsQueryable
+  isSpec: "True"
+  fullName: CG.Business.Repositories.LinqRepositoryBase<TOptions, TModel>.AsQueryable
+  fullName.vb: CG.Business.Repositories.LinqRepositoryBase(Of TOptions, TModel).AsQueryable
+  nameWithType: LinqRepositoryBase<TOptions, TModel>.AsQueryable
+  nameWithType.vb: LinqRepositoryBase(Of TOptions, TModel).AsQueryable
+- uid: CG.Business.Repositories.LinqRepositoryBase`3
+  name: LinqRepositoryBase<TOptions, TModel, TKey>
+  href: api/CG.Business.Repositories.LinqRepositoryBase-3.html
+  commentId: T:CG.Business.Repositories.LinqRepositoryBase`3
+  name.vb: LinqRepositoryBase(Of TOptions, TModel, TKey)
+  fullName: CG.Business.Repositories.LinqRepositoryBase<TOptions, TModel, TKey>
+  fullName.vb: CG.Business.Repositories.LinqRepositoryBase(Of TOptions, TModel, TKey)
+  nameWithType: LinqRepositoryBase<TOptions, TModel, TKey>
+  nameWithType.vb: LinqRepositoryBase(Of TOptions, TModel, TKey)
+- uid: CG.Business.Repositories.LinqRepositoryBase`3.#ctor(`0)
+  name: LinqRepositoryBase(TOptions)
+  href: api/CG.Business.Repositories.LinqRepositoryBase-3.html#CG_Business_Repositories_LinqRepositoryBase_3__ctor__0_
+  commentId: M:CG.Business.Repositories.LinqRepositoryBase`3.#ctor(`0)
+  fullName: CG.Business.Repositories.LinqRepositoryBase<TOptions, TModel, TKey>.LinqRepositoryBase(TOptions)
+  fullName.vb: CG.Business.Repositories.LinqRepositoryBase(Of TOptions, TModel, TKey).LinqRepositoryBase(TOptions)
+  nameWithType: LinqRepositoryBase<TOptions, TModel, TKey>.LinqRepositoryBase(TOptions)
+  nameWithType.vb: LinqRepositoryBase(Of TOptions, TModel, TKey).LinqRepositoryBase(TOptions)
+- uid: CG.Business.Repositories.LinqRepositoryBase`3.#ctor*
+  name: LinqRepositoryBase
+  href: api/CG.Business.Repositories.LinqRepositoryBase-3.html#CG_Business_Repositories_LinqRepositoryBase_3__ctor_
+  commentId: Overload:CG.Business.Repositories.LinqRepositoryBase`3.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Repositories.LinqRepositoryBase<TOptions, TModel, TKey>.LinqRepositoryBase
+  fullName.vb: CG.Business.Repositories.LinqRepositoryBase(Of TOptions, TModel, TKey).LinqRepositoryBase
+  nameWithType: LinqRepositoryBase<TOptions, TModel, TKey>.LinqRepositoryBase
+  nameWithType.vb: LinqRepositoryBase(Of TOptions, TModel, TKey).LinqRepositoryBase
 - uid: CG.Business.Repositories.Options
   name: CG.Business.Repositories.Options
   href: api/CG.Business.Repositories.Options.html
   commentId: N:CG.Business.Repositories.Options
   fullName: CG.Business.Repositories.Options
   nameWithType: CG.Business.Repositories.Options
+- uid: CG.Business.Repositories.Options.LinqRepositoryOptions
+  name: LinqRepositoryOptions
+  href: api/CG.Business.Repositories.Options.LinqRepositoryOptions.html
+  commentId: T:CG.Business.Repositories.Options.LinqRepositoryOptions
+  fullName: CG.Business.Repositories.Options.LinqRepositoryOptions
+  nameWithType: LinqRepositoryOptions
+- uid: CG.Business.Repositories.Options.LinqRepositoryOptions.ConnectionString
+  name: ConnectionString
+  href: api/CG.Business.Repositories.Options.LinqRepositoryOptions.html#CG_Business_Repositories_Options_LinqRepositoryOptions_ConnectionString
+  commentId: P:CG.Business.Repositories.Options.LinqRepositoryOptions.ConnectionString
+  fullName: CG.Business.Repositories.Options.LinqRepositoryOptions.ConnectionString
+  nameWithType: LinqRepositoryOptions.ConnectionString
+- uid: CG.Business.Repositories.Options.LinqRepositoryOptions.ConnectionString*
+  name: ConnectionString
+  href: api/CG.Business.Repositories.Options.LinqRepositoryOptions.html#CG_Business_Repositories_Options_LinqRepositoryOptions_ConnectionString_
+  commentId: Overload:CG.Business.Repositories.Options.LinqRepositoryOptions.ConnectionString
+  isSpec: "True"
+  fullName: CG.Business.Repositories.Options.LinqRepositoryOptions.ConnectionString
+  nameWithType: LinqRepositoryOptions.ConnectionString
 - uid: CG.Business.Repositories.Options.RepositoryOptions
   name: RepositoryOptions
   href: api/CG.Business.Repositories.Options.RepositoryOptions.html
   commentId: T:CG.Business.Repositories.Options.RepositoryOptions
   fullName: CG.Business.Repositories.Options.RepositoryOptions
   nameWithType: RepositoryOptions
-- uid: CG.Business.Repositories.Options.RepositoryOptions.Assembly
-  name: Assembly
-  href: api/CG.Business.Repositories.Options.RepositoryOptions.html#CG_Business_Repositories_Options_RepositoryOptions_Assembly
-  commentId: P:CG.Business.Repositories.Options.RepositoryOptions.Assembly
-  fullName: CG.Business.Repositories.Options.RepositoryOptions.Assembly
-  nameWithType: RepositoryOptions.Assembly
-- uid: CG.Business.Repositories.Options.RepositoryOptions.Assembly*
-  name: Assembly
-  href: api/CG.Business.Repositories.Options.RepositoryOptions.html#CG_Business_Repositories_Options_RepositoryOptions_Assembly_
-  commentId: Overload:CG.Business.Repositories.Options.RepositoryOptions.Assembly
-  isSpec: "True"
-  fullName: CG.Business.Repositories.Options.RepositoryOptions.Assembly
-  nameWithType: RepositoryOptions.Assembly
-- uid: CG.Business.Repositories.Options.RepositoryOptions.SectionName
-  name: SectionName
-  href: api/CG.Business.Repositories.Options.RepositoryOptions.html#CG_Business_Repositories_Options_RepositoryOptions_SectionName
-  commentId: F:CG.Business.Repositories.Options.RepositoryOptions.SectionName
-  fullName: CG.Business.Repositories.Options.RepositoryOptions.SectionName
-  nameWithType: RepositoryOptions.SectionName
-- uid: CG.Business.Repositories.Options.RepositoryOptions.Strategy
-  name: Strategy
-  href: api/CG.Business.Repositories.Options.RepositoryOptions.html#CG_Business_Repositories_Options_RepositoryOptions_Strategy
-  commentId: P:CG.Business.Repositories.Options.RepositoryOptions.Strategy
-  fullName: CG.Business.Repositories.Options.RepositoryOptions.Strategy
-  nameWithType: RepositoryOptions.Strategy
-- uid: CG.Business.Repositories.Options.RepositoryOptions.Strategy*
-  name: Strategy
-  href: api/CG.Business.Repositories.Options.RepositoryOptions.html#CG_Business_Repositories_Options_RepositoryOptions_Strategy_
-  commentId: Overload:CG.Business.Repositories.Options.RepositoryOptions.Strategy
-  isSpec: "True"
-  fullName: CG.Business.Repositories.Options.RepositoryOptions.Strategy
-  nameWithType: RepositoryOptions.Strategy
 - uid: CG.Business.Repositories.RepositoryBase
   name: RepositoryBase
   href: api/CG.Business.Repositories.RepositoryBase.html
@@ -539,92 +609,6 @@ references:
   fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions).Options
   nameWithType: RepositoryBase<TOptions>.Options
   nameWithType.vb: RepositoryBase(Of TOptions).Options
-- uid: CG.Business.Repositories.RepositoryBase`2
-  name: RepositoryBase<TEntity, TModel>
-  href: api/CG.Business.Repositories.RepositoryBase-2.html
-  commentId: T:CG.Business.Repositories.RepositoryBase`2
-  name.vb: RepositoryBase(Of TEntity, TModel)
-  fullName: CG.Business.Repositories.RepositoryBase<TEntity, TModel>
-  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TEntity, TModel)
-  nameWithType: RepositoryBase<TEntity, TModel>
-  nameWithType.vb: RepositoryBase(Of TEntity, TModel)
-- uid: CG.Business.Repositories.RepositoryBase`2.ToEntity(`1)
-  name: ToEntity(TModel)
-  href: api/CG.Business.Repositories.RepositoryBase-2.html#CG_Business_Repositories_RepositoryBase_2_ToEntity__1_
-  commentId: M:CG.Business.Repositories.RepositoryBase`2.ToEntity(`1)
-  fullName: CG.Business.Repositories.RepositoryBase<TEntity, TModel>.ToEntity(TModel)
-  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TEntity, TModel).ToEntity(TModel)
-  nameWithType: RepositoryBase<TEntity, TModel>.ToEntity(TModel)
-  nameWithType.vb: RepositoryBase(Of TEntity, TModel).ToEntity(TModel)
-- uid: CG.Business.Repositories.RepositoryBase`2.ToEntity*
-  name: ToEntity
-  href: api/CG.Business.Repositories.RepositoryBase-2.html#CG_Business_Repositories_RepositoryBase_2_ToEntity_
-  commentId: Overload:CG.Business.Repositories.RepositoryBase`2.ToEntity
-  isSpec: "True"
-  fullName: CG.Business.Repositories.RepositoryBase<TEntity, TModel>.ToEntity
-  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TEntity, TModel).ToEntity
-  nameWithType: RepositoryBase<TEntity, TModel>.ToEntity
-  nameWithType.vb: RepositoryBase(Of TEntity, TModel).ToEntity
-- uid: CG.Business.Repositories.RepositoryBase`2.ToModel(`0)
-  name: ToModel(TEntity)
-  href: api/CG.Business.Repositories.RepositoryBase-2.html#CG_Business_Repositories_RepositoryBase_2_ToModel__0_
-  commentId: M:CG.Business.Repositories.RepositoryBase`2.ToModel(`0)
-  fullName: CG.Business.Repositories.RepositoryBase<TEntity, TModel>.ToModel(TEntity)
-  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TEntity, TModel).ToModel(TEntity)
-  nameWithType: RepositoryBase<TEntity, TModel>.ToModel(TEntity)
-  nameWithType.vb: RepositoryBase(Of TEntity, TModel).ToModel(TEntity)
-- uid: CG.Business.Repositories.RepositoryBase`2.ToModel*
-  name: ToModel
-  href: api/CG.Business.Repositories.RepositoryBase-2.html#CG_Business_Repositories_RepositoryBase_2_ToModel_
-  commentId: Overload:CG.Business.Repositories.RepositoryBase`2.ToModel
-  isSpec: "True"
-  fullName: CG.Business.Repositories.RepositoryBase<TEntity, TModel>.ToModel
-  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TEntity, TModel).ToModel
-  nameWithType: RepositoryBase<TEntity, TModel>.ToModel
-  nameWithType.vb: RepositoryBase(Of TEntity, TModel).ToModel
-- uid: CG.Business.Repositories.RepositoryBase`3
-  name: RepositoryBase<TOptions, TEntity, TModel>
-  href: api/CG.Business.Repositories.RepositoryBase-3.html
-  commentId: T:CG.Business.Repositories.RepositoryBase`3
-  name.vb: RepositoryBase(Of TOptions, TEntity, TModel)
-  fullName: CG.Business.Repositories.RepositoryBase<TOptions, TEntity, TModel>
-  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions, TEntity, TModel)
-  nameWithType: RepositoryBase<TOptions, TEntity, TModel>
-  nameWithType.vb: RepositoryBase(Of TOptions, TEntity, TModel)
-- uid: CG.Business.Repositories.RepositoryBase`3.#ctor(`0)
-  name: RepositoryBase(TOptions)
-  href: api/CG.Business.Repositories.RepositoryBase-3.html#CG_Business_Repositories_RepositoryBase_3__ctor__0_
-  commentId: M:CG.Business.Repositories.RepositoryBase`3.#ctor(`0)
-  fullName: CG.Business.Repositories.RepositoryBase<TOptions, TEntity, TModel>.RepositoryBase(TOptions)
-  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions, TEntity, TModel).RepositoryBase(TOptions)
-  nameWithType: RepositoryBase<TOptions, TEntity, TModel>.RepositoryBase(TOptions)
-  nameWithType.vb: RepositoryBase(Of TOptions, TEntity, TModel).RepositoryBase(TOptions)
-- uid: CG.Business.Repositories.RepositoryBase`3.#ctor*
-  name: RepositoryBase
-  href: api/CG.Business.Repositories.RepositoryBase-3.html#CG_Business_Repositories_RepositoryBase_3__ctor_
-  commentId: Overload:CG.Business.Repositories.RepositoryBase`3.#ctor
-  isSpec: "True"
-  fullName: CG.Business.Repositories.RepositoryBase<TOptions, TEntity, TModel>.RepositoryBase
-  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions, TEntity, TModel).RepositoryBase
-  nameWithType: RepositoryBase<TOptions, TEntity, TModel>.RepositoryBase
-  nameWithType.vb: RepositoryBase(Of TOptions, TEntity, TModel).RepositoryBase
-- uid: CG.Business.Repositories.RepositoryBase`3.Options
-  name: Options
-  href: api/CG.Business.Repositories.RepositoryBase-3.html#CG_Business_Repositories_RepositoryBase_3_Options
-  commentId: P:CG.Business.Repositories.RepositoryBase`3.Options
-  fullName: CG.Business.Repositories.RepositoryBase<TOptions, TEntity, TModel>.Options
-  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions, TEntity, TModel).Options
-  nameWithType: RepositoryBase<TOptions, TEntity, TModel>.Options
-  nameWithType.vb: RepositoryBase(Of TOptions, TEntity, TModel).Options
-- uid: CG.Business.Repositories.RepositoryBase`3.Options*
-  name: Options
-  href: api/CG.Business.Repositories.RepositoryBase-3.html#CG_Business_Repositories_RepositoryBase_3_Options_
-  commentId: Overload:CG.Business.Repositories.RepositoryBase`3.Options
-  isSpec: "True"
-  fullName: CG.Business.Repositories.RepositoryBase<TOptions, TEntity, TModel>.Options
-  fullName.vb: CG.Business.Repositories.RepositoryBase(Of TOptions, TEntity, TModel).Options
-  nameWithType: RepositoryBase<TOptions, TEntity, TModel>.Options
-  nameWithType.vb: RepositoryBase(Of TOptions, TEntity, TModel).Options
 - uid: CG.Business.Repositories.RepositoryException
   name: RepositoryException
   href: api/CG.Business.Repositories.RepositoryException.html
@@ -916,15 +900,14 @@ references:
   fullName.vb: CG.Business.Stores.CrudStoreBase(Of TOptions, TModel, TKey, TRepository)
   nameWithType: CrudStoreBase<TOptions, TModel, TKey, TRepository>
   nameWithType.vb: CrudStoreBase(Of TOptions, TModel, TKey, TRepository)
-- uid: CG.Business.Stores.CrudStoreBase`4.#ctor(Microsoft.Extensions.Options.IOptions{`0},`3)
-  name: CrudStoreBase(IOptions<TOptions>, TRepository)
-  href: api/CG.Business.Stores.CrudStoreBase-4.html#CG_Business_Stores_CrudStoreBase_4__ctor_Microsoft_Extensions_Options_IOptions__0___3_
-  commentId: M:CG.Business.Stores.CrudStoreBase`4.#ctor(Microsoft.Extensions.Options.IOptions{`0},`3)
-  name.vb: CrudStoreBase(IOptions(Of TOptions), TRepository)
-  fullName: CG.Business.Stores.CrudStoreBase<TOptions, TModel, TKey, TRepository>.CrudStoreBase(Microsoft.Extensions.Options.IOptions<TOptions>, TRepository)
-  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TOptions, TModel, TKey, TRepository).CrudStoreBase(Microsoft.Extensions.Options.IOptions(Of TOptions), TRepository)
-  nameWithType: CrudStoreBase<TOptions, TModel, TKey, TRepository>.CrudStoreBase(IOptions<TOptions>, TRepository)
-  nameWithType.vb: CrudStoreBase(Of TOptions, TModel, TKey, TRepository).CrudStoreBase(IOptions(Of TOptions), TRepository)
+- uid: CG.Business.Stores.CrudStoreBase`4.#ctor(`0,`3)
+  name: CrudStoreBase(TOptions, TRepository)
+  href: api/CG.Business.Stores.CrudStoreBase-4.html#CG_Business_Stores_CrudStoreBase_4__ctor__0__3_
+  commentId: M:CG.Business.Stores.CrudStoreBase`4.#ctor(`0,`3)
+  fullName: CG.Business.Stores.CrudStoreBase<TOptions, TModel, TKey, TRepository>.CrudStoreBase(TOptions, TRepository)
+  fullName.vb: CG.Business.Stores.CrudStoreBase(Of TOptions, TModel, TKey, TRepository).CrudStoreBase(TOptions, TRepository)
+  nameWithType: CrudStoreBase<TOptions, TModel, TKey, TRepository>.CrudStoreBase(TOptions, TRepository)
+  nameWithType.vb: CrudStoreBase(Of TOptions, TModel, TKey, TRepository).CrudStoreBase(TOptions, TRepository)
 - uid: CG.Business.Stores.CrudStoreBase`4.#ctor*
   name: CrudStoreBase
   href: api/CG.Business.Stores.CrudStoreBase-4.html#CG_Business_Stores_CrudStoreBase_4__ctor_

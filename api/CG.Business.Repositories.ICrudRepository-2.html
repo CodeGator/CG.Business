@@ -83,13 +83,15 @@
   
   <h1 id="CG_Business_Repositories_ICrudRepository_2" data-uid="CG.Business.Repositories.ICrudRepository`2" class="text-break">Interface ICrudRepository&lt;TModel, TKey&gt;
   </h1>
-  <div class="markdown level0 summary"><p>This interface represents a repository type that includes simple
-CRUD operations and queries through the use of the LINQ <span class="xref">System.Linq.IQueryable&lt;T&gt;</span>.
-type.</p>
+  <div class="markdown level0 summary"><p>This interface represents a <a class="xref" href="CG.Business.Repositories.ILinqRepository-1.html">ILinqRepository&lt;TModel&gt;</a> type that
+adds additional methods to complete a simple CRUD abstraction.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CG.Business.Repositories.ILinqRepository-1.html#CG_Business_Repositories_ILinqRepository_1_AsQueryable">ILinqRepository&lt;TModel&gt;.AsQueryable()</a>
+    </div>
     <div>
       <span class="xref">System.IDisposable.Dispose()</span>
     </div>
@@ -98,7 +100,7 @@ type.</p>
   <h6><strong>Assembly</strong>: CG.Business.dll</h6>
   <h5 id="CG_Business_Repositories_ICrudRepository_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface ICrudRepository&lt;TModel, TKey&gt; : IRepository, IDisposable where TModel : ModelBase&lt;TKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ICrudRepository&lt;TModel, TKey&gt; : ILinqRepository&lt;TModel&gt;, IRepository, IDisposable where TModel : class, IModel&lt;TKey&gt; where TKey : new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -111,11 +113,13 @@ type.</p>
     <tbody>
       <tr>
         <td><span class="parametername">TModel</span></td>
-        <td></td>
+        <td><p>The model type associated with the repository.</p>
+</td>
       </tr>
       <tr>
         <td><span class="parametername">TKey</span></td>
-        <td></td>
+        <td><p>The key type associated with the model.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -172,55 +176,6 @@ added <code data-dev-comment-type="typeparamref" class="typeparamref">TModel</co
       </tr>
     </tbody>
   </table>
-  <a id="CG_Business_Repositories_ICrudRepository_2_AsQueryable_" data-uid="CG.Business.Repositories.ICrudRepository`2.AsQueryable*"></a>
-  <h4 id="CG_Business_Repositories_ICrudRepository_2_AsQueryable" data-uid="CG.Business.Repositories.ICrudRepository`2.AsQueryable">AsQueryable()</h4>
-  <div class="markdown level1 summary"><p>This method returns an <span class="xref">System.Linq.IQueryable&lt;T&gt;</span> object
-from the repository.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IQueryable&lt;TModel&gt; AsQueryable()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Linq.IQueryable</span>&lt;TModel&gt;</td>
-        <td><p>An <span class="xref">System.Linq.IQueryable&lt;T&gt;</span> object</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="CG_Business_Repositories_ICrudRepository_2_AsQueryable_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>
-The idea, with this method, is to expose the internals of the 
-underlying data store directly to the caller. I realize that means
-the abstraction is leaking implementation details. But, because of
-the way LINQ works, it&apos;s also the simplest way of doing business 
-without forcing everyone who uses this type to jump through hoops 
-trying to simultaneously hide, and expose, those very same details. 
-So yes, this abstraction is leakier than a $2 rowboat in a hurricane, 
-but, it&apos;s also usable without forcing layers of additional code onto 
-everyone that, ultimately, will probably also leak in ways we wish it 
-wouldn&apos;t. LINQ is a flexible tool we all love to use, but, it&apos;s also 
-the culprit here. If we use LINQ for queries (as I&apos;m doing her), then 
-we can live with the benefits of that decision. Of course, it also 
-means we have to live with the consequences of that decision ... 
-</p>
-<p>
-An alternative to this type of repository is the <a class="xref" href="CG.Business.Repositories.RepositoryBase.html">RepositoryBase</a>
-type, and it&apos;s variants. They all lend themselves quite nicely to 
-the use of ADO for creating highly performant query methods that 
-don&apos;t leak implementation details. 
-</p>
-</div>
   <a id="CG_Business_Repositories_ICrudRepository_2_DeleteAsync_" data-uid="CG.Business.Repositories.ICrudRepository`2.DeleteAsync*"></a>
   <h4 id="CG_Business_Repositories_ICrudRepository_2_DeleteAsync__0_System_Threading_CancellationToken_" data-uid="CG.Business.Repositories.ICrudRepository`2.DeleteAsync(`0,System.Threading.CancellationToken)">DeleteAsync(TModel, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>This method deletes a <code data-dev-comment-type="typeparamref" class="typeparamref">TModel</code> from the

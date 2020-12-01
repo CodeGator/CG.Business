@@ -92,6 +92,7 @@
     <div class="level1"><span class="xref">CG.DataAnnotations.ValidatableObject</span></div>
     <div class="level2"><span class="xref">CG.Options.OptionsBase</span></div>
     <div class="level3"><span class="xref">RepositoryOptions</span></div>
+      <div class="level4"><a class="xref" href="CG.Business.Repositories.Options.LinqRepositoryOptions.html">LinqRepositoryOptions</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -130,85 +131,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class RepositoryOptions : OptionsBase, IValidatableObject</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <h4 id="CG_Business_Repositories_Options_RepositoryOptions_SectionName" data-uid="CG.Business.Repositories.Options.RepositoryOptions.SectionName">SectionName</h4>
-  <div class="markdown level1 summary"><p>This constant represents the configuration section root for repository
-options. This means options for repositories should be bound at a
-point just above the Repositories node, in the configuration.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string SectionName = &quot;Repositories&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  <a id="CG_Business_Repositories_Options_RepositoryOptions_Assembly_" data-uid="CG.Business.Repositories.Options.RepositoryOptions.Assembly*"></a>
-  <h4 id="CG_Business_Repositories_Options_RepositoryOptions_Assembly" data-uid="CG.Business.Repositories.Options.RepositoryOptions.Assembly">Assembly</h4>
-  <div class="markdown level1 summary"><p>This property contains the optional name of the assembly that contains
-the repository strategy.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Assembly { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Business_Repositories_Options_RepositoryOptions_Strategy_" data-uid="CG.Business.Repositories.Options.RepositoryOptions.Strategy*"></a>
-  <h4 id="CG_Business_Repositories_Options_RepositoryOptions_Strategy" data-uid="CG.Business.Repositories.Options.RepositoryOptions.Strategy">Strategy</h4>
-  <div class="markdown level1 summary"><p>This property contains the name of the configured repository strategy.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Required(ErrorMessageResourceName = &quot;RepositoryOptions_Strategy&quot;, ErrorMessageResourceType = typeof(Resources))]
-public string Strategy { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.ComponentModel.DataAnnotations.IValidatableObject</span>

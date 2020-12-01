@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class CrudRepositoryBase&lt;TOptions, TEntity, TModel, TKey&gt;
+    <title>Class LinqRepositoryBase&lt;TOptions, TModel, TKey&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class CrudRepositoryBase&lt;TOptions, TEntity, TModel, TKey&gt;
+    <meta name="title" content="Class LinqRepositoryBase&lt;TOptions, TModel, TKey&gt;
    ">
     <meta name="generator" content="docfx 2.56.5.0">
     
@@ -78,13 +78,13 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Business.Repositories.CrudRepositoryBase`4">
+            <article class="content wrap" id="_content" data-uid="CG.Business.Repositories.LinqRepositoryBase`3">
   
   
-  <h1 id="CG_Business_Repositories_CrudRepositoryBase_4" data-uid="CG.Business.Repositories.CrudRepositoryBase`4" class="text-break">Class CrudRepositoryBase&lt;TOptions, TEntity, TModel, TKey&gt;
+  <h1 id="CG_Business_Repositories_LinqRepositoryBase_3" data-uid="CG.Business.Repositories.LinqRepositoryBase`3" class="text-break">Class LinqRepositoryBase&lt;TOptions, TModel, TKey&gt;
   </h1>
-  <div class="markdown level0 summary"><p>This class is an implementation of the <a class="xref" href="CG.Business.Repositories.ICrudRepository-2.html">ICrudRepository&lt;TModel, TKey&gt;</a>
-interface that adds an extra type parameter for an entity.</p>
+  <div class="markdown level0 summary"><p>This class represents a base implementation of the <a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a>
+interface that adds an additional type parameter: <code data-dev-comment-type="typeparamref" class="typeparamref">TKey</code>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -92,32 +92,24 @@ interface that adds an extra type parameter for an entity.</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">CG.DisposableBase</span></div>
     <div class="level2"><a class="xref" href="CG.Business.Repositories.RepositoryBase.html">RepositoryBase</a></div>
-    <div class="level3"><a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-2.html">CrudRepositoryBase</a>&lt;TModel, TKey&gt;</div>
-    <div class="level4"><a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-3.html">CrudRepositoryBase</a>&lt;TOptions, TModel, TKey&gt;</div>
-    <div class="level5"><span class="xref">CrudRepositoryBase&lt;TOptions, TEntity, TModel, TKey&gt;</span></div>
+    <div class="level3"><a class="xref" href="CG.Business.Repositories.RepositoryBase-1.html">RepositoryBase</a>&lt;TOptions&gt;</div>
+    <div class="level4"><a class="xref" href="CG.Business.Repositories.LinqRepositoryBase-2.html">LinqRepositoryBase</a>&lt;TOptions, TModel&gt;</div>
+    <div class="level5"><span class="xref">LinqRepositoryBase&lt;TOptions, TModel, TKey&gt;</span></div>
+      <div class="level6"><a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-3.html">CrudRepositoryBase&lt;TOptions, TModel, TKey&gt;</a></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="CG.Business.Repositories.ICrudRepository-2.html">ICrudRepository</a>&lt;TModel, TKey&gt;</div>
+    <div><a class="xref" href="CG.Business.Repositories.ILinqRepository-1.html">ILinqRepository</a>&lt;TModel&gt;</div>
     <div><a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a></div>
     <div><span class="xref">System.IDisposable</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-3.html#CG_Business_Repositories_CrudRepositoryBase_3_Options">CrudRepositoryBase&lt;TOptions, TModel, TKey&gt;.Options</a>
+      <a class="xref" href="CG.Business.Repositories.LinqRepositoryBase-2.html#CG_Business_Repositories_LinqRepositoryBase_2_AsQueryable">LinqRepositoryBase&lt;TOptions, TModel&gt;.AsQueryable()</a>
     </div>
     <div>
-      <a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_AsQueryable">CrudRepositoryBase&lt;TModel, TKey&gt;.AsQueryable()</a>
-    </div>
-    <div>
-      <a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_AddAsync__0_System_Threading_CancellationToken_">CrudRepositoryBase&lt;TModel, TKey&gt;.AddAsync(TModel, CancellationToken)</a>
-    </div>
-    <div>
-      <a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_UpdateAsync__0_System_Threading_CancellationToken_">CrudRepositoryBase&lt;TModel, TKey&gt;.UpdateAsync(TModel, CancellationToken)</a>
-    </div>
-    <div>
-      <a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-2.html#CG_Business_Repositories_CrudRepositoryBase_2_DeleteAsync__0_System_Threading_CancellationToken_">CrudRepositoryBase&lt;TModel, TKey&gt;.DeleteAsync(TModel, CancellationToken)</a>
+      <a class="xref" href="CG.Business.Repositories.RepositoryBase-1.html#CG_Business_Repositories_RepositoryBase_1_Options">RepositoryBase&lt;TOptions&gt;.Options</a>
     </div>
     <div>
       <span class="xref">CG.DisposableBase.System.IDisposable.Dispose()</span>
@@ -152,9 +144,9 @@ interface that adds an extra type parameter for an entity.</p>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="CG.Business.Repositories.html">CG.Business.Repositories</a></h6>
   <h6><strong>Assembly</strong>: CG.Business.dll</h6>
-  <h5 id="CG_Business_Repositories_CrudRepositoryBase_4_syntax">Syntax</h5>
+  <h5 id="CG_Business_Repositories_LinqRepositoryBase_3_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class CrudRepositoryBase&lt;TOptions, TEntity, TModel, TKey&gt; : CrudRepositoryBase&lt;TOptions, TModel, TKey&gt;, ICrudRepository&lt;TModel, TKey&gt;, IRepository, IDisposable where TOptions : IOptions&lt;RepositoryOptions&gt; where TEntity : class where TModel : ModelBase&lt;TKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class LinqRepositoryBase&lt;TOptions, TModel, TKey&gt; : LinqRepositoryBase&lt;TOptions, TModel&gt;, ILinqRepository&lt;TModel&gt;, IRepository, IDisposable where TOptions : IOptions&lt;RepositoryOptions&gt; where TModel : class, IModel&lt;TKey&gt; where TKey : new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -167,17 +159,12 @@ interface that adds an extra type parameter for an entity.</p>
     <tbody>
       <tr>
         <td><span class="parametername">TOptions</span></td>
-        <td><p>The options type associated with the repository.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="parametername">TEntity</span></td>
-        <td><p>The entity type associated with the repository.</p>
+        <td><p>The type of associated options.</p>
 </td>
       </tr>
       <tr>
         <td><span class="parametername">TModel</span></td>
-        <td><p>The model type associated with the repository.</p>
+        <td><p>The type of associated model.</p>
 </td>
       </tr>
       <tr>
@@ -189,15 +176,15 @@ interface that adds an extra type parameter for an entity.</p>
   </table>
   <h3 id="constructors">Constructors
   </h3>
-  <a id="CG_Business_Repositories_CrudRepositoryBase_4__ctor_" data-uid="CG.Business.Repositories.CrudRepositoryBase`4.#ctor*"></a>
-  <h4 id="CG_Business_Repositories_CrudRepositoryBase_4__ctor__0_" data-uid="CG.Business.Repositories.CrudRepositoryBase`4.#ctor(`0)">CrudRepositoryBase(TOptions)</h4>
-  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Business.Repositories.CrudRepositoryBase-4.html">CrudRepositoryBase&lt;TOptions, TEntity, TModel, TKey&gt;</a>
+  <a id="CG_Business_Repositories_LinqRepositoryBase_3__ctor_" data-uid="CG.Business.Repositories.LinqRepositoryBase`3.#ctor*"></a>
+  <h4 id="CG_Business_Repositories_LinqRepositoryBase_3__ctor__0_" data-uid="CG.Business.Repositories.LinqRepositoryBase`3.#ctor(`0)">LinqRepositoryBase(TOptions)</h4>
+  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Business.Repositories.LinqRepositoryBase-3.html">LinqRepositoryBase&lt;TOptions, TModel, TKey&gt;</a>
 class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected CrudRepositoryBase(TOptions options)</code></pre>
+    <pre><code class="lang-csharp hljs">protected LinqRepositoryBase(TOptions options)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -217,97 +204,9 @@ class.</p>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
-  <a id="CG_Business_Repositories_CrudRepositoryBase_4_ToEntity_" data-uid="CG.Business.Repositories.CrudRepositoryBase`4.ToEntity*"></a>
-  <h4 id="CG_Business_Repositories_CrudRepositoryBase_4_ToEntity__2_" data-uid="CG.Business.Repositories.CrudRepositoryBase`4.ToEntity(`2)">ToEntity(TModel)</h4>
-  <div class="markdown level1 summary"><p>This method is called to convert a model to an entity.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract TEntity ToEntity(TModel source)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TModel</span></td>
-        <td><span class="parametername">source</span></td>
-        <td><p>The object to be converted.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TEntity</span></td>
-        <td><p>A converted entity.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="CG_Business_Repositories_CrudRepositoryBase_4_ToModel_" data-uid="CG.Business.Repositories.CrudRepositoryBase`4.ToModel*"></a>
-  <h4 id="CG_Business_Repositories_CrudRepositoryBase_4_ToModel__1_" data-uid="CG.Business.Repositories.CrudRepositoryBase`4.ToModel(`1)">ToModel(TEntity)</h4>
-  <div class="markdown level1 summary"><p>This method is called to convert an entity to a model.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected abstract TModel ToModel(TEntity source)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TEntity</span></td>
-        <td><span class="parametername">source</span></td>
-        <td><p>The object to be converted.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">TModel</span></td>
-        <td><p>A converted model.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="CG.Business.Repositories.ICrudRepository-2.html">ICrudRepository&lt;TModel, TKey&gt;</a>
+      <a class="xref" href="CG.Business.Repositories.ILinqRepository-1.html">ILinqRepository&lt;TModel&gt;</a>
   </div>
   <div>
       <a class="xref" href="CG.Business.Repositories.IRepository.html">IRepository</a>

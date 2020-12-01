@@ -135,7 +135,8 @@ interface.</p>
   <h6><strong>Assembly</strong>: CG.Business.dll</h6>
   <h5 id="CG_Business_Stores_CrudStoreBase_3_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CrudStoreBase&lt;TModel, TKey, TRepository&gt; : StoreBase, ICrudStore&lt;TModel, TKey&gt;, IStore, IDisposable where TModel : ModelBase&lt;TKey&gt; where TRepository : CrudRepositoryBase&lt;TModel, TKey&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class CrudStoreBase&lt;TModel, TKey, TRepository&gt; : StoreBase, ICrudStore&lt;TModel, TKey&gt;, IStore, IDisposable where TModel : class, IModel&lt;TKey&gt; where TKey : new()
+    where TRepository : class, ICrudRepository&lt;TModel, TKey&gt;</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

@@ -83,7 +83,8 @@
   
   <h1 id="CG_Business_Models_ModelBase_1" data-uid="CG.Business.Models.ModelBase`1" class="text-break">Class ModelBase&lt;TKey&gt;
   </h1>
-  <div class="markdown level0 summary"><p>This class represents a base implmentation of a business model.</p>
+  <div class="markdown level0 summary"><p>This class is a default implmentation of the <a class="xref" href="CG.Business.Models.IModel.html">IModel</a>
+interface.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -96,6 +97,8 @@
   <div classs="implements">
     <h5>Implements</h5>
     <div><span class="xref">System.ComponentModel.DataAnnotations.IValidatableObject</span></div>
+    <div><a class="xref" href="CG.Business.Models.IModel-1.html">IModel</a>&lt;TKey&gt;</div>
+    <div><a class="xref" href="CG.Business.Models.IModel.html">IModel</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -119,7 +122,7 @@
   <h6><strong>Assembly</strong>: CG.Business.dll</h6>
   <h5 id="CG_Business_Models_ModelBase_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ModelBase&lt;TKey&gt; : ModelBase, IValidatableObject</code></pre>
+    <pre><code class="lang-csharp hljs">public class ModelBase&lt;TKey&gt; : ModelBase, IValidatableObject, IModel&lt;TKey&gt;, IModel where TKey : new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -148,7 +151,7 @@ version of <a class="xref" href="CG.Business.Models.ModelBase-1.html">ModelBase&
   </h3>
   <a id="CG_Business_Models_ModelBase_1_Key_" data-uid="CG.Business.Models.ModelBase`1.Key*"></a>
   <h4 id="CG_Business_Models_ModelBase_1_Key" data-uid="CG.Business.Models.ModelBase`1.Key">Key</h4>
-  <div class="markdown level1 summary"><p>This property contains a unique identifier for the model.</p>
+  <div class="markdown level1 summary"><p>This property contains the key for the model.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -276,6 +279,12 @@ for the model.</p>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.ComponentModel.DataAnnotations.IValidatableObject</span>
+  </div>
+  <div>
+      <a class="xref" href="CG.Business.Models.IModel-1.html">IModel&lt;TKey&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="CG.Business.Models.IModel.html">IModel</a>
   </div>
 </article>
           </div>
