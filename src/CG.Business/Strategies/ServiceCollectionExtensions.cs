@@ -1,7 +1,7 @@
 ﻿using CG.Business;
 using CG.Business.Builders;
 using CG.Business.Properties;
-using CG.Business.Repositories.Options;
+using CG.Business.Options;
 using CG.Business.Strategies.Options;
 using CG.Reflection;
 using CG.Validations;
@@ -25,8 +25,10 @@ namespace Microsoft.Extensions.DependencyInjection
         #region Public methods
 
         /// <summary>
-        /// This method dynamically registers strategy types, as configured 
-        /// in the specified configuration section. 
+        /// This method reads the configuration for a <see cref="LoaderOptions"/>
+        /// compatible section. It then uses that information to dynamically locate,
+        /// and then invoke, an extension method that registers concrete options 
+        /// and strategy types. 
         /// </summary>
         /// <param name="serviceCollection">The service collection to use 
         /// for the operation.</param>
@@ -164,10 +166,11 @@ namespace Microsoft.Extensions.DependencyInjection
         // *******************************************************************
 
         /// <summary>
-        /// This method dynamically registers strategy types, as configured 
-        /// in the specified configuration section. This variant is intended to 
-        /// work with custom builders derived from the <see cref="BuilderBase"/>
-        /// class.
+        /// This method reads the configuration for a <see cref="LoaderOptions"/>
+        /// compatible section. It then uses that information to dynamically locate,
+        /// and then invoke, an extension method that registers concrete options 
+        /// and strategy types. This variant is intended to work with custom 
+        /// builders derived from the <see cref="BuilderBase"/> class.
         /// </summary>
         /// <typeparam name="TBuilder">The type of builder to use for internal
         /// extension method search.</typeparam>
