@@ -126,8 +126,10 @@ type.</p>
   </h3>
   <a id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories*"></a>
   <h4 id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)">AddRepositories(IServiceCollection, IConfiguration, String, String)</h4>
-  <div class="markdown level1 summary"><p>This method dynamically registers repository types, as configured
-in the specified configuration section.</p>
+  <div class="markdown level1 summary"><p>This method reads the configuration for a <a class="xref" href="CG.Business.Options.LoaderOptions.html">LoaderOptions</a>
+compatible section. It then uses that information to dynamically locate,
+and then invoke, an extension method that registers concrete options
+and repository types.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -222,10 +224,11 @@ the operation can't be completed.</p>
   </table>
   <a id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories*"></a>
   <h4 id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)">AddRepositories&lt;TBuilder&gt;(IServiceCollection, IConfiguration, String, String)</h4>
-  <div class="markdown level1 summary"><p>This method dynamically registers repository types, as configured
-in the specified configuration section. This variant is intended to
-work with custom builders derived from the <a class="xref" href="CG.Business.Builders.BuilderBase.html">BuilderBase</a>
-class.</p>
+  <div class="markdown level1 summary"><p>This method reads the configuration for a <a class="xref" href="CG.Business.Options.LoaderOptions.html">LoaderOptions</a>
+compatible section. It then uses that information to dynamically locate,
+and then invoke, an extension method that registers concrete options
+and repository types. This variant is intended to work with custom
+builders derived from the <a class="xref" href="CG.Business.Builders.BuilderBase.html">BuilderBase</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -336,10 +339,130 @@ the operation can't be completed.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories*"></a>
+  <h4 id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)">AddRepositories&lt;TModel, TKey&gt;(IServiceCollection, IConfiguration, String, String)</h4>
+  <div class="markdown level1 summary"><p>This method dynamically registers repository types, as configured
+in the specified configuration section.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IServiceCollection AddRepositories&lt;TModel, TKey&gt;(this IServiceCollection serviceCollection, IConfiguration configuration, string assemblyWhiteList = &quot;&quot;, string assemblyBlackList = &quot;Microsoft*, System*, mscorlib, netstandard&quot;)
+    where TModel : class, IModel&lt;TKey&gt; where TKey : new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><span class="parametername">serviceCollection</span></td>
+        <td><p>The service collection to use
+for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration to use for the
+operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">assemblyWhiteList</span></td>
+        <td><p>An optional white list for filtering
+the list of assemblies that are searched during this operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">assemblyBlackList</span></td>
+        <td><p>An optional black list for filtering
+the list of assemblies that are searched during this operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.DependencyInjection.IServiceCollection</span></td>
+        <td><p>the value of the <code data-dev-comment-type="paramref" class="paramref">serviceCollection</code>
+parameter, for chaining calls together.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TModel</span></td>
+        <td><p>The type of associated model.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td><p>The type of associated key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The idea, with this method, is to allow the caller to specify the
+concrete repository type(s) in the configuration. If configured to
+do so, this method will load an assembly in order to resolve the
+extension method(s) needed to register the repository types.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>This exception is thrown whenever
+one ore more of the parameters is missing, or invalid.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CG.Business.BusinessException.html">BusinessException</a></td>
+        <td><p>This exception is thrown whenver
+the operation can't be completed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies*"></a>
   <h4 id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)">AddStrategies(IServiceCollection, IConfiguration, String, String)</h4>
-  <div class="markdown level1 summary"><p>This method dynamically registers strategy types, as configured
-in the specified configuration section.</p>
+  <div class="markdown level1 summary"><p>This method reads the configuration for a <a class="xref" href="CG.Business.Options.LoaderOptions.html">LoaderOptions</a>
+compatible section. It then uses that information to dynamically locate,
+and then invoke, an extension method that registers concrete options
+and strategy types.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -434,10 +557,11 @@ the operation can't be completed.</p>
   </table>
   <a id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies*"></a>
   <h4 id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)">AddStrategies&lt;TBuilder&gt;(IServiceCollection, IConfiguration, String, String)</h4>
-  <div class="markdown level1 summary"><p>This method dynamically registers strategy types, as configured
-in the specified configuration section. This variant is intended to
-work with custom builders derived from the <a class="xref" href="CG.Business.Builders.BuilderBase.html">BuilderBase</a>
-class.</p>
+  <div class="markdown level1 summary"><p>This method reads the configuration for a <a class="xref" href="CG.Business.Options.LoaderOptions.html">LoaderOptions</a>
+compatible section. It then uses that information to dynamically locate,
+and then invoke, an extension method that registers concrete options
+and strategy types. This variant is intended to work with custom
+builders derived from the <a class="xref" href="CG.Business.Builders.BuilderBase.html">BuilderBase</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

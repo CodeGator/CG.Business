@@ -1299,6 +1299,15 @@ references:
   fullName.vb: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Of TBuilder)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String)
   nameWithType: ServiceCollectionExtensions.AddRepositories<TBuilder>(IServiceCollection, IConfiguration, String, String)
   nameWithType.vb: ServiceCollectionExtensions.AddRepositories(Of TBuilder)(IServiceCollection, IConfiguration, String, String)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  name: AddRepositories<TModel, TKey>(IServiceCollection, IConfiguration, String, String)
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  name.vb: AddRepositories(Of TModel, TKey)(IServiceCollection, IConfiguration, String, String)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories<TModel, TKey>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Of TModel, TKey)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String)
+  nameWithType: ServiceCollectionExtensions.AddRepositories<TModel, TKey>(IServiceCollection, IConfiguration, String, String)
+  nameWithType.vb: ServiceCollectionExtensions.AddRepositories(Of TModel, TKey)(IServiceCollection, IConfiguration, String, String)
 - uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
   name: AddStrategies(IServiceCollection, IConfiguration, String, String)
   href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_
