@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ModelBase&lt;TKey&gt;
+    <title>Class ModelBase&lt;TKey1, TKey2&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ModelBase&lt;TKey&gt;
+    <meta name="title" content="Class ModelBase&lt;TKey1, TKey2&gt;
    ">
     <meta name="generator" content="docfx 2.56.6.0">
     
@@ -78,12 +78,12 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Business.Models.ModelBase`1">
+            <article class="content wrap" id="_content" data-uid="CG.Business.Models.ModelBase`2">
   
   
-  <h1 id="CG_Business_Models_ModelBase_1" data-uid="CG.Business.Models.ModelBase`1" class="text-break">Class ModelBase&lt;TKey&gt;
+  <h1 id="CG_Business_Models_ModelBase_2" data-uid="CG.Business.Models.ModelBase`2" class="text-break">Class ModelBase&lt;TKey1, TKey2&gt;
   </h1>
-  <div class="markdown level0 summary"><p>This class is a default implmentation of the <a class="xref" href="CG.Business.Models.IModel.html">IModel</a>
+  <div class="markdown level0 summary"><p>This class is a default implementation of the <a class="xref" href="CG.Business.Models.IModel-2.html">IModel&lt;TKey1, TKey2&gt;</a>
 interface.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -92,12 +92,12 @@ interface.</p>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">CG.DataAnnotations.ValidatableObject</span></div>
     <div class="level2"><a class="xref" href="CG.Business.Models.ModelBase.html">ModelBase</a></div>
-    <div class="level3"><span class="xref">ModelBase&lt;TKey&gt;</span></div>
+    <div class="level3"><span class="xref">ModelBase&lt;TKey1, TKey2&gt;</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
     <div><span class="xref">System.ComponentModel.DataAnnotations.IValidatableObject</span></div>
-    <div><a class="xref" href="CG.Business.Models.IModel-1.html">IModel</a>&lt;TKey&gt;</div>
+    <div><a class="xref" href="CG.Business.Models.IModel-2.html">IModel</a>&lt;TKey1, TKey2&gt;</div>
     <div><a class="xref" href="CG.Business.Models.IModel.html">IModel</a></div>
   </div>
   <div class="inheritedMembers">
@@ -120,9 +120,10 @@ interface.</p>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="CG.Business.Models.html">CG.Business.Models</a></h6>
   <h6><strong>Assembly</strong>: CG.Business.dll</h6>
-  <h5 id="CG_Business_Models_ModelBase_1_syntax">Syntax</h5>
+  <h5 id="CG_Business_Models_ModelBase_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ModelBase&lt;TKey&gt; : ModelBase, IValidatableObject, IModel&lt;TKey&gt;, IModel where TKey : new()</code></pre>
+    <pre><code class="lang-csharp hljs">public class ModelBase&lt;TKey1, TKey2&gt; : ModelBase, IValidatableObject, IModel&lt;TKey1, TKey2&gt;, IModel where TKey1 : new()
+    where TKey2 : new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -134,23 +135,29 @@ interface.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TKey</span></td>
-        <td><p>The type of associated model key.</p>
+        <td><span class="parametername">TKey1</span></td>
+        <td><p>The type of associated model key 1.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TKey2</span></td>
+        <td><p>The type of associated model key 2.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="CG_Business_Models_ModelBase_1_Key_" data-uid="CG.Business.Models.ModelBase`1.Key*"></a>
-  <h4 id="CG_Business_Models_ModelBase_1_Key" data-uid="CG.Business.Models.ModelBase`1.Key">Key</h4>
-  <div class="markdown level1 summary"><p>This property contains the key for the model.</p>
+  <a id="CG_Business_Models_ModelBase_2_Key1_" data-uid="CG.Business.Models.ModelBase`2.Key1*"></a>
+  <h4 id="CG_Business_Models_ModelBase_2_Key1" data-uid="CG.Business.Models.ModelBase`2.Key1">Key1</h4>
+  <div class="markdown level1 summary"><p>This property contains the key 1 for the model.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Key]
-public TKey Key { get; set; }</code></pre>
+[Column(Order = 0)]
+public TKey1 Key1 { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -162,15 +169,41 @@ public TKey Key { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">TKey</span></td>
+        <td><span class="xref">TKey1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="CG_Business_Models_ModelBase_2_Key2_" data-uid="CG.Business.Models.ModelBase`2.Key2*"></a>
+  <h4 id="CG_Business_Models_ModelBase_2_Key2" data-uid="CG.Business.Models.ModelBase`2.Key2">Key2</h4>
+  <div class="markdown level1 summary"><p>This property contains the key 2 for the model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Key]
+[Column(Order = 1)]
+public TKey2 Key2 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey2</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <h3 id="methods">Methods
   </h3>
-  <a id="CG_Business_Models_ModelBase_1_Equals_" data-uid="CG.Business.Models.ModelBase`1.Equals*"></a>
-  <h4 id="CG_Business_Models_ModelBase_1_Equals_System_Object_" data-uid="CG.Business.Models.ModelBase`1.Equals(System.Object)">Equals(Object)</h4>
+  <a id="CG_Business_Models_ModelBase_2_Equals_" data-uid="CG.Business.Models.ModelBase`2.Equals*"></a>
+  <h4 id="CG_Business_Models_ModelBase_2_Equals_System_Object_" data-uid="CG.Business.Models.ModelBase`2.Equals(System.Object)">Equals(Object)</h4>
   <div class="markdown level1 summary"><p>This method is overriden in order to determine equality.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -214,8 +247,8 @@ public TKey Key { get; set; }</code></pre>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.Equals(System.Object)</span></div>
-  <a id="CG_Business_Models_ModelBase_1_GetHashCode_" data-uid="CG.Business.Models.ModelBase`1.GetHashCode*"></a>
-  <h4 id="CG_Business_Models_ModelBase_1_GetHashCode" data-uid="CG.Business.Models.ModelBase`1.GetHashCode">GetHashCode()</h4>
+  <a id="CG_Business_Models_ModelBase_2_GetHashCode_" data-uid="CG.Business.Models.ModelBase`2.GetHashCode*"></a>
+  <h4 id="CG_Business_Models_ModelBase_2_GetHashCode" data-uid="CG.Business.Models.ModelBase`2.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"><p>This method is overridden in order to generate a unique hash code
 for the model.</p>
 </div>
@@ -242,8 +275,8 @@ for the model.</p>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.GetHashCode()</span></div>
-  <a id="CG_Business_Models_ModelBase_1_ToString_" data-uid="CG.Business.Models.ModelBase`1.ToString*"></a>
-  <h4 id="CG_Business_Models_ModelBase_1_ToString" data-uid="CG.Business.Models.ModelBase`1.ToString">ToString()</h4>
+  <a id="CG_Business_Models_ModelBase_2_ToString_" data-uid="CG.Business.Models.ModelBase`2.ToString*"></a>
+  <h4 id="CG_Business_Models_ModelBase_2_ToString" data-uid="CG.Business.Models.ModelBase`2.ToString">ToString()</h4>
   <div class="markdown level1 summary"><p>This method returns a string that represents the current model.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -274,7 +307,7 @@ for the model.</p>
       <span class="xref">System.ComponentModel.DataAnnotations.IValidatableObject</span>
   </div>
   <div>
-      <a class="xref" href="CG.Business.Models.IModel-1.html">IModel&lt;TKey&gt;</a>
+      <a class="xref" href="CG.Business.Models.IModel-2.html">IModel&lt;TKey1, TKey2&gt;</a>
   </div>
   <div>
       <a class="xref" href="CG.Business.Models.IModel.html">IModel</a>

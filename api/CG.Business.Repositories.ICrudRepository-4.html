@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IModel&lt;TKey&gt;
+    <title>Interface ICrudRepository&lt;TModel, TKey1, TKey2, TKey3&gt;
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IModel&lt;TKey&gt;
+    <meta name="title" content="Interface ICrudRepository&lt;TModel, TKey1, TKey2, TKey3&gt;
    ">
     <meta name="generator" content="docfx 2.56.6.0">
     
@@ -78,19 +78,31 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Business.Models.IModel`1">
+            <article class="content wrap" id="_content" data-uid="CG.Business.Repositories.ICrudRepository`4">
   
   
-  <h1 id="CG_Business_Models_IModel_1" data-uid="CG.Business.Models.IModel`1" class="text-break">Interface IModel&lt;TKey&gt;
+  <h1 id="CG_Business_Repositories_ICrudRepository_4" data-uid="CG.Business.Repositories.ICrudRepository`4" class="text-break">Interface ICrudRepository&lt;TModel, TKey1, TKey2, TKey3&gt;
   </h1>
-  <div class="markdown level0 summary"><p>This interface represents a business model.</p>
+  <div class="markdown level0 summary"><p>This interface represents a <a class="xref" href="CG.Business.Repositories.ILinqRepository-1.html">ILinqRepository&lt;TModel&gt;</a> type that
+adds additional methods to complete a simple CRUD abstraction.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Business.Models.html">CG.Business.Models</a></h6>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CG.Business.Repositories.ILinqRepository-1.html#CG_Business_Repositories_ILinqRepository_1_AsQueryable">ILinqRepository&lt;TModel&gt;.AsQueryable()</a>
+    </div>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Business.Repositories.html">CG.Business.Repositories</a></h6>
   <h6><strong>Assembly</strong>: CG.Business.dll</h6>
-  <h5 id="CG_Business_Models_IModel_1_syntax">Syntax</h5>
+  <h5 id="CG_Business_Repositories_ICrudRepository_4_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IModel&lt;TKey&gt; : IModel where TKey : new()</code></pre>
+    <pre><code class="lang-csharp hljs">public interface ICrudRepository&lt;TModel, TKey1, TKey2, TKey3&gt; : ILinqRepository&lt;TModel&gt;, IRepository, IDisposable where TModel : class, IModel&lt;TKey1, TKey2, TKey3&gt; where TKey1 : new()
+    where TKey2 : new()
+    where TKey3 : new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -102,35 +114,24 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="parametername">TKey</span></td>
-        <td><p>The type of associated model key.</p>
+        <td><span class="parametername">TModel</span></td>
+        <td><p>The model type associated with the repository.</p>
 </td>
       </tr>
-    </tbody>
-  </table>
-  <h3 id="properties">Properties
-  </h3>
-  <a id="CG_Business_Models_IModel_1_Key_" data-uid="CG.Business.Models.IModel`1.Key*"></a>
-  <h4 id="CG_Business_Models_IModel_1_Key" data-uid="CG.Business.Models.IModel`1.Key">Key</h4>
-  <div class="markdown level1 summary"><p>This property contains the key for the model.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">TKey Key { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
       <tr>
-        <th>Type</th>
-        <th>Description</th>
+        <td><span class="parametername">TKey1</span></td>
+        <td><p>The key 1 type associated with the model.</p>
+</td>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td><span class="xref">TKey</span></td>
-        <td></td>
+        <td><span class="parametername">TKey2</span></td>
+        <td><p>The key 2 type associated with the model.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TKey3</span></td>
+        <td><p>The key 3 type associated with the model.</p>
+</td>
       </tr>
     </tbody>
   </table>
