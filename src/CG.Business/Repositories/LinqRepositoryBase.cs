@@ -12,6 +12,7 @@ namespace CG.Business.Repositories
     /// interface.
     /// </summary>
     /// <typeparam name="TOptions">The type of associated options.</typeparam>
+    /// <typeparam name="TModel">The type of associated model.</typeparam>
     public abstract class LinqRepositoryBase<TOptions, TModel> :
         RepositoryBase<TOptions>,
         ILinqRepository<TModel>
@@ -67,7 +68,6 @@ namespace CG.Business.Repositories
         where TModel : class, IModel<TKey>
         where TOptions : IOptions<RepositoryOptions>
         where TKey : new()
-
     {
         // *******************************************************************
         // Constructors.
@@ -77,6 +77,88 @@ namespace CG.Business.Repositories
 
         /// <summary>
         /// This constructor creates a new instance of the <see cref="LinqRepositoryBase{TOptions, TModel, TKey}"/>
+        /// class.
+        /// </summary>
+        /// <param name="options">The options to use with the repository.</param>
+        protected LinqRepositoryBase(
+            TOptions options
+            ) : base(options)
+        {
+
+        }
+
+        #endregion
+    }
+
+
+
+    /// <summary>
+    /// This class represents a base implementation of the <see cref="IRepository"/>
+    /// interface that adds additional type parameters: <typeparamref name="TKey1"/>
+    /// and <typeparamref name="TKey2"/>.
+    /// </summary>
+    /// <typeparam name="TOptions">The type of associated options.</typeparam>
+    /// <typeparam name="TModel">The type of associated model.</typeparam>
+    /// <typeparam name="TKey1">The key 1 type associated with the model.</typeparam>
+    /// <typeparam name="TKey2">The key 2 type associated with the model.</typeparam>
+    public abstract class LinqRepositoryBase<TOptions, TModel, TKey1, TKey2> :
+        LinqRepositoryBase<TOptions, TModel>,
+        ILinqRepository<TModel>
+        where TModel : class, IModel<TKey1, TKey2>
+        where TOptions : IOptions<RepositoryOptions>
+        where TKey1 : new()
+        where TKey2 : new()
+    {
+        // *******************************************************************
+        // Constructors.
+        // *******************************************************************
+
+        #region Constructors
+
+        /// <summary>
+        /// This constructor creates a new instance of the <see cref="LinqRepositoryBase{TOptions, TModel, TKey1, TKey2}"/>
+        /// class.
+        /// </summary>
+        /// <param name="options">The options to use with the repository.</param>
+        protected LinqRepositoryBase(
+            TOptions options
+            ) : base(options)
+        {
+
+        }
+
+        #endregion
+    }
+
+
+
+    /// <summary>
+    /// This class represents a base implementation of the <see cref="IRepository"/>
+    /// interface that adds additional type parameters: <typeparamref name="TKey1"/>,
+    /// <typeparamref name="TKey2"/> and <typeparamref name="TKey3"/>.
+    /// </summary>
+    /// <typeparam name="TOptions">The type of associated options.</typeparam>
+    /// <typeparam name="TModel">The type of associated model.</typeparam>
+    /// <typeparam name="TKey1">The key 1 type associated with the model.</typeparam>
+    /// <typeparam name="TKey2">The key 2 type associated with the model.</typeparam>
+    /// <typeparam name="TKey3">The key 3 type associated with the model.</typeparam>
+    public abstract class LinqRepositoryBase<TOptions, TModel, TKey1, TKey2, TKey3> :
+        LinqRepositoryBase<TOptions, TModel>,
+        ILinqRepository<TModel>
+        where TModel : class, IModel<TKey1, TKey2, TKey3>
+        where TOptions : IOptions<RepositoryOptions>
+        where TKey1 : new()
+        where TKey2 : new()
+        where TKey3 : new()
+    {
+        // *******************************************************************
+        // Constructors.
+        // *******************************************************************
+
+        #region Constructors
+
+        /// <summary>
+        /// This constructor creates a new instance of the <see cref="LinqRepositoryBase{TOptions, TModel, TKey1, TKey2, TKey3}"/>
         /// class.
         /// </summary>
         /// <param name="options">The options to use with the repository.</param>

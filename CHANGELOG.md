@@ -5,6 +5,8 @@
 
 * I bumped the major version for the new year.
 
+* I added additional keys to the crud repository and model types.
+
 ## 2020.1
 
 * I copied the code from the old CG.Core.
