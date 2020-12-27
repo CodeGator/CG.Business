@@ -746,6 +746,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html",
+          "hash": "/431Nf6PA0D1e+yP3NSDqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.html",
+          "hash": "PYoinEedfcxQuS4DDEar0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.yml",
       "output": {
         ".html": {
@@ -774,7 +798,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "rm71cFCHOETDGly34g041A=="
+          "hash": "/6bcoRB4Z1fdLkM+8Rr9Zg=="
         }
       },
       "is_incremental": false,
@@ -849,7 +873,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 63,
+          "total_file_count": 65,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
