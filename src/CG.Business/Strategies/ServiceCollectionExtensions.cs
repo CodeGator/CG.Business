@@ -81,7 +81,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Panic!
                 throw new BusinessException(
                     message: string.Format(
-                        Resources.ServiceCollectionExtensions_EmptyStrategyName,
+                        Resources.EmptyStrategyName,
                         nameof(AddStrategies)
                         )
                     );
@@ -109,7 +109,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Provide better context for the error.
                 throw new BusinessException(
                     message: string.Format(
-                        Resources.ServiceCollectionExtensions_NoLoadAssembly,
+                        Resources.NoLoadAssembly,
                         strategyOptions.Assembly
                         ),
                     innerException: ex
@@ -153,7 +153,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Panic!
                 throw new BusinessException(
                     message: string.Format(
-                        Resources.ServiceCollectionExtensions_MethodNotFound,
+                        Resources.MethodNotFound,
                         methodName
                         )
                     );
@@ -225,7 +225,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Panic!
                 throw new BusinessException(
                     message: string.Format(
-                        Resources.ServiceCollectionExtensions_EmptyStrategyName,
+                        Resources.EmptyStrategyName,
                         nameof(AddStrategies)
                         )
                     );
@@ -253,7 +253,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Provide better context for the error.
                 throw new BusinessException(
                     message: string.Format(
-                        Resources.ServiceCollectionExtensions_NoLoadAssembly,
+                        Resources.NoLoadAssembly,
                         strategyOptions.Assembly
                         ),
                     innerException: ex
@@ -303,7 +303,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Panic!
                 throw new BusinessException(
                     message: string.Format(
-                        Resources.ServiceCollectionExtensions_MethodNotFound,
+                        Resources.MethodNotFound,
                         methodName
                         )
                     );

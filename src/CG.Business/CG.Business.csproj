@@ -1,17 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>CG.Business</RootNamespace>
     <Description>This package contains business related abstractions used by other CodeGator packages. 
 
 Platforms supported:
-      .NET Standard 2.0 or above</Description>
+      .NET Core 3.1 or above</Description>
     <Company>CodeGator</Company>
     <Authors>Martin Cook</Authors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Copyright>Copyright © 2010 - 2020 by CodeGator.</Copyright>
+    <Copyright>Copyright © 2010 - 2021 by CodeGator.</Copyright>
     <PackageProjectUrl>https://github.com/CodeGator/CG.Business</PackageProjectUrl>
     <PackageTags>business, abstrations, CG.Busness, CodeGator</PackageTags>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -21,12 +21,8 @@ Platforms supported:
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netstandard2.0\CG.Business.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netcoreapp3.1\CG.Business.xml</DocumentationFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Repositories\RepositoryBase.cs~RF6e2350.TMP" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="CG.Core" Version="2021.1.1" />
@@ -60,5 +56,9 @@ Platforms supported:
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
 
 </Project>

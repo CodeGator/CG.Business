@@ -7,6 +7,10 @@
 
 * I added additional keys to the crud repository and model types.
 
+* I switched the build target to .net core 3.1
+
+* I added userepositories and usestrategies methods.
+
 ## 2020.1
 
 * I copied the code from the old CG.Core.

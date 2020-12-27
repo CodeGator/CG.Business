@@ -86,7 +86,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Panic!
                 throw new BusinessException(
                     message: string.Format(
-                        Resources.ServiceCollectionExtensions_EmptyStrategyName,
+                        Resources.EmptyStrategyName,
                         nameof(AddRepositories)
                         )
                     );
@@ -114,7 +114,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Provide better context for the error.
                 throw new BusinessException(
                     message: string.Format(
-                        Resources.ServiceCollectionExtensions_NoLoadAssembly,
+                        Resources.NoLoadAssembly,
                         loaderOptions.Assembly
                         ),
                     innerException: ex
@@ -158,7 +158,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Panic!
                 throw new BusinessException(
                     message: string.Format(
-                        Resources.ServiceCollectionExtensions_MethodNotFound,
+                        Resources.MethodNotFound,
                         methodName
                         )
                     );
@@ -233,7 +233,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Panic!
                 throw new BusinessException(
                     message: string.Format(
-                        Resources.ServiceCollectionExtensions_EmptyStrategyName,
+                        Resources.EmptyStrategyName,
                         nameof(AddRepositories)
                         )
                     );
@@ -261,7 +261,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Provide better context for the error.
                 throw new BusinessException(
                     message: string.Format(
-                        Resources.ServiceCollectionExtensions_NoLoadAssembly,
+                        Resources.NoLoadAssembly,
                         loaderOptions.Assembly
                         ),
                     innerException: ex
@@ -385,7 +385,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Panic!
                 throw new BusinessException(
                     message: string.Format(
-                        Resources.ServiceCollectionExtensions_EmptyStrategyName,
+                        Resources.EmptyStrategyName,
                         nameof(AddRepositories)
                         )
                     );
@@ -413,7 +413,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Provide better context for the error.
                 throw new BusinessException(
                     message: string.Format(
-                        Resources.ServiceCollectionExtensions_NoLoadAssembly,
+                        Resources.NoLoadAssembly,
                         loaderOptions.Assembly
                         ),
                     innerException: ex
@@ -457,7 +457,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Panic!
                 throw new BusinessException(
                     message: string.Format(
-                        Resources.ServiceCollectionExtensions_MethodNotFound,
+                        Resources.MethodNotFound,
                         methodName
                         )
                     );
