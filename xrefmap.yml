@@ -529,32 +529,32 @@ references:
   commentId: T:CG.Business.Options.LoaderOptions
   fullName: CG.Business.Options.LoaderOptions
   nameWithType: LoaderOptions
-- uid: CG.Business.Options.LoaderOptions.Assembly
-  name: Assembly
-  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions_Assembly
-  commentId: P:CG.Business.Options.LoaderOptions.Assembly
-  fullName: CG.Business.Options.LoaderOptions.Assembly
-  nameWithType: LoaderOptions.Assembly
-- uid: CG.Business.Options.LoaderOptions.Assembly*
-  name: Assembly
-  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions_Assembly_
-  commentId: Overload:CG.Business.Options.LoaderOptions.Assembly
+- uid: CG.Business.Options.LoaderOptions.AssemblyNameOrPath
+  name: AssemblyNameOrPath
+  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions_AssemblyNameOrPath
+  commentId: P:CG.Business.Options.LoaderOptions.AssemblyNameOrPath
+  fullName: CG.Business.Options.LoaderOptions.AssemblyNameOrPath
+  nameWithType: LoaderOptions.AssemblyNameOrPath
+- uid: CG.Business.Options.LoaderOptions.AssemblyNameOrPath*
+  name: AssemblyNameOrPath
+  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions_AssemblyNameOrPath_
+  commentId: Overload:CG.Business.Options.LoaderOptions.AssemblyNameOrPath
   isSpec: "True"
-  fullName: CG.Business.Options.LoaderOptions.Assembly
-  nameWithType: LoaderOptions.Assembly
-- uid: CG.Business.Options.LoaderOptions.Strategy
-  name: Strategy
-  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions_Strategy
-  commentId: P:CG.Business.Options.LoaderOptions.Strategy
-  fullName: CG.Business.Options.LoaderOptions.Strategy
-  nameWithType: LoaderOptions.Strategy
-- uid: CG.Business.Options.LoaderOptions.Strategy*
-  name: Strategy
-  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions_Strategy_
-  commentId: Overload:CG.Business.Options.LoaderOptions.Strategy
+  fullName: CG.Business.Options.LoaderOptions.AssemblyNameOrPath
+  nameWithType: LoaderOptions.AssemblyNameOrPath
+- uid: CG.Business.Options.LoaderOptions.Name
+  name: Name
+  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions_Name
+  commentId: P:CG.Business.Options.LoaderOptions.Name
+  fullName: CG.Business.Options.LoaderOptions.Name
+  nameWithType: LoaderOptions.Name
+- uid: CG.Business.Options.LoaderOptions.Name*
+  name: Name
+  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions_Name_
+  commentId: Overload:CG.Business.Options.LoaderOptions.Name
   isSpec: "True"
-  fullName: CG.Business.Options.LoaderOptions.Strategy
-  nameWithType: LoaderOptions.Strategy
+  fullName: CG.Business.Options.LoaderOptions.Name
+  nameWithType: LoaderOptions.Name
 - uid: CG.Business.Repositories
   name: CG.Business.Repositories
   href: api/CG.Business.Repositories.html
@@ -1723,38 +1723,6 @@ references:
   commentId: T:CG.Business.Strategies.Options.StrategyOptions
   fullName: CG.Business.Strategies.Options.StrategyOptions
   nameWithType: StrategyOptions
-- uid: CG.Business.Strategies.Options.StrategyOptions.Assembly
-  name: Assembly
-  href: api/CG.Business.Strategies.Options.StrategyOptions.html#CG_Business_Strategies_Options_StrategyOptions_Assembly
-  commentId: P:CG.Business.Strategies.Options.StrategyOptions.Assembly
-  fullName: CG.Business.Strategies.Options.StrategyOptions.Assembly
-  nameWithType: StrategyOptions.Assembly
-- uid: CG.Business.Strategies.Options.StrategyOptions.Assembly*
-  name: Assembly
-  href: api/CG.Business.Strategies.Options.StrategyOptions.html#CG_Business_Strategies_Options_StrategyOptions_Assembly_
-  commentId: Overload:CG.Business.Strategies.Options.StrategyOptions.Assembly
-  isSpec: "True"
-  fullName: CG.Business.Strategies.Options.StrategyOptions.Assembly
-  nameWithType: StrategyOptions.Assembly
-- uid: CG.Business.Strategies.Options.StrategyOptions.SectionName
-  name: SectionName
-  href: api/CG.Business.Strategies.Options.StrategyOptions.html#CG_Business_Strategies_Options_StrategyOptions_SectionName
-  commentId: F:CG.Business.Strategies.Options.StrategyOptions.SectionName
-  fullName: CG.Business.Strategies.Options.StrategyOptions.SectionName
-  nameWithType: StrategyOptions.SectionName
-- uid: CG.Business.Strategies.Options.StrategyOptions.Strategy
-  name: Strategy
-  href: api/CG.Business.Strategies.Options.StrategyOptions.html#CG_Business_Strategies_Options_StrategyOptions_Strategy
-  commentId: P:CG.Business.Strategies.Options.StrategyOptions.Strategy
-  fullName: CG.Business.Strategies.Options.StrategyOptions.Strategy
-  nameWithType: StrategyOptions.Strategy
-- uid: CG.Business.Strategies.Options.StrategyOptions.Strategy*
-  name: Strategy
-  href: api/CG.Business.Strategies.Options.StrategyOptions.html#CG_Business_Strategies_Options_StrategyOptions_Strategy_
-  commentId: Overload:CG.Business.Strategies.Options.StrategyOptions.Strategy
-  isSpec: "True"
-  fullName: CG.Business.Strategies.Options.StrategyOptions.Strategy
-  nameWithType: StrategyOptions.Strategy
 - uid: CG.Business.Strategies.StrategyBase
   name: StrategyBase
   href: api/CG.Business.Strategies.StrategyBase.html
