@@ -19,15 +19,15 @@ namespace CG.Business.Options
         /// <summary>
         /// This property contains the name of a configured loader strategy.
         /// </summary>
-        [Required(ErrorMessageResourceName = "LoaderOptions_Strategy",
+        [Required(ErrorMessageResourceName = "LoaderOptions_Name",
                   ErrorMessageResourceType = typeof(Resources))]
-        public string Strategy { get; set; }
+        public string Name { get; set; }
 
         /// <summary>
-        /// This property contains the optional name of an assembly that 
-        /// contains one or more extension method(s), for the loader strategy.
+        /// This property contains the optional name of, or path to, an assembly 
+        /// that contains one or more extension method(s), for the loader strategy.
         /// </summary>
-        public string Assembly { get; set; }
+        public string AssemblyNameOrPath { get; set; }
 
         #endregion
     }

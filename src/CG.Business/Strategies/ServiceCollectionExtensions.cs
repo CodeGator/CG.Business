@@ -9,6 +9,10 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.Linq;
 using System.Reflection;
+using CG.Options;
+using CG.DataAnnotations;
+using System.IO;
+using CG.Configuration;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -61,19 +65,51 @@ namespace Microsoft.Extensions.DependencyInjection
             Guard.Instance().ThrowIfNull(serviceCollection, nameof(serviceCollection))
                 .ThrowIfNull(configuration, nameof(configuration));
 
-            // Get the appropriate configuration section.
-            var section = configuration.GetSection(
-                StrategyOptions.SectionName
-                );
+            // Check the configuration path, just in case we need to adjust it, to 
+            //   work with this method.
 
-            // Register the strategy options with the DI container.
-            serviceCollection.ConfigureOptions<StrategyOptions>(
-                section,
-                out var strategyOptions
-                );
+            // Get the path for the current section.
+            var path = configuration.GetPath();
+
+            // Are we pointed to a strategy section?
+            if (false == path.EndsWith("Strategy"))
+            {
+                // Point to the proper section.
+                configuration = configuration.GetSection("Strategy");
+
+                // Get the new path.
+                path = configuration.GetPath();
+            }
+
+            // Now we should be pointed to the strategy section, but, just in case, 
+            //   let's do one more check. We're doing this here because configuration
+            //   bugs are difficult and frustrating to troubleshoot, so, we want to 
+            //   provide as much feedback as is practical to the caller.
+
+            if (false == path.EndsWith("Strategy"))
+            {
+                // Panic!
+                throw new ConfigurationException(
+                    message: string.Format(
+                        Resources.WrongSection,
+                        nameof(AddStrategies),
+                        path,
+                        $"{configuration.GetPath()}:Strategy"
+                        )
+                    );
+            }
+
+            // Create the loader options.
+            var loaderOptions = new LoaderOptions();
+
+            // Bind the loader options to the configuration.
+            configuration.Bind(loaderOptions);
+
+            // Verify the options.
+            (loaderOptions as OptionsBase)?.ThrowIfInvalid();
 
             // Trim the strategy name, just in case.
-            var strategyName = strategyOptions.Strategy.Trim();
+            var strategyName = loaderOptions.Name.Trim();
 
             // Should never happen, but, pffft, check it anyway
             if (string.IsNullOrEmpty(strategyName))
@@ -89,19 +125,39 @@ namespace Microsoft.Extensions.DependencyInjection
 
             try
             {
-                // Should we try to load an assembly for the strategy?
-                if (false == string.IsNullOrEmpty(strategyOptions.Assembly))
+                // Should we try to load an assembly for the repository strategy?
+                if (false == string.IsNullOrEmpty(loaderOptions.AssemblyNameOrPath))
                 {
-                    // Load the assembly.
-                    _ = Assembly.Load(strategyOptions.Assembly);
+                    // Should we load the assembly by path, or name?
+                    if (loaderOptions.AssemblyNameOrPath.EndsWith(".dll"))
+                    {
+                        // Load the assembly.
+                        _ = Assembly.LoadFrom(
+                            loaderOptions.AssemblyNameOrPath
+                            );
 
-                    // If an assembly was specified then we should be able to
-                    // make use of the white list to significantly improve 
-                    //   the runtime of the search operation we're about to
-                    //   perform.
-                    assemblyWhiteList = assemblyWhiteList.Length > 0
-                        ? $"{assemblyWhiteList}, {strategyOptions.Assembly}"
-                        : assemblyWhiteList;
+                        // If an assembly path was specified then we should be able
+                        //   to doctor that path up a bit and add it to the white list
+                        //   to significantly improve the runtime of the search operation
+                        //   we're about to perform.
+                        assemblyWhiteList = assemblyWhiteList.Length > 0
+                            ? $"{assemblyWhiteList}, {Path.GetFileNameWithoutExtension(loaderOptions.AssemblyNameOrPath)}"
+                            : $"{Path.GetFileNameWithoutExtension(loaderOptions.AssemblyNameOrPath)}";
+                    }
+                    else
+                    {
+                        // Load the assembly by yname.
+                        _ = Assembly.Load(
+                            loaderOptions.AssemblyNameOrPath
+                            );
+
+                        // If an assembly name was specified then we should be able to
+                        //   make use of the white list to significantly improve the
+                        //   runtime of the search operation we're about to perform.
+                        assemblyWhiteList = assemblyWhiteList.Length > 0
+                            ? $"{assemblyWhiteList}, {loaderOptions.AssemblyNameOrPath}"
+                            : $"{loaderOptions.AssemblyNameOrPath}";
+                    }                    
                 }
             }
             catch (Exception ex)
@@ -110,7 +166,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 throw new BusinessException(
                     message: string.Format(
                         Resources.NoLoadAssembly,
-                        strategyOptions.Assembly
+                        loaderOptions.AssemblyNameOrPath
                         ),
                     innerException: ex
                     );
@@ -132,9 +188,32 @@ namespace Microsoft.Extensions.DependencyInjection
             if (methods.Any())
             {
                 // Drill down to the right configuration sub-section.
-                var subSection = section.GetSection(
+                var subSection = configuration.GetSection(
                     strategyName
                     );
+
+                // Now we should be pointed to the named sub-section under the strategy
+                //   section, but, just in case, let's do one more check. We're doing
+                //   this here because configuration bugs are difficult and frustrating
+                //   to troubleshoot, so, we want to provide as much feedback as is
+                //   practical to the caller.
+
+                // Get the path.
+                path = subSection.GetPath();
+
+                // Are we not pointed to the sub-section?
+                if (false == path.EndsWith(strategyName))
+                {
+                    // Panic!
+                    throw new ConfigurationException(
+                        message: string.Format(
+                            Resources.WrongSection,
+                            nameof(AddStrategies),
+                            path,
+                            $"{configuration.GetPath()}:{strategyName}"
+                            )
+                        );
+                }
 
                 // We'll use the first matching method.
                 var method = methods.First();
@@ -207,17 +286,20 @@ namespace Microsoft.Extensions.DependencyInjection
 
             // Get the appropriate configuration section.
             var section = configuration.GetSection(
-                StrategyOptions.SectionName
+                "Strategy"
                 );
 
-            // Register the strategy options with the DI container.
-            serviceCollection.ConfigureOptions<StrategyOptions>(
-                section,
-                out var strategyOptions
-                );
+            // Create the loader options.
+            var loaderOptions = new LoaderOptions();
+
+            // Bind the loader options to the configuration.
+            section.Bind(loaderOptions);
+
+            // Verify the options.
+            (loaderOptions as OptionsBase)?.ThrowIfInvalid();
 
             // Trim the strategy name, just in case.
-            var strategyName = strategyOptions.Strategy.Trim();
+            var strategyName = loaderOptions.Name.Trim();
 
             // Should never happen, but, pffft, check it anyway
             if (string.IsNullOrEmpty(strategyName))
@@ -233,19 +315,39 @@ namespace Microsoft.Extensions.DependencyInjection
 
             try
             {
-                // Should we try to load an assembly for the strategy?
-                if (false == string.IsNullOrEmpty(strategyOptions.Assembly))
+                // Should we try to load an assembly for the repository strategy?
+                if (false == string.IsNullOrEmpty(loaderOptions.AssemblyNameOrPath))
                 {
-                    // Load the assembly.
-                    _ = Assembly.Load(strategyOptions.Assembly);
+                    // Should we load the assembly by path, or name?
+                    if (loaderOptions.AssemblyNameOrPath.EndsWith(".dll"))
+                    {
+                        // Load the assembly.
+                        _ = Assembly.LoadFrom(
+                            loaderOptions.AssemblyNameOrPath
+                            );
 
-                    // If an assembly was specified then we should be able to
-                    // make use of the white list to significantly improve 
-                    //   the runtime of the search operation we're about to
-                    //   perform.
-                    assemblyWhiteList = assemblyWhiteList.Length > 0
-                        ? $"{assemblyWhiteList}, {strategyOptions.Assembly}"
-                        : assemblyWhiteList;
+                        // If an assembly path was specified then we should be able
+                        //   to doctor that path up a bit and add it to the white list
+                        //   to significantly improve the runtime of the search operation
+                        //   we're about to perform.
+                        assemblyWhiteList = assemblyWhiteList.Length > 0
+                            ? $"{assemblyWhiteList}, {Path.GetFileNameWithoutExtension(loaderOptions.AssemblyNameOrPath)}"
+                            : $"{ Path.GetFileNameWithoutExtension(loaderOptions.AssemblyNameOrPath)}";
+                    }
+                    else
+                    {
+                        // Load the assembly by yname.
+                        _ = Assembly.Load(
+                            loaderOptions.AssemblyNameOrPath
+                            );
+
+                        // If an assembly name was specified then we should be able to
+                        //   make use of the white list to significantly improve the
+                        //   runtime of the search operation we're about to perform.
+                        assemblyWhiteList = assemblyWhiteList.Length > 0
+                            ? $"{assemblyWhiteList}, {loaderOptions.AssemblyNameOrPath}"
+                            : $"{loaderOptions.AssemblyNameOrPath}";
+                    }
                 }
             }
             catch (Exception ex)
@@ -254,7 +356,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 throw new BusinessException(
                     message: string.Format(
                         Resources.NoLoadAssembly,
-                        strategyOptions.Assembly
+                        loaderOptions.AssemblyNameOrPath
                         ),
                     innerException: ex
                     );

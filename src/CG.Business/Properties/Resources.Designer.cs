@@ -115,11 +115,11 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Loader strategy options require a &apos;Strategy&apos; field and it appears to be missing, or empty. .
+        ///   Looks up a localized string similar to Loader strategy options require a &apos;Name&apos; field and it appears to be missing, or empty. .
         /// </summary>
-        internal static string LoaderOptions_Strategy {
+        internal static string LoaderOptions_Name {
             get {
-                return ResourceManager.GetString("LoaderOptions_Strategy", resourceCulture);
+                return ResourceManager.GetString("LoaderOptions_Name", resourceCulture);
             }
         }
         
@@ -142,15 +142,6 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Repository options require a &apos;Strategy&apos; field and it appears to be missing, or empty. Check the configuration to ensure that it contains a &apos;Strategy&apos; field under the &apos;Repositories&apos; section. Also, ensure that you&apos;re binding to the properties above the &apos;Repositories&apos; section, so that the binding operation won&apos;t fail and the options will validate properly..
-        /// </summary>
-        internal static string RepositoryOptions_Strategy {
-            get {
-                return ResourceManager.GetString("RepositoryOptions_Strategy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Failed to locate an extension method named: &apos;{0}&apos; accepting {1} and IConfiguration arguments. Do you have the corresponding assembly loaded, or specified for loading in the configuration? Also, is the strategy name correct?.
         /// </summary>
         internal static string ServiceCollectionExtensions_MethodNotFound2 {
@@ -160,11 +151,11 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Strategy options require a &apos;Strategy&apos; field and it appears to be missing, or empty. Check the configuration to ensure that it contains a &apos;Strategy&apos; field under the &apos;Strategies&apos; section. Also, ensure that you&apos;re binding to the properties above the &apos;Strategies&apos; section, so that the binding operation won&apos;t fail and the options will validate properly..
+        ///   Looks up a localized string similar to {0} error! It appears the method was called using the &apos;{1}&apos; configuration section. The method should be called using the &apos;{2}&apos; section..
         /// </summary>
-        internal static string StrategyOptions_Strategy {
+        internal static string WrongSection {
             get {
-                return ResourceManager.GetString("StrategyOptions_Strategy", resourceCulture);
+                return ResourceManager.GetString("WrongSection", resourceCulture);
             }
         }
     }

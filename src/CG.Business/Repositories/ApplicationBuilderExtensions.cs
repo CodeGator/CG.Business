@@ -5,15 +5,13 @@ using CG.DataAnnotations;
 using CG.Options;
 using CG.Reflection;
 using CG.Validations;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
 
 namespace Microsoft.AspNetCore.Builder
 {
@@ -58,9 +56,8 @@ namespace Microsoft.AspNetCore.Builder
                 .ThrowIfNull(hostEnvironment, nameof(hostEnvironment));
 
             // Get the configuration.
-            var configuration = applicationBuilder.ApplicationServices.GetRequiredService<
-                IConfiguration
-                >();
+            var configuration = applicationBuilder.ApplicationServices
+                    .GetRequiredService<IConfiguration>();
 
             // Get the appropriate configuration section.
             var section = configuration.GetSection(
@@ -77,7 +74,7 @@ namespace Microsoft.AspNetCore.Builder
             (loaderOptions as OptionsBase)?.ThrowIfInvalid();
 
             // Trim the strategy name, just in case.
-            var strategyName = loaderOptions.Strategy.Trim();
+            var strategyName = loaderOptions.Name.Trim();
 
             // Should never happen, but, pffft, check it anyway
             if (string.IsNullOrEmpty(strategyName))
@@ -94,18 +91,38 @@ namespace Microsoft.AspNetCore.Builder
             try
             {
                 // Should we try to load an assembly for the repository strategy?
-                if (false == string.IsNullOrEmpty(loaderOptions.Assembly))
+                if (false == string.IsNullOrEmpty(loaderOptions.AssemblyNameOrPath))
                 {
-                    // Load the assembly.
-                    _ = Assembly.Load(loaderOptions.Assembly);
+                    // Should we load the assembly by path, or name?
+                    if (loaderOptions.AssemblyNameOrPath.EndsWith(".dll"))
+                    {
+                        // Load the assembly.
+                        _ = Assembly.LoadFrom(
+                            loaderOptions.AssemblyNameOrPath
+                            );
 
-                    // If an assembly was specified then we should be able to
-                    // make use of the white list to significantly improve 
-                    //   the runtime of the search operation we're about to
-                    //   perform.
-                    assemblyWhiteList = assemblyWhiteList.Length > 0
-                        ? $"{assemblyWhiteList}, {loaderOptions.Assembly}"
-                        : assemblyWhiteList;
+                        // If an assembly path was specified then we should be able
+                        //   to doctor that path up a bit and add it to the white list
+                        //   to significantly improve the runtime of the search operation
+                        //   we're about to perform.
+                        assemblyWhiteList = assemblyWhiteList.Length > 0
+                            ? $"{assemblyWhiteList}, {Path.GetFileNameWithoutExtension(loaderOptions.AssemblyNameOrPath)}"
+                            : $"{Path.GetFileNameWithoutExtension(loaderOptions.AssemblyNameOrPath)}";
+                    }
+                    else
+                    {
+                        // Load the assembly by yname.
+                        _ = Assembly.Load(
+                            loaderOptions.AssemblyNameOrPath
+                            );
+
+                        // If an assembly name was specified then we should be able to
+                        //   make use of the white list to significantly improve the
+                        //   runtime of the search operation we're about to perform.
+                        assemblyWhiteList = assemblyWhiteList.Length > 0
+                            ? $"{assemblyWhiteList}, {loaderOptions.AssemblyNameOrPath}"
+                            : $"{loaderOptions.AssemblyNameOrPath}";
+                    }
                 }
             }
             catch (Exception ex)
@@ -114,7 +131,7 @@ namespace Microsoft.AspNetCore.Builder
                 throw new BusinessException(
                     message: string.Format(
                         Resources.NoLoadAssembly,
-                        loaderOptions.Assembly
+                        loaderOptions.AssemblyNameOrPath
                         ),
                     innerException: ex
                     );

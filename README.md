@@ -26,8 +26,7 @@ The package contains business related abstractions used by other CodeGator packa
 * CG.Business.Strategies.StrategyException
 
 #### What platform(s) does it support?
-* .NET 4.61x or above
-* .NET Standard 2.x or higher
+* .NET Core 3.1 or above
 
 #### How do I install it?
 The binary is hosted on [NuGet](https://www.nuget.org/packages/CG.Business). To install the package using the NuGet package manager:
