@@ -194,90 +194,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Repositories.CrudRepositoryBase-3.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Repositories.CrudRepositoryBase-3.html",
-          "hash": "0Ylas23oxRfnxxF1JexlNg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Repositories.CrudRepositoryBase-4.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Repositories.CrudRepositoryBase-4.html",
-          "hash": "eUEa+W1OtMT5kK82qni6hg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Repositories.CrudRepositoryBase-5.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Repositories.CrudRepositoryBase-5.html",
-          "hash": "GFtizcz0Es18Pc6ivNEDFg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Repositories.ICrudRepository-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Repositories.ICrudRepository-2.html",
-          "hash": "4swRlfxnXr6dljeWrX1Paw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Repositories.ICrudRepository-3.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Repositories.ICrudRepository-3.html",
-          "hash": "mIIEvznReyoTUE+1pmeN6A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Repositories.ICrudRepository-4.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Repositories.ICrudRepository-4.html",
-          "hash": "WWH5JGHAJEIGsWrMCfQ+3A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Repositories.ILinqRepository-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Repositories.ILinqRepository-1.html",
-          "hash": "vlSD8m6qx/TyMH4hEChLRw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CG.Business.Repositories.IRepository.yml",
       "output": {
         ".html": {
@@ -290,83 +206,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Repositories.KeyUtility.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Repositories.KeyUtility.html",
-          "hash": "btw/jT/qyCctJ9Y7MtBH7g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Repositories.LinqRepositoryBase-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Repositories.LinqRepositoryBase-2.html",
-          "hash": "pD1zV90gZBFhHJwINhew4w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Repositories.LinqRepositoryBase-3.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Repositories.LinqRepositoryBase-3.html",
-          "hash": "fCEZ4ZkuAjcYUZxRFtSASg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Repositories.LinqRepositoryBase-4.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Repositories.LinqRepositoryBase-4.html",
-          "hash": "DKcsPoQeXkbmfGZmC42PVQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Repositories.LinqRepositoryBase-5.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Repositories.LinqRepositoryBase-5.html",
-          "hash": "0gwcpAWWXTBljAKXHSXH/w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Repositories.Options.LinqRepositoryOptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Repositories.Options.LinqRepositoryOptions.html",
-          "hash": "Vo7Ya8B6ZG9ShLhKhpZRKw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CG.Business.Repositories.Options.RepositoryOptions.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.Options.RepositoryOptions.html",
-          "hash": "6lt7fkPPHRs7mDjNZ0u9bQ=="
+          "hash": "7D7wWK4raufZ7YnmplPoRQ=="
         }
       },
       "is_incremental": false,
@@ -378,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.Options.html",
-          "hash": "TujBbWPx9q2w/0Lsrq6i/g=="
+          "hash": "xoIwkaIkM+71sNG8u7PLsw=="
         }
       },
       "is_incremental": false,
@@ -390,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.RepositoryBase-1.html",
-          "hash": "fuVzohoDbl6BjV1ewOp6oA=="
+          "hash": "7H71l+XZDNNHqwJaQU/L/w=="
         }
       },
       "is_incremental": false,
@@ -426,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.html",
-          "hash": "+9nHMEyuiZpeeNJdM1O3rg=="
+          "hash": "kgMiwT0k3tOl7ufu4RnAMg=="
         }
       },
       "is_incremental": false,
@@ -518,42 +362,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Stores.CrudStoreBase-3.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Stores.CrudStoreBase-3.html",
-          "hash": "iLhGfCJ+ZkgVrUAskyB4JA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Stores.CrudStoreBase-4.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Stores.CrudStoreBase-4.html",
-          "hash": "VSV3jltgCHqMMp+yAlaYqA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Stores.ICrudStore-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Stores.ICrudStore-2.html",
-          "hash": "joWvltqYPLXpFsytaSG7tw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CG.Business.Stores.IStore.yml",
       "output": {
         ".html": {
@@ -606,7 +414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Stores.StoreBase.html",
-          "hash": "Q0fF5t1G6v3Qpkpm43u0kw=="
+          "hash": "3Ozy0XZFbQLgeovSux/IMA=="
         }
       },
       "is_incremental": false,
@@ -630,7 +438,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Stores.html",
-          "hash": "N7fDIR5wwFOzJYT33rlTtg=="
+          "hash": "R2O6PHwBYoO/77o5oN4Mpw=="
         }
       },
       "is_incremental": false,
@@ -798,7 +606,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "/6bcoRB4Z1fdLkM+8Rr9Zg=="
+          "hash": "6R1E1XBp/I9oH594pCi+iQ=="
         }
       },
       "is_incremental": false,
@@ -873,7 +681,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 65,
+          "total_file_count": 49,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
