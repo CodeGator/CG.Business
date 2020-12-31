@@ -61,56 +61,11 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} failed to add a new {1}! parameter: {2}. See inner exception(s) for more detail..
-        /// </summary>
-        internal static string CrudStoreBase_AddAsync {
-            get {
-                return ResourceManager.GetString("CrudStoreBase_AddAsync", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {0} failed to delete a {1}! parameter: {2}. See inner exception(s) for more detail..
-        /// </summary>
-        internal static string CrudStoreBase_DeleteAsync {
-            get {
-                return ResourceManager.GetString("CrudStoreBase_DeleteAsync", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {0} failed to update a {1}! parameter: {2}. See inner exception(s) for more detail..
-        /// </summary>
-        internal static string CrudStoreBase_UpdateAsync {
-            get {
-                return ResourceManager.GetString("CrudStoreBase_UpdateAsync", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Despite our best efforts, you&apos;ve somehow managed to call the &apos;{0}&apos; method with an empty strategy name! Please correct the strategy name in the associated options and try again..
         /// </summary>
         internal static string EmptyStrategyName {
             get {
                 return ResourceManager.GetString("EmptyStrategyName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to The KeyUtility doesn&apos;t know how to deal with a key of type: &apos;{0}&apos;..
-        /// </summary>
-        internal static string KeyUtility_KeyType {
-            get {
-                return ResourceManager.GetString("KeyUtility_KeyType", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LinqRepository options require a &apos;ConnectionString&apos; field and it appears to be missing, or empty. .
-        /// </summary>
-        internal static string LinqRepositoryOptions_CS {
-            get {
-                return ResourceManager.GetString("LinqRepositoryOptions_CS", resourceCulture);
             }
         }
         
@@ -133,20 +88,20 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Failed to locate an extension method named: &apos;{0}&apos; accepting {1} and IConfiguration arguments. Do you have the corresponding assembly loaded, or specified for loading in the configuration? Also, is the strategy name correct?.
+        /// </summary>
+        internal static string MethodNotFound2 {
+            get {
+                return ResourceManager.GetString("MethodNotFound2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unable to load the specified assembly: &apos;{0}&apos;. If this is a path to an assembly, is it correct? If this is an assembly name, is the corresponding dll file in your path? See inner exception(s) for more detail..
         /// </summary>
         internal static string NoLoadAssembly {
             get {
                 return ResourceManager.GetString("NoLoadAssembly", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Failed to locate an extension method named: &apos;{0}&apos; accepting {1} and IConfiguration arguments. Do you have the corresponding assembly loaded, or specified for loading in the configuration? Also, is the strategy name correct?.
-        /// </summary>
-        internal static string ServiceCollectionExtensions_MethodNotFound2 {
-            get {
-                return ResourceManager.GetString("ServiceCollectionExtensions_MethodNotFound2", resourceCulture);
             }
         }
         

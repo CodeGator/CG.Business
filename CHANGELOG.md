@@ -11,6 +11,8 @@
 
 * I added userepositories and usestrategies methods.
 
+* I moved the CRUD repository and store types to CG.Linq
+
 ## 2020.1
 
 * I copied the code from the old CG.Core.

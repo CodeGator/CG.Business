@@ -405,7 +405,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Panic!
                 throw new BusinessException(
                     message: string.Format(
-                        Resources.ServiceCollectionExtensions_MethodNotFound2,
+                        Resources.MethodNotFound2,
                         methodName,
                         typeof(TBuilder).Name
                         )
