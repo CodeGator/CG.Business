@@ -120,6 +120,9 @@
   <data name="EmptyStrategyName" xml:space="preserve">
     <value>Despite our best efforts, you've somehow managed to call the '{0}' method with an empty strategy name! Please correct the strategy name in the associated options and try again.</value>
   </data>
+  <data name="InvalidLoaderSection" xml:space="preserve">
+    <value>{0} error! The method was pointed to configuration section: '{1}' but the resulting LoaderOptions have failed to validate. Check the path and the corresponding configuration.</value>
+  </data>
   <data name="LoaderOptions_Name" xml:space="preserve">
     <value>Loader strategy options require a 'Name' field and it appears to be missing, or empty. </value>
   </data>

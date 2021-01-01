@@ -70,6 +70,15 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} error! The method was pointed to configuration section: &apos;{1}&apos; but the resulting LoaderOptions have failed to validate. Check the path and the corresponding configuration..
+        /// </summary>
+        internal static string InvalidLoaderSection {
+            get {
+                return ResourceManager.GetString("InvalidLoaderSection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Loader strategy options require a &apos;Name&apos; field and it appears to be missing, or empty. .
         /// </summary>
         internal static string LoaderOptions_Name {

@@ -1,18 +1,15 @@
 ﻿using CG.Business;
-using CG.Business.Builders;
-using CG.Business.Properties;
 using CG.Business.Options;
-using CG.Business.Strategies.Options;
+using CG.Business.Properties;
+using CG.Configuration;
+using CG.DataAnnotations;
 using CG.Reflection;
 using CG.Validations;
 using Microsoft.Extensions.Configuration;
 using System;
+using System.IO;
 using System.Linq;
 using System.Reflection;
-using CG.Options;
-using CG.DataAnnotations;
-using System.IO;
-using CG.Configuration;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -46,14 +43,12 @@ namespace Microsoft.Extensions.DependencyInjection
         /// parameter, for chaining calls together.</returns>
         /// <exception cref="ArgumentException">This exception is thrown whenever
         /// one ore more of the parameters is missing, or invalid.</exception>
-        /// <exception cref="BusinessException">This exception is thrown whenver
-        /// the operation can't be completed.</exception>
-        /// <remarks>
-        /// The idea, with this method, is to allow the caller to specify the
-        /// concrete strategy type(s) in the configuration. If configured to 
-        /// do so, this method will load an assembly in order to resolve the 
-        /// extension method(s) needed to register the strategy types.  
-        /// </remarks>
+        /// <exception cref="ConfigurationException">This exception is thrown whenever
+        /// the method failes to locate appropriate configuration sections and/or settings
+        /// at runtime.</exception>
+        /// <exception cref="BusinessException">This exception is thrown whenever the 
+        /// method failes to locate an appropriate extension method to call, or when that
+        /// call fails.</exception>
         public static IServiceCollection AddStrategies(
             this IServiceCollection serviceCollection,
             IConfiguration configuration,
@@ -71,8 +66,18 @@ namespace Microsoft.Extensions.DependencyInjection
             // Bind the loader options to the configuration.
             configuration.Bind(loaderOptions);
 
-            // Verify the options.
-            (loaderOptions as OptionsBase)?.ThrowIfInvalid();
+            // Verify the loader options.
+            if (false == loaderOptions.IsValid())
+            {
+                // Throw an error with (hopefully) better context.
+                throw new ConfigurationException(
+                    message: string.Format(
+                        Resources.InvalidLoaderSection,
+                        nameof(AddRepositories),
+                        configuration.GetPath()
+                        )
+                    );
+            }
 
             // Trim the strategy name, just in case.
             var strategyName = loaderOptions.Name.Trim();
@@ -81,7 +86,7 @@ namespace Microsoft.Extensions.DependencyInjection
             if (string.IsNullOrEmpty(strategyName))
             {
                 // Panic!
-                throw new BusinessException(
+                throw new ConfigurationException(
                     message: string.Format(
                         Resources.EmptyStrategyName,
                         nameof(AddStrategies)
@@ -129,7 +134,7 @@ namespace Microsoft.Extensions.DependencyInjection
             catch (Exception ex)
             {
                 // Provide better context for the error.
-                throw new BusinessException(
+                throw new ConfigurationException(
                     message: string.Format(
                         Resources.NoLoadAssembly,
                         loaderOptions.AssemblyNameOrPath
@@ -173,7 +178,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 //   extension method!
 
                 // Panic!
-                throw new BusinessException(
+                throw new ConfigurationException(
                     message: string.Format(
                         Resources.MethodNotFound,
                         methodName

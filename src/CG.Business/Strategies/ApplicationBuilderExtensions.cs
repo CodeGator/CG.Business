@@ -1,8 +1,8 @@
 ﻿using CG.Business;
 using CG.Business.Options;
 using CG.Business.Properties;
+using CG.Configuration;
 using CG.DataAnnotations;
-using CG.Options;
 using CG.Reflection;
 using CG.Validations;
 using Microsoft.AspNetCore.Hosting;
@@ -36,8 +36,8 @@ namespace Microsoft.AspNetCore.Builder
         /// <param name="applicationBuilder">The application builder to use for 
         /// the operation.</param>
         /// <param name="hostEnvironment">The host environment to use for the operation.</param>
-        /// <param name="configurationSection">The root configuration section to use
-        /// for the operation.</param>
+        /// <param name="configurationSection">The configuration sub-section to use 
+        /// for the operation. </param>
         /// <param name="assemblyBlackList">An optional black list for filtering
         /// the list of assemblies that are searched during this operation.</param>
         /// <param name="assemblyWhiteList">An optional white list for filtering
@@ -46,6 +46,12 @@ namespace Microsoft.AspNetCore.Builder
         /// parameter, for chaining calls together.</returns>
         /// <exception cref="ArgumentException">This exception is thrown whenever one
         /// or more arguments are invalid, or missing.</exception>
+        /// <exception cref="ConfigurationException">This exception is thrown whenever
+        /// the method failes to locate appropriate configuration sections and/or settings
+        /// at runtime.</exception>
+        /// <exception cref="BusinessException">This exception is thrown whenever the 
+        /// method failes to locate an appropriate extension method to call, or when that
+        /// call fails.</exception>
         public static IApplicationBuilder UseStrategies(
             this IApplicationBuilder applicationBuilder,
             IWebHostEnvironment hostEnvironment,
@@ -73,8 +79,18 @@ namespace Microsoft.AspNetCore.Builder
             // Bind the loader options to the configuration.
             section.Bind(loaderOptions);
 
-            // Verify the options.
-            (loaderOptions as OptionsBase)?.ThrowIfInvalid();
+            // Verify the loader options.
+            if (false == loaderOptions.IsValid())
+            {
+                // Throw an error with (hopefully) better context.
+                throw new ConfigurationException(
+                    message: string.Format(
+                        Resources.InvalidLoaderSection,
+                        nameof(UseStrategies),
+                        configurationSection
+                        )
+                    );
+            }
 
             // Trim the strategy name, just in case.
             var strategyName = loaderOptions.Name.Trim();
@@ -83,7 +99,7 @@ namespace Microsoft.AspNetCore.Builder
             if (string.IsNullOrEmpty(strategyName))
             {
                 // Panic!
-                throw new BusinessException(
+                throw new ConfigurationException(
                     message: string.Format(
                         Resources.EmptyStrategyName,
                         nameof(UseRepositories)
