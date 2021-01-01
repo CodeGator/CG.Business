@@ -36,6 +36,8 @@ namespace Microsoft.AspNetCore.Builder
         /// <param name="applicationBuilder">The application builder to use for 
         /// the operation.</param>
         /// <param name="hostEnvironment">The host environment to use for the operation.</param>
+        /// <param name="configurationSection">The root configuration section to use
+        /// for the operation.</param>
         /// <param name="assemblyBlackList">An optional black list for filtering
         /// the list of assemblies that are searched during this operation.</param>
         /// <param name="assemblyWhiteList">An optional white list for filtering
@@ -47,6 +49,7 @@ namespace Microsoft.AspNetCore.Builder
         public static IApplicationBuilder UseStrategies(
             this IApplicationBuilder applicationBuilder,
             IWebHostEnvironment hostEnvironment,
+            string configurationSection,
             string assemblyWhiteList = "",
             string assemblyBlackList = "Microsoft*, System*, mscorlib, netstandard"
             ) 
@@ -55,14 +58,13 @@ namespace Microsoft.AspNetCore.Builder
             Guard.Instance().ThrowIfNull(applicationBuilder, nameof(applicationBuilder))
                 .ThrowIfNull(hostEnvironment, nameof(hostEnvironment));
 
-            // Get the configuration.
-            var configuration = applicationBuilder.ApplicationServices.GetRequiredService<
-                IConfiguration
-                >();
+            // Get the configuration root.
+            var configuration = applicationBuilder.ApplicationServices
+                    .GetRequiredService<IConfiguration>();
 
-            // Get the appropriate configuration section.
+            // Navigate to the desired section.
             var section = configuration.GetSection(
-                "Strategies"
+                configurationSection
                 );
 
             // Create the loader options.
@@ -145,7 +147,7 @@ namespace Microsoft.AspNetCore.Builder
             var methods = AppDomain.CurrentDomain.ExtensionMethods(
                 typeof(IApplicationBuilder),
                 methodName,
-                new Type[] { typeof(IWebHostEnvironment) },
+                new Type[] { typeof(IWebHostEnvironment), typeof(string) },
                 assemblyWhiteList,
                 assemblyBlackList
                 );
@@ -159,7 +161,7 @@ namespace Microsoft.AspNetCore.Builder
                 // Invoke the extension method.
                 method.Invoke(
                     null,
-                    new object[] { applicationBuilder, hostEnvironment }
+                    new object[] { applicationBuilder, hostEnvironment, configurationSection }
                     );
             }
             else

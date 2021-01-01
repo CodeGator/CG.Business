@@ -88,15 +88,6 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Failed to locate an extension method named: &apos;{0}&apos; accepting {1} and IConfiguration arguments. Do you have the corresponding assembly loaded, or specified for loading in the configuration? Also, is the strategy name correct?.
-        /// </summary>
-        internal static string MethodNotFound2 {
-            get {
-                return ResourceManager.GetString("MethodNotFound2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Unable to load the specified assembly: &apos;{0}&apos;. If this is a path to an assembly, is it correct? If this is an assembly name, is the corresponding dll file in your path? See inner exception(s) for more detail..
         /// </summary>
         internal static string NoLoadAssembly {

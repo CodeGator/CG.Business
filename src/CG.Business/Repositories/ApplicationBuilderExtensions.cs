@@ -36,6 +36,8 @@ namespace Microsoft.AspNetCore.Builder
         /// <param name="applicationBuilder">The application builder to use for 
         /// the operation.</param>
         /// <param name="hostEnvironment">The host environment to use for the operation.</param>
+        /// <param name="configurationSection">The root configuration section to use
+        /// for the operation.</param>
         /// <param name="assemblyBlackList">An optional black list for filtering
         /// the list of assemblies that are searched during this operation.</param>
         /// <param name="assemblyWhiteList">An optional white list for filtering
@@ -47,6 +49,7 @@ namespace Microsoft.AspNetCore.Builder
         public static IApplicationBuilder UseRepositories(
             this IApplicationBuilder applicationBuilder,
             IWebHostEnvironment hostEnvironment,
+            string configurationSection,
             string assemblyWhiteList = "",
             string assemblyBlackList = "Microsoft*, System*, mscorlib, netstandard"
             ) 
@@ -55,13 +58,13 @@ namespace Microsoft.AspNetCore.Builder
             Guard.Instance().ThrowIfNull(applicationBuilder, nameof(applicationBuilder))
                 .ThrowIfNull(hostEnvironment, nameof(hostEnvironment));
 
-            // Get the configuration.
+            // Get the configuration root.
             var configuration = applicationBuilder.ApplicationServices
                     .GetRequiredService<IConfiguration>();
 
-            // Get the appropriate configuration section.
+            // Navigate to the desired section.
             var section = configuration.GetSection(
-                "Repositories"
+                configurationSection
                 );
 
             // Create the loader options.
@@ -70,7 +73,7 @@ namespace Microsoft.AspNetCore.Builder
             // Bind the loader options to the configuration.
             section.Bind(loaderOptions);
 
-            // Verify the options.
+            // Verify the loader options.
             (loaderOptions as OptionsBase)?.ThrowIfInvalid();
 
             // Trim the strategy name, just in case.
@@ -103,8 +106,8 @@ namespace Microsoft.AspNetCore.Builder
 
                         // If an assembly path was specified then we should be able
                         //   to doctor that path up a bit and add it to the white list
-                        //   to significantly improve the runtime of the search operation
-                        //   we're about to perform.
+                        //   to significantly improve the runtime characteristics of the
+                        //   search operation we're about to perform.
                         assemblyWhiteList = assemblyWhiteList.Length > 0
                             ? $"{assemblyWhiteList}, {Path.GetFileNameWithoutExtension(loaderOptions.AssemblyNameOrPath)}"
                             : $"{Path.GetFileNameWithoutExtension(loaderOptions.AssemblyNameOrPath)}";
@@ -118,7 +121,8 @@ namespace Microsoft.AspNetCore.Builder
 
                         // If an assembly name was specified then we should be able to
                         //   make use of the white list to significantly improve the
-                        //   runtime of the search operation we're about to perform.
+                        //   runtime characteristics of the search operation we're about
+                        //   to perform.
                         assemblyWhiteList = assemblyWhiteList.Length > 0
                             ? $"{assemblyWhiteList}, {loaderOptions.AssemblyNameOrPath}"
                             : $"{loaderOptions.AssemblyNameOrPath}";
@@ -144,7 +148,7 @@ namespace Microsoft.AspNetCore.Builder
             var methods = AppDomain.CurrentDomain.ExtensionMethods(
                 typeof(IApplicationBuilder),
                 methodName,
-                new Type[] { typeof(IWebHostEnvironment) },
+                new Type[] { typeof(IWebHostEnvironment), typeof(string) },
                 assemblyWhiteList,
                 assemblyBlackList
                 );
@@ -158,7 +162,7 @@ namespace Microsoft.AspNetCore.Builder
                 // Invoke the extension method.
                 method.Invoke(
                     null,
-                    new object[] { applicationBuilder, hostEnvironment }
+                    new object[] { applicationBuilder, hostEnvironment, configurationSection }
                     );
             }
             else
