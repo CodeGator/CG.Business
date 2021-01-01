@@ -162,8 +162,9 @@ the operation.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">configurationSection</span></td>
-        <td><p>The root configuration section to use
-for the operation.</p>
+        <td><p>The configuration sub-section to use
+for the operation. This path should point to a <a class="xref" href="CG.Business.Options.LoaderOptions.html">LoaderOptions</a>
+compatible section. If it doesn't the method will fail.</p>
 </td>
       </tr>
       <tr>
@@ -212,6 +213,20 @@ parameter, for chaining calls together.</p>
         <td><span class="xref">System.ArgumentException</span></td>
         <td><p>This exception is thrown whenever one
 or more arguments are invalid, or missing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CG.Configuration.ConfigurationException</span></td>
+        <td><p>This exception is thrown whenever
+the method failes to locate appropriate configuration sections and/or settings
+at runtime.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CG.Business.BusinessException.html">BusinessException</a></td>
+        <td><p>This exception is thrown whenever the
+method failes to locate an appropriate extension method to call, or when that
+call fails.</p>
 </td>
       </tr>
     </tbody>
@@ -254,7 +269,7 @@ the operation.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">configurationSection</span></td>
-        <td><p>The root configuration section to use
+        <td><p>The configuration sub-section to use
 for the operation.</p>
 </td>
       </tr>
@@ -304,6 +319,20 @@ parameter, for chaining calls together.</p>
         <td><span class="xref">System.ArgumentException</span></td>
         <td><p>This exception is thrown whenever one
 or more arguments are invalid, or missing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CG.Configuration.ConfigurationException</span></td>
+        <td><p>This exception is thrown whenever
+the method failes to locate appropriate configuration sections and/or settings
+at runtime.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="CG.Business.BusinessException.html">BusinessException</a></td>
+        <td><p>This exception is thrown whenever the
+method failes to locate an appropriate extension method to call, or when that
+call fails.</p>
 </td>
       </tr>
     </tbody>
