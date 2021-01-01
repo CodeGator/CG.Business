@@ -118,21 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="EmptyStrategyName" xml:space="preserve">
-    <value>Despite our best efforts, you've somehow managed to call the '{0}' method with an empty strategy name! Please correct the strategy name in the associated options and try again.</value>
+    <value>{0} error! The method encountered an empty or missing 'Name' property!   Some things to look at include: (1) Ensure the method is pointed at the correct configuration section. (2) Ensure the 'Name' property for the section is not misnamed, or missing, or empty.</value>
   </data>
   <data name="InvalidLoaderSection" xml:space="preserve">
-    <value>{0} error! The method was pointed to configuration section: '{1}' but the resulting LoaderOptions have failed to validate. Check the path and the corresponding configuration.</value>
+    <value>{0} error! The method was pointed to: '{1}' but no LoaderOptions were found there!    Some things to look at include: (1) The path should point to a section with a 'Name' property. (2) The path should use ':' symbols to delimit the sub-sections. (3) The configuration section itself should not be missing, misnamed, or empty. (4) If using appSettings.json, ensure the file exists.</value>
   </data>
   <data name="LoaderOptions_Name" xml:space="preserve">
     <value>Loader strategy options require a 'Name' field and it appears to be missing, or empty. </value>
   </data>
   <data name="MethodNotFound" xml:space="preserve">
-    <value>Failed to locate an extension method named: '{0}' accepting IServiceCollection and IConfiguration arguments. Do you have the corresponding assembly loaded, or specified for loading in the configuration? Also, is the strategy name correct?</value>
+    <value>{0} error!   Failed to locate an extension method named: '{1}' accepting IServiceCollection, IConfiguration, and string arguments!    Some things to look at include: (1) Do you have the corresponding assembly loaded, or specified for loading in the configuration? (2) Is the method part of the assembly? (3) Is the method named correctly? (4) Does the method have the correct arguments?</value>
   </data>
   <data name="NoLoadAssembly" xml:space="preserve">
-    <value>Unable to load the specified assembly: '{0}'. If this is a path to an assembly, is it correct? If this is an assembly name, is the corresponding dll file in your path? See inner exception(s) for more detail.</value>
-  </data>
-  <data name="WrongSection" xml:space="preserve">
-    <value>{0} error! It appears the method was called using the '{1}' configuration section. The method should be called using the '{2}' section.</value>
+    <value>Unable to load the specified assembly: '{0}'! See inner exception(s) for more detail.  Some things to look at include: (1) If this is a path to an assembly, is it correct? (2) If this is an assembly name, is the corresponding dll file in your path? </value>
   </data>
 </root>

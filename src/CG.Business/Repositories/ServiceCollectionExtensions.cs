@@ -181,6 +181,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 throw new BusinessException(
                     message: string.Format(
                         Resources.MethodNotFound,
+                        nameof(AddRepositories),
                         methodName
                         )
                     );

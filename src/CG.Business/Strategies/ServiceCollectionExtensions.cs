@@ -181,6 +181,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 throw new ConfigurationException(
                     message: string.Format(
                         Resources.MethodNotFound,
+                        nameof(AddStrategies),
                         methodName
                         )
                     );

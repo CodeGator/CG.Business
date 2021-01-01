@@ -189,6 +189,7 @@ namespace Microsoft.AspNetCore.Builder
                 throw new BusinessException(
                     message: string.Format(
                         Resources.MethodNotFound,
+                        nameof(UseRepositories),
                         methodName
                         )
                     );
