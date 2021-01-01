@@ -558,7 +558,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html",
-          "hash": "/431Nf6PA0D1e+yP3NSDqw=="
+          "hash": "bimhRweT4V73Gdt5I1ew8Q=="
         }
       },
       "is_incremental": false,
@@ -582,7 +582,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html",
-          "hash": "o9J/v/qgIoKaOELwTW6aIQ=="
+          "hash": "tICLh/PvJ8RGfyPKaAkiJg=="
         }
       },
       "is_incremental": false,
