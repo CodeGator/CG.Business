@@ -61,7 +61,7 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} error! The method encountered an empty or missing &apos;Name&apos; property!   Some things to look at include: (1) Ensure the method is pointed at the correct configuration section. (2) Ensure the &apos;Name&apos; property for the section is not misnamed, or missing, or empty..
+        ///   Looks up a localized string similar to {0} error! The method encountered an empty or missing &apos;Name&apos; property!.
         /// </summary>
         internal static string EmptyStrategyName {
             get {
@@ -70,7 +70,7 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} error! The method was pointed to: &apos;{1}&apos; but no LoaderOptions were found there!    Some things to look at include: (1) The path should point to a section with a &apos;Name&apos; property. (2) The path should use &apos;:&apos; symbols to delimit the sub-sections. (3) The configuration section itself should not be missing, misnamed, or empty. (4) If using appSettings.json, ensure the file exists..
+        ///   Looks up a localized string similar to {0} error! The method was pointed to: &apos;{1}&apos; but no LoaderOptions were found there!.
         /// </summary>
         internal static string InvalidLoaderSection {
             get {
@@ -79,7 +79,7 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Loader strategy options require a &apos;Name&apos; field and it appears to be missing, or empty. .
+        ///   Looks up a localized string similar to LoaderOptons requires a &apos;Name&apos; field and it appears to be missing, or empty. .
         /// </summary>
         internal static string LoaderOptions_Name {
             get {
@@ -88,7 +88,7 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} error!   Failed to locate an extension method named: &apos;{1}&apos; accepting IServiceCollection, IConfiguration, and string arguments!    Some things to look at include: (1) Do you have the corresponding assembly loaded, or specified for loading in the configuration? (2) Is the method part of the assembly? (3) Is the method named correctly? (4) Does the method have the correct arguments?.
+        ///   Looks up a localized string similar to {0} error! Failed to locate an extension method named: &apos;{1}&apos;..
         /// </summary>
         internal static string MethodNotFound {
             get {
@@ -97,7 +97,7 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unable to load the specified assembly: &apos;{0}&apos;! See inner exception(s) for more detail.  Some things to look at include: (1) If this is a path to an assembly, is it correct? (2) If this is an assembly name, is the corresponding dll file in your path? .
+        ///   Looks up a localized string similar to Unable to load the specified assembly: &apos;{0}&apos;! See inner exception(s) for more detail. .
         /// </summary>
         internal static string NoLoadAssembly {
             get {

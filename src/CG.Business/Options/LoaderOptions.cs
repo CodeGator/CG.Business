@@ -1,5 +1,6 @@
 ﻿using CG.Business.Properties;
 using CG.Options;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.ComponentModel.DataAnnotations;
 

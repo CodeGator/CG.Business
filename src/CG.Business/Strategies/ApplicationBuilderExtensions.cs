@@ -102,7 +102,7 @@ namespace Microsoft.AspNetCore.Builder
                 throw new ConfigurationException(
                     message: string.Format(
                         Resources.EmptyStrategyName,
-                        nameof(UseRepositories)
+                        nameof(UseStrategies)
                         )
                     );
             }

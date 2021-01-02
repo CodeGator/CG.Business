@@ -35,6 +35,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// for the operation.</param>
         /// <param name="configuration">The configuration to use for the 
         /// operation.</param>
+        /// <param name="serviceLifetime">The service lifetime to use for the operation.</param>
         /// <param name="assemblyBlackList">An optional black list for filtering
         /// the list of assemblies that are searched during this operation.</param>
         /// <param name="assemblyWhiteList">An optional white list for filtering
@@ -52,6 +53,7 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddRepositories(
             this IServiceCollection serviceCollection,
             IConfiguration configuration,
+            ServiceLifetime serviceLifetime = ServiceLifetime.Scoped,
             string assemblyWhiteList = "", 
             string assemblyBlackList = "Microsoft*, System*, mscorlib, netstandard"
             )
@@ -150,7 +152,7 @@ namespace Microsoft.Extensions.DependencyInjection
             var methods = AppDomain.CurrentDomain.ExtensionMethods(
                 typeof(IServiceCollection),
                 methodName,
-                new Type[] { typeof(IConfiguration) },
+                new Type[] { typeof(IConfiguration), typeof(ServiceLifetime) },
                 assemblyWhiteList,
                 assemblyBlackList
                 );
@@ -169,7 +171,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 // Invoke the extension method.
                 method.Invoke(
                     null,
-                    new object[] { serviceCollection, subSection }
+                    new object[] { serviceCollection, subSection, serviceLifetime }
                     );
             }
             else
