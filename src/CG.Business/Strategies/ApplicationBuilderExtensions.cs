@@ -190,7 +190,8 @@ namespace Microsoft.AspNetCore.Builder
                     message: string.Format(
                         Resources.MethodNotFound,
                         nameof(UseRepositories),
-                        methodName
+                        methodName,
+                        $"{nameof(IApplicationBuilder)},{nameof(IWebHostEnvironment)}, {nameof(String)}"
                         )
                     );
             }

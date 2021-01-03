@@ -13,6 +13,12 @@
 
 * I moved the CRUD repository and store types to CG.Linq
 
+* I movd the generic model types to CG.Linq.
+
+* I added service lifetime to the LoaderOptions type, and I modified the related
+    extension methods to pass that hint down during registration, so all parts
+    of a service are registered using the same lifetime rules.
+
 ## 2020.1
 
 * I copied the code from the old CG.Core.
