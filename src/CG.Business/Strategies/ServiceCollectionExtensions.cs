@@ -73,7 +73,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 throw new ConfigurationException(
                     message: string.Format(
                         Resources.InvalidLoaderSection,
-                        nameof(AddRepositories),
+                        nameof(AddStrategies),
                         configuration.GetPath()
                         )
                     );

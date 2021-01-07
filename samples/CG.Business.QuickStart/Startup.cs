@@ -20,7 +20,7 @@ namespace CG.Business.QuickStart
             //   to control what repository types get registered, and what
             //   options are passed to those repositories, at runtime.
             services.AddRepositories(
-                Configuration.GetSection("Repositories")
+                Configuration.GetSection("Foo")
                 );
         }
 
@@ -31,7 +31,7 @@ namespace CG.Business.QuickStart
             //   migrations.
             app.UseRepositories(
                 env,
-                "Repositories"
+                "Foo"
                 );
         }
     }
