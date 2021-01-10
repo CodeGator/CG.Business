@@ -35,9 +35,10 @@ namespace Microsoft.Extensions.DependencyInjection
         /// for the operation.</param>
         /// <param name="configuration">The configuration to use for the 
         /// operation.</param>
-        /// <param name="assemblyBlackList">An optional black list for filtering
-        /// the list of assemblies that are searched during this operation.</param>
+        /// <param name="serviceLifetime">The service lifetime to use for the operation.</param>
         /// <param name="assemblyWhiteList">An optional white list for filtering
+        /// the list of assemblies that are searched during this operation.</param>
+        /// <param name="assemblyBlackList">An optional black list for filtering
         /// the list of assemblies that are searched during this operation.</param>
         /// <returns>the value of the <paramref name="serviceCollection"/>
         /// parameter, for chaining calls together.</returns>
@@ -52,6 +53,7 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddRepositories(
             this IServiceCollection serviceCollection,
             IConfiguration configuration,
+            ServiceLifetime serviceLifetime = ServiceLifetime.Scoped,
             string assemblyWhiteList = "", 
             string assemblyBlackList = "Microsoft*, System*, mscorlib, netstandard"
             )
@@ -166,15 +168,28 @@ namespace Microsoft.Extensions.DependencyInjection
                 // We'll use the first matching method.
                 var method = methods.First();
 
-                // Invoke the extension method.
-                method.Invoke(
-                    null,
-                    new object[] 
-                    { 
-                        serviceCollection, 
-                        subSection, 
-                        loaderOptions.ServiceLifetime 
-                    });
+                // This loop is a hack I'm using to try to troubleshoot a problem
+                //   with Microsoft's DI implementation, where I'll register my 
+                //   types the first time, and I can verify that the registration
+                //   happens, but then, randomly, after that, the registration is
+                //   suddenly gone when the app tries to resolve the service.
+                // While walking through my code, looking for the source of this
+                //   problem, I've noticed that repeating the registrations seems 
+                //   to make the problem go away. So, I'm adding a loop here to see
+                //   if I can just call this method N times, to work around the
+                //   issue, until Microsoft, or I, figure it out for good.
+                for (var x = 0; x < 2; x++)
+                {
+                    // Invoke the extension method.
+                    method.Invoke(
+                        null,
+                        new object[]
+                        {
+                        serviceCollection,
+                        subSection,
+                        serviceLifetime
+                        });
+                }
             }
             else
             {
@@ -187,7 +202,7 @@ namespace Microsoft.Extensions.DependencyInjection
                         Resources.MethodNotFound,
                         nameof(AddRepositories),
                         methodName,
-                        $"{nameof(IServiceCollection)},{nameof(IConfiguration)}, {nameof(ServiceLifetime)}"
+                        $"{nameof(IServiceCollection)},{nameof(IConfiguration)},{nameof(ServiceLifetime)}"
                         )
                     );
             }

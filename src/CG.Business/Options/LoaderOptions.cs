@@ -30,31 +30,6 @@ namespace CG.Business.Options
         /// </summary>
         public string AssemblyNameOrPath { get; set; }
 
-        /// <summary>
-        /// This property contains a service lifetime hint, which is passed 
-        /// down the any internal abstractions, and helps to ensure that everything
-        /// in the object graph has the same lifetime rules applied.
-        /// </summary>
-        public ServiceLifetime ServiceLifetime { get; set; }
-
-        #endregion
-
-        // *******************************************************************
-        // Constructors.
-        // *******************************************************************
-
-        #region Constructors
-
-        /// <summary>
-        /// This constructor creates a new instance of the <see cref="LoaderOptions"/>
-        /// class.
-        /// </summary>
-        public LoaderOptions()
-        {
-            // Setup defaults.
-            ServiceLifetime = ServiceLifetime.Singleton;
-        }
-
         #endregion
     }
 }

@@ -35,9 +35,10 @@ namespace Microsoft.Extensions.DependencyInjection
         /// for the operation.</param>
         /// <param name="configuration">The configuration to use for the 
         /// operation.</param>
-        /// <param name="assemblyBlackList">An optional black list for filtering
-        /// the list of assemblies that are searched during this operation.</param>
+        /// <param name="serviceLifetime">The service lifetime to use for the operation.</param>
         /// <param name="assemblyWhiteList">An optional white list for filtering
+        /// the list of assemblies that are searched during this operation.</param>
+        /// <param name="assemblyBlackList">An optional black list for filtering
         /// the list of assemblies that are searched during this operation.</param>
         /// <returns>the value of the <paramref name="serviceCollection"/>
         /// parameter, for chaining calls together.</returns>
@@ -52,6 +53,7 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddStrategies(
             this IServiceCollection serviceCollection,
             IConfiguration configuration,
+            ServiceLifetime serviceLifetime = ServiceLifetime.Scoped,
             string assemblyWhiteList = "", 
             string assemblyBlackList = "Microsoft*, System*, mscorlib, netstandard"
             )
@@ -185,7 +187,7 @@ namespace Microsoft.Extensions.DependencyInjection
                         {
                         serviceCollection,
                         subSection,
-                        loaderOptions.ServiceLifetime
+                        serviceLifetime
                         });
                 }
             }
