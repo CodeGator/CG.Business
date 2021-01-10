@@ -118,19 +118,6 @@ references:
   commentId: T:CG.Business.Options.LoaderOptions
   fullName: CG.Business.Options.LoaderOptions
   nameWithType: LoaderOptions
-- uid: CG.Business.Options.LoaderOptions.#ctor
-  name: LoaderOptions()
-  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions__ctor
-  commentId: M:CG.Business.Options.LoaderOptions.#ctor
-  fullName: CG.Business.Options.LoaderOptions.LoaderOptions()
-  nameWithType: LoaderOptions.LoaderOptions()
-- uid: CG.Business.Options.LoaderOptions.#ctor*
-  name: LoaderOptions
-  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions__ctor_
-  commentId: Overload:CG.Business.Options.LoaderOptions.#ctor
-  isSpec: "True"
-  fullName: CG.Business.Options.LoaderOptions.LoaderOptions
-  nameWithType: LoaderOptions.LoaderOptions
 - uid: CG.Business.Options.LoaderOptions.AssemblyNameOrPath
   name: AssemblyNameOrPath
   href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions_AssemblyNameOrPath
@@ -157,19 +144,6 @@ references:
   isSpec: "True"
   fullName: CG.Business.Options.LoaderOptions.Name
   nameWithType: LoaderOptions.Name
-- uid: CG.Business.Options.LoaderOptions.ServiceLifetime
-  name: ServiceLifetime
-  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions_ServiceLifetime
-  commentId: P:CG.Business.Options.LoaderOptions.ServiceLifetime
-  fullName: CG.Business.Options.LoaderOptions.ServiceLifetime
-  nameWithType: LoaderOptions.ServiceLifetime
-- uid: CG.Business.Options.LoaderOptions.ServiceLifetime*
-  name: ServiceLifetime
-  href: api/CG.Business.Options.LoaderOptions.html#CG_Business_Options_LoaderOptions_ServiceLifetime_
-  commentId: Overload:CG.Business.Options.LoaderOptions.ServiceLifetime
-  isSpec: "True"
-  fullName: CG.Business.Options.LoaderOptions.ServiceLifetime
-  nameWithType: LoaderOptions.ServiceLifetime
 - uid: CG.Business.Repositories
   name: CG.Business.Repositories
   href: api/CG.Business.Repositories.html
@@ -669,12 +643,12 @@ references:
   commentId: T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
   fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
   nameWithType: ServiceCollectionExtensions
-- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
-  name: AddRepositories(IServiceCollection, IConfiguration, String, String)
-  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_
-  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
-  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String)
-  nameWithType: ServiceCollectionExtensions.AddRepositories(IServiceCollection, IConfiguration, String, String)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
+  name: AddRepositories(IServiceCollection, IConfiguration, ServiceLifetime, String, String)
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_DependencyInjection_ServiceLifetime_System_String_System_String_
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.ServiceLifetime, System.String, System.String)
+  nameWithType: ServiceCollectionExtensions.AddRepositories(IServiceCollection, IConfiguration, ServiceLifetime, String, String)
 - uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories*
   name: AddRepositories
   href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_
@@ -682,12 +656,12 @@ references:
   isSpec: "True"
   fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories
   nameWithType: ServiceCollectionExtensions.AddRepositories
-- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
-  name: AddStrategies(IServiceCollection, IConfiguration, String, String)
-  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_
-  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
-  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String)
-  nameWithType: ServiceCollectionExtensions.AddStrategies(IServiceCollection, IConfiguration, String, String)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
+  name: AddStrategies(IServiceCollection, IConfiguration, ServiceLifetime, String, String)
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_DependencyInjection_ServiceLifetime_System_String_System_String_
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.ServiceLifetime, System.String, System.String)
+  nameWithType: ServiceCollectionExtensions.AddStrategies(IServiceCollection, IConfiguration, ServiceLifetime, String, String)
 - uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies*
   name: AddStrategies
   href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies_
