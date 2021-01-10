@@ -62,42 +62,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Models.IModel-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Models.IModel-1.html",
-          "hash": "bzIEKGCi1QpEhrHk2l00Xg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Models.IModel-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Models.IModel-2.html",
-          "hash": "8yu4yEg0zfBR+PmXittQAA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Models.IModel-3.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Models.IModel-3.html",
-          "hash": "4S7zn2O5BJBNJkohwKAMMg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CG.Business.Models.IModel.yml",
       "output": {
         ".html": {
@@ -110,47 +74,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Models.ModelBase-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Models.ModelBase-1.html",
-          "hash": "PE9HfW3AB4TtPoFBbRttVg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Models.ModelBase-2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Models.ModelBase-2.html",
-          "hash": "5wZx8VSKNgVZtGRp/R58LA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CG.Business.Models.ModelBase-3.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CG.Business.Models.ModelBase-3.html",
-          "hash": "ES4h0klPNTwfSHEN/WUEgg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/CG.Business.Models.ModelBase.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Models.ModelBase.html",
-          "hash": "Ffx8D45OyY0QBs+NHf5UhA=="
+          "hash": "iwRpIP60evAWq9SvgJx82A=="
         }
       },
       "is_incremental": false,
@@ -162,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Models.html",
-          "hash": "JljFE4mbN1+pI9cKzw3phw=="
+          "hash": "7tm6eNsYvTP77BzuCuPxCw=="
         }
       },
       "is_incremental": false,
@@ -174,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Options.LoaderOptions.html",
-          "hash": "WCbWG054u2MGvI9cRJZKzQ=="
+          "hash": "rpCfMjrgq1UJiNmIphUNEA=="
         }
       },
       "is_incremental": false,
@@ -582,7 +510,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html",
-          "hash": "+qKKQZxMzpYVROi1a+973g=="
+          "hash": "+sui6//gB9C6vOJIRdEjbA=="
         }
       },
       "is_incremental": false,
@@ -606,7 +534,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "6R1E1XBp/I9oH594pCi+iQ=="
+          "hash": "B98fRhQgMn/IRgAr6z230w=="
         }
       },
       "is_incremental": false,
@@ -681,7 +609,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 49,
+          "total_file_count": 43,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

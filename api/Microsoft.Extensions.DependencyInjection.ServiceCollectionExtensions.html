@@ -125,7 +125,7 @@ type.</p>
   <h3 id="methods">Methods
   </h3>
   <a id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories*"></a>
-  <h4 id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_DependencyInjection_ServiceLifetime_System_String_System_String_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)">AddRepositories(IServiceCollection, IConfiguration, ServiceLifetime, String, String)</h4>
+  <h4 id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)">AddRepositories(IServiceCollection, IConfiguration, String, String)</h4>
   <div class="markdown level1 summary"><p>This method reads the configuration for a <a class="xref" href="CG.Business.Options.LoaderOptions.html">LoaderOptions</a>
 compatible section. It then uses that information to dynamically locate,
 and then invoke, an extension method that registers concrete options
@@ -134,7 +134,7 @@ and repository types.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IServiceCollection AddRepositories(this IServiceCollection serviceCollection, IConfiguration configuration, ServiceLifetime serviceLifetime = ServiceLifetime.Scoped, string assemblyWhiteList = &quot;&quot;, string assemblyBlackList = &quot;Microsoft*, System*, mscorlib, netstandard&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IServiceCollection AddRepositories(this IServiceCollection serviceCollection, IConfiguration configuration, string assemblyWhiteList = &quot;&quot;, string assemblyBlackList = &quot;Microsoft*, System*, mscorlib, netstandard&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -158,12 +158,6 @@ for the operation.</p>
         <td><span class="parametername">configuration</span></td>
         <td><p>The configuration to use for the
 operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.DependencyInjection.ServiceLifetime</span></td>
-        <td><span class="parametername">serviceLifetime</span></td>
-        <td><p>The service lifetime to use for the operation.</p>
 </td>
       </tr>
       <tr>
@@ -231,7 +225,7 @@ call fails.</p>
     </tbody>
   </table>
   <a id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies*"></a>
-  <h4 id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_DependencyInjection_ServiceLifetime_System_String_System_String_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)">AddStrategies(IServiceCollection, IConfiguration, ServiceLifetime, String, String)</h4>
+  <h4 id="Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_" data-uid="Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)">AddStrategies(IServiceCollection, IConfiguration, String, String)</h4>
   <div class="markdown level1 summary"><p>This method reads the configuration for a <a class="xref" href="CG.Business.Options.LoaderOptions.html">LoaderOptions</a>
 compatible section. It then uses that information to dynamically locate,
 and then invoke, an extension method that registers concrete options
@@ -240,7 +234,7 @@ and strategy types.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IServiceCollection AddStrategies(this IServiceCollection serviceCollection, IConfiguration configuration, ServiceLifetime serviceLifetime = ServiceLifetime.Scoped, string assemblyWhiteList = &quot;&quot;, string assemblyBlackList = &quot;Microsoft*, System*, mscorlib, netstandard&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IServiceCollection AddStrategies(this IServiceCollection serviceCollection, IConfiguration configuration, string assemblyWhiteList = &quot;&quot;, string assemblyBlackList = &quot;Microsoft*, System*, mscorlib, netstandard&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -264,12 +258,6 @@ for the operation.</p>
         <td><span class="parametername">configuration</span></td>
         <td><p>The configuration to use for the
 operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.Extensions.DependencyInjection.ServiceLifetime</span></td>
-        <td><span class="parametername">serviceLifetime</span></td>
-        <td><p>The service lifetime to use for the operation.</p>
 </td>
       </tr>
       <tr>
