@@ -8,13 +8,14 @@ namespace CG.Business.QuickStart
     {
         static void Main(string[] args)
         {
-            Host.CreateDefaultBuilder(args)
+            var host = Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>(); // < -- call our startup class ...
                 })
-                .Build()
-                .Start();
+                .Build();
+
+            host.Start();
         } 
     }
 }
