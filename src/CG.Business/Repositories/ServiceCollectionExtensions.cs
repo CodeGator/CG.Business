@@ -168,28 +168,15 @@ namespace Microsoft.Extensions.DependencyInjection
                 // We'll use the first matching method.
                 var method = methods.First();
 
-                // This loop is a hack I'm using to try to troubleshoot a problem
-                //   with Microsoft's DI implementation, where I'll register my 
-                //   types the first time, and I can verify that the registration
-                //   happens, but then, randomly, after that, the registration is
-                //   suddenly gone when the app tries to resolve the service.
-                // While walking through my code, looking for the source of this
-                //   problem, I've noticed that repeating the registrations seems 
-                //   to make the problem go away. So, I'm adding a loop here to see
-                //   if I can just call this method N times, to work around the
-                //   issue, until Microsoft, or I, figure it out for good.
-                for (var x = 0; x < 2; x++)
-                {
-                    // Invoke the extension method.
-                    method.Invoke(
-                        null,
-                        new object[]
-                        {
-                        serviceCollection,
-                        subSection,
-                        serviceLifetime
-                        });
-                }
+                // Invoke the extension method.
+                method.Invoke(
+                    null,
+                    new object[]
+                    {
+                    serviceCollection,
+                    subSection,
+                    serviceLifetime
+                    });
             }
             else
             {
