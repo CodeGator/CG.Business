@@ -54,7 +54,7 @@ namespace Microsoft.Extensions.DependencyInjection
             this IServiceCollection serviceCollection,
             IConfiguration configuration,
             ServiceLifetime serviceLifetime = ServiceLifetime.Scoped,
-            string assemblyWhiteList = "", 
+            string assemblyWhiteList = "",
             string assemblyBlackList = "Microsoft*, System*, mscorlib, netstandard"
             )
         {
@@ -147,7 +147,7 @@ namespace Microsoft.Extensions.DependencyInjection
 
             // Format the name of a target extension method.
             var methodName = $"Add{strategyName}Repositories";
-            
+
             // Look for specified extension method.
             var methods = AppDomain.CurrentDomain.ExtensionMethods(
                 typeof(IServiceCollection),

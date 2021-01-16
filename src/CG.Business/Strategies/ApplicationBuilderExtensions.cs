@@ -58,7 +58,7 @@ namespace Microsoft.AspNetCore.Builder
             string configurationSection,
             string assemblyWhiteList = "",
             string assemblyBlackList = "Microsoft*, System*, mscorlib, netstandard"
-            ) 
+            )
         {
             // Validate the parameters before attempting to use them.
             Guard.Instance().ThrowIfNull(applicationBuilder, nameof(applicationBuilder))
@@ -126,7 +126,7 @@ namespace Microsoft.AspNetCore.Builder
                         //   we're about to perform.
                         assemblyWhiteList = assemblyWhiteList.Length > 0
                             ? $"{assemblyWhiteList}, {Path.GetFileNameWithoutExtension(loaderOptions.AssemblyNameOrPath)}"
-                            : assemblyWhiteList;
+                            : $"{Path.GetFileNameWithoutExtension(loaderOptions.AssemblyNameOrPath)}";
                     }
                     else
                     {
@@ -140,7 +140,7 @@ namespace Microsoft.AspNetCore.Builder
                         //   runtime of the search operation we're about to perform.
                         assemblyWhiteList = assemblyWhiteList.Length > 0
                             ? $"{assemblyWhiteList}, {loaderOptions.AssemblyNameOrPath}"
-                            : assemblyWhiteList;
+                            : $"{loaderOptions.AssemblyNameOrPath}";
                     }
                 }
             }
@@ -189,7 +189,7 @@ namespace Microsoft.AspNetCore.Builder
                 throw new BusinessException(
                     message: string.Format(
                         Resources.MethodNotFound,
-                        nameof(UseRepositories),
+                        nameof(UseStrategies),
                         methodName,
                         $"{nameof(IApplicationBuilder)},{nameof(IWebHostEnvironment)}, {nameof(String)}"
                         )

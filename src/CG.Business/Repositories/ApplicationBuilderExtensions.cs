@@ -59,7 +59,7 @@ namespace Microsoft.AspNetCore.Builder
             string configurationSection,
             string assemblyWhiteList = "",
             string assemblyBlackList = "Microsoft*, System*, mscorlib, netstandard"
-            ) 
+            )
         {
             // Validate the parameters before attempting to use them.
             Guard.Instance().ThrowIfNull(applicationBuilder, nameof(applicationBuilder))
