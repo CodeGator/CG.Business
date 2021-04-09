@@ -5,7 +5,6 @@ using CG.Configuration;
 using CG.DataAnnotations;
 using CG.Reflection;
 using CG.Validations;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -35,7 +34,6 @@ namespace Microsoft.AspNetCore.Builder
         /// </summary>
         /// <param name="applicationBuilder">The application builder to use for 
         /// the operation.</param>
-        /// <param name="hostEnvironment">The host environment to use for the operation.</param>
         /// <param name="configurationSection">The configuration sub-section to use 
         /// for the operation. This path should point to a <see cref="LoaderOptions"/>
         /// compatible section. If it doesn't the method will fail.</param>
@@ -55,15 +53,13 @@ namespace Microsoft.AspNetCore.Builder
         /// call fails.</exception>
         public static IApplicationBuilder UseRepositories(
             this IApplicationBuilder applicationBuilder,
-            IWebHostEnvironment hostEnvironment,
             string configurationSection,
             string assemblyWhiteList = "",
             string assemblyBlackList = "Microsoft*, System*, mscorlib, netstandard"
             )
         {
             // Validate the parameters before attempting to use them.
-            Guard.Instance().ThrowIfNull(applicationBuilder, nameof(applicationBuilder))
-                .ThrowIfNull(hostEnvironment, nameof(hostEnvironment));
+            Guard.Instance().ThrowIfNull(applicationBuilder, nameof(applicationBuilder));
 
             // Get the configuration root.
             var configuration = applicationBuilder.ApplicationServices
@@ -165,7 +161,7 @@ namespace Microsoft.AspNetCore.Builder
             var methods = AppDomain.CurrentDomain.ExtensionMethods(
                 typeof(IApplicationBuilder),
                 methodName,
-                new Type[] { typeof(IWebHostEnvironment), typeof(string) },
+                new Type[] { typeof(string) },
                 assemblyWhiteList,
                 assemblyBlackList
                 );
@@ -179,7 +175,7 @@ namespace Microsoft.AspNetCore.Builder
                 // Invoke the extension method.
                 method.Invoke(
                     null,
-                    new object[] { applicationBuilder, hostEnvironment, configurationSection }
+                    new object[] { applicationBuilder, configurationSection }
                     );
             }
             else
@@ -193,7 +189,7 @@ namespace Microsoft.AspNetCore.Builder
                         Resources.MethodNotFound,
                         nameof(UseRepositories),
                         methodName,
-                        $"{nameof(IApplicationBuilder)},{nameof(IWebHostEnvironment)}, {nameof(String)}"
+                        $"{nameof(IApplicationBuilder)},{nameof(String)}"
                         )
                     );
             }
