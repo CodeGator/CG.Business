@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ApplicationBuilderExtensions
    ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.57.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -125,7 +125,7 @@ type.</p>
   <h3 id="methods">Methods
   </h3>
   <a id="Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseRepositories_" data-uid="Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseRepositories*"></a>
-  <h4 id="Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseRepositories_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_System_String_System_String_System_String_" data-uid="Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseRepositories(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,System.String,System.String,System.String)">UseRepositories(IApplicationBuilder, IWebHostEnvironment, String, String, String)</h4>
+  <h4 id="Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseRepositories_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_String_System_String_System_String_" data-uid="Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseRepositories(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.String,System.String)">UseRepositories(IApplicationBuilder, String, String, String)</h4>
   <div class="markdown level1 summary"><p>This method reads the configuration for a <a class="xref" href="CG.Business.Options.LoaderOptions.html">LoaderOptions</a>
 compatible section. It then uses that information to dynamically locate,
 and then invoke, an extension method that wires up any startup logic
@@ -134,7 +134,7 @@ required to run the configured repository type(s).</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IApplicationBuilder UseRepositories(this IApplicationBuilder applicationBuilder, IWebHostEnvironment hostEnvironment, string configurationSection, string assemblyWhiteList = &quot;&quot;, string assemblyBlackList = &quot;Microsoft*, System*, mscorlib, netstandard&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IApplicationBuilder UseRepositories(this IApplicationBuilder applicationBuilder, string configurationSection, string assemblyWhiteList = &quot;&quot;, string assemblyBlackList = &quot;Microsoft*, System*, mscorlib, netstandard&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -151,12 +151,6 @@ required to run the configured repository type(s).</p>
         <td><span class="parametername">applicationBuilder</span></td>
         <td><p>The application builder to use for
 the operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.AspNetCore.Hosting.IWebHostEnvironment</span></td>
-        <td><span class="parametername">hostEnvironment</span></td>
-        <td><p>The host environment to use for the operation.</p>
 </td>
       </tr>
       <tr>
@@ -232,7 +226,7 @@ call fails.</p>
     </tbody>
   </table>
   <a id="Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseStrategies_" data-uid="Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies*"></a>
-  <h4 id="Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseStrategies_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_System_String_System_String_System_String_" data-uid="Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,System.String,System.String,System.String)">UseStrategies(IApplicationBuilder, IWebHostEnvironment, String, String, String)</h4>
+  <h4 id="Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseStrategies_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_String_System_String_System_String_" data-uid="Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.String,System.String)">UseStrategies(IApplicationBuilder, String, String, String)</h4>
   <div class="markdown level1 summary"><p>This method reads the configuration for a <a class="xref" href="CG.Business.Options.LoaderOptions.html">LoaderOptions</a>
 compatible section. It then uses that information to dynamically locate,
 and then invoke, an extension method that wires up any startup logic
@@ -241,7 +235,7 @@ required to run the configured strategy type(s).</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IApplicationBuilder UseStrategies(this IApplicationBuilder applicationBuilder, IWebHostEnvironment hostEnvironment, string configurationSection, string assemblyWhiteList = &quot;&quot;, string assemblyBlackList = &quot;Microsoft*, System*, mscorlib, netstandard&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IApplicationBuilder UseStrategies(this IApplicationBuilder applicationBuilder, string configurationSection, string assemblyWhiteList = &quot;&quot;, string assemblyBlackList = &quot;Microsoft*, System*, mscorlib, netstandard&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -258,12 +252,6 @@ required to run the configured strategy type(s).</p>
         <td><span class="parametername">applicationBuilder</span></td>
         <td><p>The application builder to use for
 the operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Microsoft.AspNetCore.Hosting.IWebHostEnvironment</span></td>
-        <td><span class="parametername">hostEnvironment</span></td>
-        <td><p>The host environment to use for the operation.</p>
 </td>
       </tr>
       <tr>
