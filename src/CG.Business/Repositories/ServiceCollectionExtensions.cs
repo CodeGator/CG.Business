@@ -5,6 +5,7 @@ using CG.Configuration;
 using CG.DataAnnotations;
 using CG.Reflection;
 using CG.Validations;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.IO;
@@ -173,9 +174,9 @@ namespace Microsoft.Extensions.DependencyInjection
                     null,
                     new object[]
                     {
-                    serviceCollection,
-                    subSection,
-                    serviceLifetime
+                        serviceCollection,
+                        subSection,
+                        serviceLifetime
                     });
             }
             else
