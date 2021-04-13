@@ -100,12 +100,423 @@ references:
   commentId: T:CG.Business.Models.IModel
   fullName: CG.Business.Models.IModel
   nameWithType: IModel
+- uid: CG.Business.Models.IModel`1
+  name: IModel<TKey>
+  href: api/CG.Business.Models.IModel-1.html
+  commentId: T:CG.Business.Models.IModel`1
+  name.vb: IModel(Of TKey)
+  fullName: CG.Business.Models.IModel<TKey>
+  fullName.vb: CG.Business.Models.IModel(Of TKey)
+  nameWithType: IModel<TKey>
+  nameWithType.vb: IModel(Of TKey)
+- uid: CG.Business.Models.IModel`1.Key
+  name: Key
+  href: api/CG.Business.Models.IModel-1.html#CG_Business_Models_IModel_1_Key
+  commentId: P:CG.Business.Models.IModel`1.Key
+  fullName: CG.Business.Models.IModel<TKey>.Key
+  fullName.vb: CG.Business.Models.IModel(Of TKey).Key
+  nameWithType: IModel<TKey>.Key
+  nameWithType.vb: IModel(Of TKey).Key
+- uid: CG.Business.Models.IModel`1.Key*
+  name: Key
+  href: api/CG.Business.Models.IModel-1.html#CG_Business_Models_IModel_1_Key_
+  commentId: Overload:CG.Business.Models.IModel`1.Key
+  isSpec: "True"
+  fullName: CG.Business.Models.IModel<TKey>.Key
+  fullName.vb: CG.Business.Models.IModel(Of TKey).Key
+  nameWithType: IModel<TKey>.Key
+  nameWithType.vb: IModel(Of TKey).Key
+- uid: CG.Business.Models.IModel`2
+  name: IModel<TKey1, TKey2>
+  href: api/CG.Business.Models.IModel-2.html
+  commentId: T:CG.Business.Models.IModel`2
+  name.vb: IModel(Of TKey1, TKey2)
+  fullName: CG.Business.Models.IModel<TKey1, TKey2>
+  fullName.vb: CG.Business.Models.IModel(Of TKey1, TKey2)
+  nameWithType: IModel<TKey1, TKey2>
+  nameWithType.vb: IModel(Of TKey1, TKey2)
+- uid: CG.Business.Models.IModel`2.Key1
+  name: Key1
+  href: api/CG.Business.Models.IModel-2.html#CG_Business_Models_IModel_2_Key1
+  commentId: P:CG.Business.Models.IModel`2.Key1
+  fullName: CG.Business.Models.IModel<TKey1, TKey2>.Key1
+  fullName.vb: CG.Business.Models.IModel(Of TKey1, TKey2).Key1
+  nameWithType: IModel<TKey1, TKey2>.Key1
+  nameWithType.vb: IModel(Of TKey1, TKey2).Key1
+- uid: CG.Business.Models.IModel`2.Key1*
+  name: Key1
+  href: api/CG.Business.Models.IModel-2.html#CG_Business_Models_IModel_2_Key1_
+  commentId: Overload:CG.Business.Models.IModel`2.Key1
+  isSpec: "True"
+  fullName: CG.Business.Models.IModel<TKey1, TKey2>.Key1
+  fullName.vb: CG.Business.Models.IModel(Of TKey1, TKey2).Key1
+  nameWithType: IModel<TKey1, TKey2>.Key1
+  nameWithType.vb: IModel(Of TKey1, TKey2).Key1
+- uid: CG.Business.Models.IModel`2.Key2
+  name: Key2
+  href: api/CG.Business.Models.IModel-2.html#CG_Business_Models_IModel_2_Key2
+  commentId: P:CG.Business.Models.IModel`2.Key2
+  fullName: CG.Business.Models.IModel<TKey1, TKey2>.Key2
+  fullName.vb: CG.Business.Models.IModel(Of TKey1, TKey2).Key2
+  nameWithType: IModel<TKey1, TKey2>.Key2
+  nameWithType.vb: IModel(Of TKey1, TKey2).Key2
+- uid: CG.Business.Models.IModel`2.Key2*
+  name: Key2
+  href: api/CG.Business.Models.IModel-2.html#CG_Business_Models_IModel_2_Key2_
+  commentId: Overload:CG.Business.Models.IModel`2.Key2
+  isSpec: "True"
+  fullName: CG.Business.Models.IModel<TKey1, TKey2>.Key2
+  fullName.vb: CG.Business.Models.IModel(Of TKey1, TKey2).Key2
+  nameWithType: IModel<TKey1, TKey2>.Key2
+  nameWithType.vb: IModel(Of TKey1, TKey2).Key2
+- uid: CG.Business.Models.IModel`3
+  name: IModel<TKey1, TKey2, TKey3>
+  href: api/CG.Business.Models.IModel-3.html
+  commentId: T:CG.Business.Models.IModel`3
+  name.vb: IModel(Of TKey1, TKey2, TKey3)
+  fullName: CG.Business.Models.IModel<TKey1, TKey2, TKey3>
+  fullName.vb: CG.Business.Models.IModel(Of TKey1, TKey2, TKey3)
+  nameWithType: IModel<TKey1, TKey2, TKey3>
+  nameWithType.vb: IModel(Of TKey1, TKey2, TKey3)
+- uid: CG.Business.Models.IModel`3.Key1
+  name: Key1
+  href: api/CG.Business.Models.IModel-3.html#CG_Business_Models_IModel_3_Key1
+  commentId: P:CG.Business.Models.IModel`3.Key1
+  fullName: CG.Business.Models.IModel<TKey1, TKey2, TKey3>.Key1
+  fullName.vb: CG.Business.Models.IModel(Of TKey1, TKey2, TKey3).Key1
+  nameWithType: IModel<TKey1, TKey2, TKey3>.Key1
+  nameWithType.vb: IModel(Of TKey1, TKey2, TKey3).Key1
+- uid: CG.Business.Models.IModel`3.Key1*
+  name: Key1
+  href: api/CG.Business.Models.IModel-3.html#CG_Business_Models_IModel_3_Key1_
+  commentId: Overload:CG.Business.Models.IModel`3.Key1
+  isSpec: "True"
+  fullName: CG.Business.Models.IModel<TKey1, TKey2, TKey3>.Key1
+  fullName.vb: CG.Business.Models.IModel(Of TKey1, TKey2, TKey3).Key1
+  nameWithType: IModel<TKey1, TKey2, TKey3>.Key1
+  nameWithType.vb: IModel(Of TKey1, TKey2, TKey3).Key1
+- uid: CG.Business.Models.IModel`3.Key2
+  name: Key2
+  href: api/CG.Business.Models.IModel-3.html#CG_Business_Models_IModel_3_Key2
+  commentId: P:CG.Business.Models.IModel`3.Key2
+  fullName: CG.Business.Models.IModel<TKey1, TKey2, TKey3>.Key2
+  fullName.vb: CG.Business.Models.IModel(Of TKey1, TKey2, TKey3).Key2
+  nameWithType: IModel<TKey1, TKey2, TKey3>.Key2
+  nameWithType.vb: IModel(Of TKey1, TKey2, TKey3).Key2
+- uid: CG.Business.Models.IModel`3.Key2*
+  name: Key2
+  href: api/CG.Business.Models.IModel-3.html#CG_Business_Models_IModel_3_Key2_
+  commentId: Overload:CG.Business.Models.IModel`3.Key2
+  isSpec: "True"
+  fullName: CG.Business.Models.IModel<TKey1, TKey2, TKey3>.Key2
+  fullName.vb: CG.Business.Models.IModel(Of TKey1, TKey2, TKey3).Key2
+  nameWithType: IModel<TKey1, TKey2, TKey3>.Key2
+  nameWithType.vb: IModel(Of TKey1, TKey2, TKey3).Key2
+- uid: CG.Business.Models.IModel`3.Key3
+  name: Key3
+  href: api/CG.Business.Models.IModel-3.html#CG_Business_Models_IModel_3_Key3
+  commentId: P:CG.Business.Models.IModel`3.Key3
+  fullName: CG.Business.Models.IModel<TKey1, TKey2, TKey3>.Key3
+  fullName.vb: CG.Business.Models.IModel(Of TKey1, TKey2, TKey3).Key3
+  nameWithType: IModel<TKey1, TKey2, TKey3>.Key3
+  nameWithType.vb: IModel(Of TKey1, TKey2, TKey3).Key3
+- uid: CG.Business.Models.IModel`3.Key3*
+  name: Key3
+  href: api/CG.Business.Models.IModel-3.html#CG_Business_Models_IModel_3_Key3_
+  commentId: Overload:CG.Business.Models.IModel`3.Key3
+  isSpec: "True"
+  fullName: CG.Business.Models.IModel<TKey1, TKey2, TKey3>.Key3
+  fullName.vb: CG.Business.Models.IModel(Of TKey1, TKey2, TKey3).Key3
+  nameWithType: IModel<TKey1, TKey2, TKey3>.Key3
+  nameWithType.vb: IModel(Of TKey1, TKey2, TKey3).Key3
 - uid: CG.Business.Models.ModelBase
   name: ModelBase
   href: api/CG.Business.Models.ModelBase.html
   commentId: T:CG.Business.Models.ModelBase
   fullName: CG.Business.Models.ModelBase
   nameWithType: ModelBase
+- uid: CG.Business.Models.ModelBase`1
+  name: ModelBase<TKey>
+  href: api/CG.Business.Models.ModelBase-1.html
+  commentId: T:CG.Business.Models.ModelBase`1
+  name.vb: ModelBase(Of TKey)
+  fullName: CG.Business.Models.ModelBase<TKey>
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey)
+  nameWithType: ModelBase<TKey>
+  nameWithType.vb: ModelBase(Of TKey)
+- uid: CG.Business.Models.ModelBase`1.Equals(System.Object)
+  name: Equals(Object)
+  href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_Equals_System_Object_
+  commentId: M:CG.Business.Models.ModelBase`1.Equals(System.Object)
+  fullName: CG.Business.Models.ModelBase<TKey>.Equals(System.Object)
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).Equals(System.Object)
+  nameWithType: ModelBase<TKey>.Equals(Object)
+  nameWithType.vb: ModelBase(Of TKey).Equals(Object)
+- uid: CG.Business.Models.ModelBase`1.Equals*
+  name: Equals
+  href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_Equals_
+  commentId: Overload:CG.Business.Models.ModelBase`1.Equals
+  isSpec: "True"
+  fullName: CG.Business.Models.ModelBase<TKey>.Equals
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).Equals
+  nameWithType: ModelBase<TKey>.Equals
+  nameWithType.vb: ModelBase(Of TKey).Equals
+- uid: CG.Business.Models.ModelBase`1.GetHashCode
+  name: GetHashCode()
+  href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_GetHashCode
+  commentId: M:CG.Business.Models.ModelBase`1.GetHashCode
+  fullName: CG.Business.Models.ModelBase<TKey>.GetHashCode()
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).GetHashCode()
+  nameWithType: ModelBase<TKey>.GetHashCode()
+  nameWithType.vb: ModelBase(Of TKey).GetHashCode()
+- uid: CG.Business.Models.ModelBase`1.GetHashCode*
+  name: GetHashCode
+  href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_GetHashCode_
+  commentId: Overload:CG.Business.Models.ModelBase`1.GetHashCode
+  isSpec: "True"
+  fullName: CG.Business.Models.ModelBase<TKey>.GetHashCode
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).GetHashCode
+  nameWithType: ModelBase<TKey>.GetHashCode
+  nameWithType.vb: ModelBase(Of TKey).GetHashCode
+- uid: CG.Business.Models.ModelBase`1.Key
+  name: Key
+  href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_Key
+  commentId: P:CG.Business.Models.ModelBase`1.Key
+  fullName: CG.Business.Models.ModelBase<TKey>.Key
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).Key
+  nameWithType: ModelBase<TKey>.Key
+  nameWithType.vb: ModelBase(Of TKey).Key
+- uid: CG.Business.Models.ModelBase`1.Key*
+  name: Key
+  href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_Key_
+  commentId: Overload:CG.Business.Models.ModelBase`1.Key
+  isSpec: "True"
+  fullName: CG.Business.Models.ModelBase<TKey>.Key
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).Key
+  nameWithType: ModelBase<TKey>.Key
+  nameWithType.vb: ModelBase(Of TKey).Key
+- uid: CG.Business.Models.ModelBase`1.ToString
+  name: ToString()
+  href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_ToString
+  commentId: M:CG.Business.Models.ModelBase`1.ToString
+  fullName: CG.Business.Models.ModelBase<TKey>.ToString()
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).ToString()
+  nameWithType: ModelBase<TKey>.ToString()
+  nameWithType.vb: ModelBase(Of TKey).ToString()
+- uid: CG.Business.Models.ModelBase`1.ToString*
+  name: ToString
+  href: api/CG.Business.Models.ModelBase-1.html#CG_Business_Models_ModelBase_1_ToString_
+  commentId: Overload:CG.Business.Models.ModelBase`1.ToString
+  isSpec: "True"
+  fullName: CG.Business.Models.ModelBase<TKey>.ToString
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey).ToString
+  nameWithType: ModelBase<TKey>.ToString
+  nameWithType.vb: ModelBase(Of TKey).ToString
+- uid: CG.Business.Models.ModelBase`2
+  name: ModelBase<TKey1, TKey2>
+  href: api/CG.Business.Models.ModelBase-2.html
+  commentId: T:CG.Business.Models.ModelBase`2
+  name.vb: ModelBase(Of TKey1, TKey2)
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2>
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2)
+  nameWithType: ModelBase<TKey1, TKey2>
+  nameWithType.vb: ModelBase(Of TKey1, TKey2)
+- uid: CG.Business.Models.ModelBase`2.Equals(System.Object)
+  name: Equals(Object)
+  href: api/CG.Business.Models.ModelBase-2.html#CG_Business_Models_ModelBase_2_Equals_System_Object_
+  commentId: M:CG.Business.Models.ModelBase`2.Equals(System.Object)
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2>.Equals(System.Object)
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2).Equals(System.Object)
+  nameWithType: ModelBase<TKey1, TKey2>.Equals(Object)
+  nameWithType.vb: ModelBase(Of TKey1, TKey2).Equals(Object)
+- uid: CG.Business.Models.ModelBase`2.Equals*
+  name: Equals
+  href: api/CG.Business.Models.ModelBase-2.html#CG_Business_Models_ModelBase_2_Equals_
+  commentId: Overload:CG.Business.Models.ModelBase`2.Equals
+  isSpec: "True"
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2>.Equals
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2).Equals
+  nameWithType: ModelBase<TKey1, TKey2>.Equals
+  nameWithType.vb: ModelBase(Of TKey1, TKey2).Equals
+- uid: CG.Business.Models.ModelBase`2.GetHashCode
+  name: GetHashCode()
+  href: api/CG.Business.Models.ModelBase-2.html#CG_Business_Models_ModelBase_2_GetHashCode
+  commentId: M:CG.Business.Models.ModelBase`2.GetHashCode
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2>.GetHashCode()
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2).GetHashCode()
+  nameWithType: ModelBase<TKey1, TKey2>.GetHashCode()
+  nameWithType.vb: ModelBase(Of TKey1, TKey2).GetHashCode()
+- uid: CG.Business.Models.ModelBase`2.GetHashCode*
+  name: GetHashCode
+  href: api/CG.Business.Models.ModelBase-2.html#CG_Business_Models_ModelBase_2_GetHashCode_
+  commentId: Overload:CG.Business.Models.ModelBase`2.GetHashCode
+  isSpec: "True"
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2>.GetHashCode
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2).GetHashCode
+  nameWithType: ModelBase<TKey1, TKey2>.GetHashCode
+  nameWithType.vb: ModelBase(Of TKey1, TKey2).GetHashCode
+- uid: CG.Business.Models.ModelBase`2.Key1
+  name: Key1
+  href: api/CG.Business.Models.ModelBase-2.html#CG_Business_Models_ModelBase_2_Key1
+  commentId: P:CG.Business.Models.ModelBase`2.Key1
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2>.Key1
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2).Key1
+  nameWithType: ModelBase<TKey1, TKey2>.Key1
+  nameWithType.vb: ModelBase(Of TKey1, TKey2).Key1
+- uid: CG.Business.Models.ModelBase`2.Key1*
+  name: Key1
+  href: api/CG.Business.Models.ModelBase-2.html#CG_Business_Models_ModelBase_2_Key1_
+  commentId: Overload:CG.Business.Models.ModelBase`2.Key1
+  isSpec: "True"
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2>.Key1
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2).Key1
+  nameWithType: ModelBase<TKey1, TKey2>.Key1
+  nameWithType.vb: ModelBase(Of TKey1, TKey2).Key1
+- uid: CG.Business.Models.ModelBase`2.Key2
+  name: Key2
+  href: api/CG.Business.Models.ModelBase-2.html#CG_Business_Models_ModelBase_2_Key2
+  commentId: P:CG.Business.Models.ModelBase`2.Key2
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2>.Key2
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2).Key2
+  nameWithType: ModelBase<TKey1, TKey2>.Key2
+  nameWithType.vb: ModelBase(Of TKey1, TKey2).Key2
+- uid: CG.Business.Models.ModelBase`2.Key2*
+  name: Key2
+  href: api/CG.Business.Models.ModelBase-2.html#CG_Business_Models_ModelBase_2_Key2_
+  commentId: Overload:CG.Business.Models.ModelBase`2.Key2
+  isSpec: "True"
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2>.Key2
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2).Key2
+  nameWithType: ModelBase<TKey1, TKey2>.Key2
+  nameWithType.vb: ModelBase(Of TKey1, TKey2).Key2
+- uid: CG.Business.Models.ModelBase`2.ToString
+  name: ToString()
+  href: api/CG.Business.Models.ModelBase-2.html#CG_Business_Models_ModelBase_2_ToString
+  commentId: M:CG.Business.Models.ModelBase`2.ToString
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2>.ToString()
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2).ToString()
+  nameWithType: ModelBase<TKey1, TKey2>.ToString()
+  nameWithType.vb: ModelBase(Of TKey1, TKey2).ToString()
+- uid: CG.Business.Models.ModelBase`2.ToString*
+  name: ToString
+  href: api/CG.Business.Models.ModelBase-2.html#CG_Business_Models_ModelBase_2_ToString_
+  commentId: Overload:CG.Business.Models.ModelBase`2.ToString
+  isSpec: "True"
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2>.ToString
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2).ToString
+  nameWithType: ModelBase<TKey1, TKey2>.ToString
+  nameWithType.vb: ModelBase(Of TKey1, TKey2).ToString
+- uid: CG.Business.Models.ModelBase`3
+  name: ModelBase<TKey1, TKey2, TKey3>
+  href: api/CG.Business.Models.ModelBase-3.html
+  commentId: T:CG.Business.Models.ModelBase`3
+  name.vb: ModelBase(Of TKey1, TKey2, TKey3)
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2, TKey3>
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2, TKey3)
+  nameWithType: ModelBase<TKey1, TKey2, TKey3>
+  nameWithType.vb: ModelBase(Of TKey1, TKey2, TKey3)
+- uid: CG.Business.Models.ModelBase`3.Equals(System.Object)
+  name: Equals(Object)
+  href: api/CG.Business.Models.ModelBase-3.html#CG_Business_Models_ModelBase_3_Equals_System_Object_
+  commentId: M:CG.Business.Models.ModelBase`3.Equals(System.Object)
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2, TKey3>.Equals(System.Object)
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2, TKey3).Equals(System.Object)
+  nameWithType: ModelBase<TKey1, TKey2, TKey3>.Equals(Object)
+  nameWithType.vb: ModelBase(Of TKey1, TKey2, TKey3).Equals(Object)
+- uid: CG.Business.Models.ModelBase`3.Equals*
+  name: Equals
+  href: api/CG.Business.Models.ModelBase-3.html#CG_Business_Models_ModelBase_3_Equals_
+  commentId: Overload:CG.Business.Models.ModelBase`3.Equals
+  isSpec: "True"
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2, TKey3>.Equals
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2, TKey3).Equals
+  nameWithType: ModelBase<TKey1, TKey2, TKey3>.Equals
+  nameWithType.vb: ModelBase(Of TKey1, TKey2, TKey3).Equals
+- uid: CG.Business.Models.ModelBase`3.GetHashCode
+  name: GetHashCode()
+  href: api/CG.Business.Models.ModelBase-3.html#CG_Business_Models_ModelBase_3_GetHashCode
+  commentId: M:CG.Business.Models.ModelBase`3.GetHashCode
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2, TKey3>.GetHashCode()
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2, TKey3).GetHashCode()
+  nameWithType: ModelBase<TKey1, TKey2, TKey3>.GetHashCode()
+  nameWithType.vb: ModelBase(Of TKey1, TKey2, TKey3).GetHashCode()
+- uid: CG.Business.Models.ModelBase`3.GetHashCode*
+  name: GetHashCode
+  href: api/CG.Business.Models.ModelBase-3.html#CG_Business_Models_ModelBase_3_GetHashCode_
+  commentId: Overload:CG.Business.Models.ModelBase`3.GetHashCode
+  isSpec: "True"
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2, TKey3>.GetHashCode
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2, TKey3).GetHashCode
+  nameWithType: ModelBase<TKey1, TKey2, TKey3>.GetHashCode
+  nameWithType.vb: ModelBase(Of TKey1, TKey2, TKey3).GetHashCode
+- uid: CG.Business.Models.ModelBase`3.Key1
+  name: Key1
+  href: api/CG.Business.Models.ModelBase-3.html#CG_Business_Models_ModelBase_3_Key1
+  commentId: P:CG.Business.Models.ModelBase`3.Key1
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2, TKey3>.Key1
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2, TKey3).Key1
+  nameWithType: ModelBase<TKey1, TKey2, TKey3>.Key1
+  nameWithType.vb: ModelBase(Of TKey1, TKey2, TKey3).Key1
+- uid: CG.Business.Models.ModelBase`3.Key1*
+  name: Key1
+  href: api/CG.Business.Models.ModelBase-3.html#CG_Business_Models_ModelBase_3_Key1_
+  commentId: Overload:CG.Business.Models.ModelBase`3.Key1
+  isSpec: "True"
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2, TKey3>.Key1
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2, TKey3).Key1
+  nameWithType: ModelBase<TKey1, TKey2, TKey3>.Key1
+  nameWithType.vb: ModelBase(Of TKey1, TKey2, TKey3).Key1
+- uid: CG.Business.Models.ModelBase`3.Key2
+  name: Key2
+  href: api/CG.Business.Models.ModelBase-3.html#CG_Business_Models_ModelBase_3_Key2
+  commentId: P:CG.Business.Models.ModelBase`3.Key2
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2, TKey3>.Key2
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2, TKey3).Key2
+  nameWithType: ModelBase<TKey1, TKey2, TKey3>.Key2
+  nameWithType.vb: ModelBase(Of TKey1, TKey2, TKey3).Key2
+- uid: CG.Business.Models.ModelBase`3.Key2*
+  name: Key2
+  href: api/CG.Business.Models.ModelBase-3.html#CG_Business_Models_ModelBase_3_Key2_
+  commentId: Overload:CG.Business.Models.ModelBase`3.Key2
+  isSpec: "True"
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2, TKey3>.Key2
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2, TKey3).Key2
+  nameWithType: ModelBase<TKey1, TKey2, TKey3>.Key2
+  nameWithType.vb: ModelBase(Of TKey1, TKey2, TKey3).Key2
+- uid: CG.Business.Models.ModelBase`3.Key3
+  name: Key3
+  href: api/CG.Business.Models.ModelBase-3.html#CG_Business_Models_ModelBase_3_Key3
+  commentId: P:CG.Business.Models.ModelBase`3.Key3
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2, TKey3>.Key3
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2, TKey3).Key3
+  nameWithType: ModelBase<TKey1, TKey2, TKey3>.Key3
+  nameWithType.vb: ModelBase(Of TKey1, TKey2, TKey3).Key3
+- uid: CG.Business.Models.ModelBase`3.Key3*
+  name: Key3
+  href: api/CG.Business.Models.ModelBase-3.html#CG_Business_Models_ModelBase_3_Key3_
+  commentId: Overload:CG.Business.Models.ModelBase`3.Key3
+  isSpec: "True"
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2, TKey3>.Key3
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2, TKey3).Key3
+  nameWithType: ModelBase<TKey1, TKey2, TKey3>.Key3
+  nameWithType.vb: ModelBase(Of TKey1, TKey2, TKey3).Key3
+- uid: CG.Business.Models.ModelBase`3.ToString
+  name: ToString()
+  href: api/CG.Business.Models.ModelBase-3.html#CG_Business_Models_ModelBase_3_ToString
+  commentId: M:CG.Business.Models.ModelBase`3.ToString
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2, TKey3>.ToString()
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2, TKey3).ToString()
+  nameWithType: ModelBase<TKey1, TKey2, TKey3>.ToString()
+  nameWithType.vb: ModelBase(Of TKey1, TKey2, TKey3).ToString()
+- uid: CG.Business.Models.ModelBase`3.ToString*
+  name: ToString
+  href: api/CG.Business.Models.ModelBase-3.html#CG_Business_Models_ModelBase_3_ToString_
+  commentId: Overload:CG.Business.Models.ModelBase`3.ToString
+  isSpec: "True"
+  fullName: CG.Business.Models.ModelBase<TKey1, TKey2, TKey3>.ToString
+  fullName.vb: CG.Business.Models.ModelBase(Of TKey1, TKey2, TKey3).ToString
+  nameWithType: ModelBase<TKey1, TKey2, TKey3>.ToString
+  nameWithType.vb: ModelBase(Of TKey1, TKey2, TKey3).ToString
 - uid: CG.Business.Options
   name: CG.Business.Options
   href: api/CG.Business.Options.html
