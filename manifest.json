@@ -554,11 +554,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.yml",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html",
-          "hash": "ruuctEe4qxAbu7u6iq6Tbx1Br7sZhHR8afRhgcsutO4="
+          "relative_path": "api/Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.html",
+          "hash": "7lZW3bGdTG9NFMZvl0CBnrlBxcPoAj/rtlFSfnj8+NY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.StrategiesApplicationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.StrategiesApplicationBuilderExtensions.html",
+          "hash": "Hq40c4RBKMVFXjnXP9CqZhs5CtkkoSkmYnIDoQSLMxE="
         }
       },
       "is_incremental": false,
@@ -570,7 +582,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Builder.html",
-          "hash": "XBRb5D7uo08bw1/aFR+1j+dg3u1Tvq1akp3U4feJdsU="
+          "hash": "h4ZlUlX3/7uhfWzfKUSDQIlcAO3uVqwlVdvF/1AnYA8="
         }
       },
       "is_incremental": false,
@@ -578,11 +590,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.yml",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html",
-          "hash": "1SR/6cdQPHKq3sVOd4DkPZOzQ4NTkkPXSG5GKgSNMio="
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.html",
+          "hash": "E2cmwE+zIjQJ4Tj/nV/hIRD13ry5mmCtgHDNxF9Gq20="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions.html",
+          "hash": "CyiVVI4nOIGS1XJnCdDlrwM87VEpFBkycj2/k3zDglA="
         }
       },
       "is_incremental": false,
@@ -594,7 +618,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.Extensions.DependencyInjection.html",
-          "hash": "IgaXKEF9ASkCD8+TNpTqvf6qEszdalOBZkq9JnhQaLA="
+          "hash": "EDLUmMfgw2RNaYCadr460OkKU+zCoNS9sffELaFif20="
         }
       },
       "is_incremental": false,
@@ -606,7 +630,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "dvRrzQystAr+FphXC/jIHIg+C57PQtoDPwRZleDSnQo="
+          "hash": "6NS1AhCKp8Bsp+gNIaTM6rwcZEEWi7LsPO+LtYM9Hhg="
         }
       },
       "is_incremental": false,
@@ -681,7 +705,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 49,
+          "total_file_count": 51,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

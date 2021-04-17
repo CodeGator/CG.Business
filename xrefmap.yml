@@ -1010,73 +1010,85 @@ references:
   commentId: N:Microsoft.AspNetCore.Builder
   fullName: Microsoft.AspNetCore.Builder
   nameWithType: Microsoft.AspNetCore.Builder
-- uid: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions
-  name: ApplicationBuilderExtensions
-  href: api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html
-  commentId: T:Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions
-  fullName: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions
-  nameWithType: ApplicationBuilderExtensions
-- uid: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseRepositories(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.String,System.String)
+- uid: Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions
+  name: RepositoriesApplicationBuilderExtensions
+  href: api/Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.html
+  commentId: T:Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions
+  fullName: Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions
+  nameWithType: RepositoriesApplicationBuilderExtensions
+- uid: Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.UseRepositories(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.String,System.String)
   name: UseRepositories(IApplicationBuilder, String, String, String)
-  href: api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseRepositories_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_String_System_String_System_String_
-  commentId: M:Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseRepositories(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.String,System.String)
-  fullName: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseRepositories(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.String, System.String, System.String)
-  nameWithType: ApplicationBuilderExtensions.UseRepositories(IApplicationBuilder, String, String, String)
-- uid: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseRepositories*
+  href: api/Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_RepositoriesApplicationBuilderExtensions_UseRepositories_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_String_System_String_System_String_
+  commentId: M:Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.UseRepositories(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.String,System.String)
+  fullName: Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.UseRepositories(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.String, System.String, System.String)
+  nameWithType: RepositoriesApplicationBuilderExtensions.UseRepositories(IApplicationBuilder, String, String, String)
+- uid: Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.UseRepositories*
   name: UseRepositories
-  href: api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseRepositories_
-  commentId: Overload:Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseRepositories
+  href: api/Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_RepositoriesApplicationBuilderExtensions_UseRepositories_
+  commentId: Overload:Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.UseRepositories
   isSpec: "True"
-  fullName: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseRepositories
-  nameWithType: ApplicationBuilderExtensions.UseRepositories
-- uid: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.String,System.String)
+  fullName: Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.UseRepositories
+  nameWithType: RepositoriesApplicationBuilderExtensions.UseRepositories
+- uid: Microsoft.AspNetCore.Builder.StrategiesApplicationBuilderExtensions
+  name: StrategiesApplicationBuilderExtensions
+  href: api/Microsoft.AspNetCore.Builder.StrategiesApplicationBuilderExtensions.html
+  commentId: T:Microsoft.AspNetCore.Builder.StrategiesApplicationBuilderExtensions
+  fullName: Microsoft.AspNetCore.Builder.StrategiesApplicationBuilderExtensions
+  nameWithType: StrategiesApplicationBuilderExtensions
+- uid: Microsoft.AspNetCore.Builder.StrategiesApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.String,System.String)
   name: UseStrategies(IApplicationBuilder, String, String, String)
-  href: api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseStrategies_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_String_System_String_System_String_
-  commentId: M:Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.String,System.String)
-  fullName: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.String, System.String, System.String)
-  nameWithType: ApplicationBuilderExtensions.UseStrategies(IApplicationBuilder, String, String, String)
-- uid: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies*
+  href: api/Microsoft.AspNetCore.Builder.StrategiesApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_StrategiesApplicationBuilderExtensions_UseStrategies_Microsoft_AspNetCore_Builder_IApplicationBuilder_System_String_System_String_System_String_
+  commentId: M:Microsoft.AspNetCore.Builder.StrategiesApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder,System.String,System.String,System.String)
+  fullName: Microsoft.AspNetCore.Builder.StrategiesApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder, System.String, System.String, System.String)
+  nameWithType: StrategiesApplicationBuilderExtensions.UseStrategies(IApplicationBuilder, String, String, String)
+- uid: Microsoft.AspNetCore.Builder.StrategiesApplicationBuilderExtensions.UseStrategies*
   name: UseStrategies
-  href: api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseStrategies_
-  commentId: Overload:Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies
+  href: api/Microsoft.AspNetCore.Builder.StrategiesApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_StrategiesApplicationBuilderExtensions_UseStrategies_
+  commentId: Overload:Microsoft.AspNetCore.Builder.StrategiesApplicationBuilderExtensions.UseStrategies
   isSpec: "True"
-  fullName: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies
-  nameWithType: ApplicationBuilderExtensions.UseStrategies
+  fullName: Microsoft.AspNetCore.Builder.StrategiesApplicationBuilderExtensions.UseStrategies
+  nameWithType: StrategiesApplicationBuilderExtensions.UseStrategies
 - uid: Microsoft.Extensions.DependencyInjection
   name: Microsoft.Extensions.DependencyInjection
   href: api/Microsoft.Extensions.DependencyInjection.html
   commentId: N:Microsoft.Extensions.DependencyInjection
   fullName: Microsoft.Extensions.DependencyInjection
   nameWithType: Microsoft.Extensions.DependencyInjection
-- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
-  name: ServiceCollectionExtensions
-  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html
-  commentId: T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
-  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
-  nameWithType: ServiceCollectionExtensions
-- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
+- uid: Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions
+  name: RepositoriesServiceCollectionExtensions
+  href: api/Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.html
+  commentId: T:Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions
+  nameWithType: RepositoriesServiceCollectionExtensions
+- uid: Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
   name: AddRepositories(IServiceCollection, IConfiguration, ServiceLifetime, String, String)
-  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_DependencyInjection_ServiceLifetime_System_String_System_String_
-  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
-  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.ServiceLifetime, System.String, System.String)
-  nameWithType: ServiceCollectionExtensions.AddRepositories(IServiceCollection, IConfiguration, ServiceLifetime, String, String)
-- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories*
+  href: api/Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_RepositoriesServiceCollectionExtensions_AddRepositories_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_DependencyInjection_ServiceLifetime_System_String_System_String_
+  commentId: M:Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
+  fullName: Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.ServiceLifetime, System.String, System.String)
+  nameWithType: RepositoriesServiceCollectionExtensions.AddRepositories(IServiceCollection, IConfiguration, ServiceLifetime, String, String)
+- uid: Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.AddRepositories*
   name: AddRepositories
-  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_
-  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories
+  href: api/Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_RepositoriesServiceCollectionExtensions_AddRepositories_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.AddRepositories
   isSpec: "True"
-  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories
-  nameWithType: ServiceCollectionExtensions.AddRepositories
-- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
+  fullName: Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.AddRepositories
+  nameWithType: RepositoriesServiceCollectionExtensions.AddRepositories
+- uid: Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions
+  name: StrategiesServiceCollectionExtensions
+  href: api/Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions.html
+  commentId: T:Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions
+  nameWithType: StrategiesServiceCollectionExtensions
+- uid: Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
   name: AddStrategies(IServiceCollection, IConfiguration, ServiceLifetime, String, String)
-  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_DependencyInjection_ServiceLifetime_System_String_System_String_
-  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
-  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.ServiceLifetime, System.String, System.String)
-  nameWithType: ServiceCollectionExtensions.AddStrategies(IServiceCollection, IConfiguration, ServiceLifetime, String, String)
-- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies*
+  href: api/Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_StrategiesServiceCollectionExtensions_AddStrategies_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_DependencyInjection_ServiceLifetime_System_String_System_String_
+  commentId: M:Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
+  fullName: Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions.AddStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.ServiceLifetime, System.String, System.String)
+  nameWithType: StrategiesServiceCollectionExtensions.AddStrategies(IServiceCollection, IConfiguration, ServiceLifetime, String, String)
+- uid: Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions.AddStrategies*
   name: AddStrategies
-  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddStrategies_
-  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies
+  href: api/Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_StrategiesServiceCollectionExtensions_AddStrategies_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions.AddStrategies
   isSpec: "True"
-  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddStrategies
-  nameWithType: ServiceCollectionExtensions.AddStrategies
+  fullName: Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions.AddStrategies
+  nameWithType: StrategiesServiceCollectionExtensions.AddStrategies
