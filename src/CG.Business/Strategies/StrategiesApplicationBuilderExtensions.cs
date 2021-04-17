@@ -5,20 +5,20 @@ using CG.Configuration;
 using CG.DataAnnotations;
 using CG.Reflection;
 using CG.Validations;
-using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 
-namespace Microsoft.Extensions.DependencyInjection
+namespace Microsoft.AspNetCore.Builder
 {
     /// <summary>
-    /// This class contains extension methods related to the <see cref="IServiceCollection"/>
-    /// type.
+    /// This class contains extension methods related to the <see cref="IApplicationBuilder"/>
+    /// type, for registering types related to strategies.
     /// </summary>
-    public static partial class ServiceCollectionExtensions
+    public static partial class StrategiesApplicationBuilderExtensions
     {
         // *******************************************************************
         // Public methods.
@@ -29,45 +29,51 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <summary>
         /// This method reads the configuration for a <see cref="LoaderOptions"/>
         /// compatible section. It then uses that information to dynamically locate,
-        /// and then invoke, an extension method that registers concrete options 
-        /// and repository types. 
+        /// and then invoke, an extension method that wires up any startup logic
+        /// required to run the configured strategy type(s).
         /// </summary>
-        /// <param name="serviceCollection">The service collection to use 
-        /// for the operation.</param>
-        /// <param name="configuration">The configuration to use for the 
-        /// operation.</param>
-        /// <param name="serviceLifetime">The service lifetime to use for the operation.</param>
-        /// <param name="assemblyWhiteList">An optional white list for filtering
-        /// the list of assemblies that are searched during this operation.</param>
+        /// <param name="applicationBuilder">The application builder to use for 
+        /// the operation.</param>
+        /// <param name="configurationSection">The configuration sub-section to use 
+        /// for the operation. </param>
         /// <param name="assemblyBlackList">An optional black list for filtering
         /// the list of assemblies that are searched during this operation.</param>
-        /// <returns>the value of the <paramref name="serviceCollection"/>
+        /// <param name="assemblyWhiteList">An optional white list for filtering
+        /// the list of assemblies that are searched during this operation.</param>
+        /// <returns>The value of the <paramref name="applicationBuilder"/>
         /// parameter, for chaining calls together.</returns>
-        /// <exception cref="ArgumentException">This exception is thrown whenever
-        /// one ore more of the parameters is missing, or invalid.</exception>
+        /// <exception cref="ArgumentException">This exception is thrown whenever one
+        /// or more arguments are invalid, or missing.</exception>
         /// <exception cref="ConfigurationException">This exception is thrown whenever
         /// the method failes to locate appropriate configuration sections and/or settings
         /// at runtime.</exception>
         /// <exception cref="BusinessException">This exception is thrown whenever the 
         /// method failes to locate an appropriate extension method to call, or when that
         /// call fails.</exception>
-        public static IServiceCollection AddRepositories(
-            this IServiceCollection serviceCollection,
-            IConfiguration configuration,
-            ServiceLifetime serviceLifetime = ServiceLifetime.Scoped,
+        public static IApplicationBuilder UseStrategies(
+            this IApplicationBuilder applicationBuilder,
+            string configurationSection,
             string assemblyWhiteList = "",
             string assemblyBlackList = "Microsoft*, System*, mscorlib, netstandard"
             )
         {
             // Validate the parameters before attempting to use them.
-            Guard.Instance().ThrowIfNull(serviceCollection, nameof(serviceCollection))
-                .ThrowIfNull(configuration, nameof(configuration));
+            Guard.Instance().ThrowIfNull(applicationBuilder, nameof(applicationBuilder));
+
+            // Get the configuration root.
+            var configuration = applicationBuilder.ApplicationServices
+                    .GetRequiredService<IConfiguration>();
+
+            // Navigate to the desired section.
+            var section = configuration.GetSection(
+                configurationSection
+                );
 
             // Create the loader options.
             var loaderOptions = new LoaderOptions();
 
             // Bind the loader options to the configuration.
-            configuration.Bind(loaderOptions);
+            section.Bind(loaderOptions);
 
             // Verify the loader options.
             if (false == loaderOptions.IsValid())
@@ -76,8 +82,8 @@ namespace Microsoft.Extensions.DependencyInjection
                 throw new ConfigurationException(
                     message: string.Format(
                         Resources.InvalidLoaderSection,
-                        nameof(AddRepositories),
-                        configuration.GetPath()
+                        nameof(UseStrategies),
+                        configurationSection
                         )
                     );
             }
@@ -92,7 +98,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 throw new ConfigurationException(
                     message: string.Format(
                         Resources.EmptyStrategyName,
-                        nameof(AddRepositories)
+                        nameof(UseStrategies)
                         )
                     );
             }
@@ -147,13 +153,13 @@ namespace Microsoft.Extensions.DependencyInjection
             }
 
             // Format the name of a target extension method.
-            var methodName = $"Add{strategyName}Repositories";
+            var methodName = $"Use{strategyName}Strategies";
 
             // Look for specified extension method.
             var methods = AppDomain.CurrentDomain.ExtensionMethods(
-                typeof(IServiceCollection),
+                typeof(IApplicationBuilder),
                 methodName,
-                new Type[] { typeof(IConfiguration), typeof(ServiceLifetime) },
+                new Type[] { typeof(string) },
                 assemblyWhiteList,
                 assemblyBlackList
                 );
@@ -161,23 +167,14 @@ namespace Microsoft.Extensions.DependencyInjection
             // Did we find it?
             if (methods.Any())
             {
-                // Drill down into the appropriate sub-section.
-                var subSection = configuration.GetSection(
-                    strategyName
-                    );
-
                 // We'll use the first matching method.
                 var method = methods.First();
 
                 // Invoke the extension method.
                 method.Invoke(
                     null,
-                    new object[]
-                    {
-                        serviceCollection,
-                        subSection,
-                        serviceLifetime
-                    });
+                    new object[] { applicationBuilder, configurationSection }
+                    );
             }
             else
             {
@@ -188,15 +185,15 @@ namespace Microsoft.Extensions.DependencyInjection
                 throw new BusinessException(
                     message: string.Format(
                         Resources.MethodNotFound,
-                        nameof(AddRepositories),
+                        nameof(UseStrategies),
                         methodName,
-                        $"{nameof(IServiceCollection)},{nameof(IConfiguration)},{nameof(ServiceLifetime)}"
+                        $"{nameof(IApplicationBuilder)},{nameof(String)}"
                         )
                     );
             }
 
-            // Return the service collection.
-            return serviceCollection;
+            // Return the application builder.
+            return applicationBuilder;
         }
 
         #endregion
