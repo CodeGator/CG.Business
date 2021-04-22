@@ -4,6 +4,8 @@
 ## 2021.2
 
 * I switched to the .NET 5.0 framework
+* I added back manager and director types
+* bug fixes
 
 ## 2021.1
 
@@ -17,7 +19,7 @@
 
 * I moved the CRUD repository and store types to CG.Linq
 
-* I movd the generic model types to CG.Linq.
+* I moved the generic model types to CG.Linq.
 
 * I added service lifetime to the LoaderOptions type, and I modified the related
     extension methods to pass that hint down during registration, so all parts
