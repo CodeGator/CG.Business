@@ -88,6 +88,228 @@ references:
   isSpec: "True"
   fullName: CG.Business.BusinessException.BusinessException
   nameWithType: BusinessException.BusinessException
+- uid: CG.Business.Directors
+  name: CG.Business.Directors
+  href: api/CG.Business.Directors.html
+  commentId: N:CG.Business.Directors
+  fullName: CG.Business.Directors
+  nameWithType: CG.Business.Directors
+- uid: CG.Business.Directors.DirectorBase
+  name: DirectorBase
+  href: api/CG.Business.Directors.DirectorBase.html
+  commentId: T:CG.Business.Directors.DirectorBase
+  fullName: CG.Business.Directors.DirectorBase
+  nameWithType: DirectorBase
+- uid: CG.Business.Directors.DirectorBase`1
+  name: DirectorBase<TOptions>
+  href: api/CG.Business.Directors.DirectorBase-1.html
+  commentId: T:CG.Business.Directors.DirectorBase`1
+  name.vb: DirectorBase(Of TOptions)
+  fullName: CG.Business.Directors.DirectorBase<TOptions>
+  fullName.vb: CG.Business.Directors.DirectorBase(Of TOptions)
+  nameWithType: DirectorBase<TOptions>
+  nameWithType.vb: DirectorBase(Of TOptions)
+- uid: CG.Business.Directors.DirectorBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name: DirectorBase(IOptions<TOptions>)
+  href: api/CG.Business.Directors.DirectorBase-1.html#CG_Business_Directors_DirectorBase_1__ctor_Microsoft_Extensions_Options_IOptions__0__
+  commentId: M:CG.Business.Directors.DirectorBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name.vb: DirectorBase(IOptions(Of TOptions))
+  fullName: CG.Business.Directors.DirectorBase<TOptions>.DirectorBase(Microsoft.Extensions.Options.IOptions<TOptions>)
+  fullName.vb: CG.Business.Directors.DirectorBase(Of TOptions).DirectorBase(Microsoft.Extensions.Options.IOptions(Of TOptions))
+  nameWithType: DirectorBase<TOptions>.DirectorBase(IOptions<TOptions>)
+  nameWithType.vb: DirectorBase(Of TOptions).DirectorBase(IOptions(Of TOptions))
+- uid: CG.Business.Directors.DirectorBase`1.#ctor*
+  name: DirectorBase
+  href: api/CG.Business.Directors.DirectorBase-1.html#CG_Business_Directors_DirectorBase_1__ctor_
+  commentId: Overload:CG.Business.Directors.DirectorBase`1.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Directors.DirectorBase<TOptions>.DirectorBase
+  fullName.vb: CG.Business.Directors.DirectorBase(Of TOptions).DirectorBase
+  nameWithType: DirectorBase<TOptions>.DirectorBase
+  nameWithType.vb: DirectorBase(Of TOptions).DirectorBase
+- uid: CG.Business.Directors.DirectorBase`1.Options
+  name: Options
+  href: api/CG.Business.Directors.DirectorBase-1.html#CG_Business_Directors_DirectorBase_1_Options
+  commentId: P:CG.Business.Directors.DirectorBase`1.Options
+  fullName: CG.Business.Directors.DirectorBase<TOptions>.Options
+  fullName.vb: CG.Business.Directors.DirectorBase(Of TOptions).Options
+  nameWithType: DirectorBase<TOptions>.Options
+  nameWithType.vb: DirectorBase(Of TOptions).Options
+- uid: CG.Business.Directors.DirectorBase`1.Options*
+  name: Options
+  href: api/CG.Business.Directors.DirectorBase-1.html#CG_Business_Directors_DirectorBase_1_Options_
+  commentId: Overload:CG.Business.Directors.DirectorBase`1.Options
+  isSpec: "True"
+  fullName: CG.Business.Directors.DirectorBase<TOptions>.Options
+  fullName.vb: CG.Business.Directors.DirectorBase(Of TOptions).Options
+  nameWithType: DirectorBase<TOptions>.Options
+  nameWithType.vb: DirectorBase(Of TOptions).Options
+- uid: CG.Business.Directors.DirectorException
+  name: DirectorException
+  href: api/CG.Business.Directors.DirectorException.html
+  commentId: T:CG.Business.Directors.DirectorException
+  fullName: CG.Business.Directors.DirectorException
+  nameWithType: DirectorException
+- uid: CG.Business.Directors.DirectorException.#ctor
+  name: DirectorException()
+  href: api/CG.Business.Directors.DirectorException.html#CG_Business_Directors_DirectorException__ctor
+  commentId: M:CG.Business.Directors.DirectorException.#ctor
+  fullName: CG.Business.Directors.DirectorException.DirectorException()
+  nameWithType: DirectorException.DirectorException()
+- uid: CG.Business.Directors.DirectorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: DirectorException(SerializationInfo, StreamingContext)
+  href: api/CG.Business.Directors.DirectorException.html#CG_Business_Directors_DirectorException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:CG.Business.Directors.DirectorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: CG.Business.Directors.DirectorException.DirectorException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: DirectorException.DirectorException(SerializationInfo, StreamingContext)
+- uid: CG.Business.Directors.DirectorException.#ctor(System.String)
+  name: DirectorException(String)
+  href: api/CG.Business.Directors.DirectorException.html#CG_Business_Directors_DirectorException__ctor_System_String_
+  commentId: M:CG.Business.Directors.DirectorException.#ctor(System.String)
+  fullName: CG.Business.Directors.DirectorException.DirectorException(System.String)
+  nameWithType: DirectorException.DirectorException(String)
+- uid: CG.Business.Directors.DirectorException.#ctor(System.String,System.Exception)
+  name: DirectorException(String, Exception)
+  href: api/CG.Business.Directors.DirectorException.html#CG_Business_Directors_DirectorException__ctor_System_String_System_Exception_
+  commentId: M:CG.Business.Directors.DirectorException.#ctor(System.String,System.Exception)
+  fullName: CG.Business.Directors.DirectorException.DirectorException(System.String, System.Exception)
+  nameWithType: DirectorException.DirectorException(String, Exception)
+- uid: CG.Business.Directors.DirectorException.#ctor*
+  name: DirectorException
+  href: api/CG.Business.Directors.DirectorException.html#CG_Business_Directors_DirectorException__ctor_
+  commentId: Overload:CG.Business.Directors.DirectorException.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Directors.DirectorException.DirectorException
+  nameWithType: DirectorException.DirectorException
+- uid: CG.Business.Directors.IDirector
+  name: IDirector
+  href: api/CG.Business.Directors.IDirector.html
+  commentId: T:CG.Business.Directors.IDirector
+  fullName: CG.Business.Directors.IDirector
+  nameWithType: IDirector
+- uid: CG.Business.Directors.Options
+  name: CG.Business.Directors.Options
+  href: api/CG.Business.Directors.Options.html
+  commentId: N:CG.Business.Directors.Options
+  fullName: CG.Business.Directors.Options
+  nameWithType: CG.Business.Directors.Options
+- uid: CG.Business.Directors.Options.DirectorOptions
+  name: DirectorOptions
+  href: api/CG.Business.Directors.Options.DirectorOptions.html
+  commentId: T:CG.Business.Directors.Options.DirectorOptions
+  fullName: CG.Business.Directors.Options.DirectorOptions
+  nameWithType: DirectorOptions
+- uid: CG.Business.Managers
+  name: CG.Business.Managers
+  href: api/CG.Business.Managers.html
+  commentId: N:CG.Business.Managers
+  fullName: CG.Business.Managers
+  nameWithType: CG.Business.Managers
+- uid: CG.Business.Managers.IManager
+  name: IManager
+  href: api/CG.Business.Managers.IManager.html
+  commentId: T:CG.Business.Managers.IManager
+  fullName: CG.Business.Managers.IManager
+  nameWithType: IManager
+- uid: CG.Business.Managers.ManagerBase
+  name: ManagerBase
+  href: api/CG.Business.Managers.ManagerBase.html
+  commentId: T:CG.Business.Managers.ManagerBase
+  fullName: CG.Business.Managers.ManagerBase
+  nameWithType: ManagerBase
+- uid: CG.Business.Managers.ManagerBase`1
+  name: ManagerBase<TOptions>
+  href: api/CG.Business.Managers.ManagerBase-1.html
+  commentId: T:CG.Business.Managers.ManagerBase`1
+  name.vb: ManagerBase(Of TOptions)
+  fullName: CG.Business.Managers.ManagerBase<TOptions>
+  fullName.vb: CG.Business.Managers.ManagerBase(Of TOptions)
+  nameWithType: ManagerBase<TOptions>
+  nameWithType.vb: ManagerBase(Of TOptions)
+- uid: CG.Business.Managers.ManagerBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name: ManagerBase(IOptions<TOptions>)
+  href: api/CG.Business.Managers.ManagerBase-1.html#CG_Business_Managers_ManagerBase_1__ctor_Microsoft_Extensions_Options_IOptions__0__
+  commentId: M:CG.Business.Managers.ManagerBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name.vb: ManagerBase(IOptions(Of TOptions))
+  fullName: CG.Business.Managers.ManagerBase<TOptions>.ManagerBase(Microsoft.Extensions.Options.IOptions<TOptions>)
+  fullName.vb: CG.Business.Managers.ManagerBase(Of TOptions).ManagerBase(Microsoft.Extensions.Options.IOptions(Of TOptions))
+  nameWithType: ManagerBase<TOptions>.ManagerBase(IOptions<TOptions>)
+  nameWithType.vb: ManagerBase(Of TOptions).ManagerBase(IOptions(Of TOptions))
+- uid: CG.Business.Managers.ManagerBase`1.#ctor*
+  name: ManagerBase
+  href: api/CG.Business.Managers.ManagerBase-1.html#CG_Business_Managers_ManagerBase_1__ctor_
+  commentId: Overload:CG.Business.Managers.ManagerBase`1.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Managers.ManagerBase<TOptions>.ManagerBase
+  fullName.vb: CG.Business.Managers.ManagerBase(Of TOptions).ManagerBase
+  nameWithType: ManagerBase<TOptions>.ManagerBase
+  nameWithType.vb: ManagerBase(Of TOptions).ManagerBase
+- uid: CG.Business.Managers.ManagerBase`1.Options
+  name: Options
+  href: api/CG.Business.Managers.ManagerBase-1.html#CG_Business_Managers_ManagerBase_1_Options
+  commentId: P:CG.Business.Managers.ManagerBase`1.Options
+  fullName: CG.Business.Managers.ManagerBase<TOptions>.Options
+  fullName.vb: CG.Business.Managers.ManagerBase(Of TOptions).Options
+  nameWithType: ManagerBase<TOptions>.Options
+  nameWithType.vb: ManagerBase(Of TOptions).Options
+- uid: CG.Business.Managers.ManagerBase`1.Options*
+  name: Options
+  href: api/CG.Business.Managers.ManagerBase-1.html#CG_Business_Managers_ManagerBase_1_Options_
+  commentId: Overload:CG.Business.Managers.ManagerBase`1.Options
+  isSpec: "True"
+  fullName: CG.Business.Managers.ManagerBase<TOptions>.Options
+  fullName.vb: CG.Business.Managers.ManagerBase(Of TOptions).Options
+  nameWithType: ManagerBase<TOptions>.Options
+  nameWithType.vb: ManagerBase(Of TOptions).Options
+- uid: CG.Business.Managers.ManagerException
+  name: ManagerException
+  href: api/CG.Business.Managers.ManagerException.html
+  commentId: T:CG.Business.Managers.ManagerException
+  fullName: CG.Business.Managers.ManagerException
+  nameWithType: ManagerException
+- uid: CG.Business.Managers.ManagerException.#ctor
+  name: ManagerException()
+  href: api/CG.Business.Managers.ManagerException.html#CG_Business_Managers_ManagerException__ctor
+  commentId: M:CG.Business.Managers.ManagerException.#ctor
+  fullName: CG.Business.Managers.ManagerException.ManagerException()
+  nameWithType: ManagerException.ManagerException()
+- uid: CG.Business.Managers.ManagerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: ManagerException(SerializationInfo, StreamingContext)
+  href: api/CG.Business.Managers.ManagerException.html#CG_Business_Managers_ManagerException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:CG.Business.Managers.ManagerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: CG.Business.Managers.ManagerException.ManagerException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ManagerException.ManagerException(SerializationInfo, StreamingContext)
+- uid: CG.Business.Managers.ManagerException.#ctor(System.String)
+  name: ManagerException(String)
+  href: api/CG.Business.Managers.ManagerException.html#CG_Business_Managers_ManagerException__ctor_System_String_
+  commentId: M:CG.Business.Managers.ManagerException.#ctor(System.String)
+  fullName: CG.Business.Managers.ManagerException.ManagerException(System.String)
+  nameWithType: ManagerException.ManagerException(String)
+- uid: CG.Business.Managers.ManagerException.#ctor(System.String,System.Exception)
+  name: ManagerException(String, Exception)
+  href: api/CG.Business.Managers.ManagerException.html#CG_Business_Managers_ManagerException__ctor_System_String_System_Exception_
+  commentId: M:CG.Business.Managers.ManagerException.#ctor(System.String,System.Exception)
+  fullName: CG.Business.Managers.ManagerException.ManagerException(System.String, System.Exception)
+  nameWithType: ManagerException.ManagerException(String, Exception)
+- uid: CG.Business.Managers.ManagerException.#ctor*
+  name: ManagerException
+  href: api/CG.Business.Managers.ManagerException.html#CG_Business_Managers_ManagerException__ctor_
+  commentId: Overload:CG.Business.Managers.ManagerException.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Managers.ManagerException.ManagerException
+  nameWithType: ManagerException.ManagerException
+- uid: CG.Business.Managers.Options
+  name: CG.Business.Managers.Options
+  href: api/CG.Business.Managers.Options.html
+  commentId: N:CG.Business.Managers.Options
+  fullName: CG.Business.Managers.Options
+  nameWithType: CG.Business.Managers.Options
+- uid: CG.Business.Managers.Options.ManagerOptions
+  name: ManagerOptions
+  href: api/CG.Business.Managers.Options.ManagerOptions.html
+  commentId: T:CG.Business.Managers.Options.ManagerOptions
+  fullName: CG.Business.Managers.Options.ManagerOptions
+  nameWithType: ManagerOptions
 - uid: CG.Business.Models
   name: CG.Business.Models
   href: api/CG.Business.Models.html

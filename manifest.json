@@ -54,7 +54,175 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.BusinessException.html",
-          "hash": "JX2mpcdcVPUamrdUH2UCx8zz0cKUscO1AtdBvWk0bOM="
+          "hash": "DjG9XwRz1kEdMmoyHqRKTT/PGiCvWKRkqaEqLVAfJvY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.DirectorBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.DirectorBase-1.html",
+          "hash": "gEjG9F+YkkeAwfR26xGZY+izzDv5otNXlAHpVxhU+0M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.DirectorBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.DirectorBase.html",
+          "hash": "gZ9xJl383GGPPBsVzD3XPpUhRrKbjWMO9zW543fI6oo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.DirectorException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.DirectorException.html",
+          "hash": "BPuq9LXe34kjoN43JDkkvATP7A4m0Ts6iIMOEj42fQM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.IDirector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.IDirector.html",
+          "hash": "r2R8xcuXV8DInh57+2STMIVgbOsvLo133GmJKKjHjVw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.Options.DirectorOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.Options.DirectorOptions.html",
+          "hash": "1zeAcbi6/dEQGVs2V9IZuLrRHwzn373boJOqjehhqho="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.Options.html",
+          "hash": "1VJQ0Slcc0oJQOufdwZlbYFdT7xtLD9eiAOIDbzLnu0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.html",
+          "hash": "Nv9MGXAZGLefvyaxyCkacx2l9WqdokIlMbZTDlFhAAA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Managers.IManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Managers.IManager.html",
+          "hash": "tTXoxdDxFvLSc7F1SyAPMXTmYJGkEEUiQ+RA4jHS6Ww="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Managers.ManagerBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Managers.ManagerBase-1.html",
+          "hash": "Gqr3eAXG5oNLlsgjSzMEVva4UQ42Zd1RXK24nVLIcXs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Managers.ManagerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Managers.ManagerBase.html",
+          "hash": "g3GMzDClu0Wt9ZYJE9/T1EAH+TmEwfp5QTmogsXh/lw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Managers.ManagerException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Managers.ManagerException.html",
+          "hash": "nlhwcv0fg/PeE/H5xWvqUwwEGi5+vC0mLE8Z5TRx+VU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Managers.Options.ManagerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Managers.Options.ManagerOptions.html",
+          "hash": "41NAygMCPCfnuoIGdlPCCcqkSrj2/aEycaGPO8h+vQs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Managers.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Managers.Options.html",
+          "hash": "zQ/JKOlts3E8bIA+k+tBvWYb5rpDqp3lS2XFwoP0tlg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Managers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Managers.html",
+          "hash": "6+iUQqX5skqG4l7dBSJSySCDqZajIV1ZX9MZ1kTBI90="
         }
       },
       "is_incremental": false,
@@ -342,7 +510,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Services.ServiceException.html",
-          "hash": "5egQtaADdTPh57OKzKTOXa9QrfaOLRrJhntk/5Mw1y0="
+          "hash": "A8DHOIuyiRNfRGtHYNS3RvkK9wr0ibhkqZB2Ob/wvTc="
         }
       },
       "is_incremental": false,
@@ -354,7 +522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Services.html",
-          "hash": "7vLtf3DgS6os2dJjfmsF6fQAaOT1LlMyobqQvIgrmwU="
+          "hash": "oXrcmBAGVnVrD9/hV0vu5zOVErMPSMP1V4UxUVn+zZc="
         }
       },
       "is_incremental": false,
@@ -630,7 +798,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "6NS1AhCKp8Bsp+gNIaTM6rwcZEEWi7LsPO+LtYM9Hhg="
+          "hash": "z2cdisNdLr81Qiv/pbdZ3M9xUl3KzUL1Tn58Y8pHHWc="
         }
       },
       "is_incremental": false,
@@ -705,7 +873,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 51,
+          "total_file_count": 65,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
