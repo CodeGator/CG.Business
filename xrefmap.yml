@@ -316,6 +316,122 @@ references:
   commentId: N:CG.Business.Models
   fullName: CG.Business.Models
   nameWithType: CG.Business.Models
+- uid: CG.Business.Models.AuditedModelBase
+  name: AuditedModelBase
+  href: api/CG.Business.Models.AuditedModelBase.html
+  commentId: T:CG.Business.Models.AuditedModelBase
+  fullName: CG.Business.Models.AuditedModelBase
+  nameWithType: AuditedModelBase
+- uid: CG.Business.Models.AuditedModelBase.CreatedBy
+  name: CreatedBy
+  href: api/CG.Business.Models.AuditedModelBase.html#CG_Business_Models_AuditedModelBase_CreatedBy
+  commentId: P:CG.Business.Models.AuditedModelBase.CreatedBy
+  fullName: CG.Business.Models.AuditedModelBase.CreatedBy
+  nameWithType: AuditedModelBase.CreatedBy
+- uid: CG.Business.Models.AuditedModelBase.CreatedBy*
+  name: CreatedBy
+  href: api/CG.Business.Models.AuditedModelBase.html#CG_Business_Models_AuditedModelBase_CreatedBy_
+  commentId: Overload:CG.Business.Models.AuditedModelBase.CreatedBy
+  isSpec: "True"
+  fullName: CG.Business.Models.AuditedModelBase.CreatedBy
+  nameWithType: AuditedModelBase.CreatedBy
+- uid: CG.Business.Models.AuditedModelBase.CreatedDate
+  name: CreatedDate
+  href: api/CG.Business.Models.AuditedModelBase.html#CG_Business_Models_AuditedModelBase_CreatedDate
+  commentId: P:CG.Business.Models.AuditedModelBase.CreatedDate
+  fullName: CG.Business.Models.AuditedModelBase.CreatedDate
+  nameWithType: AuditedModelBase.CreatedDate
+- uid: CG.Business.Models.AuditedModelBase.CreatedDate*
+  name: CreatedDate
+  href: api/CG.Business.Models.AuditedModelBase.html#CG_Business_Models_AuditedModelBase_CreatedDate_
+  commentId: Overload:CG.Business.Models.AuditedModelBase.CreatedDate
+  isSpec: "True"
+  fullName: CG.Business.Models.AuditedModelBase.CreatedDate
+  nameWithType: AuditedModelBase.CreatedDate
+- uid: CG.Business.Models.AuditedModelBase.UpdatedBy
+  name: UpdatedBy
+  href: api/CG.Business.Models.AuditedModelBase.html#CG_Business_Models_AuditedModelBase_UpdatedBy
+  commentId: P:CG.Business.Models.AuditedModelBase.UpdatedBy
+  fullName: CG.Business.Models.AuditedModelBase.UpdatedBy
+  nameWithType: AuditedModelBase.UpdatedBy
+- uid: CG.Business.Models.AuditedModelBase.UpdatedBy*
+  name: UpdatedBy
+  href: api/CG.Business.Models.AuditedModelBase.html#CG_Business_Models_AuditedModelBase_UpdatedBy_
+  commentId: Overload:CG.Business.Models.AuditedModelBase.UpdatedBy
+  isSpec: "True"
+  fullName: CG.Business.Models.AuditedModelBase.UpdatedBy
+  nameWithType: AuditedModelBase.UpdatedBy
+- uid: CG.Business.Models.AuditedModelBase.UpdatedDate
+  name: UpdatedDate
+  href: api/CG.Business.Models.AuditedModelBase.html#CG_Business_Models_AuditedModelBase_UpdatedDate
+  commentId: P:CG.Business.Models.AuditedModelBase.UpdatedDate
+  fullName: CG.Business.Models.AuditedModelBase.UpdatedDate
+  nameWithType: AuditedModelBase.UpdatedDate
+- uid: CG.Business.Models.AuditedModelBase.UpdatedDate*
+  name: UpdatedDate
+  href: api/CG.Business.Models.AuditedModelBase.html#CG_Business_Models_AuditedModelBase_UpdatedDate_
+  commentId: Overload:CG.Business.Models.AuditedModelBase.UpdatedDate
+  isSpec: "True"
+  fullName: CG.Business.Models.AuditedModelBase.UpdatedDate
+  nameWithType: AuditedModelBase.UpdatedDate
+- uid: CG.Business.Models.IAuditedModel
+  name: IAuditedModel
+  href: api/CG.Business.Models.IAuditedModel.html
+  commentId: T:CG.Business.Models.IAuditedModel
+  fullName: CG.Business.Models.IAuditedModel
+  nameWithType: IAuditedModel
+- uid: CG.Business.Models.IAuditedModel.CreatedBy
+  name: CreatedBy
+  href: api/CG.Business.Models.IAuditedModel.html#CG_Business_Models_IAuditedModel_CreatedBy
+  commentId: P:CG.Business.Models.IAuditedModel.CreatedBy
+  fullName: CG.Business.Models.IAuditedModel.CreatedBy
+  nameWithType: IAuditedModel.CreatedBy
+- uid: CG.Business.Models.IAuditedModel.CreatedBy*
+  name: CreatedBy
+  href: api/CG.Business.Models.IAuditedModel.html#CG_Business_Models_IAuditedModel_CreatedBy_
+  commentId: Overload:CG.Business.Models.IAuditedModel.CreatedBy
+  isSpec: "True"
+  fullName: CG.Business.Models.IAuditedModel.CreatedBy
+  nameWithType: IAuditedModel.CreatedBy
+- uid: CG.Business.Models.IAuditedModel.CreatedDate
+  name: CreatedDate
+  href: api/CG.Business.Models.IAuditedModel.html#CG_Business_Models_IAuditedModel_CreatedDate
+  commentId: P:CG.Business.Models.IAuditedModel.CreatedDate
+  fullName: CG.Business.Models.IAuditedModel.CreatedDate
+  nameWithType: IAuditedModel.CreatedDate
+- uid: CG.Business.Models.IAuditedModel.CreatedDate*
+  name: CreatedDate
+  href: api/CG.Business.Models.IAuditedModel.html#CG_Business_Models_IAuditedModel_CreatedDate_
+  commentId: Overload:CG.Business.Models.IAuditedModel.CreatedDate
+  isSpec: "True"
+  fullName: CG.Business.Models.IAuditedModel.CreatedDate
+  nameWithType: IAuditedModel.CreatedDate
+- uid: CG.Business.Models.IAuditedModel.UpdatedBy
+  name: UpdatedBy
+  href: api/CG.Business.Models.IAuditedModel.html#CG_Business_Models_IAuditedModel_UpdatedBy
+  commentId: P:CG.Business.Models.IAuditedModel.UpdatedBy
+  fullName: CG.Business.Models.IAuditedModel.UpdatedBy
+  nameWithType: IAuditedModel.UpdatedBy
+- uid: CG.Business.Models.IAuditedModel.UpdatedBy*
+  name: UpdatedBy
+  href: api/CG.Business.Models.IAuditedModel.html#CG_Business_Models_IAuditedModel_UpdatedBy_
+  commentId: Overload:CG.Business.Models.IAuditedModel.UpdatedBy
+  isSpec: "True"
+  fullName: CG.Business.Models.IAuditedModel.UpdatedBy
+  nameWithType: IAuditedModel.UpdatedBy
+- uid: CG.Business.Models.IAuditedModel.UpdatedDate
+  name: UpdatedDate
+  href: api/CG.Business.Models.IAuditedModel.html#CG_Business_Models_IAuditedModel_UpdatedDate
+  commentId: P:CG.Business.Models.IAuditedModel.UpdatedDate
+  fullName: CG.Business.Models.IAuditedModel.UpdatedDate
+  nameWithType: IAuditedModel.UpdatedDate
+- uid: CG.Business.Models.IAuditedModel.UpdatedDate*
+  name: UpdatedDate
+  href: api/CG.Business.Models.IAuditedModel.html#CG_Business_Models_IAuditedModel_UpdatedDate_
+  commentId: Overload:CG.Business.Models.IAuditedModel.UpdatedDate
+  isSpec: "True"
+  fullName: CG.Business.Models.IAuditedModel.UpdatedDate
+  nameWithType: IAuditedModel.UpdatedDate
 - uid: CG.Business.Models.IModel
   name: IModel
   href: api/CG.Business.Models.IModel.html
@@ -1276,25 +1392,25 @@ references:
   commentId: N:Microsoft.Extensions.DependencyInjection
   fullName: Microsoft.Extensions.DependencyInjection
   nameWithType: Microsoft.Extensions.DependencyInjection
-- uid: Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions
-  name: RepositoriesServiceCollectionExtensions
-  href: api/Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.html
-  commentId: T:Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions
-  fullName: Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions
-  nameWithType: RepositoriesServiceCollectionExtensions
-- uid: Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html
+  commentId: T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
   name: AddRepositories(IServiceCollection, IConfiguration, ServiceLifetime, String, String)
-  href: api/Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_RepositoriesServiceCollectionExtensions_AddRepositories_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_DependencyInjection_ServiceLifetime_System_String_System_String_
-  commentId: M:Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
-  fullName: Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.ServiceLifetime, System.String, System.String)
-  nameWithType: RepositoriesServiceCollectionExtensions.AddRepositories(IServiceCollection, IConfiguration, ServiceLifetime, String, String)
-- uid: Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.AddRepositories*
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_Microsoft_Extensions_DependencyInjection_ServiceLifetime_System_String_System_String_
+  commentId: M:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.DependencyInjection.ServiceLifetime,System.String,System.String)
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, Microsoft.Extensions.DependencyInjection.ServiceLifetime, System.String, System.String)
+  nameWithType: ServiceCollectionExtensions.AddRepositories(IServiceCollection, IConfiguration, ServiceLifetime, String, String)
+- uid: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories*
   name: AddRepositories
-  href: api/Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_RepositoriesServiceCollectionExtensions_AddRepositories_
-  commentId: Overload:Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.AddRepositories
+  href: api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_ServiceCollectionExtensions_AddRepositories_
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories
   isSpec: "True"
-  fullName: Microsoft.Extensions.DependencyInjection.RepositoriesServiceCollectionExtensions.AddRepositories
-  nameWithType: RepositoriesServiceCollectionExtensions.AddRepositories
+  fullName: Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddRepositories
+  nameWithType: ServiceCollectionExtensions.AddRepositories
 - uid: Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions
   name: StrategiesServiceCollectionExtensions
   href: api/Microsoft.Extensions.DependencyInjection.StrategiesServiceCollectionExtensions.html
