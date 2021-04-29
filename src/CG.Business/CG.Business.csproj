@@ -28,7 +28,7 @@ Platforms supported:
     <PackageReference Include="CG.Configuration" Version="2021.2.3" />
     <PackageReference Include="CG.Core" Version="2021.2.7" />
     <PackageReference Include="CG.Options" Version="2021.4.10" />
-    <PackageReference Include="CG.Reflection" Version="2021.2.6" />
+    <PackageReference Include="CG.Reflection" Version="2021.2.7" />
     <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.194">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
