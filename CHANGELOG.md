@@ -6,6 +6,7 @@
 * I switched to the .NET 5.0 framework
 * I added back manager and director types
 * bug fixes
+* I added a client iface, exception and base type
 
 ## 2021.1
 
