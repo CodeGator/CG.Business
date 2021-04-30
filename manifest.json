@@ -54,7 +54,91 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.BusinessException.html",
-          "hash": "DjG9XwRz1kEdMmoyHqRKTT/PGiCvWKRkqaEqLVAfJvY="
+          "hash": "pj0I1CAt5tBr+fzjrySXyxDxnWHhRb6PLonUG48rZDM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Clients.ClientBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Clients.ClientBase-1.html",
+          "hash": "xdpFcG89l/IQTp0umJjG1lwfVoJGddtRa6MDeJCI59A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Clients.ClientBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Clients.ClientBase.html",
+          "hash": "7gjbnP/qARmpOlbKX+vJLYRfDZigoq3sbLwtfkgwVVE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Clients.ClientException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Clients.ClientException.html",
+          "hash": "Eq1HxRrMxkl36OcmLCtxXf9PnyDsNZ83Gc5L0dNXZy8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Clients.IClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Clients.IClient.html",
+          "hash": "Iun7HBFWI3qGUkjLkFsWvpHZKGUy8XV+1+ar/jfuPCs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Clients.Options.ClientOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Clients.Options.ClientOptions.html",
+          "hash": "n6Vb+KEqbwVeisk4GwnpvLLhkGxJjFqk2X/RaIq25zM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Clients.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Clients.Options.html",
+          "hash": "LWtKcfFRMBk4FZz9Gl20wU+Fp4bU9z+/huSfyWYSOZ8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Clients.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Clients.html",
+          "hash": "U/Ij1hzrFaNxDi8h13mgyuHmyX02Jw+UevNWkw8Yhho="
         }
       },
       "is_incremental": false,
@@ -822,7 +906,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "RMkXGC/OVp1ZhGmyfScfa1pV6vjcoogbI7d5Wi4biUE="
+          "hash": "HXTKzQMyk6Q5uXlAVKCFfyU76acfpgyMNcm0E+AQOmw="
         }
       },
       "is_incremental": false,
@@ -897,7 +981,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 67,
+          "total_file_count": 74,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

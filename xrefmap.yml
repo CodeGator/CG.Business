@@ -88,6 +88,117 @@ references:
   isSpec: "True"
   fullName: CG.Business.BusinessException.BusinessException
   nameWithType: BusinessException.BusinessException
+- uid: CG.Business.Clients
+  name: CG.Business.Clients
+  href: api/CG.Business.Clients.html
+  commentId: N:CG.Business.Clients
+  fullName: CG.Business.Clients
+  nameWithType: CG.Business.Clients
+- uid: CG.Business.Clients.ClientBase
+  name: ClientBase
+  href: api/CG.Business.Clients.ClientBase.html
+  commentId: T:CG.Business.Clients.ClientBase
+  fullName: CG.Business.Clients.ClientBase
+  nameWithType: ClientBase
+- uid: CG.Business.Clients.ClientBase`1
+  name: ClientBase<TOptions>
+  href: api/CG.Business.Clients.ClientBase-1.html
+  commentId: T:CG.Business.Clients.ClientBase`1
+  name.vb: ClientBase(Of TOptions)
+  fullName: CG.Business.Clients.ClientBase<TOptions>
+  fullName.vb: CG.Business.Clients.ClientBase(Of TOptions)
+  nameWithType: ClientBase<TOptions>
+  nameWithType.vb: ClientBase(Of TOptions)
+- uid: CG.Business.Clients.ClientBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name: ClientBase(IOptions<TOptions>)
+  href: api/CG.Business.Clients.ClientBase-1.html#CG_Business_Clients_ClientBase_1__ctor_Microsoft_Extensions_Options_IOptions__0__
+  commentId: M:CG.Business.Clients.ClientBase`1.#ctor(Microsoft.Extensions.Options.IOptions{`0})
+  name.vb: ClientBase(IOptions(Of TOptions))
+  fullName: CG.Business.Clients.ClientBase<TOptions>.ClientBase(Microsoft.Extensions.Options.IOptions<TOptions>)
+  fullName.vb: CG.Business.Clients.ClientBase(Of TOptions).ClientBase(Microsoft.Extensions.Options.IOptions(Of TOptions))
+  nameWithType: ClientBase<TOptions>.ClientBase(IOptions<TOptions>)
+  nameWithType.vb: ClientBase(Of TOptions).ClientBase(IOptions(Of TOptions))
+- uid: CG.Business.Clients.ClientBase`1.#ctor*
+  name: ClientBase
+  href: api/CG.Business.Clients.ClientBase-1.html#CG_Business_Clients_ClientBase_1__ctor_
+  commentId: Overload:CG.Business.Clients.ClientBase`1.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Clients.ClientBase<TOptions>.ClientBase
+  fullName.vb: CG.Business.Clients.ClientBase(Of TOptions).ClientBase
+  nameWithType: ClientBase<TOptions>.ClientBase
+  nameWithType.vb: ClientBase(Of TOptions).ClientBase
+- uid: CG.Business.Clients.ClientBase`1.Options
+  name: Options
+  href: api/CG.Business.Clients.ClientBase-1.html#CG_Business_Clients_ClientBase_1_Options
+  commentId: P:CG.Business.Clients.ClientBase`1.Options
+  fullName: CG.Business.Clients.ClientBase<TOptions>.Options
+  fullName.vb: CG.Business.Clients.ClientBase(Of TOptions).Options
+  nameWithType: ClientBase<TOptions>.Options
+  nameWithType.vb: ClientBase(Of TOptions).Options
+- uid: CG.Business.Clients.ClientBase`1.Options*
+  name: Options
+  href: api/CG.Business.Clients.ClientBase-1.html#CG_Business_Clients_ClientBase_1_Options_
+  commentId: Overload:CG.Business.Clients.ClientBase`1.Options
+  isSpec: "True"
+  fullName: CG.Business.Clients.ClientBase<TOptions>.Options
+  fullName.vb: CG.Business.Clients.ClientBase(Of TOptions).Options
+  nameWithType: ClientBase<TOptions>.Options
+  nameWithType.vb: ClientBase(Of TOptions).Options
+- uid: CG.Business.Clients.ClientException
+  name: ClientException
+  href: api/CG.Business.Clients.ClientException.html
+  commentId: T:CG.Business.Clients.ClientException
+  fullName: CG.Business.Clients.ClientException
+  nameWithType: ClientException
+- uid: CG.Business.Clients.ClientException.#ctor
+  name: ClientException()
+  href: api/CG.Business.Clients.ClientException.html#CG_Business_Clients_ClientException__ctor
+  commentId: M:CG.Business.Clients.ClientException.#ctor
+  fullName: CG.Business.Clients.ClientException.ClientException()
+  nameWithType: ClientException.ClientException()
+- uid: CG.Business.Clients.ClientException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: ClientException(SerializationInfo, StreamingContext)
+  href: api/CG.Business.Clients.ClientException.html#CG_Business_Clients_ClientException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:CG.Business.Clients.ClientException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: CG.Business.Clients.ClientException.ClientException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: ClientException.ClientException(SerializationInfo, StreamingContext)
+- uid: CG.Business.Clients.ClientException.#ctor(System.String)
+  name: ClientException(String)
+  href: api/CG.Business.Clients.ClientException.html#CG_Business_Clients_ClientException__ctor_System_String_
+  commentId: M:CG.Business.Clients.ClientException.#ctor(System.String)
+  fullName: CG.Business.Clients.ClientException.ClientException(System.String)
+  nameWithType: ClientException.ClientException(String)
+- uid: CG.Business.Clients.ClientException.#ctor(System.String,System.Exception)
+  name: ClientException(String, Exception)
+  href: api/CG.Business.Clients.ClientException.html#CG_Business_Clients_ClientException__ctor_System_String_System_Exception_
+  commentId: M:CG.Business.Clients.ClientException.#ctor(System.String,System.Exception)
+  fullName: CG.Business.Clients.ClientException.ClientException(System.String, System.Exception)
+  nameWithType: ClientException.ClientException(String, Exception)
+- uid: CG.Business.Clients.ClientException.#ctor*
+  name: ClientException
+  href: api/CG.Business.Clients.ClientException.html#CG_Business_Clients_ClientException__ctor_
+  commentId: Overload:CG.Business.Clients.ClientException.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Clients.ClientException.ClientException
+  nameWithType: ClientException.ClientException
+- uid: CG.Business.Clients.IClient
+  name: IClient
+  href: api/CG.Business.Clients.IClient.html
+  commentId: T:CG.Business.Clients.IClient
+  fullName: CG.Business.Clients.IClient
+  nameWithType: IClient
+- uid: CG.Business.Clients.Options
+  name: CG.Business.Clients.Options
+  href: api/CG.Business.Clients.Options.html
+  commentId: N:CG.Business.Clients.Options
+  fullName: CG.Business.Clients.Options
+  nameWithType: CG.Business.Clients.Options
+- uid: CG.Business.Clients.Options.ClientOptions
+  name: ClientOptions
+  href: api/CG.Business.Clients.Options.ClientOptions.html
+  commentId: T:CG.Business.Clients.Options.ClientOptions
+  fullName: CG.Business.Clients.Options.ClientOptions
+  nameWithType: ClientOptions
 - uid: CG.Business.Directors
   name: CG.Business.Directors
   href: api/CG.Business.Directors.html

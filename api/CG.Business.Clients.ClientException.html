@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class BusinessException
+    <title>Class ClientException
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class BusinessException
+    <meta name="title" content="Class ClientException
    ">
     <meta name="generator" content="docfx 2.57.2.0">
     
@@ -78,26 +78,20 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CG.Business.BusinessException">
+            <article class="content wrap" id="_content" data-uid="CG.Business.Clients.ClientException">
   
   
-  <h1 id="CG_Business_BusinessException" data-uid="CG.Business.BusinessException" class="text-break">Class BusinessException
+  <h1 id="CG_Business_Clients_ClientException" data-uid="CG.Business.Clients.ClientException" class="text-break">Class ClientException
   </h1>
-  <div class="markdown level0 summary"><p>This class represents a business related exception.</p>
+  <div class="markdown level0 summary"><p>This class represents a client related exception.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">System.Exception</span></div>
-    <div class="level2"><span class="xref">BusinessException</span></div>
-      <div class="level3"><a class="xref" href="CG.Business.Clients.ClientException.html">ClientException</a></div>
-      <div class="level3"><a class="xref" href="CG.Business.Directors.DirectorException.html">DirectorException</a></div>
-      <div class="level3"><a class="xref" href="CG.Business.Managers.ManagerException.html">ManagerException</a></div>
-      <div class="level3"><a class="xref" href="CG.Business.Repositories.RepositoryException.html">RepositoryException</a></div>
-      <div class="level3"><a class="xref" href="CG.Business.Services.ServiceException.html">ServiceException</a></div>
-      <div class="level3"><a class="xref" href="CG.Business.Stores.StoreException.html">StoreException</a></div>
-      <div class="level3"><a class="xref" href="CG.Business.Strategys.StrategyException.html">StrategyException</a></div>
+    <div class="level2"><a class="xref" href="CG.Business.BusinessException.html">BusinessException</a></div>
+    <div class="level3"><span class="xref">ClientException</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -160,34 +154,34 @@
       <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Business.html">CG.Business</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="CG.Business.Clients.html">CG.Business.Clients</a></h6>
   <h6><strong>Assembly</strong>: CG.Business.dll</h6>
-  <h5 id="CG_Business_BusinessException_syntax">Syntax</h5>
+  <h5 id="CG_Business_Clients_ClientException_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public class BusinessException : Exception, ISerializable</code></pre>
+public class ClientException : BusinessException, ISerializable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  <a id="CG_Business_BusinessException__ctor_" data-uid="CG.Business.BusinessException.#ctor*"></a>
-  <h4 id="CG_Business_BusinessException__ctor" data-uid="CG.Business.BusinessException.#ctor">BusinessException()</h4>
-  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Business.BusinessException.html">BusinessException</a>
+  <a id="CG_Business_Clients_ClientException__ctor_" data-uid="CG.Business.Clients.ClientException.#ctor*"></a>
+  <h4 id="CG_Business_Clients_ClientException__ctor" data-uid="CG.Business.Clients.ClientException.#ctor">ClientException()</h4>
+  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Business.Clients.ClientException.html">ClientException</a>
 class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BusinessException()</code></pre>
+    <pre><code class="lang-csharp hljs">public ClientException()</code></pre>
   </div>
-  <a id="CG_Business_BusinessException__ctor_" data-uid="CG.Business.BusinessException.#ctor*"></a>
-  <h4 id="CG_Business_BusinessException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="CG.Business.BusinessException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">BusinessException(SerializationInfo, StreamingContext)</h4>
-  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Business.BusinessException.html">BusinessException</a>
+  <a id="CG_Business_Clients_ClientException__ctor_" data-uid="CG.Business.Clients.ClientException.#ctor*"></a>
+  <h4 id="CG_Business_Clients_ClientException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="CG.Business.Clients.ClientException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">ClientException(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Business.Clients.ClientException.html">ClientException</a>
 class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BusinessException(SerializationInfo info, StreamingContext context)</code></pre>
+    <pre><code class="lang-csharp hljs">public ClientException(SerializationInfo info, StreamingContext context)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -213,15 +207,15 @@ class.</p>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Business_BusinessException__ctor_" data-uid="CG.Business.BusinessException.#ctor*"></a>
-  <h4 id="CG_Business_BusinessException__ctor_System_String_" data-uid="CG.Business.BusinessException.#ctor(System.String)">BusinessException(String)</h4>
-  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Business.BusinessException.html">BusinessException</a>
+  <a id="CG_Business_Clients_ClientException__ctor_" data-uid="CG.Business.Clients.ClientException.#ctor*"></a>
+  <h4 id="CG_Business_Clients_ClientException__ctor_System_String_" data-uid="CG.Business.Clients.ClientException.#ctor(System.String)">ClientException(String)</h4>
+  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Business.Clients.ClientException.html">ClientException</a>
 class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BusinessException(string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public ClientException(string message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -241,15 +235,15 @@ class.</p>
       </tr>
     </tbody>
   </table>
-  <a id="CG_Business_BusinessException__ctor_" data-uid="CG.Business.BusinessException.#ctor*"></a>
-  <h4 id="CG_Business_BusinessException__ctor_System_String_System_Exception_" data-uid="CG.Business.BusinessException.#ctor(System.String,System.Exception)">BusinessException(String, Exception)</h4>
-  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Business.BusinessException.html">BusinessException</a>
+  <a id="CG_Business_Clients_ClientException__ctor_" data-uid="CG.Business.Clients.ClientException.#ctor*"></a>
+  <h4 id="CG_Business_Clients_ClientException__ctor_System_String_System_Exception_" data-uid="CG.Business.Clients.ClientException.#ctor(System.String,System.Exception)">ClientException(String, Exception)</h4>
+  <div class="markdown level1 summary"><p>This constructor creates a new instance of the <a class="xref" href="CG.Business.Clients.ClientException.html">ClientException</a>
 class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public BusinessException(string message, Exception innerException)</code></pre>
+    <pre><code class="lang-csharp hljs">public ClientException(string message, Exception innerException)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
