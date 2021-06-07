@@ -13,6 +13,8 @@
 
 * I added a hosting environment and configuration parameter to the UseRepositories method.
 
+* I added a hosting environment and configuration parameter to the UseStrategies method.
+
 ## 2021.1
 
 * I bumped the major version for the new year.

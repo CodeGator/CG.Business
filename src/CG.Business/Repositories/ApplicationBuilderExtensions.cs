@@ -60,7 +60,9 @@ namespace Microsoft.AspNetCore.Builder
             )
         {
             // Validate the parameters before attempting to use them.
-            Guard.Instance().ThrowIfNull(applicationBuilder, nameof(applicationBuilder));
+            Guard.Instance().ThrowIfNull(applicationBuilder, nameof(applicationBuilder))
+                .ThrowIfNull(hostEnvironment, nameof(hostEnvironment))
+                .ThrowIfNull(configuration, nameof(configuration));
 
             // Create the loader options.
             var loaderOptions = new LoaderOptions();

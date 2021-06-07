@@ -6,19 +6,18 @@ using CG.DataAnnotations;
 using CG.Reflection;
 using CG.Validations;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 
-namespace Microsoft.AspNetCore.Builder
+namespace Microsoft.Extensions.DependencyInjection
 {
     /// <summary>
-    /// This class contains extension methods related to the <see cref="IApplicationBuilder"/>
+    /// This class contains extension methods related to the <see cref="IServiceCollection"/>
     /// type, for registering types related to strategies.
     /// </summary>
-    public static partial class StrategiesApplicationBuilderExtensions
+    public static partial class ServiceCollectionExtensions
     {
         // *******************************************************************
         // Public methods.
@@ -29,51 +28,45 @@ namespace Microsoft.AspNetCore.Builder
         /// <summary>
         /// This method reads the configuration for a <see cref="LoaderOptions"/>
         /// compatible section. It then uses that information to dynamically locate,
-        /// and then invoke, an extension method that wires up any startup logic
-        /// required to run the configured strategy type(s).
+        /// and then invoke, an extension method that registers concrete options 
+        /// and strategy types. 
         /// </summary>
-        /// <param name="applicationBuilder">The application builder to use for 
-        /// the operation.</param>
-        /// <param name="configurationSection">The configuration sub-section to use 
-        /// for the operation. </param>
-        /// <param name="assemblyBlackList">An optional black list for filtering
-        /// the list of assemblies that are searched during this operation.</param>
+        /// <param name="serviceCollection">The service collection to use 
+        /// for the operation.</param>
+        /// <param name="configuration">The configuration to use for the 
+        /// operation.</param>
+        /// <param name="serviceLifetime">The service lifetime to use for the operation.</param>
         /// <param name="assemblyWhiteList">An optional white list for filtering
         /// the list of assemblies that are searched during this operation.</param>
-        /// <returns>The value of the <paramref name="applicationBuilder"/>
+        /// <param name="assemblyBlackList">An optional black list for filtering
+        /// the list of assemblies that are searched during this operation.</param>
+        /// <returns>the value of the <paramref name="serviceCollection"/>
         /// parameter, for chaining calls together.</returns>
-        /// <exception cref="ArgumentException">This exception is thrown whenever one
-        /// or more arguments are invalid, or missing.</exception>
+        /// <exception cref="ArgumentException">This exception is thrown whenever
+        /// one ore more of the parameters is missing, or invalid.</exception>
         /// <exception cref="ConfigurationException">This exception is thrown whenever
         /// the method failes to locate appropriate configuration sections and/or settings
         /// at runtime.</exception>
         /// <exception cref="BusinessException">This exception is thrown whenever the 
         /// method failes to locate an appropriate extension method to call, or when that
         /// call fails.</exception>
-        public static IApplicationBuilder UseStrategies(
-            this IApplicationBuilder applicationBuilder,
-            string configurationSection,
+        public static IServiceCollection AddStrategies(
+            this IServiceCollection serviceCollection,
+            IConfiguration configuration,
+            ServiceLifetime serviceLifetime = ServiceLifetime.Scoped,
             string assemblyWhiteList = "",
             string assemblyBlackList = "Microsoft*, System*, mscorlib, netstandard"
             )
         {
             // Validate the parameters before attempting to use them.
-            Guard.Instance().ThrowIfNull(applicationBuilder, nameof(applicationBuilder));
-
-            // Get the configuration root.
-            var configuration = applicationBuilder.ApplicationServices
-                    .GetRequiredService<IConfiguration>();
-
-            // Navigate to the desired section.
-            var section = configuration.GetSection(
-                configurationSection
-                );
+            Guard.Instance().ThrowIfNull(serviceCollection, nameof(serviceCollection))
+                .ThrowIfNull(configuration, nameof(configuration));
 
             // Create the loader options.
             var loaderOptions = new LoaderOptions();
 
             // Bind the loader options to the configuration.
-            section.Bind(loaderOptions);
+            configuration.Bind(loaderOptions);
 
             // Verify the loader options.
             if (false == loaderOptions.IsValid())
@@ -82,8 +75,8 @@ namespace Microsoft.AspNetCore.Builder
                 throw new ConfigurationException(
                     message: string.Format(
                         Resources.InvalidLoaderSection,
-                        nameof(UseStrategies),
-                        configurationSection
+                        nameof(AddStrategies),
+                        configuration.GetPath()
                         )
                     );
             }
@@ -98,7 +91,7 @@ namespace Microsoft.AspNetCore.Builder
                 throw new ConfigurationException(
                     message: string.Format(
                         Resources.EmptyStrategyName,
-                        nameof(UseStrategies)
+                        nameof(AddStrategies)
                         )
                     );
             }
@@ -143,7 +136,7 @@ namespace Microsoft.AspNetCore.Builder
             catch (Exception ex)
             {
                 // Provide better context for the error.
-                throw new BusinessException(
+                throw new ConfigurationException(
                     message: string.Format(
                         Resources.NoLoadAssembly,
                         loaderOptions.AssemblyNameOrPath
@@ -153,13 +146,13 @@ namespace Microsoft.AspNetCore.Builder
             }
 
             // Format the name of a target extension method.
-            var methodName = $"Use{strategyName}Strategies";
+            var methodName = $"Add{strategyName}Strategies";
 
             // Look for specified extension method.
             var methods = AppDomain.CurrentDomain.ExtensionMethods(
-                typeof(IApplicationBuilder),
+                typeof(IServiceCollection),
                 methodName,
-                new Type[] { typeof(string) },
+                new Type[] { typeof(IConfiguration), typeof(ServiceLifetime) },
                 assemblyWhiteList,
                 assemblyBlackList
                 );
@@ -167,14 +160,23 @@ namespace Microsoft.AspNetCore.Builder
             // Did we find it?
             if (methods.Any())
             {
+                // Drill down to the right configuration sub-section.
+                var subSection = configuration.GetSection(
+                    strategyName
+                    );
+
                 // We'll use the first matching method.
                 var method = methods.First();
 
                 // Invoke the extension method.
                 method.Invoke(
                     null,
-                    new object[] { applicationBuilder, configurationSection }
-                    );
+                    new object[]
+                    {
+                    serviceCollection,
+                    subSection,
+                    serviceLifetime
+                    });
             }
             else
             {
@@ -182,18 +184,18 @@ namespace Microsoft.AspNetCore.Builder
                 //   extension method!
 
                 // Panic!
-                throw new BusinessException(
+                throw new ConfigurationException(
                     message: string.Format(
                         Resources.MethodNotFound,
-                        nameof(UseStrategies),
+                        nameof(AddStrategies),
                         methodName,
-                        $"{nameof(IApplicationBuilder)},{nameof(String)}"
+                        $"{nameof(IServiceCollection)},{nameof(IConfiguration)}, {nameof(ServiceLifetime)}"
                         )
                     );
             }
 
-            // Return the application builder.
-            return applicationBuilder;
+            // Return the service collection.
+            return serviceCollection;
         }
 
         #endregion
