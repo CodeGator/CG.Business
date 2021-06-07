@@ -7,6 +7,7 @@ using CG.Reflection;
 using CG.Validations;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using System;
 using System.IO;
 using System.Linq;
@@ -34,9 +35,8 @@ namespace Microsoft.AspNetCore.Builder
         /// </summary>
         /// <param name="applicationBuilder">The application builder to use for 
         /// the operation.</param>
-        /// <param name="configurationSection">The configuration sub-section to use 
-        /// for the operation. This path should point to a <see cref="LoaderOptions"/>
-        /// compatible section. If it doesn't the method will fail.</param>
+        /// <param name="hostEnvironment">The hosting environment to use for the operation.</param>
+        /// <param name="configuration">The configuration section to use for the operation.</param>
         /// <param name="assemblyBlackList">An optional black list for filtering
         /// the list of assemblies that are searched during this operation.</param>
         /// <param name="assemblyWhiteList">An optional white list for filtering
@@ -53,7 +53,8 @@ namespace Microsoft.AspNetCore.Builder
         /// call fails.</exception>
         public static IApplicationBuilder UseRepositories(
             this IApplicationBuilder applicationBuilder,
-            string configurationSection,
+            IHostEnvironment hostEnvironment,
+            IConfiguration configuration,
             string assemblyWhiteList = "",
             string assemblyBlackList = "Microsoft*, System*, mscorlib, netstandard"
             )
@@ -61,20 +62,11 @@ namespace Microsoft.AspNetCore.Builder
             // Validate the parameters before attempting to use them.
             Guard.Instance().ThrowIfNull(applicationBuilder, nameof(applicationBuilder));
 
-            // Get the configuration root.
-            var configuration = applicationBuilder.ApplicationServices
-                    .GetRequiredService<IConfiguration>();
-
-            // Navigate to the desired section.
-            var section = configuration.GetSection(
-                configurationSection
-                );
-
             // Create the loader options.
             var loaderOptions = new LoaderOptions();
 
             // Bind the loader options to the configuration.
-            section.Bind(loaderOptions);
+            configuration.Bind(loaderOptions);
 
             // Verify the loader options.
             if (false == loaderOptions.IsValid())
@@ -84,7 +76,7 @@ namespace Microsoft.AspNetCore.Builder
                     message: string.Format(
                         Resources.InvalidLoaderSection,
                         nameof(UseRepositories),
-                        configurationSection
+                        configuration.GetPath()
                         )
                     );
             }
@@ -127,7 +119,7 @@ namespace Microsoft.AspNetCore.Builder
                     }
                     else
                     {
-                        // Load the assembly by yname.
+                        // Load the assembly by name.
                         _ = Assembly.Load(
                             loaderOptions.AssemblyNameOrPath
                             );
@@ -157,7 +149,7 @@ namespace Microsoft.AspNetCore.Builder
             // Format the name of a target extension method.
             var methodName = $"Use{strategyName}Repositories";
 
-            // Look for specified extension method.
+            // Look for specified extension method(s).
             var methods = AppDomain.CurrentDomain.ExtensionMethods(
                 typeof(IApplicationBuilder),
                 methodName,
@@ -166,7 +158,7 @@ namespace Microsoft.AspNetCore.Builder
                 assemblyBlackList
                 );
 
-            // Did we find it?
+            // Did we find anything?
             if (methods.Any())
             {
                 // We'll use the first matching method.
@@ -175,7 +167,7 @@ namespace Microsoft.AspNetCore.Builder
                 // Invoke the extension method.
                 method.Invoke(
                     null,
-                    new object[] { applicationBuilder, configurationSection }
+                    new object[] { applicationBuilder, hostEnvironment, configuration }
                     );
             }
             else
@@ -189,7 +181,7 @@ namespace Microsoft.AspNetCore.Builder
                         Resources.MethodNotFound,
                         nameof(UseRepositories),
                         methodName,
-                        $"{nameof(IApplicationBuilder)},{nameof(String)}"
+                        $"{nameof(IApplicationBuilder)},{nameof(IHostEnvironment)},{nameof(IConfiguration)}"
                         )
                     );
             }

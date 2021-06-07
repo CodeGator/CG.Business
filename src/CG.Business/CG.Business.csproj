@@ -26,11 +26,11 @@ Platforms supported:
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CG.Configuration" Version="2021.2.3" />
+    <PackageReference Include="CG.Configuration" Version="2021.2.4" />
     <PackageReference Include="CG.Core" Version="2021.2.9" />
-    <PackageReference Include="CG.Options" Version="2021.4.10" />
-    <PackageReference Include="CG.Reflection" Version="2021.2.7" />
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.203">
+    <PackageReference Include="CG.Options" Version="2021.4.11" />
+    <PackageReference Include="CG.Reflection" Version="2021.2.8" />
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.205">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

@@ -3,10 +3,15 @@
 
 ## 2021.2
 
-* I switched to the .NET 5.0 framework
-* I added back manager and director types
 * bug fixes
+
+* I switched to the .NET 5.0 framework
+
+* I added back manager and director types
+
 * I added a client iface, exception and base type
+
+* I added a hosting environment and configuration parameter to the UseRepositories method.
 
 ## 2021.1
 
