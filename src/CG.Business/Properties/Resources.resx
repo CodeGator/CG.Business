@@ -127,7 +127,7 @@
     <value>LoaderOptons requires a 'Name' field and it appears to be missing, or empty. </value>
   </data>
   <data name="MethodNotFound" xml:space="preserve">
-    <value>{0} error! Failed to locate an extension method named: '{1}' with the following parameter types: '{2}'.</value>
+    <value>{0} error! Failed to locate an extension method named: '{1}' with parameters that match our convention!</value>
   </data>
   <data name="NoLoadAssembly" xml:space="preserve">
     <value>Unable to load the specified assembly: '{0}'! See inner exception(s) for more detail. </value>

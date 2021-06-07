@@ -15,6 +15,8 @@
 
 * I added a hosting environment and configuration parameter to the UseStrategies method.
 
+* I added code to allow strategies and/or repositories to use either two or three parameter extension methods.
+
 ## 2021.1
 
 * I bumped the major version for the new year.

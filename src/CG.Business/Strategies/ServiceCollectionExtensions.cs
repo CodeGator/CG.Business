@@ -188,8 +188,7 @@ namespace Microsoft.Extensions.DependencyInjection
                     message: string.Format(
                         Resources.MethodNotFound,
                         nameof(AddStrategies),
-                        methodName,
-                        $"{nameof(IServiceCollection)},{nameof(IConfiguration)}, {nameof(ServiceLifetime)}"
+                        methodName
                         )
                     );
             }

@@ -88,7 +88,7 @@ namespace CG.Business.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} error! Failed to locate an extension method named: &apos;{1}&apos; with the following parameter types: &apos;{2}&apos;..
+        ///   Looks up a localized string similar to {0} error! Failed to locate an extension method named: &apos;{1}&apos; with parameters that match our convention!.
         /// </summary>
         internal static string MethodNotFound {
             get {
