@@ -243,7 +243,7 @@ namespace Microsoft.AspNetCore.Builder
                                 methodName,
                                 $"looked for: {nameof(IApplicationBuilder)},{nameof(IHostEnvironment)},{nameof(IConfiguration)} " +
                                 $"OR {nameof(IApplicationBuilder)},{nameof(IHostEnvironment)} " +
-                                $"OR {nameof(String)}"
+                                $"OR {nameof(IApplicationBuilder)},{nameof(String)}"
                                 )
                             );
                     }
