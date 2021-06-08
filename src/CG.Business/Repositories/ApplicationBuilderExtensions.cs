@@ -152,8 +152,8 @@ namespace Microsoft.AspNetCore.Builder
             var methodName = $"Use{strategyName}Repositories";
 
             // Our convention is that the specified extension method can appear in
-            //   two different flavors, one with a configuration parameter, and the
-            //   other without. We'll look for both now.
+            //   two different flavors, one with a trailing configuration parameter,
+            //   and the other without. We'll look for both now.
 
             // Look for specified extension method(s).
             var methods = AppDomain.CurrentDomain.ExtensionMethods(
@@ -205,17 +205,45 @@ namespace Microsoft.AspNetCore.Builder
                 }
                 else
                 {
-                    // If we get here we couldn't find the specified extension method
-                    //   in any combination of parameter(s).
+                    // If we get here then we might as well look for any extension
+                    //   methods with a legacy signature - which is a string with
+                    //   the configuration path.
 
-                    // Panic!
-                    throw new BusinessException(
-                        message: string.Format(
-                            Resources.MethodNotFound,
-                            nameof(UseRepositories),
-                            methodName
-                            )
+                    // Look for specified extension method(s).
+                    methods = AppDomain.CurrentDomain.ExtensionMethods(
+                        typeof(IApplicationBuilder),
+                        methodName,
+                        new Type[] { typeof(string) },
+                        assemblyWhiteList,
+                        assemblyBlackList
                         );
+
+                    // Did we find anything?
+                    if (methods.Any())
+                    {
+                        // We'll use the first matching method.
+                        var method = methods.First();
+
+                        // Invoke the extension method.
+                        method.Invoke(
+                            null,
+                            new object[] { applicationBuilder, configuration.GetPath() }
+                            );
+                    }
+                    else
+                    {
+                        // If we get here we couldn't find the specified extension method
+                        //   in any combination of parameter(s).
+
+                        // Panic!
+                        throw new BusinessException(
+                            message: string.Format(
+                                Resources.MethodNotFound,
+                                nameof(UseRepositories),
+                                methodName
+                                )
+                            );
+                    }
                 }
             }
 

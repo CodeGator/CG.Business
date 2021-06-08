@@ -148,6 +148,10 @@ namespace Microsoft.Extensions.DependencyInjection
             // Format the name of a target extension method.
             var methodName = $"Add{strategyName}Repositories";
 
+            // Our convention is that the specified extension method can appear in
+            //   two different flavors, one with a trailing ServiceLifetime parameter,
+            //   and the other without. We'll look for both now.
+
             // Look for specified extension method.
             var methods = AppDomain.CurrentDomain.ExtensionMethods(
                 typeof(IServiceCollection),
@@ -180,17 +184,53 @@ namespace Microsoft.Extensions.DependencyInjection
             }
             else
             {
-                // If we get here we found the assembly but couldn't find a matching
-                //   extension method!
+                // If we get here then we failed to find a 3 parameter version of the
+                //   specified extension method. So we'll now look for a two parameter
+                //   version, in case that exists.
 
-                // Panic!
-                throw new BusinessException(
-                    message: string.Format(
-                        Resources.MethodNotFound,
-                        nameof(AddRepositories),
-                        methodName
-                        )
+                // Look for specified extension method.
+                methods = AppDomain.CurrentDomain.ExtensionMethods(
+                    typeof(IServiceCollection),
+                    methodName,
+                    new Type[] { typeof(IConfiguration) },
+                    assemblyWhiteList,
+                    assemblyBlackList
                     );
+
+                // Did we find it?
+                if (methods.Any())
+                {
+                    // Drill down into the appropriate sub-section.
+                    var subSection = configuration.GetSection(
+                        strategyName
+                        );
+
+                    // We'll use the first matching method.
+                    var method = methods.First();
+
+                    // Invoke the extension method.
+                    method.Invoke(
+                        null,
+                        new object[]
+                        {
+                            serviceCollection,
+                            subSection
+                        });
+                }
+                else
+                {
+                    // If we get here we couldn't find the specified extension method
+                    //   in any combination of parameter(s).
+
+                    // Panic!
+                    throw new BusinessException(
+                        message: string.Format(
+                            Resources.MethodNotFound,
+                            nameof(AddRepositories),
+                            methodName
+                            )
+                        );
+                }
             }
 
             // Return the service collection.

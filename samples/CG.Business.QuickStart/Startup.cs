@@ -31,7 +31,7 @@ namespace CG.Business.QuickStart
             //   migrations.
             app.UseRepositories(
                 env,
-                "Foo"
+                Configuration.GetSection("Foo")
                 );
         }
     }
