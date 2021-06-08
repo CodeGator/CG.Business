@@ -7,7 +7,7 @@ namespace CG.Business.QuickStart
     {
         public static IApplicationBuilder UseTestRepositories(
             this IApplicationBuilder applicationBuilder,
-            IHostingEnvironment hostEnvironment
+            IHostEnvironment hostEnvironment
             )
         {
             // This method is an example of how to hook into the startup
