@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using System;
+using Microsoft.Extensions.Hosting;
 
 namespace CG.Business.QuickStart
 {
@@ -8,7 +7,7 @@ namespace CG.Business.QuickStart
     {
         public static IApplicationBuilder UseTestRepositories(
             this IApplicationBuilder applicationBuilder,
-            IWebHostEnvironment hostEnvironment
+            IHostEnvironment hostEnvironment
             )
         {
             // This method is an example of how to hook into the startup

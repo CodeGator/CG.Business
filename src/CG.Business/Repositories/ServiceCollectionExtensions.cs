@@ -227,7 +227,9 @@ namespace Microsoft.Extensions.DependencyInjection
                         message: string.Format(
                             Resources.MethodNotFound,
                             nameof(AddRepositories),
-                            methodName
+                            methodName,
+                            $"looked for: {nameof(IServiceCollection)},{nameof(IConfiguration)},{nameof(ServiceLifetime)} " +
+                            $"OR {nameof(IServiceCollection)},{nameof(IConfiguration)} "
                             )
                         );
                 }

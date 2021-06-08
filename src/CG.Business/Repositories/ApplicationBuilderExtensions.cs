@@ -240,7 +240,10 @@ namespace Microsoft.AspNetCore.Builder
                             message: string.Format(
                                 Resources.MethodNotFound,
                                 nameof(UseRepositories),
-                                methodName
+                                methodName,
+                                $"looked for: {nameof(IApplicationBuilder)},{nameof(IHostEnvironment)},{nameof(IConfiguration)} " +
+                                $"OR {nameof(IApplicationBuilder)},{nameof(IHostEnvironment)} " +
+                                $"OR {nameof(String)}"
                                 )
                             );
                     }
