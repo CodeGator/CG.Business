@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AggregatedFail" xml:space="preserve">
+    <value>{0} error! The method failed to process one or more selections! section: '{1}'.</value>
+  </data>
   <data name="EmptyStrategyName" xml:space="preserve">
     <value>{0} error! The method encountered an empty or missing 'Name' property!</value>
   </data>
@@ -126,10 +129,19 @@
   <data name="LoaderOptions_Name" xml:space="preserve">
     <value>LoaderOptons requires a 'Name' field and it appears to be missing, or empty. </value>
   </data>
+  <data name="MalformedSelectionArray" xml:space="preserve">
+    <value>{0} error! The method encountered a missing or malformed 'Selection' property! section: '{1}'.</value>
+  </data>
   <data name="MethodNotFound" xml:space="preserve">
     <value>{0} error! Failed to locate an extension method named: '{1}', parameters: '{2}'!</value>
   </data>
+  <data name="MissingSelectedField" xml:space="preserve">
+    <value>{0} error! The method was pointed to: '{1}' but no 'Selected' field was found there!</value>
+  </data>
   <data name="NoLoadAssembly" xml:space="preserve">
     <value>Unable to load the specified assembly: '{0}'! See inner exception(s) for more detail. </value>
+  </data>
+  <data name="SingleFail" xml:space="preserve">
+    <value>{0} error! The method failed to process selection: '{1}'! section: '{2}'.</value>
   </data>
 </root>

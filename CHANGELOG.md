@@ -17,6 +17,8 @@
 
 * I added code to allow strategies and/or repositories to use either two or three parameter extension methods.
 
+* I rewrote the strategy/repository code to allow selecting multiple or single abstractions via the configuration.
+
 ## 2021.1
 
 * I bumped the major version for the new year.
