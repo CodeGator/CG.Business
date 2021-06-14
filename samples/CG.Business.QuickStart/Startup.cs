@@ -22,6 +22,8 @@ namespace CG.Business.QuickStart
 
         public void ConfigureServices(IServiceCollection services)
         {
+            Console.WriteLine("REGISTERING REPOSITORIES");
+
             // This is how to register repositories, using the configuration
             //   to control what repository type(s) get registered, and what
             //   options are passed to those repositories, at runtime.
@@ -29,7 +31,7 @@ namespace CG.Business.QuickStart
                 Configuration.GetSection("FooRep")
                 );
 
-            Console.WriteLine();
+            Console.WriteLine("REGISTERING STRATEGIES");
 
             // This is how to register strategies, using the configuration
             //   to control what repository type(s) get registered, and what
@@ -37,12 +39,12 @@ namespace CG.Business.QuickStart
             services.AddStrategies(
                 Configuration.GetSection("FooStrat")
                 );
-
-            Console.WriteLine();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            Console.WriteLine("STARTING REPOSITORIES");
+
             // This is how to call any startup logic required for the configured
             //   repository types.
             app.UseRepositories(
@@ -50,7 +52,7 @@ namespace CG.Business.QuickStart
                 Configuration.GetSection("FooRep")
                 );
 
-            Console.WriteLine();
+            Console.WriteLine("STARTING STRATEGIES");
 
             // This is how to call any startup logic required for the configured
             //   strategy types.
@@ -58,8 +60,6 @@ namespace CG.Business.QuickStart
                 env,
                 Configuration.GetSection("FooStrat")
                 );
-
-            Console.WriteLine();
         }
     }
 }

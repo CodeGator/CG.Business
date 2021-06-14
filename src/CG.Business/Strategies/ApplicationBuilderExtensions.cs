@@ -296,7 +296,7 @@ namespace Microsoft.AspNetCore.Builder
             }
 
             // Format the name of a target extension method.
-            var methodName = $"Use{strategyName}Repositories";
+            var methodName = $"Use{strategyName}Strategies";
 
             // Look for the specified extension method.
             var methods = AppDomain.CurrentDomain.ExtensionMethods(
