@@ -148,7 +148,7 @@ namespace Microsoft.AspNetCore.Builder
                         assemblyBlackList
                         );
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
                     // Throw an error with (hopefully) better context.
                     throw new ConfigurationException(
@@ -157,7 +157,8 @@ namespace Microsoft.AspNetCore.Builder
                             nameof(UseStrategies),
                             configuration["Selected"],
                             configuration.GetPath()
-                            )
+                            ),
+                        innerException: ex
                         );
                 }
             }
