@@ -13,12 +13,900 @@
       "is_incremental": false
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Builders.BuilderBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Builders.BuilderBase.html",
+          "hash": "ztB0uzSbsYiXslgNDAGFWkggtVsGubx6pUK65Iw4QxY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Builders.IBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Builders.IBuilder.html",
+          "hash": "tNlORe/rS6otZ6nXA1jgeNa3hCXG/KTJkZIIZHwvqVc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Builders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Builders.html",
+          "hash": "SzQmb5+qURFwUQ+Fz0zYByju38C+9S0kvc5vB1p2JVI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.BusinessException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.BusinessException.html",
+          "hash": "kQuakCg/684Dl5bNT3lszE/YLuGrmzWUPDWKosgHs2E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Clients.ClientBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Clients.ClientBase-1.html",
+          "hash": "KWYFrtthl2x9zFZojwbTcaOSkR347yEa4r5a5B9v+iU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Clients.ClientBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Clients.ClientBase.html",
+          "hash": "35xa1BQ1oisv3FDn6q+NyR5PNRq+kmkPH7ekqqwdwHc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Clients.ClientException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Clients.ClientException.html",
+          "hash": "P600z3EoRSMvit2nWBJa1prsoQVe4FPzLNs3q1WcSeQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Clients.IClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Clients.IClient.html",
+          "hash": "OPEQiuHh1Wcubtkqd5PJvk2Z6/zeZ++mDfp014G9HsQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Clients.Options.ClientOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Clients.Options.ClientOptions.html",
+          "hash": "25zf7dh5opHSolp9TK/C8Z8a2iiV7PCoBnO35NXECtI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Clients.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Clients.Options.html",
+          "hash": "ciYG9pXK9L25/9OEXF9yACypRVwj3YEOhE3GY3RYMoQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Clients.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Clients.html",
+          "hash": "NowsyEuDXuaHcTH1weB+/pZRMaPc+DM4pdN/R2rcFWM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.DirectorBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.DirectorBase-1.html",
+          "hash": "MO3cGfc9CdzHyEW8mfnmDrtXcNgIVxg+ruc2GURuMqA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.DirectorBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.DirectorBase.html",
+          "hash": "DK01KsO8RCwzEi0UWFeDM5bvxPBHBI/7bsyJ35iG3xs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.DirectorException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.DirectorException.html",
+          "hash": "8dth7Le2MdBfgkBFtHUm+3d56Cv2UrQhA0+irVkIcFw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.IDirector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.IDirector.html",
+          "hash": "F6z5IvUgrH5YZBqe9KejuhyaEnQIomu9lYLwhwV1prY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.Options.DirectorOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.Options.DirectorOptions.html",
+          "hash": "Ss2EvbF9mj8Ux9GY6zZq8Aiz0gQVu0ElVvC5anhmN8U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.Options.html",
+          "hash": "VLlmnDQ3gCbIaOKY5s563DNJ9YThLRJIyEmA637v5ew="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.html",
+          "hash": "Yq66ce3NN62btXWagsACf08yN5AZ8AtnH+uxO/Tr+l0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Managers.IManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Managers.IManager.html",
+          "hash": "dFn5VGwqzUK65CCEq6Ju2Or5UtsxRhPnpf69wmfvFeA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Managers.ManagerBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Managers.ManagerBase-1.html",
+          "hash": "vkBfzY1U+LE1CMQIJ8F8pKcHfQcq7ru4042HAvbQQzc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Managers.ManagerBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Managers.ManagerBase.html",
+          "hash": "EHQKiu2YOB9lpu3iQ2CKdwekq9tEOdvRbfut3+ZEfCI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Managers.ManagerException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Managers.ManagerException.html",
+          "hash": "S2DTf8p1RNo8koH8X7P+xoyJvDgRIHC46HoonSSeLgg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Managers.Options.ManagerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Managers.Options.ManagerOptions.html",
+          "hash": "iFIaFJm+Sf4wBrSFwEoCkUDV4expE981O/HuBYSwYnU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Managers.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Managers.Options.html",
+          "hash": "pAmWTOIDRuN+xNGNo3XQd/JssGult9+4vUVXV5XI1sk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Managers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Managers.html",
+          "hash": "Pn8gT1zJ3oSGr1FLnU0eGmWE0Yw0FxIDaccL+7wGbTE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Models.AuditedModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Models.AuditedModelBase.html",
+          "hash": "X9yerbdYVib7HZihFHVz5Slkxcms/UddudRCSkqdGGY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Models.IAuditedModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Models.IAuditedModel.html",
+          "hash": "AcW/uYnuL8aHLJ+htjDC3SZkWFogGsCS22FXV6d33B8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Models.IModel-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Models.IModel-1.html",
+          "hash": "6ZRC0yJ6uuyxy2Y1xGmAzddZ6buE0dK3kXpgGZUvT6E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Models.IModel-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Models.IModel-2.html",
+          "hash": "51zTu3+fW7dM+BUrPez9nsBSLFajZ+NGMpa5JIxcmD8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Models.IModel-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Models.IModel-3.html",
+          "hash": "Ea4Pj8teyDcSLGaD7Aim7gpGWmFzKkzgJaoXJSsqJdE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Models.IModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Models.IModel.html",
+          "hash": "aLaZOzhgYuuxZyEP/fugot9ZL50gYpV6CBPElrAiT1w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Models.ModelBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Models.ModelBase-1.html",
+          "hash": "G7eXwlL/i1rKA/OTdeMPMpohrc9h98HH5Dyp6Bh+PGU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Models.ModelBase-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Models.ModelBase-2.html",
+          "hash": "agLkRy2WbLO5uCE8htW2uQSnBsLluePc022gqMqT/Ag="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Models.ModelBase-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Models.ModelBase-3.html",
+          "hash": "BS73oPcECl1BaFMo2DioWpCyxsqKXp1wFG3nd8Gu008="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Models.ModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Models.ModelBase.html",
+          "hash": "IKtwMFJYgkaq6KsBuNKqoURC/k5Uf7e6oHgyazt5WHY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Models.html",
+          "hash": "W9uFGo2+FQ0+9oPEKG34+hJKcanrRk5f0TKu1ExZY8s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Options.LoaderOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Options.LoaderOptions.html",
+          "hash": "M9ACe8KSY4p7KK83bjk08dV5VazBtSLVg25AN1KjNtY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Options.html",
+          "hash": "N2R1pOdrKF64Y0NDtqlFUHX50O0+OSykPfVI8A0bMeo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Repositories.IRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Repositories.IRepository.html",
+          "hash": "rnbPUulMYyM69N/T+bLD93bH07hUCcNL7uyn6x2K270="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Repositories.Options.RepositoryOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Repositories.Options.RepositoryOptions.html",
+          "hash": "sAdZBHH/qBweJ+2AZsgoLg9bow6PuPx2sn+cjW1ifYc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Repositories.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Repositories.Options.html",
+          "hash": "osmUM8GERcqibFbc0E2UI/KeawueIqfHPB9VwkBe0CY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Repositories.RepositoryBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Repositories.RepositoryBase-1.html",
+          "hash": "j728cp1110wKayAuxemiZrwvyj9qo9wcLilAA6SlqAM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Repositories.RepositoryBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Repositories.RepositoryBase.html",
+          "hash": "pBeo4pQvz/kWx8QeU4SZ1kuB+K2mVbbKf8A8zv8s79U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Repositories.RepositoryException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Repositories.RepositoryException.html",
+          "hash": "ae2Hlwbkk0Jz78LCRCHTAeCmaCIPUlWgzzg+TA5e4Gg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Repositories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Repositories.html",
+          "hash": "29/TK4NQPwj/s6ZOOE3LfJ918rI4ZqN4BZuzIavNEHU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.IService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.IService.html",
+          "hash": "aDXH9XciJ/1H78TrB+hj1c2hFlO1G4LlhxEW0tYfCXs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.Options.ServiceOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.Options.ServiceOptions.html",
+          "hash": "kRLIIQoalC1IwMrBWxecObz2AXcPGaGJYrzY/5qRfFE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.Options.html",
+          "hash": "q/WhpWmmx4JIpOQez/d1BrNvb82emS4dCsnVLqrvV4c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.ServiceBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.ServiceBase-1.html",
+          "hash": "Fat4GC5osFCHjcxDCHpq+DzhOifeBwwtxB9VlBIulYg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.ServiceBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.ServiceBase.html",
+          "hash": "ri+1pDvtaeYL8fySEaXi5k2Jy/65tSbDr1dpvpIBecg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.ServiceException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.ServiceException.html",
+          "hash": "Qj9crCvJhPXW9re3muOJkV4eQbL0QIEMzG6BU+Deso4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Services.html",
+          "hash": "Gi2udR7d6Bm+rp9HyDomDYmxV74aE5tC+63iHU8qB+I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Stores.IStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Stores.IStore.html",
+          "hash": "Kk1+cQSnTEqMF8HBYXCqPbdeFaExvCB0m+ikjrShiNc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Stores.Options.StoreOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Stores.Options.StoreOptions.html",
+          "hash": "HyMrmX6ulOOM0B2U87fTL82fsL7ifCE9HoKzSZlfq2M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Stores.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Stores.Options.html",
+          "hash": "nA+tMwBHNKrpOZmNR0+K025yUIOQpF0xNTElyh6KLco="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Stores.StoreBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Stores.StoreBase-1.html",
+          "hash": "f6Jasv1w/JRwEL8PbgLEu87o0oOqUhq7tn1HdeLyWow="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Stores.StoreBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Stores.StoreBase.html",
+          "hash": "C1JM++4kAO6jaISjEKhQbMR8Tyu2TfGDd68BdUcPCys="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Stores.StoreException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Stores.StoreException.html",
+          "hash": "4gQJxDNj5ugUK299gnTlIX7K9D+i2Y8SPg4Ku4yo1eQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Stores.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Stores.html",
+          "hash": "efT5IbgrqzmOvsZcK3Y1s4JnqftHsK8oGls5u8M0bbw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategies.IStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategies.IStrategy.html",
+          "hash": "GF+ZRR86Fd4/7eUoa+0ZNXCoAeRqKcdXgyCmJkxtZKI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategies.Options.StrategyOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategies.Options.StrategyOptions.html",
+          "hash": "MGCh+iNhbG1z1+15vlFuggJJPnS0Nkr4uRTM1U7n1Xs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategies.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategies.Options.html",
+          "hash": "iSL5+r8zGzB3biULYnCGv8jmJSvPArRSxARplAmJTsc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategies.StrategyBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategies.StrategyBase-1.html",
+          "hash": "RxZ/wFNId45geN44LjNV2oKLuJppHxu57RFw8TDE8FI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategies.StrategyBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategies.StrategyBase.html",
+          "hash": "kds46nvtekaGiqdsOtLHpVETRKlrfE39BvRLJMGYK4w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategies.html",
+          "hash": "P4PPznNca+AOdFx1mSEMPsZ7OkfpZtM0AHCmdA5bfDU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategys.StrategyException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategys.StrategyException.html",
+          "hash": "jJrpHul23lcbVDYb9t/DWsSfqaVel8U/hb8MH9gn7rs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Strategys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Strategys.html",
+          "hash": "2ybtOSOKNPxqWDQ+cIAjYmWyk4+ZE1P93MS9XbhPrfY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.html",
+          "hash": "x+lw3Z25pyUJDwCU5msDWupmB+i2J8Dlmd00okZ4XO0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html",
+          "hash": "DPQYj+ayBLN6bIbltTNsOaGrTvNg3niFdLwhkPZTT7U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.html",
+          "hash": "ko54+UEDn4bSRbV5ixIW5fdF9ZB3G25zHaJVeCkZDIA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.AspNetCore.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.AspNetCore.Builder.html",
+          "hash": "Zfh80hAdPquXI3esvAJbkP9xpwY9CsRxc/+oXPJeCCM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.html",
+          "hash": "p9ZG7Psj3yZmQsIvXTParyYuDyWEKF/37gSWdNXnvNc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Microsoft.Extensions.DependencyInjection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Microsoft.Extensions.DependencyInjection.html",
+          "hash": "yKjBINC662HHYrYzTt2D1uZuNIK8suDElYNDz7DWIIA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "y3wmeqcbQ6nYcZYOWyt9Nq81mZjgI/ymN4B7yY//2VY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "articles/intro.md",
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "OgOIdp+68sKjWkO8X7/eMKamv9SPvmhi1lIB7IfCk/4="
+          "hash": "3lFGsZn+vpYCWz7OututIOBGsz91XMn2mjINvNxc584="
         }
       },
       "is_incremental": false,
@@ -42,7 +930,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "A7OhdjnHqrBcaoRFemTk1aBMHa6pHENjynxbvLY3I/Y="
+          "hash": "JCmSv2Zqgr4Ti8+1WcgZupVeWdI+v30mmVPE9HPLvN0="
         }
       },
       "is_incremental": false,
@@ -54,7 +942,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "3G8xz3KpF6zZWXiC7CBw7NvWQG9ma4rWhSKViMBCCDY="
+          "hash": "+4zBurZbhcplOTviD+4unb0mSGta4FfW6stBm5qtxLo="
         }
       },
       "is_incremental": false,
@@ -76,6 +964,12 @@
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 2,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 73,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
