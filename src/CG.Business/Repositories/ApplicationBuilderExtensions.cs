@@ -1,11 +1,10 @@
 ﻿using CG.Business;
-using CG.Business.Options;
 using CG.Business.Properties;
 using CG.Configuration;
 using CG.Reflection;
+using CG.Runtime;
 using CG.Validations;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
@@ -138,12 +137,14 @@ namespace Microsoft.AspNetCore.Builder
             {
                 // If we get here then the configuration holds a single value.
 
+                var strategyName = configuration["Selected"];
+
                 try
                 {
                     // Process the selection.
                     applicationBuilder.ProcessRepositorySection(
                         hostEnvironment,
-                        configuration["Selected"],
+                        strategyName,
                         configuration,
                         assemblyWhiteList,
                         assemblyBlackList
@@ -156,7 +157,7 @@ namespace Microsoft.AspNetCore.Builder
                         message: string.Format(
                             Resources.SingleFail,
                             nameof(UseRepositories),
-                            configuration["Selected"],
+                            strategyName,
                             configuration.GetPath()
                             ),
                         innerException: ex
@@ -193,24 +194,15 @@ namespace Microsoft.AspNetCore.Builder
         /// the list of assemblies that are searched during this operation.</param>
         /// <returns>the value of the <paramref name="applicationBuilder"/>
         /// parameter, for chaining calls together.</returns>
-        internal static IApplicationBuilder ProcessRepositorySection(
+        private static IApplicationBuilder ProcessRepositorySection(
            this IApplicationBuilder applicationBuilder,
            IHostEnvironment hostEnvironment,
-           string strategyName,           
+           string strategyName,
            IConfiguration configuration,
            string assemblyWhiteList,
            string assemblyBlackList
            )
         {
-            // Validate the parameters before attempting to use them.
-            Guard.Instance().ThrowIfNull(applicationBuilder, nameof(applicationBuilder))
-                .ThrowIfNull(configuration, nameof(configuration));
-
-            // Strategy name is a configuration parameter, not just a programming
-            //   argument to a method call, so, we'll check it here because the programmer
-            //   might have supplied the argument while the configuration itself might be 
-            //   missing any actual information.
-
             // Trim the strategy name, just in case.
             strategyName = strategyName.Trim();
 
@@ -243,6 +235,10 @@ namespace Microsoft.AspNetCore.Builder
                     // Is there anything in the field?
                     if (false == string.IsNullOrEmpty(assemblyNameOrPath))
                     {
+                        // If we get here then the 'AssemblyNameOrPath' field was specified,
+                        //   either as an assembly name, or a path. This means we should try
+                        //   our best to locate and load the assembly now.
+
                         // If an assembly name/path was specified then we should be able
                         //   to doctor it up a bit and add it to the white list to
                         //   significantly improve the runtime of the search operation
@@ -252,11 +248,21 @@ namespace Microsoft.AspNetCore.Builder
 
                         try
                         {
+                            // Using a loader gives us a better ability to find assemblies
+                            //   at runtime - including dependent assemblies, which can be
+                            //   tricky, otherwise.
+                            var loader = new AssemblyLoader();
+
                             // Should we load the assembly by path, or name?
-                            if (assemblyNameOrPath.EndsWith(".dll"))
+                            if (assemblyNameOrPath.EndsWith(".dll", StringComparison.InvariantCultureIgnoreCase))
                             {
-                                // Load the assembly.
-                                var tempAsm = Assembly.LoadFrom(assemblyNameOrPath);
+                                // We'll need a complete path here.
+                                var completePath = Path.GetFullPath(
+                                    assemblyNameOrPath
+                                    );
+
+                                // Load the assembly by path.
+                                var tempAsm = loader.LoadFromAssemblyPath(completePath);
 
                                 // Add it to the white list.
                                 assemblyWhiteList = assemblyWhiteList.Length > 0
@@ -265,8 +271,10 @@ namespace Microsoft.AspNetCore.Builder
                             }
                             else
                             {
-                                // Load the assembly by yname.
-                                var tempAsm = Assembly.Load(assemblyNameOrPath);
+                                // Load the assembly by name.
+                                var tempAsm = loader.LoadFromAssemblyName(
+                                    new AssemblyName(assemblyNameOrPath)
+                                    );
 
                                 // Add it to the white list.
                                 assemblyWhiteList = assemblyWhiteList.Length > 0
@@ -292,7 +300,8 @@ namespace Microsoft.AspNetCore.Builder
             {
                 // If we get here then the 'Selected' field contains a value that
                 //   doesn't correspond to a child section. In itself, that isn't an
-                //   error, but, it probably is something we should warn about ...
+                //   error, since the child section it optional, but, it probably is
+                //   something we should warn about ...
                 // Hmm ... should we pull in an ILogger parameter just for this warning?
             }
 

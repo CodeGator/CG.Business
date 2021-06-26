@@ -2,6 +2,7 @@
 using CG.Business.Properties;
 using CG.Configuration;
 using CG.Reflection;
+using CG.Runtime;
 using CG.Validations;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -101,7 +102,7 @@ namespace Microsoft.Extensions.DependencyInjection
             if (configuration.FieldIsArray("Selected"))
             {
                 // If we get here then the configuration holds an array.
-                
+
                 // Try to get the list of selections.
                 if (false == configuration.TryGetAsList<string>("Selected", out var list))
                 {
@@ -154,11 +155,13 @@ namespace Microsoft.Extensions.DependencyInjection
             {
                 // If we get here then the configuration holds a single value.
 
+                var strategyName = configuration["Selected"];
+
                 try
                 {
                     // Process the selection.
                     serviceCollection.ProcessRepositorySection(
-                        configuration["Selected"],
+                        strategyName,
                         configuration,
                         serviceLifetime,
                         assemblyWhiteList,
@@ -172,12 +175,12 @@ namespace Microsoft.Extensions.DependencyInjection
                         message: string.Format(
                             Resources.SingleFail,
                             nameof(AddRepositories),
-                            configuration["Selected"],
+                            strategyName,
                             configuration.GetPath()
                             ),
                         innerException: ex
                         );
-                }                
+                }
             }
 
             // Return the service collection.
@@ -208,7 +211,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// the list of assemblies that are searched during this operation.</param>
         /// <returns>the value of the <paramref name="serviceCollection"/>
         /// parameter, for chaining calls together.</returns>
-        internal static IServiceCollection ProcessRepositorySection(
+        private static IServiceCollection ProcessRepositorySection(
            this IServiceCollection serviceCollection,
            string strategyName,
            IConfiguration configuration,
@@ -217,15 +220,6 @@ namespace Microsoft.Extensions.DependencyInjection
            string assemblyBlackList
            )
         {
-            // Validate the parameters before attempting to use them.
-            Guard.Instance().ThrowIfNull(serviceCollection, nameof(serviceCollection))
-                .ThrowIfNull(configuration, nameof(configuration));
-
-            // Strategy name is a configuration parameter, not just a programming
-            //   argument to a method call, so, we'll check it here because the programmer
-            //   might have supplied the argument while the configuration itself might be 
-            //   missing any actual information.
-
             // Trim the strategy name, just in case.
             strategyName = strategyName.Trim();
 
@@ -258,20 +252,34 @@ namespace Microsoft.Extensions.DependencyInjection
                     // Is there anything in the field?
                     if (false == string.IsNullOrEmpty(assemblyNameOrPath))
                     {
-                        // If an assembly name/path was specified then we should be able
-                        //   to doctor it up a bit and add it to the white list to
-                        //   significantly improve the runtime of the search operation
-                        //   we're about to perform. We'll pull the actual name from the 
-                        //   loaded assembly, in case the caller fat-fingered the filename
-                        //   in any way (the upcoming compares are all case sensitive).
+                        // If we get here then the 'AssemblyNameOrPath' field was specified,
+                        //   either as an assembly name, or a path. This means we should try
+                        //   our best to locate and load the assembly now.
+
+                        // As a side note, the fact that we have an assembly name/path here
+                        //   means we should be able to doctor up the white list to significantly
+                        //   improve the runtime of the search operation we're about to perform.
+                        // We'll pull the actual name from the loaded assembly, in case the caller
+                        //   fat-fingered the filename in any way (the upcoming compares are all
+                        //   case sensitive).
 
                         try
                         {
+                            // Using a loader gives us a better ability to find assemblies
+                            //   at runtime - including dependent assemblies, which can be
+                            //   tricky, otherwise.
+                            var loader = new AssemblyLoader();
+
                             // Should we load the assembly by path, or name?
-                            if (assemblyNameOrPath.EndsWith(".dll"))
+                            if (assemblyNameOrPath.EndsWith(".dll", StringComparison.InvariantCultureIgnoreCase))
                             {
-                                // Load the assembly.
-                                var tempAsm = Assembly.LoadFrom(assemblyNameOrPath);
+                                // We'll need a complete path here.
+                                var completePath = Path.GetFullPath(
+                                    assemblyNameOrPath
+                                    );
+
+                                // Load the assembly by path.
+                                var tempAsm = loader.LoadFromAssemblyPath(completePath);
 
                                 // Add it to the white list.
                                 assemblyWhiteList = assemblyWhiteList.Length > 0
@@ -280,8 +288,10 @@ namespace Microsoft.Extensions.DependencyInjection
                             }
                             else
                             {
-                                // Load the assembly by yname.
-                               var tempAsm = Assembly.Load(assemblyNameOrPath);
+                                // Load the assembly by name.
+                                var tempAsm = loader.LoadFromAssemblyName(
+                                    new AssemblyName(assemblyNameOrPath)
+                                    );
 
                                 // Add it to the white list.
                                 assemblyWhiteList = assemblyWhiteList.Length > 0
@@ -307,7 +317,8 @@ namespace Microsoft.Extensions.DependencyInjection
             {
                 // If we get here then the 'Selected' field contains a value that
                 //   doesn't correspond to a child section. In itself, that isn't an
-                //   error, but, it probably is something we should warn about ...
+                //   error, since the child section it optional, but, it probably is
+                //   something we should warn about ...
                 // Hmm ... should we pull in an ILogger parameter just for this warning?
             }
 
@@ -384,8 +395,8 @@ namespace Microsoft.Extensions.DependencyInjection
                             Resources.MethodNotFound,
                             nameof(ProcessRepositorySection),
                             methodName,
-                            $"looked for variant 1: '{nameof(IServiceCollection)},{nameof(IConfiguration)},{nameof(ServiceLifetime)}' " +
-                            $"AND variant 2: '{nameof(IServiceCollection)},{nameof(IConfiguration)}' "
+                            $"looked for parameters: '{nameof(IServiceCollection)},{nameof(IConfiguration)},{nameof(ServiceLifetime)}' " +
+                            $"AND parameters: '{nameof(IServiceCollection)},{nameof(IConfiguration)}' "
                             )
                         );
                 }

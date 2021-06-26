@@ -4,6 +4,7 @@ using CG.Business.Properties;
 using CG.Configuration;
 using CG.DataAnnotations;
 using CG.Reflection;
+using CG.Runtime;
 using CG.Validations;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -156,11 +157,13 @@ namespace Microsoft.Extensions.DependencyInjection
             {
                 // If we get here then the configuration holds a single value.
 
+                var strategyName = configuration["Selected"];
+
                 try
                 {
                     // Process the selection.
                     serviceCollection.ProcessStrategySection(
-                        configuration["Selected"],
+                        strategyName,
                         configuration,
                         serviceLifetime,
                         assemblyWhiteList,
@@ -174,7 +177,7 @@ namespace Microsoft.Extensions.DependencyInjection
                         message: string.Format(
                             Resources.SingleFail,
                             nameof(AddStrategies),
-                            configuration["Selected"],
+                            strategyName,
                             configuration.GetPath()
                             ),
                             innerException: ex
@@ -218,15 +221,6 @@ namespace Microsoft.Extensions.DependencyInjection
            string assemblyBlackList
            )
         {
-            // Validate the parameters before attempting to use them.
-            Guard.Instance().ThrowIfNull(serviceCollection, nameof(serviceCollection))
-                .ThrowIfNull(configuration, nameof(configuration));
-
-            // Strategy name is a configuration parameter, not just a programming
-            //   argument to a method call, so, we'll check it here because the programmer
-            //   might have supplied the argument while the configuration itself might be 
-            //   missing any actual information.
-
             // Trim the strategy name, just in case.
             strategyName = strategyName.Trim();
 
@@ -266,13 +260,23 @@ namespace Microsoft.Extensions.DependencyInjection
                         //   loaded assembly, in case the caller fat-fingered the filename
                         //   in any way (the upcoming compares are all case sensitive).
 
+                        // Using a loader gives us a better ability to find assemblies
+                        //   at runtime - including dependent assemblies, which can be
+                        //   tricky, otherwise.
+                        var loader = new AssemblyLoader();
+
                         try
                         {
                             // Should we load the assembly by path, or name?
-                            if (assemblyNameOrPath.EndsWith(".dll"))
+                            if (assemblyNameOrPath.EndsWith(".dll", StringComparison.InvariantCultureIgnoreCase))
                             {
-                                // Load the assembly.
-                                var tempAsm = Assembly.LoadFrom(assemblyNameOrPath);
+                                // We'll need a complete path here.
+                                var completePath = Path.GetFullPath(
+                                    assemblyNameOrPath
+                                    );
+
+                                // Load the assembly by path.
+                                var tempAsm = loader.LoadFromAssemblyPath(completePath);
 
                                 // Add it to the white list.
                                 assemblyWhiteList = assemblyWhiteList.Length > 0
@@ -281,8 +285,10 @@ namespace Microsoft.Extensions.DependencyInjection
                             }
                             else
                             {
-                                // Load the assembly by yname.
-                                var tempAsm = Assembly.Load(assemblyNameOrPath);
+                                // Load the assembly by name.
+                                var tempAsm = loader.LoadFromAssemblyName(
+                                    new AssemblyName(assemblyNameOrPath)
+                                    );
 
                                 // Add it to the white list.
                                 assemblyWhiteList = assemblyWhiteList.Length > 0
@@ -308,7 +314,8 @@ namespace Microsoft.Extensions.DependencyInjection
             {
                 // If we get here then the 'Selected' field contains a value that
                 //   doesn't correspond to a child section. In itself, that isn't an
-                //   error, but, it probably is something we should warn about ...
+                //   error, since the child section it optional, but, it probably is
+                //   something we should warn about ...
                 // Hmm ... should we pull in an ILogger parameter just for this warning?
             }
 
@@ -385,8 +392,8 @@ namespace Microsoft.Extensions.DependencyInjection
                             Resources.MethodNotFound,
                             nameof(ProcessStrategySection),
                             methodName,
-                            $"looked for variant 1: '{nameof(IServiceCollection)},{nameof(IConfiguration)},{nameof(ServiceLifetime)}' " +
-                            $"AND variant 2: '{nameof(IServiceCollection)},{nameof(IConfiguration)}' "
+                            $"looked parameters: '{nameof(IServiceCollection)},{nameof(IConfiguration)},{nameof(ServiceLifetime)}' " +
+                            $"AND parameters: '{nameof(IServiceCollection)},{nameof(IConfiguration)}' "
                             )
                         );
                 }

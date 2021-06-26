@@ -19,6 +19,8 @@
 
 * I rewrote the strategy/repository code to allow selecting multiple or single abstractions via the configuration.
 
+* I added a loader for the repository / strategy loader extension methods.
+
 ## 2021.1
 
 * I bumped the major version for the new year.
