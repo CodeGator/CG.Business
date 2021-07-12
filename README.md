@@ -6,6 +6,7 @@
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.Business.svg?style=flat)](https://nuget.org/packages/CG.Business)
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Business/4)
 [![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.Business/discussions)
+[![CG.Business on fuget.org](https://www.fuget.org/packages/CG.Business/badge.svg)](https://www.fuget.org/packages/CG.Business)
 
 #### What does it do?
 The package contains business related abstractions used by other CodeGator packages.
@@ -35,6 +36,8 @@ PM> Install-Package CG.Business
 
 #### How do I contact you?
 If you've spotted a bug in the code please use the project Issues [HERE](https://github.com/CodeGator/CG.Business/issues)
+
+We have a discussion group [HERE](https://github.com/CodeGator/CG.Business/discussions)
 
 #### Is there any documentation?
 There is developer documentation [HERE](https://codegator.github.io/CG.Business/)
