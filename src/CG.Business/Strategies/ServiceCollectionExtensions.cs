@@ -39,6 +39,9 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <param name="configuration">The configuration to use for the 
         /// operation.</param>
         /// <param name="serviceLifetime">The service lifetime to use for the operation.</param>
+        /// <param name="methodNameSuffix">An optional filtering mechanism, for removing
+        /// unrelated duplicate methods during the search process. When specified, the 
+        /// matching method name will contain this value before the word Strategies.</param>
         /// <param name="assemblyWhiteList">An optional white list for filtering
         /// the list of assemblies that are searched during this operation.</param>
         /// <param name="assemblyBlackList">An optional black list for filtering
@@ -75,6 +78,7 @@ namespace Microsoft.Extensions.DependencyInjection
             this IServiceCollection serviceCollection,
             IConfiguration configuration,
             ServiceLifetime serviceLifetime = ServiceLifetime.Scoped,
+            string methodNameSuffix = "",
             string assemblyWhiteList = "",
             string assemblyBlackList = "Microsoft*, System*, mscorlib, netstandard"
             )
@@ -129,6 +133,7 @@ namespace Microsoft.Extensions.DependencyInjection
                             strategyName,
                             configuration,
                             serviceLifetime,
+                            methodNameSuffix,
                             assemblyWhiteList,
                             assemblyBlackList
                             );
@@ -166,6 +171,7 @@ namespace Microsoft.Extensions.DependencyInjection
                         strategyName,
                         configuration,
                         serviceLifetime,
+                        methodNameSuffix,
                         assemblyWhiteList,
                         assemblyBlackList
                         );
@@ -206,6 +212,9 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <param name="configuration">The configuration to use for the 
         /// operation.</param>
         /// <param name="serviceLifetime">The service lifetime to use for the operation.</param>
+        /// <param name="methodNameSuffix">An optional filtering mechanism, for removing
+        /// unrelated duplicate methods during the search process. When specified, the 
+        /// matching method name will contain this value before the word Strategies.</param>
         /// <param name="assemblyWhiteList">An optional white list for filtering
         /// the list of assemblies that are searched during this operation.</param>
         /// <param name="assemblyBlackList">An optional black list for filtering
@@ -217,12 +226,23 @@ namespace Microsoft.Extensions.DependencyInjection
            string strategyName,
            IConfiguration configuration,
            ServiceLifetime serviceLifetime,
+           string methodNameSuffix,
            string assemblyWhiteList,
            string assemblyBlackList
            )
         {
-            // Trim the strategy name, just in case.
+            // Trim these parameters, just in case.
+            methodNameSuffix = methodNameSuffix.Trim();
             strategyName = strategyName.Trim();
+
+            // Sanity check the filter parameter.
+            if (strategyName.EndsWith(methodNameSuffix))
+            {
+                // If we get here then the filtering parameter ends with the
+                //   same name as the strategy, so, it's most likely no longer
+                //   needed.
+                methodNameSuffix = string.Empty;
+            }
 
             // Should never happen, but, pffft, check it anyway
             if (string.IsNullOrEmpty(strategyName))
@@ -313,14 +333,13 @@ namespace Microsoft.Extensions.DependencyInjection
             else
             {
                 // If we get here then the 'Selected' field contains a value that
-                //   doesn't correspond to a child section. In itself, that isn't an
-                //   error, since the child section it optional, but, it probably is
-                //   something we should warn about ...
-                // Hmm ... should we pull in an ILogger parameter just for this warning?
+                //   corresponds to an empty child section. In itself, that isn't an
+                //   error, since the child section it optional, and may contain as
+                //   much, or as little, is needed.
             }
 
             // Format the name of a target extension method.
-            var methodName = $"Add{strategyName}Strategies";
+            var methodName = $"Add{strategyName}{methodNameSuffix}Strategies";
 
             // Our convention is that the specified extension method can appear in
             //   two different flavors, one with a trailing ServiceLifetime parameter,

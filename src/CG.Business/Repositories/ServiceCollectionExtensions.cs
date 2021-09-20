@@ -37,6 +37,9 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <param name="configuration">The configuration to use for the 
         /// operation.</param>
         /// <param name="serviceLifetime">The service lifetime to use for the operation.</param>
+        /// <param name="methodNameSuffix">An optional filtering mechanism, for removing
+        /// unrelated duplicate methods during the search process. When specified, the 
+        /// matching method name will contain this value before the word Repositories.</param>
         /// <param name="assemblyWhiteList">An optional white list for filtering
         /// the list of assemblies that are searched during this operation.</param>
         /// <param name="assemblyBlackList">An optional black list for filtering
@@ -73,6 +76,7 @@ namespace Microsoft.Extensions.DependencyInjection
             this IServiceCollection serviceCollection,
             IConfiguration configuration,
             ServiceLifetime serviceLifetime = ServiceLifetime.Scoped,
+            string methodNameSuffix = "",
             string assemblyWhiteList = "",
             string assemblyBlackList = "Microsoft*, System*, mscorlib, netstandard"
             )
@@ -127,6 +131,7 @@ namespace Microsoft.Extensions.DependencyInjection
                             strategyName,
                             configuration,
                             serviceLifetime,
+                            methodNameSuffix,
                             assemblyWhiteList,
                             assemblyBlackList
                             );
@@ -164,6 +169,7 @@ namespace Microsoft.Extensions.DependencyInjection
                         strategyName,
                         configuration,
                         serviceLifetime,
+                        methodNameSuffix,
                         assemblyWhiteList,
                         assemblyBlackList
                         );
@@ -205,6 +211,9 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <param name="configuration">The configuration to use for the 
         /// operation.</param>
         /// <param name="serviceLifetime">The service lifetime to use for the operation.</param>
+        /// <param name="methodNameSuffix">An optional filtering mechanism, for removing
+        /// unrelated duplicate methods during the search process. When specified, the 
+        /// matching method name will contain this value before the word Repositories.</param>
         /// <param name="assemblyWhiteList">An optional white list for filtering
         /// the list of assemblies that are searched during this operation.</param>
         /// <param name="assemblyBlackList">An optional black list for filtering
@@ -216,12 +225,23 @@ namespace Microsoft.Extensions.DependencyInjection
            string strategyName,
            IConfiguration configuration,
            ServiceLifetime serviceLifetime,
+           string methodNameSuffix,
            string assemblyWhiteList,
            string assemblyBlackList
            )
         {
-            // Trim the strategy name, just in case.
+            // Trim these parameters, just in case.
+            methodNameSuffix = methodNameSuffix.Trim();
             strategyName = strategyName.Trim();
+
+            // Sanity check the filter parameter.
+            if (strategyName.EndsWith(methodNameSuffix))
+            {
+                // If we get here then the filtering parameter ends with the
+                //   same name as the strategy, so, it's most likely no longer
+                //   needed.
+                methodNameSuffix = string.Empty;
+            }
 
             // Should never happen, but, pffft, check it anyway
             if (string.IsNullOrEmpty(strategyName))
@@ -323,7 +343,7 @@ namespace Microsoft.Extensions.DependencyInjection
             }
 
             // Format the name of a target extension method.
-            var methodName = $"Add{strategyName}Repositories";
+            var methodName = $"Add{strategyName}{methodNameSuffix}Repositories";
 
             // Our convention is that the specified extension method can appear in
             //   two different flavors, one with a trailing ServiceLifetime parameter,
