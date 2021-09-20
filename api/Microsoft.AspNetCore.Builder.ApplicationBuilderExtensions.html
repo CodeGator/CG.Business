@@ -125,7 +125,7 @@ type, for registering types related to strategies.</p>
   <h3 id="methods">Methods
   </h3>
   <a id="Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseStrategies_" data-uid="Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies*"></a>
-  <h4 id="Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseStrategies_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_Extensions_Hosting_IHostEnvironment_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_" data-uid="Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)">UseStrategies(IApplicationBuilder, IHostEnvironment, IConfiguration, String, String)</h4>
+  <h4 id="Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseStrategies_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_Extensions_Hosting_IHostEnvironment_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_System_String_" data-uid="Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String,System.String)">UseStrategies(IApplicationBuilder, IHostEnvironment, IConfiguration, String, String, String)</h4>
   <div class="markdown level1 summary"><p>This method reads the specified configuration for information to
 dynamically locate (possibly by loading an external assembly), and
 then invoke, one or more user supplied extension methods, for the
@@ -134,7 +134,7 @@ purpose of calling startup logic for strategy related abstractions.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IApplicationBuilder UseStrategies(this IApplicationBuilder applicationBuilder, IHostEnvironment hostEnvironment, IConfiguration configuration, string assemblyWhiteList = &quot;&quot;, string assemblyBlackList = &quot;Microsoft*, System*, mscorlib, netstandard&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static IApplicationBuilder UseStrategies(this IApplicationBuilder applicationBuilder, IHostEnvironment hostEnvironment, IConfiguration configuration, string methodNameSuffix = &quot;&quot;, string assemblyWhiteList = &quot;&quot;, string assemblyBlackList = &quot;Microsoft*, System*, mscorlib, netstandard&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -163,6 +163,14 @@ the operation.</p>
         <td><span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span></td>
         <td><span class="parametername">configuration</span></td>
         <td><p>The configuration section to use for the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">methodNameSuffix</span></td>
+        <td><p>An optional filtering mechanism, for removing
+unrelated duplicate methods during the search process. When specified, the
+matching method name will contain this value before the word Strategies.</p>
 </td>
       </tr>
       <tr>

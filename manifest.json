@@ -834,7 +834,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html",
-          "hash": "WcmT4BMaqmnf2ULXo5vg0RzRS7H+r5qn00tPCdf83SA="
+          "hash": "dm5V5zvLhTdFQC/js3N5PD1968SaxVpdoR1MizL/Jf8="
         }
       },
       "is_incremental": false,
@@ -846,7 +846,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.html",
-          "hash": "UcQUjkixYEvXIcBapDYJydugR2Uw/U4spcw3f3mH1mw="
+          "hash": "YDMNCglRFKy3paIGsLYK+fDuFKbzlYauwMX/sAZHO/M="
         }
       },
       "is_incremental": false,
