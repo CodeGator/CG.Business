@@ -36,6 +36,9 @@ namespace Microsoft.AspNetCore.Builder
         /// the operation.</param>
         /// <param name="hostEnvironment">The hosting environment to use for the operation.</param>
         /// <param name="configuration">The configuration section to use for the operation.</param>
+        /// <param name="methodNameSuffix">An optional filtering mechanism, for removing
+        /// unrelated duplicate methods during the search process. When specified, the 
+        /// matching method name will contain this value before the word Strategies.</param>
         /// <param name="assemblyBlackList">An optional black list for filtering
         /// the list of assemblies that are searched during this operation.</param>
         /// <param name="assemblyWhiteList">An optional white list for filtering
@@ -54,6 +57,7 @@ namespace Microsoft.AspNetCore.Builder
             this IApplicationBuilder applicationBuilder,
             IHostEnvironment hostEnvironment,
             IConfiguration configuration,
+            string methodNameSuffix = "",
             string assemblyWhiteList = "",
             string assemblyBlackList = "Microsoft*, System*, mscorlib, netstandard"
             )
@@ -110,6 +114,7 @@ namespace Microsoft.AspNetCore.Builder
                             hostEnvironment,
                             strategyName,
                             configuration,
+                            methodNameSuffix,
                             assemblyWhiteList,
                             assemblyBlackList
                             );
@@ -147,6 +152,7 @@ namespace Microsoft.AspNetCore.Builder
                         hostEnvironment,
                         strategyName,
                         configuration,
+                        methodNameSuffix,
                         assemblyWhiteList,
                         assemblyBlackList
                         );
@@ -187,6 +193,9 @@ namespace Microsoft.AspNetCore.Builder
         /// <param name="hostEnvironment">The host environment to use for the 
         /// operation.</param>
         /// <param name="strategyName">The strategy name to use for the operation.</param>
+        /// <param name="methodNameSuffix">An optional filtering mechanism, for removing
+        /// unrelated duplicate methods during the search process. When specified, the 
+        /// matching method name will contain this value before the word Strategies.</param>
         /// <param name="configuration">The configuration to use for the 
         /// operation.</param>
         /// <param name="assemblyWhiteList">An optional white list for filtering
@@ -200,12 +209,23 @@ namespace Microsoft.AspNetCore.Builder
            IHostEnvironment hostEnvironment,
            string strategyName,
            IConfiguration configuration,
+           string methodNameSuffix,
            string assemblyWhiteList,
            string assemblyBlackList
            )
         {
-            // Trim the strategy name, just in case.
+            // Trim these parameters, just in case.
+            methodNameSuffix = methodNameSuffix.Trim();
             strategyName = strategyName.Trim();
+
+            // Sanity check the filter parameter.
+            if (strategyName.EndsWith(methodNameSuffix))
+            {
+                // If we get here then the filtering parameter ends with the
+                //   same name as the strategy, so, it's most likely no longer
+                //   needed.
+                methodNameSuffix = string.Empty;
+            }
 
             // Should never happen, but, pffft, check it anyway
             if (string.IsNullOrEmpty(strategyName))
@@ -303,7 +323,7 @@ namespace Microsoft.AspNetCore.Builder
             }
 
             // Format the name of a target extension method.
-            var methodName = $"Use{strategyName}Strategies";
+            var methodName = $"Use{strategyName}{methodNameSuffix}Strategies";
 
             // Look for the specified extension method.
             var methods = AppDomain.CurrentDomain.ExtensionMethods(
