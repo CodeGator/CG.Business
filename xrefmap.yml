@@ -1465,12 +1465,12 @@ references:
   commentId: T:Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions
   fullName: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions
   nameWithType: ApplicationBuilderExtensions
-- uid: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String,System.String)
-  name: UseStrategies(IApplicationBuilder, IHostEnvironment, IConfiguration, String, String, String)
-  href: api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseStrategies_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_Extensions_Hosting_IHostEnvironment_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_System_String_
-  commentId: M:Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String,System.String)
-  fullName: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.Extensions.Hosting.IHostEnvironment, Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String, System.String)
-  nameWithType: ApplicationBuilderExtensions.UseStrategies(IApplicationBuilder, IHostEnvironment, IConfiguration, String, String, String)
+- uid: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  name: UseStrategies(IApplicationBuilder, IHostEnvironment, IConfiguration, String, String)
+  href: api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseStrategies_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_Extensions_Hosting_IHostEnvironment_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_
+  commentId: M:Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  fullName: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.Extensions.Hosting.IHostEnvironment, Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String)
+  nameWithType: ApplicationBuilderExtensions.UseStrategies(IApplicationBuilder, IHostEnvironment, IConfiguration, String, String)
 - uid: Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.UseStrategies*
   name: UseStrategies
   href: api/Microsoft.AspNetCore.Builder.ApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_ApplicationBuilderExtensions_UseStrategies_
@@ -1484,12 +1484,12 @@ references:
   commentId: T:Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions
   fullName: Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions
   nameWithType: RepositoriesApplicationBuilderExtensions
-- uid: Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.UseRepositories(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String,System.String)
-  name: UseRepositories(IApplicationBuilder, IHostEnvironment, IConfiguration, String, String, String)
-  href: api/Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_RepositoriesApplicationBuilderExtensions_UseRepositories_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_Extensions_Hosting_IHostEnvironment_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_System_String_
-  commentId: M:Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.UseRepositories(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String,System.String)
-  fullName: Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.UseRepositories(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.Extensions.Hosting.IHostEnvironment, Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String, System.String)
-  nameWithType: RepositoriesApplicationBuilderExtensions.UseRepositories(IApplicationBuilder, IHostEnvironment, IConfiguration, String, String, String)
+- uid: Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.UseRepositories(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  name: UseRepositories(IApplicationBuilder, IHostEnvironment, IConfiguration, String, String)
+  href: api/Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_RepositoriesApplicationBuilderExtensions_UseRepositories_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_Extensions_Hosting_IHostEnvironment_Microsoft_Extensions_Configuration_IConfiguration_System_String_System_String_
+  commentId: M:Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.UseRepositories(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)
+  fullName: Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.UseRepositories(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.Extensions.Hosting.IHostEnvironment, Microsoft.Extensions.Configuration.IConfiguration, System.String, System.String)
+  nameWithType: RepositoriesApplicationBuilderExtensions.UseRepositories(IApplicationBuilder, IHostEnvironment, IConfiguration, String, String)
 - uid: Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.UseRepositories*
   name: UseRepositories
   href: api/Microsoft.AspNetCore.Builder.RepositoriesApplicationBuilderExtensions.html#Microsoft_AspNetCore_Builder_RepositoriesApplicationBuilderExtensions_UseRepositories_
