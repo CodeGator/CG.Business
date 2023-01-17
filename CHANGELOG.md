@@ -1,6 +1,10 @@
 # CG.Business
 ---
 
+## 2023.1
+
+I removed everything but the exception classes.
+
 ## 2022.1
 
 * I switched the runtime to .net 6.0
