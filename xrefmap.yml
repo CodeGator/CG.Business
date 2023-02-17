@@ -1,6 +1,55 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: CG.Business.Apis
+  name: CG.Business.Apis
+  href: api/CG.Business.Apis.html
+  commentId: N:CG.Business.Apis
+  fullName: CG.Business.Apis
+  nameWithType: CG.Business.Apis
+- uid: CG.Business.Apis.ApiException
+  name: ApiException
+  href: api/CG.Business.Apis.ApiException.html
+  commentId: T:CG.Business.Apis.ApiException
+  fullName: CG.Business.Apis.ApiException
+  nameWithType: ApiException
+- uid: CG.Business.Apis.ApiException.#ctor
+  name: ApiException()
+  href: api/CG.Business.Apis.ApiException.html#CG_Business_Apis_ApiException__ctor
+  commentId: M:CG.Business.Apis.ApiException.#ctor
+  fullName: CG.Business.Apis.ApiException.ApiException()
+  nameWithType: ApiException.ApiException()
+- uid: CG.Business.Apis.ApiException.#ctor(SerializationInfo,StreamingContext)
+  name: ApiException(SerializationInfo, StreamingContext)
+  href: api/CG.Business.Apis.ApiException.html#CG_Business_Apis_ApiException__ctor_SerializationInfo_StreamingContext_
+  commentId: M:CG.Business.Apis.ApiException.#ctor(SerializationInfo,StreamingContext)
+  fullName: CG.Business.Apis.ApiException.ApiException(SerializationInfo, StreamingContext)
+  nameWithType: ApiException.ApiException(SerializationInfo, StreamingContext)
+- uid: CG.Business.Apis.ApiException.#ctor(System.String)
+  name: ApiException(String)
+  href: api/CG.Business.Apis.ApiException.html#CG_Business_Apis_ApiException__ctor_System_String_
+  commentId: M:CG.Business.Apis.ApiException.#ctor(System.String)
+  fullName: CG.Business.Apis.ApiException.ApiException(System.String)
+  nameWithType: ApiException.ApiException(String)
+- uid: CG.Business.Apis.ApiException.#ctor(System.String,Exception)
+  name: ApiException(String, Exception)
+  href: api/CG.Business.Apis.ApiException.html#CG_Business_Apis_ApiException__ctor_System_String_Exception_
+  commentId: M:CG.Business.Apis.ApiException.#ctor(System.String,Exception)
+  fullName: CG.Business.Apis.ApiException.ApiException(System.String, Exception)
+  nameWithType: ApiException.ApiException(String, Exception)
+- uid: CG.Business.Apis.ApiException.#ctor*
+  name: ApiException
+  href: api/CG.Business.Apis.ApiException.html#CG_Business_Apis_ApiException__ctor_
+  commentId: Overload:CG.Business.Apis.ApiException.#ctor
+  isSpec: "True"
+  fullName: CG.Business.Apis.ApiException.ApiException
+  nameWithType: ApiException.ApiException
+- uid: CG.Business.Apis.IApi
+  name: IApi
+  href: api/CG.Business.Apis.IApi.html
+  commentId: T:CG.Business.Apis.IApi
+  fullName: CG.Business.Apis.IApi
+  nameWithType: IApi
 - uid: CG.Business.Directors
   name: CG.Business.Directors
   href: api/CG.Business.Directors.html
@@ -44,6 +93,18 @@ references:
   isSpec: "True"
   fullName: CG.Business.Directors.DirectorException.DirectorException
   nameWithType: DirectorException.DirectorException
+- uid: CG.Business.Directors.IDirector
+  name: IDirector
+  href: api/CG.Business.Directors.IDirector.html
+  commentId: T:CG.Business.Directors.IDirector
+  fullName: CG.Business.Directors.IDirector
+  nameWithType: IDirector
+- uid: CG.Business.Directors.IManager
+  name: IManager
+  href: api/CG.Business.Directors.IManager.html
+  commentId: T:CG.Business.Directors.IManager
+  fullName: CG.Business.Directors.IManager
+  nameWithType: IManager
 - uid: CG.Business.Managers
   name: CG.Business.Managers
   href: api/CG.Business.Managers.html
@@ -93,6 +154,12 @@ references:
   commentId: N:CG.Business.Repositories
   fullName: CG.Business.Repositories
   nameWithType: CG.Business.Repositories
+- uid: CG.Business.Repositories.IRepository
+  name: IRepository
+  href: api/CG.Business.Repositories.IRepository.html
+  commentId: T:CG.Business.Repositories.IRepository
+  fullName: CG.Business.Repositories.IRepository
+  nameWithType: IRepository
 - uid: CG.Business.Repositories.RepositoryException
   name: RepositoryException
   href: api/CG.Business.Repositories.RepositoryException.html

@@ -14,6 +14,42 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Apis.ApiException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Apis.ApiException.html",
+          "hash": "OKm7X90jFPuuusDJ1c1KHJQxNmW44E1vQb0jhECQNkg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Apis.IApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Apis.IApi.html",
+          "hash": "+LaC2Tje8dAv9A36jZItBDODhj9IwqN7yMLMBl2KibA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Apis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Apis.html",
+          "hash": "AiRKTxuZqK/C1OOxALwbcrCFC+JBGOiB9DIgAmUF87Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Business.Directors.DirectorException.yml",
       "output": {
         ".html": {
@@ -26,11 +62,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.IDirector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.IDirector.html",
+          "hash": "1ELScjQODzNIJiIfxhXO+9/6SiFpR3hUZeQI51PHetU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Directors.IManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Directors.IManager.html",
+          "hash": "9PYYxAc0h3KYDyks/PTyRSOpYTURrcON6B6HOBN/qjg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Business.Directors.yml",
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Directors.html",
-          "hash": "hWX5YQYDw6vuf29jk6ZpaC+E42gI2TqHgNV87ypxRBc="
+          "hash": "f82b+jJ+gTN3cyfPlSBGaRlFv8Py9x6NTKhiA/9ZuQk="
         }
       },
       "is_incremental": false,
@@ -62,6 +122,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CG.Business.Repositories.IRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CG.Business.Repositories.IRepository.html",
+          "hash": "1XJOJqBzEgqYKNdJXOgrEx/Pv/eZE+aulCmu7kt9IQs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CG.Business.Repositories.RepositoryException.yml",
       "output": {
         ".html": {
@@ -78,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/CG.Business.Repositories.html",
-          "hash": "c97279Bt7id6iLB53168FvBm55y60vIf+O3N0MCUsPk="
+          "hash": "Mel4wfn45A1AvPrGCmJyI0xPYgO1s/BSx+1REZkwD9s="
         }
       },
       "is_incremental": false,
@@ -90,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "3jjMVwU8S6N1K2hj+AF7OV9XdR8UbfiybBi85YgviJE="
+          "hash": "aQwRj3WkUSRS6jAzlziz/IFvytLY8rQIP4laIOAXot8="
         }
       },
       "is_incremental": false,
@@ -138,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "RBRsF/6rs7hpvI72dN4C7WxYEGkkV8qcyB+hcRo4d8g="
+          "hash": "ZlL8t/htLcO2psz9WkAlNOgL2Y3wXHuu+HgsJpPYNpA="
         }
       },
       "is_incremental": false,
@@ -165,7 +237,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 6,
+          "total_file_count": 12,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

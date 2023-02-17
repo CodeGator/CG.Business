@@ -1,4 +1,19 @@
 {
+  "api/CG.Business.Apis.ApiException.html": {
+    "href": "api/CG.Business.Apis.ApiException.html",
+    "title": "Class ApiException",
+    "keywords": "Class ApiException This class represents an API related exception. Inheritance System.Object ApiException Namespace : CG.Business.Apis Assembly : CG.Business.dll Syntax public class ApiException : Exception Constructors ApiException() This constructor creates a new instance of the ApiException class. Declaration public ApiException() ApiException(SerializationInfo, StreamingContext) This constructor creates a new instance of the ApiException class. Declaration public ApiException(SerializationInfo info, StreamingContext context) Parameters Type Name Description SerializationInfo info The serialization info to use for the exception. StreamingContext context The streaming context to use for the exception. ApiException(String) This constructor creates a new instance of the ApiException class. Declaration public ApiException(string message) Parameters Type Name Description System.String message The message to use for the exception. ApiException(String, Exception) This constructor creates a new instance of the ApiException class. Declaration public ApiException(string message, Exception innerException) Parameters Type Name Description System.String message The message to use for the exception. Exception innerException An optional inner exception reference."
+  },
+  "api/CG.Business.Apis.html": {
+    "href": "api/CG.Business.Apis.html",
+    "title": "Namespace CG.Business.Apis",
+    "keywords": "Namespace CG.Business.Apis Classes ApiException This class represents an API related exception. Interfaces IApi This interface represents an API."
+  },
+  "api/CG.Business.Apis.IApi.html": {
+    "href": "api/CG.Business.Apis.IApi.html",
+    "title": "Interface IApi",
+    "keywords": "Interface IApi This interface represents an API. Namespace : CG.Business.Apis Assembly : CG.Business.dll Syntax public interface IApi"
+  },
   "api/CG.Business.Directors.DirectorException.html": {
     "href": "api/CG.Business.Directors.DirectorException.html",
     "title": "Class DirectorException",
@@ -7,7 +22,17 @@
   "api/CG.Business.Directors.html": {
     "href": "api/CG.Business.Directors.html",
     "title": "Namespace CG.Business.Directors",
-    "keywords": "Namespace CG.Business.Directors Classes DirectorException This class represents a director related exception."
+    "keywords": "Namespace CG.Business.Directors Classes DirectorException This class represents a director related exception. Interfaces IDirector This interface represents a director. IManager This interface represents a manager."
+  },
+  "api/CG.Business.Directors.IDirector.html": {
+    "href": "api/CG.Business.Directors.IDirector.html",
+    "title": "Interface IDirector",
+    "keywords": "Interface IDirector This interface represents a director. Namespace : CG.Business.Directors Assembly : CG.Business.dll Syntax public interface IDirector"
+  },
+  "api/CG.Business.Directors.IManager.html": {
+    "href": "api/CG.Business.Directors.IManager.html",
+    "title": "Interface IManager",
+    "keywords": "Interface IManager This interface represents a manager. Namespace : CG.Business.Directors Assembly : CG.Business.dll Syntax public interface IManager"
   },
   "api/CG.Business.Managers.html": {
     "href": "api/CG.Business.Managers.html",
@@ -22,7 +47,12 @@
   "api/CG.Business.Repositories.html": {
     "href": "api/CG.Business.Repositories.html",
     "title": "Namespace CG.Business.Repositories",
-    "keywords": "Namespace CG.Business.Repositories Classes RepositoryException This class represents a repository related exception."
+    "keywords": "Namespace CG.Business.Repositories Classes RepositoryException This class represents a repository related exception. Interfaces IRepository This interface represents a repository."
+  },
+  "api/CG.Business.Repositories.IRepository.html": {
+    "href": "api/CG.Business.Repositories.IRepository.html",
+    "title": "Interface IRepository",
+    "keywords": "Interface IRepository This interface represents a repository. Namespace : CG.Business.Repositories Assembly : CG.Business.dll Syntax public interface IRepository"
   },
   "api/CG.Business.Repositories.RepositoryException.html": {
     "href": "api/CG.Business.Repositories.RepositoryException.html",
