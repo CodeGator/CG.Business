@@ -1,6 +1,10 @@
 # CG.Business
 ---
 
+## 2023.2
+
+I added the repository, manager, director and api interfaces back in.
+
 ## 2023.1
 
 I removed everything but the exception classes.
